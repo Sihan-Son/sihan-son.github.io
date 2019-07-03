@@ -3,6 +3,9 @@ layout: post
 title:  "Simple Latent Space"
 date:   2019-07-01
 excerpt: "What is latent space"
+sitemap :
+  changefreq : daily
+  priority : 1.0
 tag:
 - GAN
 - graduation
