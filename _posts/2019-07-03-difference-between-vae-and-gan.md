@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Difference between vae and gan"
+title:  "Difference between VAE and GAN"
 date:   2019-07-03
 excerpt: "what is difference between vae and gan"
 sitemap :
