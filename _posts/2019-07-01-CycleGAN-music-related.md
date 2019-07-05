@@ -23,7 +23,7 @@ comments: true
 # Index
 - <a href='https://sihan-son.github.io/CycleGAN-music-intro'>Intro</a>
 - <a href='https://sihan-son.github.io/CycleGAN-music-related'>Related Work</a>
-- <a href=''>Model Architecture</a>
+- <a href='https://sihan-son.github.io/CycleGAN-music-model'>Model Architecture</a>
 - <a href='https://sihan-son.github.io/CycleGAN-music-pre'>Dataset and Preprocessing</a>
 - <a href=''>Architecture Parmeters and Training</a>
 - <a href=''>Experimental Results</a>

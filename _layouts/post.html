@@ -10,11 +10,12 @@ layout: compress
     {% include analytics.html %}
     {% include head.html %}
     <script>
-            (adsbygoogle = window.adsbygoogle || []).push({
-                google_ad_client: "ca-pub-5414348543182733",
-                enable_page_level_ads: true
-            });
-        </script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-5414348543182733",
+            enable_page_level_ads: true
+        });
+    </script>
+    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
     {% include nav.html %}
@@ -51,7 +52,7 @@ layout: compress
     {% include scripts.html %}
     {% if site.mathjax == true %}
     <!-- MathJax -->
-    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
     {% endif %}
 </body>
 </html>
