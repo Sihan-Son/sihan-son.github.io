@@ -41,7 +41,8 @@ comments: true
 <code>D<sub>A,m</sub></code>, <code>D<sub>B,m</sub></code>: `extra Discriminator`이며, `G`가 `high level feature`를 학습 할 수 있게 해줌  
 <code>M</code>: 여러 도메인을 가지고 있는 data sets
 
-$\hat{A}$  
+X<sub>A</sub>는 원본 도메인이다.  
+$\hat{A}$ = <code>G <sub>A->B</sub></code>
 $\tilde{A}$
 ---
 <a id="paper01">1.</a> Generative Adversarial Nets
