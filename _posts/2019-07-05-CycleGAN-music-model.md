@@ -48,6 +48,9 @@ X<sub>A</sub>는 원본 도메인이다.
 $\\hat{A}_B$ = G <sub>A->B</sub>(X<sub>A</sub>)  
 $\\tilde{A}_A$ =G <sub>B->A</sub>(G <sub>A->B</sub>(X<sub>A</sub>))  
 
+\\[ \frac{1}{n^{2}} \\]  
+\\( 1/x^{2} \\)
+
 --- 
 
 ## Cycle Consistency Loss

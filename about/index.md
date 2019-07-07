@@ -11,6 +11,6 @@ comments: false
 
 ---
 
-Wir müssen wissen, Wir werden wissen  
-David Hilbert
+> Wir müssen wissen, Wir werden wissen  
+>> David Hilbert
  
