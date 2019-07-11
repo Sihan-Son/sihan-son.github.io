@@ -17,7 +17,7 @@ comments: true
 오늘은 `Github page`로 블로그 중에서 `Jekyll` 기반 블로그를 이용하는 이용자에게 push 하지 않고 로컬머신에서 확인하는 방법을 소개하려고 합니다. `Mac`, `Linux` 사용자에겐 상대적으로 수월 하지만 윈도우에서는 번거러운 점이 좀 있어서 시도해보다가 그만둔 사용자가 있을 겁니다. 제가 그 중 하나였으니까요. 그래서 `Ruby` 설치 부터 로컬 머신 실행까지 절차를 알아보려고 합니다!
 
 # 루비 Ruby 설치
-`Jekyll`은 `Ruby`로 만들어 졌기 때문에 먼저 `Ruby`를 설치해야합니다. <a herf='https://rubyinstaller.org/downloads/'>Ruby installer for Window</a>에서 `Ruby+Devkit` 파일을 다운로드 받으셔서 설치하면 됩니다. 이 과정에서 환경변수(PATH)까지 잡히게 됩니다
+`Jekyll`은 `Ruby`로 만들어 졌기 때문에 먼저 `Ruby`를 설치해야합니다. <a href='https://rubyinstaller.org/downloads/'>Ruby installer for Window</a>에서 `Ruby+Devkit` 파일을 다운로드 받으셔서 설치하면 됩니다. 이 과정에서 환경변수(PATH)까지 잡히게 됩니다
 
 # Jekyll 설치하기
 `Ruby`를 설치했으면 이제 `Jekyll`을 설치해야합니다. 먼저 윈도우 버튼을 누른 후 `Prompt with Ruby`를 검색해 주세요. 그리고 나오는 것 중에서 `Start Command Prompt with Ruby`를 실행 시키면 됩니다.  
