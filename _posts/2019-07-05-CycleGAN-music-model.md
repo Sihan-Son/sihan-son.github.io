@@ -49,16 +49,16 @@ X<sub>A</sub>는 원본 도메인이다.
 
 `G`의 `Loss`로는 `L2 norm`사용합니다.
 
-<img src='https://sihan-son.github.io/public/CycleGAN_music_review/L2_NORM_LOSS.png'>
+<img src='https://sihan-son.github.io/public/CycleGAN_music_review/p2.png'>
 
 추가적으로 `Cycle Consistency loss`라는 `L1 Loss`를 사용합니다. `Cycle Consistency loss`는 글 아래에 자세한 설명이 있습니다.
 
-<img src='https://sihan-son.github.io/public/CycleGAN_music_review/Cycle_Consistency_loss.png'>
+<img src='https://sihan-son.github.io/public/CycleGAN_music_review/p3.png'>
 
 그래서 두 식을 합친 최종적인 `Loss`는 다음과 같이 표현 됩니다. 
 \\(lambda\\)는 `Cycle Consistency loss`의 가중치입니다.
 
-<img src='https://sihan-son.github.io/public/CycleGAN_music_review/loss.png'>  
+<img src='https://sihan-son.github.io/public/CycleGAN_music_review/p4.png'>  
   
 
 `GAN` 학습은 안정적이지 못하기 때문에 밸런스 조절이 필요합니다. `D`가 너무 강력해서 초반부터 `G`를 압도하게 되면 `local optima`의 위험을 가지고 있습니다. `G`가 `D`를 속이기 위해서는 두 장르의 특징에 대해 효과적으로 학습을 진행해야 합니다. 하지만 음악 장르는 독특한 패턴을 가질 확률이 높기 때문에 `D`를 속이기 위한 패턴을 만들 확률이 높습니다. `D`를 속인다고 해서 반드시 들을만한 음악이 나오는 것이 나오진 않습니다. 들을 만한 음악을 만들기 위해선 `high level feature`가 필요합니다. 그래서 두 개의 `extra D (D_x)`를 도입합니다. 기존의 `D`는 fake/real 구분을 하고 `D_x`는 `G`가 `music manifold`에 잔류하게 도와줍니다. 이를 통해 그럴듯하고 실제적인 음악을 만들어 줍니다. `G`가 대부분의 입력 구조를 유지하게 하여 원복 조각을 장르 변화 이후에도 유지 할 수 있게 합니다. 
@@ -66,13 +66,13 @@ X<sub>A</sub>는 원본 도메인이다.
 
 다음은 `D`의 `Loss`와 `D_x`의 로스입니다.
 
-<img src='https://sihan-son.github.io/public/CycleGAN_music_review/d_loss.png'>    
+<img src='https://sihan-son.github.io/public/CycleGAN_music_review/p5.png'>    
 
-<img src='https://sihan-son.github.io/public/CycleGAN_music_review/dx_loss.png'>  
+<img src='https://sihan-son.github.io/public/CycleGAN_music_review/d6.png'>  
 
 최종적인 `Loss`의 형태입니다. \\(gamma\\)는 `D_x`의 가중치입니다.  
 
-<img src='https://sihan-son.github.io/public/CycleGAN_music_review/da_loss.png'>  
+<img src='https://sihan-son.github.io/public/CycleGAN_music_review/d7.png'>  
 
 학습의 안정성을 위해 `D`에 가우시안 노이즈를 추가하게됩니다.
 
