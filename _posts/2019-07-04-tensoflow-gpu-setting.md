@@ -9,8 +9,9 @@ sitemap :
 tag:
 - Setting
 - tensorflow
-- gpu
+- GPU
 - anaconda
+- ML
 comments: true
 ---
 

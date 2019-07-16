@@ -9,6 +9,7 @@ sitemap :
 tag:
 - GAN
 - graduation
+- ML
 comments: true
 ---
 
