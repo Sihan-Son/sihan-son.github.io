@@ -27,4 +27,7 @@ comments: true
 위는 정상적으로 학습 될떄 생성 되는 이미지이고, 아래가 `mode collapse`가 발생한 이미지입니다.
 
 ---
-이미지는 [Jaejun Yoo's Playground]('http://jaejunyoo.blogspot.com/2017/02/unrolled-generative-adversarial-network-1.html')에서 가져온 이미지입니다
+이미지는 [Jaejun Yoo's Playground]('http://jaejunyoo.blogspot.com/2017/02/unrolled-generative-adversarial-network-1.html')에서 가져온 이미지입니다.  
+
+
+본 포스팅은 졸업작품을 위한 미팅 자료에 기반을 두고 있습니다. <a href='https://dev-hani.tistory.com'>팀원</a>과 함께 진행하는 프로젝트입니다.

@@ -50,3 +50,6 @@ Vector X = [3, 4]: 7
 <img src ='https://sihan-son.github.io/public/norm/5.png' >
 
 `L2 Norm`은 가장 직접적인 경로입니다. `L2 Regularization`, `KNN`, `K-means` 등의 알고리즘에서 사용됩니다. 벡터의 각 구성요소가 제곱된 형태이기 때문에 결과 값이 왜곡 될 가능성이 있기 때문에 고려해야합니다. 
+
+---
+본 포스팅은 졸업작품을 위한 미팅 자료에 기반을 두고 있습니다. <a href='https://dev-hani.tistory.com'>팀원</a>과 함께 진행하는 프로젝트입니다.

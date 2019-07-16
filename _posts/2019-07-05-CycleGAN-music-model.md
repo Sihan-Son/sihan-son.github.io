@@ -83,7 +83,7 @@ X<sub>A</sub>는 원본 도메인이다.
 
 ## Cycle Consistency Loss
 
-학습의 안정성을 위해 `Cycle Consistency Loss`를 사용합니다. `Cycle Consistency Loss`는 `mapping`을 보장하는 역할을 수행합니다. `Cycle Consistency Loss`가 없을 경우 `posterior collapse`또는 `mode collapse`라는 현상을 경험할 수 있습니다. 이 현상은 <a href="">이 글</a>을 참조해 주세요. `G`가 입력 데이터를 무시하지 않고 필요한 정보를 남기고 `invert`할 수 있게 하는 `regularizer`의 역할 수행합니다.   
+학습의 안정성을 위해 `Cycle Consistency Loss`를 사용합니다. `Cycle Consistency Loss`는 `mapping`을 보장하는 역할을 수행합니다. `Cycle Consistency Loss`가 없을 경우 `posterior collapse`또는 `mode collapse`라는 현상을 경험할 수 있습니다. 이 현상은 <a href="https://sihan-son.github.io/mode-collapse">이 글</a>을 참조해 주세요. `G`가 입력 데이터를 무시하지 않고 필요한 정보를 남기고 `invert`할 수 있게 하는 `regularizer`의 역할 수행합니다.   
 
 ---
 <a id="paper01">1.</a> Generative Adversarial Nets
