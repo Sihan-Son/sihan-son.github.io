@@ -172,7 +172,7 @@ plt.show()
 ```
 
 
-<img src = 'https://sihan-son.github.io/public/book/gilbut/ch02_3_0.png'>
+<img src = 'https://sihan-son.github.io/public/book/gilbut/3.png'>
 
 
 
