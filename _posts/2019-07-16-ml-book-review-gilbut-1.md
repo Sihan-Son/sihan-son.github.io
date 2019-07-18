@@ -172,7 +172,8 @@ plt.show()
 ```
 
 
-![png]('https://sihan-son.github.io/public/book/gilbut/ch02_3_0.png')
+<img src = 'https://sihan-son.github.io/public/book/gilbut/ch02_3_0.png'>
+
 
 
 `Jupyter Notebook`을 이용해서 실습을 진행해 `Jupyter Notebook`에 대한 사용법도 익힐 수 있습니다.
