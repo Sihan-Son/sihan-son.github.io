@@ -16,6 +16,7 @@ tag:
 - graduation
 - ML
 comments: true
+paper: true
 ---
 
 졸업 작품으로 `Generative adversarial network(GAN)`을 이용해 작곡을 하려고 했다. 프로젝트 진행을 위해 자료 수집을 진행하며 지도 교수님과 이야기를 통해 작곡에서 `domain transfer` 즉 음악의 편곡으로 방향을 선회해 프로젝트를 진행하게 되었다. 핵심적으로 본 논문들을 리뷰하면서 공부한 내용을 정리하고자 한다. 수학적 베이스가 약해서 논문을 읽으면서 가장 힘들었던 부분이 Loss function에 관한 내용이었던 만큼 이 부분의 감안하고 읽어 주세요. 논문 리뷰 이후에 github에 공개된 코드를 리뷰해 보려고 합니다
