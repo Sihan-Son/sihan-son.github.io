@@ -3,6 +3,7 @@ layout: post
 title:  "Symbolic Music Genre Transfer with CycleGAN(4)"
 date:   2019-07-05
 excerpt: "MUSIC domain transfer, paper review"
+paper: true
 sitemap :
   changefreq : daily
   priority : 1.0
