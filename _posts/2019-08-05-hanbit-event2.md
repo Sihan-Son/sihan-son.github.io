@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Event]한빛 미디어 도서"
+title:  "[Event] 한빛 미디어 도서 이벤트"
 date:   2019-08-05
 excerpt: "내가 만난 & 만나고 싶은 머신러닝 & 딥러닝"
 sitemap :

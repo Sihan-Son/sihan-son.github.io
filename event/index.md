@@ -1,6 +1,6 @@
 ---
 layout: event
-title: Event&Review
-excerpt: "A List of Setting"
+title: Event
+excerpt: "A List of Events"
 comments: false
 ---
