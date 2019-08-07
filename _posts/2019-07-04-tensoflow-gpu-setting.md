@@ -6,6 +6,7 @@ excerpt: "Tensorflow-gpu를 anaconda로 쉽게 세팅해봅시다."
 sitemap :
   changefreq : daily
   priority : 1.0
+setting: true
 tag:
 - Setting
 - tensorflow

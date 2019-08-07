@@ -6,6 +6,7 @@ excerpt: "jekyll in windows"
 sitemap :
   changefreq : daily
   priority : 1.0
+setting: true
 tag:
 - blog
 - jekyll

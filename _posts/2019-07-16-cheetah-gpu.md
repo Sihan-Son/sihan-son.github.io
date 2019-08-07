@@ -6,6 +6,7 @@ excerpt: "GPU Server for deep learning"
 sitemap :
   changefreq : daily
   priority : 1.0
+review: true
 tag:
 - GPU
 - tensorflow

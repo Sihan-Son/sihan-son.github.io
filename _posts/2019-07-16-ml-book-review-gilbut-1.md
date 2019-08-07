@@ -6,6 +6,7 @@ excerpt: ""
 sitemap :
   changefreq : daily
   priority : 1.0
+review: true
 tag:
 - tensorflow
 - scikit-learn
