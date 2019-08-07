@@ -1,6 +1,6 @@
 ---
-layout: Review
+layout: review
 title: Review
-excerpt: "A List of Setting"
+excerpt: "A List of Reviews"
 comments: false
 ---
