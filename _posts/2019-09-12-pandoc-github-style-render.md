@@ -41,9 +41,9 @@ comments: true
 
 [GitHub Sytle](https://gist.github.com/dashed/6714393)에 들어가셔서 `CSS`파일을 다운로드 받아주세요. 이 포스팅의 가장 핵심인 파일입니다. 여기서 받은 파일을 `--css` 옵션으로 줘서 `Github-Style`로 만들수 있습니다.
 
-
->pandoc test1.md -f markdown -t html -s --css=github-style.css -o test1.html
-
+```
+pandoc test1.md -f markdown -t html -s --css=github-pandoc.css -o test1.html
+```
 위와 같이 `Markdown`파일이 있는 위치에 `css`파일도 두고 변환을 시켜주시면 됩니다. `PDF`로 바로 저장도 되지만 `LaTeX` 패키지가 필요해서 `LaTeX`유저가 아니시면 `HTML`로 변환 하시고 `PDF` 인쇄 옵션을 통해서 저장하셔도 괜찮습니다.
 
-주의 하실 점은 `CSS`로 `HTML`을 꾸며서 만드는 것이기 떄문에 `CSS`파일의 위치 참고 깨지면 도로 안이쁜 마크다운으로 돌아갑니다.
+주의 하실 점은 `CSS`로 `HTML`을 꾸며서 만드는 것이기 떄문에 `CSS`파일의 위치 참조가 깨지면 다시 평문 형태로 돌아가기 때문에 추출한 파일을 이동하실 때에는 `CSS`파일과 같이 움직여 주세요.
