@@ -26,11 +26,11 @@ comments: true
 
 2장부터는 실제적인 실습으로 들어갑니다. `퍼셉트론`으로 시작해서 익숙하지 않았던 `아달린` 모델 등 프레임워크를 이용하지 않고, `numpy`와 `sklearn`을 이용해서 코드를 작성하기 때문에 `PYTHON`에 익숙해지고 머신러닝의 개념을 잡기에 좋은 구성이라고 생각합니다. 수학 또한 어떤식으로 유도가 되고 어떻게 적용이 되는지 알려주기 때문에 수학적으로 탄탄이 갖출 수 있는 책입니다.  
 
-<img src = 'https://sihan-son.github.io/public/book/gilbut/2.jpg'>  
+<img src = 'https://sihan-son.github.io/public/book/gilbut/ml/2.jpg'>  
 
 처럼 수식을 통해서 설명을 하고 있어서 느낌적으로 이해 하는 것이 아니라 실제적으로 어떤 과정을 통해서 유도 하는지 보여주고 있습니다
 
-<img src = 'https://sihan-son.github.io/public/book/gilbut/1.jpg'>   
+<img src = 'https://sihan-son.github.io/public/book/gilbut/ml/1.jpg'>   
 
 기하적으로 어떤식으로 규제와 `Loss`가 사용되는지 보여주기 때문에 다른 책을 통해서 봤을 때 이해가 되지 않던 부분이 명확지는 느낌을 받을 수가 있습니다. 
 
@@ -173,7 +173,7 @@ plt.show()
 ```
 
 
-<img src = 'https://sihan-son.github.io/public/book/gilbut/3.png'>
+<img src = 'https://sihan-son.github.io/public/book/gilbut/ml/3.png'>
 
 
 
