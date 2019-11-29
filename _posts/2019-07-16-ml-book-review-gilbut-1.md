@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Review] 머신러닝 교과서 with 파이썬, 사이킷런, 텐서플로"
+title:  "[Book] 머신러닝 교과서 with 파이썬, 사이킷런, 텐서플로"
 date:   2019-07-16
 excerpt: ""
 sitemap :
