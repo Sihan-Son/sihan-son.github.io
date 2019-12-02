@@ -6,7 +6,7 @@ excerpt: "Markdown을 예쁘게 뽑아봅시다"
 sitemap :
   changefreq : daily
   priority : 1.0
-event: true
+setting: true
 tag:
 - Github
 - markdown
