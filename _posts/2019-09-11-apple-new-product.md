@@ -2,7 +2,7 @@
 layout: post
 title:  "Apple 2019 신제품"
 date:   2019-09-11
-excerpt: "Apple 2019 신제춤 발표회"
+excerpt: "Apple 2019 신제품 발표회"
 sitemap :
   changefreq : daily
   priority : 1.0
