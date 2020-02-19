@@ -32,5 +32,5 @@ comments: true
 
 이번 리뷰부터는 추천과 난이도 표기를 도입해 보려고 합니다. 각각 5개가 최고입니다.
 
-추천: :star: :star: :star: :star:
+추천: :star: :star: :star: :star:  
 난이도: :star: :star:
