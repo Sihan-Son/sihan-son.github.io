@@ -12,6 +12,7 @@ tag:
 - language
 - book
 - event
+- doit
 comments: true
 ---
 
