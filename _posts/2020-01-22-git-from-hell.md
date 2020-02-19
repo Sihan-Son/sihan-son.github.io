@@ -10,6 +10,7 @@ review: true
 tag:
 - GIT
 - book
+- doit
 comments: true
 ---
 
