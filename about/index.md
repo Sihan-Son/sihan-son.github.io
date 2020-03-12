@@ -9,6 +9,8 @@ comments: false
 고등학교 때 독일어를 전공하고, 현재 소프트웨어를 전공하고 있는 소위(진) `SiHan`입니다. 주 관심 분야는 `GAN`입니다. 피드백은 댓글이나 메일 `sihan830@gmail.com`으로 해주세요.  
 카카오톡 오픈채팅방 [Vision & A.I Study](https://v-ais.github.io/) 운영진으로 활동중입니다.
 
+---
+
 편지주소
 
 우편 주소
