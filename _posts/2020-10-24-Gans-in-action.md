@@ -2,7 +2,7 @@
 layout: post
 title: "[Book] GANs in Action"
 date: 2020-10-24
-excerpt: "코틀린의 진수를 맛 볼 수 있는 기회"
+excerpt: "생성모델이 궁금한 이들이여 오라!"
 sitemap:
     changefreq: daily
     priority: 1.0
