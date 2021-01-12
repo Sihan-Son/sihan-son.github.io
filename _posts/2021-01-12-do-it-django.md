@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Book] Do it! 점프 투 장고"
-date: 2020-01-09
+date: 2021-01-12
 excerpt: "파이썬 개발자를 위한 웹 프레임워크"
 sitemap:
     changefreq: daily
