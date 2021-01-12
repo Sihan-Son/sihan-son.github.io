@@ -23,7 +23,7 @@ comments: false
 -   모던 파이썬 입문 (길벗, 2019)
 -   실전 대비 C 알고리즘 인터뷰 (길벗, 2020)
 -   밑바닥부터 시작하는 딥러닝 3 (한빛미디어, 2020)
--   Do it! 점프 투 장고 (이지스퍼블리싱, 2021)
+-    <a href='https://sihan-son.github.io/do-it-django'><font color='black'>Do it! 점프 투 장고 (이지스퍼블리싱, 2021) </font></a>
 -   진지한 파이썬 (한빛미디어, 2021)
 
 ---
