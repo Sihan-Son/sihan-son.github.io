@@ -2,6 +2,10 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 tags: []
-categories: ""
+categories:
+-
+keywords:
+- tech
+type: post
 draft: true
 ---
