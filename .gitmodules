@@ -1,0 +1,8 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/Sihan-Son/sihan-son.github.io.git
+	branch = master
+[submodule "themes/hugo-tranquilpeak-theme"]
+	path = themes/hugo-tranquilpeak-theme
+	url = https://github.com/Sihan-Son/hugo-tranquilpeak-theme.git
+	branch = master
