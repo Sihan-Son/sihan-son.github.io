@@ -1,4 +1,0 @@
-# Allow crawling of all content
-User-agent: *
-Disallow: 
-Sitemap: https://sihan-son.github.io/sitemap.xml
