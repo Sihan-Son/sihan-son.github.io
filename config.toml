@@ -5,7 +5,7 @@ title = "Sihan`s Blog"
 theme = "hugo-tranquilpeak-theme"
 
 disqusShortname = "sihans-blog-1"
-googleAnalytics = "UA-143237170-1"
+# googleAnalytics = "UA-143237170-1"
 paginate = 7
 canonifyurls = true
 
