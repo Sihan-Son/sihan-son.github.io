@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/blog/</link>
+    <description>Recent content in blog on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>윈도우에서 Jekyll 서버 실행하기</title>
+      <link>https://sihan-son.github.io/setting/jekyll-github-page/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/setting/jekyll-github-page/</guid>
+      <description>오늘은 Github page로 블로그 중에서 Jekyll 기반 블로그를 이용하는 이용자에게 push 하지 않고 로컬머신에서 확인하는 방법을 소개하려고 합니다. Mac, Linux 사용자에겐 상대적으로 수월 하지만 윈도우에서는 번거러운 점이 좀 있어서 시도해보다가 그만둔 사용자가 있을 겁니다. 제가 그 중 하나였으니까요. 그래서 Ruby 설치 부터 로컬 머신 실행까지 절차를 알아보려고 합니다!
+루비 Ruby 설치 Jekyll은 Ruby로 만들어 졌기 때문에 먼저 Ruby를 설치해야합니다. Ruby installer for Window에서 Ruby+Devkit 파일을 다운로드 받으셔서 설치하면 됩니다. 이 과정에서 환경변수(PATH)까지 잡히게 됩니다</description>
+    </item>
+    
+  </channel>
+</rss>

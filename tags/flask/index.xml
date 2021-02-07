@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>flask on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/flask/</link>
+    <description>Recent content in flask on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/flask/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Do it! 점프 투 플라스크</title>
+      <link>https://sihan-son.github.io/do-it-flask/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/do-it-flask/</guid>
+      <description>python은 분명 쉽고 간결한 언어이다. 간결한 만큼 강력하고 확장성이 좋은 언어이다. 기초가 간결하다고 해서 본격적으로 사용하기 위한 코드가 쉽다는 의미는 아니다. 오히려 본격적으로 사용하기 위해선 다양한 라이브러리들을 얼마나 유기적으로 사용하느냐가 python을 잘 다룬다고 할 수 있을 것이다.
+웹 프로그래밍은 점점 개발자에게 요구되는 기본적인 기술요소가 되어가고 있는 듯 하다. 웹은 우리의 코드에게 UI를 선물하기 좋은 방법입니다. UI를 선물하기 위해선 몇 가지 거쳐야할 단계가 있습니다. flask는 우리의 선물 포장지를 만들어 python Web Framework입니다.</description>
+    </item>
+    
+  </channel>
+</rss>

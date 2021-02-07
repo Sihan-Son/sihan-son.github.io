@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data preprocessing on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/data-preprocessing/</link>
+    <description>Recent content in data preprocessing on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 17 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/data-preprocessing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>데이터 전처리 대전</title>
+      <link>https://sihan-son.github.io/data-preprocessing/</link>
+      <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/data-preprocessing/</guid>
+      <description>이번 달에 만나볼 책은 데이터 전처리 대전입니다. 인공지능, 빅데이터 등이 기술 분야에서 큰 자리를 잡아가고 있습니다. 그 동시에 이 데이터를 다루는 기술의 중요도도 커지고 있습니다. 그래서 데이터를 다루는 책 여러권이 시장에 나오고 있습니다.
+데이터는 굉장히 다양한 형태로 뽑아져 나옵니다. 종류도 다양하고, 데이터 셋이 가지고 있는 속성 값들, 속성의 종류들 너무 다양한 형태로 존재해서 한가지 방법론으로 모든 데이터를 다룰 수는 없습니다. 또 뽑아져 나온 데이터가 모두 우리에게 필요하지도 않습니다. 수행하려는 작업에 따라 전혀 필요없는 속성들도 존재합니다.</description>
+    </item>
+    
+  </channel>
+</rss>

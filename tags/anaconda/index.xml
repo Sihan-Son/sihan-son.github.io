@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>anaconda on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/anaconda/</link>
+    <description>Recent content in anaconda on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Mon, 12 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/anaconda/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>쉽게 따라하는 Pycharm interpreter 설정</title>
+      <link>https://sihan-son.github.io/setting/pycharm-setting/</link>
+      <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/setting/pycharm-setting/</guid>
+      <description>오늘 알아볼 내용은 Pycharm에서 Python interpreter설정입니다. 잘나온 Python IDE가 여러가지라 취향에 따라서 Jupyter, vscode, spyder 등등 여러가지 사용하고 계실겁니다. 이 글은 그중에서 Pycharm 사용하시려는 분 중에서 interpreter설정에서 문제를 격고 계신 분들을 위한 포스팅입니다.
+1. 기본 interpreter 설정하기! fig 1
+interpreter 설정을 위해서 파란색으로 하이라이트 되어 있는 setting을 눌러줍니다.
+fig 2
+fig 3
+이제 fig 2이미지에서 좌측 메뉴의 Project Interpreter를 들어가면 처음이시면 fig 2처럼 빈 화면이 뜨게 됩니다. 이제 우측 상단의 빨간 동그라미 표시된 톱니 바퀴를 누르게 되면 fig 3과 같이 Add와 Show all이 나옵니다.</description>
+    </item>
+    
+    <item>
+      <title>쉽게 따라하는 Tensorflow-gpu Setting with anaconda</title>
+      <link>https://sihan-son.github.io/setting/tensoflow-gpu-setting/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/setting/tensoflow-gpu-setting/</guid>
+      <description>Tensorflow를 사용하면서 제일 힘든 작업은 GPU를 이용한 환경을 세팅하는 일이다. CUDA, cuDNN등 여러 패키지를 설치해야하고, 또 따라하라는데로 따라하는데 블로그 글들이 업데이트가 되어 있지 않아서 버전 오류가 발생하기도 한다. 그래서 간단한 방법을 소개하려고 한다.
+먼저 anaconda가 필요하다. anaconda는 과학용 파이썬 패키지를 묶어서 배포하는 배포판 인데 이 내용은 다음에 알아보도록 하고, anaconda가 설치 되어 있다는 사람들을 대상으로 글을 쓴다. 혹시 anaconda 설치가 필요하다면 이 글을 참조해서 설치하길 바란다.
+먼저 python 버전이 tensorflow와 호환되는 버전이지 확인이 필요하다.</description>
+    </item>
+    
+  </channel>
+</rss>

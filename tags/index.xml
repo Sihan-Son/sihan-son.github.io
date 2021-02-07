@@ -6,58 +6,670 @@
     <description>Recent content in Tags on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 29 Jun 2019 00:49:14 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>CycleGAN</title>
-      <link>https://sihan-son.github.io/tags/cyclegan/</link>
-      <pubDate>Sat, 29 Jun 2019 00:49:14 +0900</pubDate>
+      <title>2020reviewer</title>
+      <link>https://sihan-son.github.io/tags/2020reviewer/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://sihan-son.github.io/tags/cyclegan/</guid>
+      <guid>https://sihan-son.github.io/tags/2020reviewer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>add</title>
+      <link>https://sihan-son.github.io/tags/add/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/add/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Book</title>
+      <link>https://sihan-son.github.io/tags/book/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GIT</title>
+      <link>https://sihan-son.github.io/tags/git/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://sihan-son.github.io/tags/github/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gitignore</title>
+      <link>https://sihan-son.github.io/tags/gitignore/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/gitignore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ignore</title>
+      <link>https://sihan-son.github.io/tags/ignore/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/ignore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://sihan-son.github.io/tags/kubernetes/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alone</title>
+      <link>https://sihan-son.github.io/tags/alone/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/alone/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DL</title>
       <link>https://sihan-son.github.io/tags/dl/</link>
-      <pubDate>Sat, 29 Jun 2019 00:49:14 +0900</pubDate>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://sihan-son.github.io/tags/dl/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>gan</title>
-      <link>https://sihan-son.github.io/tags/gan/</link>
-      <pubDate>Sat, 29 Jun 2019 00:49:14 +0900</pubDate>
+      <title>Hanbit</title>
+      <link>https://sihan-son.github.io/tags/hanbit/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://sihan-son.github.io/tags/gan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>genre</title>
-      <link>https://sihan-son.github.io/tags/genre/</link>
-      <pubDate>Sat, 29 Jun 2019 00:49:14 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/genre/</guid>
+      <guid>https://sihan-son.github.io/tags/hanbit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ML</title>
       <link>https://sihan-son.github.io/tags/ml/</link>
-      <pubDate>Sat, 29 Jun 2019 00:49:14 +0900</pubDate>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://sihan-son.github.io/tags/ml/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>혼공</title>
+      <link>https://sihan-son.github.io/tags/%ED%98%BC%EA%B3%B5/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/%ED%98%BC%EA%B3%B5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>밑바닥</title>
+      <link>https://sihan-son.github.io/tags/%EB%B0%91%EB%B0%94%EB%8B%A5/</link>
+      <pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/%EB%B0%91%EB%B0%94%EB%8B%A5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>django</title>
+      <link>https://sihan-son.github.io/tags/django/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>doit</title>
+      <link>https://sihan-son.github.io/tags/doit/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/doit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://sihan-son.github.io/tags/python/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>agian-math</title>
+      <link>https://sihan-son.github.io/tags/agian-math/</link>
+      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/agian-math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gilbut</title>
+      <link>https://sihan-son.github.io/tags/gilbut/</link>
+      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/gilbut/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>https://sihan-son.github.io/tags/math/</link>
+      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probability</title>
+      <link>https://sihan-son.github.io/tags/probability/</link>
+      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/probability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistics</title>
+      <link>https://sihan-son.github.io/tags/statistics/</link>
+      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flask</title>
+      <link>https://sihan-son.github.io/tags/flask/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/flask/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>APP</title>
+      <link>https://sihan-son.github.io/tags/app/</link>
+      <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ios</title>
+      <link>https://sihan-son.github.io/tags/ios/</link>
+      <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>swift</title>
+      <link>https://sihan-son.github.io/tags/swift/</link>
+      <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/swift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data preprocessing</title>
+      <link>https://sihan-son.github.io/tags/data-preprocessing/</link>
+      <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/data-preprocessing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GAN</title>
+      <link>https://sihan-son.github.io/tags/gan/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/gan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UI</title>
+      <link>https://sihan-son.github.io/tags/ui/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/ui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>US</title>
+      <link>https://sihan-son.github.io/tags/us/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/us/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>책만</title>
+      <link>https://sihan-son.github.io/tags/%EC%B1%85%EB%A7%8C/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/%EC%B1%85%EB%A7%8C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://sihan-son.github.io/tags/r/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>statics</title>
+      <link>https://sihan-son.github.io/tags/statics/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/statics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>csharp</title>
+      <link>https://sihan-son.github.io/tags/csharp/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/csharp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>language</title>
+      <link>https://sihan-son.github.io/tags/language/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/language/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mysql</title>
+      <link>https://sihan-son.github.io/tags/mysql/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kotlin</title>
+      <link>https://sihan-son.github.io/tags/kotlin/</link>
+      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/kotlin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>react</title>
+      <link>https://sihan-son.github.io/tags/react/</link>
+      <pubDate>Fri, 28 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/react/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deeplearning</title>
+      <link>https://sihan-son.github.io/tags/deeplearning/</link>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/deeplearning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>event</title>
+      <link>https://sihan-son.github.io/tags/event/</link>
+      <pubDate>Thu, 19 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/event/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MS</title>
+      <link>https://sihan-son.github.io/tags/ms/</link>
+      <pubDate>Thu, 19 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/ms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ppt</title>
+      <link>https://sihan-son.github.io/tags/ppt/</link>
+      <pubDate>Thu, 19 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/ppt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>https://sihan-son.github.io/tags/java/</link>
+      <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>again-math</title>
+      <link>https://sihan-son.github.io/tags/again-math/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/again-math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>calculus</title>
+      <link>https://sihan-son.github.io/tags/calculus/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/calculus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>derivative</title>
+      <link>https://sihan-son.github.io/tags/derivative/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/derivative/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>integral</title>
+      <link>https://sihan-son.github.io/tags/integral/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/integral/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>alexnet</title>
+      <link>https://sihan-son.github.io/tags/alexnet/</link>
+      <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/alexnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CNN</title>
+      <link>https://sihan-son.github.io/tags/cnn/</link>
+      <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/cnn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resnet</title>
+      <link>https://sihan-son.github.io/tags/resnet/</link>
+      <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/resnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vggnet</title>
+      <link>https://sihan-son.github.io/tags/vggnet/</link>
+      <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/vggnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>https://sihan-son.github.io/tags/markdown/</link>
+      <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pandoc</title>
+      <link>https://sihan-son.github.io/tags/pandoc/</link>
+      <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/pandoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>appple</title>
+      <link>https://sihan-son.github.io/tags/appple/</link>
+      <pubDate>Wed, 11 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/appple/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Setting</title>
+      <link>https://sihan-son.github.io/tags/setting/</link>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/setting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>colab</title>
+      <link>https://sihan-son.github.io/tags/colab/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/colab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GPU</title>
+      <link>https://sihan-son.github.io/tags/gpu/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/gpu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deutsch</title>
+      <link>https://sihan-son.github.io/tags/deutsch/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/deutsch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>German</title>
+      <link>https://sihan-son.github.io/tags/german/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/german/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>anaconda</title>
+      <link>https://sihan-son.github.io/tags/anaconda/</link>
+      <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/anaconda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pycharm</title>
+      <link>https://sihan-son.github.io/tags/pycharm/</link>
+      <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/pycharm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cheetah</title>
+      <link>https://sihan-son.github.io/tags/cheetah/</link>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/cheetah/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>graduation</title>
+      <link>https://sihan-son.github.io/tags/graduation/</link>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/graduation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tensorflow</title>
+      <link>https://sihan-son.github.io/tags/tensorflow/</link>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/tensorflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>https://sihan-son.github.io/tags/blog/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jekyll</title>
+      <link>https://sihan-son.github.io/tags/jekyll/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/jekyll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ruby</title>
+      <link>https://sihan-son.github.io/tags/ruby/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/ruby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>numpy</title>
+      <link>https://sihan-son.github.io/tags/numpy/</link>
+      <pubDate>Sat, 06 Jul 2019 23:04:49 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/numpy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scikit-learn</title>
+      <link>https://sihan-son.github.io/tags/scikit-learn/</link>
+      <pubDate>Sat, 06 Jul 2019 23:04:49 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/scikit-learn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CycleGAN</title>
+      <link>https://sihan-son.github.io/tags/cyclegan/</link>
+      <pubDate>Fri, 05 Jul 2019 00:49:14 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/cyclegan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>genre</title>
+      <link>https://sihan-son.github.io/tags/genre/</link>
+      <pubDate>Fri, 05 Jul 2019 00:49:14 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/genre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>music</title>
       <link>https://sihan-son.github.io/tags/music/</link>
-      <pubDate>Sat, 29 Jun 2019 00:49:14 +0900</pubDate>
+      <pubDate>Fri, 05 Jul 2019 00:49:14 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VAE</title>
+      <link>https://sihan-son.github.io/tags/vae/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/vae/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>midi</title>
+      <link>https://sihan-son.github.io/tags/midi/</link>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/midi/</guid>
       <description></description>
     </item>
     

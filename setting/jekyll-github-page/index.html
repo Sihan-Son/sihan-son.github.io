@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.78.2 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="Sihan Son">
+<meta name="keywords" content="">
+<meta name="description" content="오늘은 Github page로 블로그 중에서 Jekyll 기반 블로그를 이용하는 이용자에게 push 하지 않고 로컬머신에서 확인하는 방법을 소개하려고 합니다. Mac, Linux 사용자에겐 상대적으로 수월 하지만 윈도우에서는 번거러운 점이 좀 있어서 시도해보다가 그만둔 사용자가 있을 겁니다. 제가 그 중 하나였으니까요. 그래서 Ruby 설치 부터 로컬 머신 실행까지 절차를 알아보려고 합니다!
+루비 Ruby 설치 Jekyll은 Ruby로 만들어 졌기 때문에 먼저 Ruby를 설치해야합니다. Ruby installer for Window에서 Ruby&#43;Devkit 파일을 다운로드 받으셔서 설치하면 됩니다. 이 과정에서 환경변수(PATH)까지 잡히게 됩니다">
+
+
+<meta property="og:description" content="오늘은 Github page로 블로그 중에서 Jekyll 기반 블로그를 이용하는 이용자에게 push 하지 않고 로컬머신에서 확인하는 방법을 소개하려고 합니다. Mac, Linux 사용자에겐 상대적으로 수월 하지만 윈도우에서는 번거러운 점이 좀 있어서 시도해보다가 그만둔 사용자가 있을 겁니다. 제가 그 중 하나였으니까요. 그래서 Ruby 설치 부터 로컬 머신 실행까지 절차를 알아보려고 합니다!
+루비 Ruby 설치 Jekyll은 Ruby로 만들어 졌기 때문에 먼저 Ruby를 설치해야합니다. Ruby installer for Window에서 Ruby&#43;Devkit 파일을 다운로드 받으셔서 설치하면 됩니다. 이 과정에서 환경변수(PATH)까지 잡히게 됩니다">
+<meta property="og:type" content="article">
+<meta property="og:title" content="윈도우에서 Jekyll 서버 실행하기">
+<meta name="twitter:title" content="윈도우에서 Jekyll 서버 실행하기">
+<meta property="og:url" content="https://sihan-son.github.io/setting/jekyll-github-page/">
+<meta property="twitter:url" content="https://sihan-son.github.io/setting/jekyll-github-page/">
+<meta property="og:site_name" content="Sihan`s Blog">
+<meta property="og:description" content="오늘은 Github page로 블로그 중에서 Jekyll 기반 블로그를 이용하는 이용자에게 push 하지 않고 로컬머신에서 확인하는 방법을 소개하려고 합니다. Mac, Linux 사용자에겐 상대적으로 수월 하지만 윈도우에서는 번거러운 점이 좀 있어서 시도해보다가 그만둔 사용자가 있을 겁니다. 제가 그 중 하나였으니까요. 그래서 Ruby 설치 부터 로컬 머신 실행까지 절차를 알아보려고 합니다!
+루비 Ruby 설치 Jekyll은 Ruby로 만들어 졌기 때문에 먼저 Ruby를 설치해야합니다. Ruby installer for Window에서 Ruby&#43;Devkit 파일을 다운로드 받으셔서 설치하면 됩니다. 이 과정에서 환경변수(PATH)까지 잡히게 됩니다">
+<meta name="twitter:description" content="오늘은 Github page로 블로그 중에서 Jekyll 기반 블로그를 이용하는 이용자에게 push 하지 않고 로컬머신에서 확인하는 방법을 소개하려고 합니다. Mac, Linux 사용자에겐 상대적으로 수월 하지만 윈도우에서는 번거러운 점이 좀 있어서 시도해보다가 그만둔 사용자가 있을 겁니다. 제가 그 중 하나였으니까요. 그래서 Ruby 설치 부터 로컬 머신 실행까지 절차를 알아보려고 합니다!
+루비 Ruby 설치 Jekyll은 Ruby로 만들어 졌기 때문에 먼저 Ruby를 설치해야합니다. Ruby installer for Window에서 Ruby&#43;Devkit 파일을 다운로드 받으셔서 설치하면 됩니다. 이 과정에서 환경변수(PATH)까지 잡히게 됩니다">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2019-07-11T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2019-07-11T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="Setting">
+    
+  
+  
+    
+      <meta property="article:tag" content="blog">
+    
+      <meta property="article:tag" content="jekyll">
+    
+      <meta property="article:tag" content="github">
+    
+      <meta property="article:tag" content="ruby">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+  <meta property="twitter:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+
+
+    <title>윈도우에서 Jekyll 서버 실행하기</title>
+
+    <link rel="icon" href="https://sihan-son.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://sihan-son.github.io/setting/jekyll-github-page/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://sihan-son.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://sihan-son.github.io/">Sihan`s Blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://sihan-son.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://sihan-son.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Sihan Son</h4>
+        
+          <h5 class="sidebar-profile-bio">Wir müssen wissen, Wir werden wissen</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/Sihan-Son" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.instagram.com/sihan_k_son/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-instagram"></i>
+      
+      <span class="sidebar-button-desc">Instagram</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/sihan-son-b43806120/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa fa-linkedin-square"></i>
+      
+      <span class="sidebar-button-desc">Linkedin</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.facebook.com/sihan830" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-facebook-square"></i>
+      
+      <span class="sidebar-button-desc">Facebook</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      윈도우에서 Jekyll 서버 실행하기
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-07-11T00:00:00Z">
+        
+  July 11, 2019
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/setting">Setting</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>오늘은 <code>Github page</code>로 블로그 중에서 <code>Jekyll</code> 기반 블로그를 이용하는 이용자에게 push 하지 않고 로컬머신에서 확인하는 방법을 소개하려고 합니다. <code>Mac</code>, <code>Linux</code> 사용자에겐 상대적으로 수월 하지만 윈도우에서는 번거러운 점이 좀 있어서 시도해보다가 그만둔 사용자가 있을 겁니다. 제가 그 중 하나였으니까요. 그래서 <code>Ruby</code> 설치 부터 로컬 머신 실행까지 절차를 알아보려고 합니다!</p>
+<h1 id="루비-ruby-설치">루비 Ruby 설치</h1>
+<p><code>Jekyll</code>은 <code>Ruby</code>로 만들어 졌기 때문에 먼저 <code>Ruby</code>를 설치해야합니다. <a href="https://rubyinstaller.org/downloads/">Ruby installer for Window</a>에서 <code>Ruby+Devkit</code> 파일을 다운로드 받으셔서 설치하면 됩니다. 이 과정에서 환경변수(PATH)까지 잡히게 됩니다</p>
+<h1 id="jekyll-설치하기">Jekyll 설치하기</h1>
+<p><code>Ruby</code>를 설치했으면 이제 <code>Jekyll</code>을 설치해야합니다. 먼저 윈도우 버튼을 누른 후 <code>Prompt with Ruby</code>를 검색해 주세요. 그리고 나오는 것 중에서 <code>Start Command Prompt with Ruby</code>를 실행 시키면 됩니다.<br>
+Prompt에서 <code>gem</code>명령어를 이용해 필요한 패키지들을 설치해 줍니다.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p><code>gem</code>명령어를 이용한 패키지 설치가 끝났으면 <code>bundle</code>을 이용한 추가 패키지 설치가 필요합니다. 우선 Prompt에서 사용하고 있는 블로그의 <code>repo</code>로 이동합니다. 해당 <code>repo</code>에서 <code>bundle</code>명령을 실행 시킵니다.</p>
+<!-- raw HTML omitted -->
+<p>이제 기본적인 모든 준비가 끝났습니다!</p>
+<h1 id="로컬-머신-활성화">로컬 머신 활성화</h1>
+<p>이제 앞 단계에서 온 블로그의 <code>repo</code>에서 다음 명령어를 실행시켜줍니다.</p>
+<!-- raw HTML omitted -->
+<p><img src="https://sihan-son.github.io/images/blog/bundle_exec.png" alt="bundle"></p>
+<p>같은 화면이 뜨면서 이제 <code>http://127.0.0.1:4000</code>에서 블로그 글을 서버에 업로드 하기 전에 확인할 수 있게 되었습니다!</p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/blog/">blog</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/jekyll/">jekyll</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/github/">github</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/ruby/">ruby</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/setting/pycharm-setting/" data-tooltip="쉽게 따라하는 Pycharm interpreter 설정">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/setting/tensoflow-gpu-setting/" data-tooltip="쉽게 따라하는 Tensorflow-gpu Setting with anaconda">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/setting/jekyll-github-page/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/setting/jekyll-github-page/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/setting/jekyll-github-page/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2021 Sihan Son. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/setting/pycharm-setting/" data-tooltip="쉽게 따라하는 Pycharm interpreter 설정">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/setting/tensoflow-gpu-setting/" data-tooltip="쉽게 따라하는 Tensorflow-gpu Setting with anaconda">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/setting/jekyll-github-page/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/setting/jekyll-github-page/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/setting/jekyll-github-page/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsihan-son.github.io%2Fsetting%2Fjekyll-github-page%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fsihan-son.github.io%2Fsetting%2Fjekyll-github-page%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fsihan-son.github.io%2Fsetting%2Fjekyll-github-page%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Sihan Son</h4>
+    
+      <div id="about-card-bio">Wir müssen wissen, Wir werden wissen</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Programmer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Korea
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://sihan-son.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://sihan-son.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/sihan-son.github.io\/setting\/jekyll-github-page\/';
+          
+            this.page.identifier = '\/setting\/jekyll-github-page\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'sihans-blog-1';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+    
+  </body>
+</html>
+

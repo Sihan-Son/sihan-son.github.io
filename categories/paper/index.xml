@@ -1,18 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>paper on Sihan`s Blog</title>
+    <title>Paper on Sihan`s Blog</title>
     <link>https://sihan-son.github.io/categories/paper/</link>
-    <description>Recent content in paper on Sihan`s Blog</description>
+    <description>Recent content in Paper on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 29 Jun 2019 00:49:14 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/categories/paper/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Jul 2019 00:49:14 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/categories/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Symbolic Music Genre Transfer with CycleGAN(3)</title>
+      <link>https://sihan-son.github.io/paper/3-cyclegan-music-model/</link>
+      <pubDate>Fri, 05 Jul 2019 00:49:14 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/paper/3-cyclegan-music-model/</guid>
+      <description>Index  Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion  이 논문에서 사용하는 모델은 Generative adversarial network(GAN)에 기반을 두고 있습니다. Ian Goodfellow et al1에서 제안 된 기존의 모델에서는 Generator G와 Discriminator D가 존재 합니다. G는 노이즈를 실제 데이터 처럼 만드는 역할을 합니다. D는 G가 만들어낸 가짜 데이터와 실제 데이터를 구별하는 역할을 합니다.
+Music domain transfer이기 때문에 input데이터는 노이즈가 아니라 실제 음악 데이터이고, 본 논문에서는 음악 데이터중에서 MIDI 데이터를 사용합니다.</description>
+    </item>
+    
+    <item>
+      <title>Symbolic Music Genre Transfer with CycleGAN(4)</title>
+      <link>https://sihan-son.github.io/paper/4-cyclegan-music-pre/</link>
+      <pubDate>Thu, 04 Jul 2019 00:49:14 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/paper/4-cyclegan-music-pre/</guid>
+      <description>Index  Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion  Model Architecture파트전에 Dataset and Preprocessing 파트를 먼저 다루려고합니다. 이 파트는 MIDI대한 간단한 설명과 데이터 전처리 방법과 전략이 나와있는 장입니다. 미디를 다루는 딥러닝 프로젝트에 꽤 큰 도움이 될 듯 합니다.
+MIDI (Musical Instrument Digital Interface)는 통신 규격을 담은 심볼릭 데이터입니다. 여기에 대한 자세한 설명은 Symbolic Music MIDI를 참조 해주세요. MIDI는 통신 규격이기 때문에 진짜 소리를 가지고 있지 않습니다.</description>
+    </item>
+    
+    <item>
+      <title>Symbolic Music Genre Transfer with CycleGAN(2)</title>
+      <link>https://sihan-son.github.io/paper/2-cyclegan-music-related/</link>
+      <pubDate>Mon, 01 Jul 2019 00:49:14 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/paper/2-cyclegan-music-related/</guid>
+      <description>지난 글에 이어서 이번 글에서는 Related Work 파트의 내용을 정리해려고 합니다. 이번 파트는 선행 연국에 대한 이야기이기 때문에 레펀러스가 많이 달리고 논문 링크는 하단에 레퍼런스로 있습니다
+Index  Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion  Related Work Gatys et al.1의 논문에서 Neural Style Transfer의 컨셉을 설명한다. 이 논문에서는 Pre-Trained CNN ResNet을 이용해 두 이미지의 스타일과 컨텐츠를 합친다.
+CycleGAN2같은 접근에서는 explict 스타일 특성 추출이 요구되지 않는다.</description>
+    </item>
+    
     <item>
       <title>Symbolic Music Genre Transfer with CycleGAN(1)</title>
-      <link>https://sihan-son.github.io/paper/cyclegan-music-intro/</link>
+      <link>https://sihan-son.github.io/paper/1-cyclegan-music-intro/</link>
       <pubDate>Sat, 29 Jun 2019 00:49:14 +0900</pubDate>
       
-      <guid>https://sihan-son.github.io/paper/cyclegan-music-intro/</guid>
+      <guid>https://sihan-son.github.io/paper/1-cyclegan-music-intro/</guid>
       <description>졸업 작품으로 Generative adversarial network(GAN)을 이용해 작곡을 하려고 했다. 프로젝트 진행을 위해 자료 수집을 진행하며 지도 교수님과 이야기를 통해 작곡에서 domain transfer 즉 음악의 편곡으로 방향을 선회해 프로젝트를 진행하게 되었다. 핵심적으로 본 논문들을 리뷰하면서 공부한 내용을 정리하고자 한다. 수학적 베이스가 약해서 논문을 읽으면서 가장 힘들었던 부분이 Loss function에 관한 내용이었던 만큼 이 부분의 감안하고 읽어 주세요. 논문 리뷰 이후에 github에 공개된 코드를 리뷰해 보려고 합니다
 처음으로 살펴볼 논문은 Symbolic Music Genre Transfer with CycleGAN입니다.</description>
     </item>

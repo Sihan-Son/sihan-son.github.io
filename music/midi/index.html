@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.78.2 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="Sihan Son">
+<meta name="keywords" content="">
+<meta name="description" content="Index  MIDI란? MIDI의 구조   MIDI (Musical Instrument Digital Interface) 란? MIDI는 Musical Instrument Digital Interface 의 약자로서, 전자악기의 디지털 데이터를 주고 받기 위한 표준 규격이다.
+MIDI의 구조 MIDI파일은 Chunk들의 집합으로서, 여러 개의 청크들로 구성되어있다. 청크는 다음과 같이 구성되며, 청크 타입은 크게 헤더, 트랙, 러닝 스테이터스로 구분할수 있다.
+Head Head 청크는 Mthd 로 표현되며, MIDI 청크 중 가장 앞에 단 하나만 존재한다. Head 청크의 길이는 14바이트이며, 다음과 같이 구성된다.">
+
+
+<meta property="og:description" content="Index  MIDI란? MIDI의 구조   MIDI (Musical Instrument Digital Interface) 란? MIDI는 Musical Instrument Digital Interface 의 약자로서, 전자악기의 디지털 데이터를 주고 받기 위한 표준 규격이다.
+MIDI의 구조 MIDI파일은 Chunk들의 집합으로서, 여러 개의 청크들로 구성되어있다. 청크는 다음과 같이 구성되며, 청크 타입은 크게 헤더, 트랙, 러닝 스테이터스로 구분할수 있다.
+Head Head 청크는 Mthd 로 표현되며, MIDI 청크 중 가장 앞에 단 하나만 존재한다. Head 청크의 길이는 14바이트이며, 다음과 같이 구성된다.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Symbolic Music MIDI">
+<meta name="twitter:title" content="Symbolic Music MIDI">
+<meta property="og:url" content="https://sihan-son.github.io/music/midi/">
+<meta property="twitter:url" content="https://sihan-son.github.io/music/midi/">
+<meta property="og:site_name" content="Sihan`s Blog">
+<meta property="og:description" content="Index  MIDI란? MIDI의 구조   MIDI (Musical Instrument Digital Interface) 란? MIDI는 Musical Instrument Digital Interface 의 약자로서, 전자악기의 디지털 데이터를 주고 받기 위한 표준 규격이다.
+MIDI의 구조 MIDI파일은 Chunk들의 집합으로서, 여러 개의 청크들로 구성되어있다. 청크는 다음과 같이 구성되며, 청크 타입은 크게 헤더, 트랙, 러닝 스테이터스로 구분할수 있다.
+Head Head 청크는 Mthd 로 표현되며, MIDI 청크 중 가장 앞에 단 하나만 존재한다. Head 청크의 길이는 14바이트이며, 다음과 같이 구성된다.">
+<meta name="twitter:description" content="Index  MIDI란? MIDI의 구조   MIDI (Musical Instrument Digital Interface) 란? MIDI는 Musical Instrument Digital Interface 의 약자로서, 전자악기의 디지털 데이터를 주고 받기 위한 표준 규격이다.
+MIDI의 구조 MIDI파일은 Chunk들의 집합으로서, 여러 개의 청크들로 구성되어있다. 청크는 다음과 같이 구성되며, 청크 타입은 크게 헤더, 트랙, 러닝 스테이터스로 구분할수 있다.
+Head Head 청크는 Mthd 로 표현되며, MIDI 청크 중 가장 앞에 단 하나만 존재한다. Head 청크의 길이는 14바이트이며, 다음과 같이 구성된다.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2019-06-30T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2019-06-30T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="Music">
+    
+  
+  
+    
+      <meta property="article:tag" content="music">
+    
+      <meta property="article:tag" content="midi">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+  <meta property="twitter:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+
+
+    <title>Symbolic Music MIDI</title>
+
+    <link rel="icon" href="https://sihan-son.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://sihan-son.github.io/music/midi/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://sihan-son.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://sihan-son.github.io/">Sihan`s Blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://sihan-son.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://sihan-son.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Sihan Son</h4>
+        
+          <h5 class="sidebar-profile-bio">Wir müssen wissen, Wir werden wissen</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/Sihan-Son" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.instagram.com/sihan_k_son/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-instagram"></i>
+      
+      <span class="sidebar-button-desc">Instagram</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/sihan-son-b43806120/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa fa-linkedin-square"></i>
+      
+      <span class="sidebar-button-desc">Linkedin</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.facebook.com/sihan830" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-facebook-square"></i>
+      
+      <span class="sidebar-button-desc">Facebook</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Symbolic Music MIDI
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-06-30T00:00:00Z">
+        
+  June 30, 2019
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/music">Music</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <h1 id="index">Index</h1>
+<ol>
+<li>MIDI란?</li>
+<li>MIDI의 구조</li>
+</ol>
+<hr>
+<h2 id="midi-musical-instrument-digital-interface-란">MIDI (Musical Instrument Digital Interface) 란?</h2>
+<p>MIDI는 Musical Instrument Digital Interface 의 약자로서, 전자악기의 디지털 데이터를 주고 받기 위한 표준 규격이다.</p>
+<h2 id="midi의-구조">MIDI의 구조</h2>
+<p>MIDI파일은 Chunk들의 집합으로서, 여러 개의 청크들로 구성되어있다. 청크는 다음과 같이 구성되며, 청크 타입은 크게 헤더, 트랙, 러닝 스테이터스로 구분할수 있다.</p>
+<p><img src="https://sihan-son.github.io/images/midi/ds.png" alt="ds"></p>
+<h4 id="head">Head</h4>
+<p>Head 청크는 Mthd 로 표현되며, MIDI 청크 중 가장 앞에 단 하나만 존재한다. Head 청크의 길이는 14바이트이며, 다음과 같이 구성된다.</p>
+<p><img src="https://sihan-son.github.io/images/midi/head.png" alt="head"></p>
+<ol>
+<li>
+<p>Mthd: Head 청크의 가장 앞에서 해당 청크가 Head 청크임을 나타내주는 역할. 4D 54 68 64 로 고정됨.</p>
+</li>
+<li>
+<p>Length: Head 청크의 길이를 나타내주는 역할. 00 00 00 06으로 고정됨.</p>
+</li>
+<li>
+<p>Format: 음표, 박자, 트랙의 정보를 표시하는 역할. 00 00, 00 01, 00 02 세 가지로 정의될수 있으며, 각 의미는 다음과 같다. 00 00: 음표와 박자 정보를 갖는 하나의 단일 채널 트랙만이 존재함,00 01: 동시에 재생되는 1개 이상의 트랙으로 이루어짐. 00 01 포맷의 첫 번째 트랙은 Tempo Map이라고 일컬어지며, Time signature, Set tempo 등의 Meta events를 반드시 포함해야 한다. 00 02: 동시에 재생되지 않는 1개 이상의 트랙으로 이루어짐.</p>
+</li>
+<li>
+<p>Track numbers: 트랙의 개수를 나타내주는 역할.</p>
+</li>
+<li>
+<p>Division: 1delta time(단위 시간)이 어느정도의 길이를 나타내는지 의미함. Division이 양수일 시 1개의 4분음표를 n개로 나눈 값을 뜻하며, 음수일 시엔 하위 1바이트값은 프레임 당 Ticks(1초 / Frame * Ticks = 1delta time)를 나타내고, 상위 1바이트중 7비트는 초당 프레임 수를 나타낸다.</p>
+</li>
+</ol>
+<h3 id="track">Track</h3>
+<p>Track 청크는 Header 청크가 끝난 뒤에 연속적으로 위치하며, 청크 데이터 부분이 트랙 이벤트 정보들로 구성된다.</p>
+<p><img src="images/midi/track.png" alt="track"></p>
+<ol>
+<li>Mtrk: Track청크 가장 앞에 위치하여 해당 청크가 Track청크임을 알려주는 역할(4D 54 72 6B 고정).</li>
+<li>len: 트랙 데이터 길이를 나타내는 역할.</li>
+<li>delta time: 해당 이벤트가 미디가 시작하여 어느 시점에 발생할 이벤트인지를 결정하는 역할.</li>
+<li>Event data: Meta event, System event, Midi event로 구분됨.
+<ol>
+<li>Delta TimeDelta time은 이벤트를 발생할 시점 정보를 가지고 있는 필드로서, 1~4바이트를 차지하는 가변 길이 필드이다. Delta time이 0x80(1000 0000(2))이상이라면 다음 바이트도 Delta time으로 활용하며, 이 경우엔 Delta time을 나타내는 각 바이트의 첫 번째 비트를 다음 바이트도 delta time에 해당하는지의 여부로 0(False) 과 1(True)을 사용하여 나타낸다.</li>
+<li>Event dataEvent data의 종류는 Delta time 뒤의 첫 번째 바이트를 통해 확인할 수 있다.</li>
+<li>Key signature0xFF 59 02 sf mi로 구성된다. sf는 –7에서 7 사이의 값으로, 0을 기준으로 가지며, 1에서 7로 올라갈수록 #이 1개~7개로 늘어나며, -1에서 –7로 내려갈수록 b이 1개~7개로 늘어난다.mi는 0 = Major, 1 = Minor로 나타낸다.</li>
+</ol>
+</li>
+</ol>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">byte값</th>
+<th style="text-align:center">Event data 종류</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">0xFF</td>
+<td style="text-align:center">meta event</td>
+</tr>
+<tr>
+<td style="text-align:left">0xF0 ~ 0xFE</td>
+<td style="text-align:center">system event</td>
+</tr>
+<tr>
+<td style="text-align:left">0x00 ~ 0xEF</td>
+<td style="text-align:center">midi event</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Meta event<br>
+Delta time + 0xFF + Meta data로 구성되는 이벤트이다.0xFF 이후의 1바이트 값에 따라 의미가 달라진다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Status Byte</th>
+<th>2<!-- raw HTML omitted -->nd<!-- raw HTML omitted --> byte</th>
+<th>other bytes</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FF</td>
+<td>00</td>
+<td>02 ss ss</td>
+<td>Set track’s sequence #</td>
+<td></td>
+</tr>
+<tr>
+<td>FF</td>
+<td>01</td>
+<td>nn tt&hellip;</td>
+<td>Any Test user wants</td>
+<td></td>
+</tr>
+<tr>
+<td>FF</td>
+<td>02</td>
+<td>nn tt&hellip;</td>
+<td>Text for copyright info</td>
+<td></td>
+</tr>
+<tr>
+<td>FF</td>
+<td>3</td>
+<td>nn tt&hellip;</td>
+<td>Track name</td>
+<td></td>
+</tr>
+<tr>
+<td>FF</td>
+<td>4</td>
+<td>nn tt&hellip;</td>
+<td>Track instrument name</td>
+<td></td>
+</tr>
+<tr>
+<td>FF</td>
+<td>5</td>
+<td>nn tt&hellip;</td>
+<td>Lyric</td>
+<td></td>
+</tr>
+<tr>
+<td>FF</td>
+<td>6</td>
+<td>nn tt&hellip;</td>
+<td>Marker</td>
+<td></td>
+</tr>
+<tr>
+<td>FF</td>
+<td>7</td>
+<td>nn tt&hellip;</td>
+<td>Cue point</td>
+<td></td>
+</tr>
+<tr>
+<td>FF</td>
+<td>20</td>
+<td>01 channel</td>
+<td>Channel prefix</td>
+<td></td>
+</tr>
+<tr>
+<td>FF</td>
+<td>21</td>
+<td>01 pp</td>
+<td>Midi port</td>
+<td></td>
+</tr>
+<tr>
+<td>FF</td>
+<td>2F</td>
+<td>00</td>
+<td>End of Track</td>
+<td></td>
+</tr>
+<tr>
+<td>FF</td>
+<td>51</td>
+<td>03 tt tt tt</td>
+<td>set tempo</td>
+<td></td>
+</tr>
+<tr>
+<td>FF</td>
+<td>54</td>
+<td>05 hh mm ss ff sf / hour/minute/second/frame/subframe</td>
+<td>set tempo</td>
+<td>SMPTE offset</td>
+</tr>
+<tr>
+<td>FF</td>
+<td>58</td>
+<td>04 nn dd cc bb/numerator/ denominator/ Metronome ticks #/ 32nd notes# per quarter note</td>
+<td>Time signature</td>
+<td></td>
+</tr>
+<tr>
+<td>FF</td>
+<td>59</td>
+<td>02 sf mi key(sharp/flat#) scale (0: major 1:minor)</td>
+<td>Key signature (C when key = 0)</td>
+<td></td>
+</tr>
+<tr>
+<td>FF</td>
+<td>7F</td>
+<td>nn tt&hellip;</td>
+<td>Sequencer specific info</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>Set tempo<br>
+4분음표를 어느 길이만큼 연주하는지에 대한 값이다. 0xFF 51 0x tt tt tt 와 같은 형태로 진행하며 tt 부분은 microsecond를 의미한다. 예를 들어 0xff 51 03 07 A1 20 으로 진행하면 07A120(500000)microsecond/4분음표 라는 뜻이며, 이는 4분음표를 0.5초동안 연주하라는 뜻이다.</p>
+</li>
+<li>
+<p>Time signature<br>
+박자표와 메트로놈 및 32분음표가 4분음표 몇 개로 구성하는지 나타내는 값이다.0xFF 58 04 nn dd cc bb 로 나타난다.nn부분은 박자표의 분자 부분을 나타내며, dd부분은 박자표의 분모 부분을 2dd 형식으로 나타낸다. cc는 메트로놈의 주기를 나타내며, bb는 특수한 상황이 아닐 시 8로 고정된다.<br>
+예) 0xFF 58 04 06 02 18 08 = 6/4 박자, 24번의 주기마다 메트로놈이 쳐짐.</p>
+</li>
+</ul>
+<hr>
+<h4 id="system-event">System Event</h4>
+<table>
+<thead>
+<tr>
+<th>Byte</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0xF0 ~ 0xFE</td>
+<td>상태 바이트 뒤에 데이터 길이(NN)와 데이터(DD)가 위치</td>
+</tr>
+<tr>
+<td>0xF1 DD</td>
+<td>상태 바이트 뒤에 MTC Quarter Frame 데이터(1바이트)가 위치</td>
+</tr>
+<tr>
+<td>0xF2 pp pp</td>
+<td>상태 바이트 뒤에 MTC Quarter Frame 데이터(2바이트)가 위치</td>
+</tr>
+<tr>
+<td>0xF3 ss</td>
+<td>상태 바이트 뒤에 Song select 데이터가 위치</td>
+</tr>
+<tr>
+<td>0xF4 ~ 0xFE</td>
+<td>상태 바이트만 존재함</td>
+</tr>
+</tbody>
+</table>
+<h4 id="midi-event">Midi Event</h4>
+<table>
+<thead>
+<tr>
+<th>Byte</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8X</td>
+<td>Note off(소리 끄기)</td>
+</tr>
+<tr>
+<td>9X</td>
+<td>Note on(소리 내기)</td>
+</tr>
+<tr>
+<td>AX</td>
+<td>Key after touch(건반을 누른 뒤 다시 압력을 가함)</td>
+</tr>
+<tr>
+<td>BX</td>
+<td>Control Change(효과 바꾸기)</td>
+</tr>
+<tr>
+<td>CX</td>
+<td>Program change(악기 바꾸기)</td>
+</tr>
+<tr>
+<td>DX</td>
+<td>Channel after touch</td>
+</tr>
+<tr>
+<td>EX</td>
+<td>Pit wheel change</td>
+</tr>
+</tbody>
+</table>
+<p>*X = Channel#</p>
+<ol>
+<li>
+<p>Note on/off8X(9X)<br>
+바이트 이후에 0~127 사이의 건반 번호가 위치하며, 다음 바이트에 소리의 세기가 위치한다. 다만, 9X 이벤트에서 소리의 세기가 0일때는 Note off로 간주할수 있다.<br>
+예) 91 40 54 = Note on, 채널 1, 65(0x40+1)번째 건반, 0x54의 세기</p>
+</li>
+<li>
+<p>Key after touch<br>
+상태바이트 이후의 바이트는 건반 번호와 누르는 속도를 나타낸다.</p>
+</li>
+<li>
+<p>Control change<br>
+상태바이트 이후의 첫 번째 바이트는 컨트롤 번호이며, 두 번째 바이트는 새로운 값이다.</p>
+</li>
+<li>
+<p>Channel after touch<br>
+상태바이트 이후의 바이트는 건반 번호와 누르는 속도를 나타낸다.</p>
+</li>
+<li>
+<p>pitch wheel change<br>
+3개의 바이트로 구성된다. 2nd 바이트 이후의 바이트는 least 값을 나타내며, 다음 바이트는 most값을 나타낸다.</p>
+</li>
+</ol>
+<h3 id="running-status">Running Status</h3>
+<p>0x80~0xEF 사이의 값을 갖는 동일한 Status code를 사용하는 메시지가 반복되어 전송될 때, Status가 없을 때 이전 Status를 다시 사용하게 하여 데이터 효율을 높힌 것이다.</p>
+<hr>
+<p>본 포스팅은 Music Transfer팀원의 보고서를 기반으로 작성되었습니다</p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/music/">music</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/midi/">midi</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/music/midi/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/music/midi/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/music/midi/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2021 Sihan Son. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/music/midi/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/music/midi/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/music/midi/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsihan-son.github.io%2Fmusic%2Fmidi%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fsihan-son.github.io%2Fmusic%2Fmidi%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fsihan-son.github.io%2Fmusic%2Fmidi%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Sihan Son</h4>
+    
+      <div id="about-card-bio">Wir müssen wissen, Wir werden wissen</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Programmer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Korea
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://sihan-son.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://sihan-son.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/sihan-son.github.io\/music\/midi\/';
+          
+            this.page.identifier = '\/music\/midi\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'sihans-blog-1';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+    
+  </body>
+</html>
+

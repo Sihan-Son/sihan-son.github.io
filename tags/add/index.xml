@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>add on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/add/</link>
+    <description>Recent content in add on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/add/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gitignore 변경 사항 remote repo에 적용하기</title>
+      <link>https://sihan-son.github.io/git/git-ignore-update/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/git/git-ignore-update/</guid>
+      <description>테크 블로그를 목표 시작한 블로그가 1년 넘게 IT 도서 서평 블로그가 되었습니다. 초심을 찾고자 오랜만에 git, Github를 주제로 돌아왔습니다. 오늘 내용은 Github에만 적용 되는 내용은 아니고 bitbucket, gitlab에서도 동일하게 적용되는 내용이지만 제 주 서식처가 github인 관계로 github가 메인입니다.
+git을 이용해 프로젝트를 진행하다 보면 굳이 버전관리가 필요 없거나 remote repo인 Github등에 올리면 안되거나, 필요가 없는 것들이 존재합니다. git에 좀 익숙하신 분들이라면 이런 파일이나 디렉토리를 관리하기 위해서 .gitignore을 대충이라도 써보셨거나 쓸 계획을 가지고 계실 것입니다.</description>
+    </item>
+    
+  </channel>
+</rss>

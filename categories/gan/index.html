@@ -13,8 +13,8 @@
 
 <meta property="og:description" content="Hugo tranquilpeak theme demo">
 <meta property="og:type" content="website">
-<meta property="og:title" content="gan">
-<meta name="twitter:title" content="gan">
+<meta property="og:title" content="GAN">
+<meta name="twitter:title" content="GAN">
 <meta property="og:url" content="https://sihan-son.github.io/categories/gan/">
 <meta property="twitter:url" content="https://sihan-son.github.io/categories/gan/">
 <meta property="og:site_name" content="Sihan`s Blog">
@@ -39,7 +39,7 @@
   <meta property="twitter:image" content="https://sihan-son.github.io/images/unicorn.jpg">
 
 
-    <title>gan</title>
+    <title>GAN</title>
 
     <link rel="icon" href="https://sihan-son.github.io/favicon.png">
     
@@ -62,19 +62,6 @@
 
     
       
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-143237170-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
     
     
   </head>
@@ -241,6 +228,243 @@ if (!doNotTrack) {
           <section class="postShorten-group main-content-wrap">
             
             
+              
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="https://sihan-son.github.io/paper/3-cyclegan-music-model/">
+          Symbolic Music Genre Transfer with CycleGAN(3)
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-07-05T00:49:14&#43;09:00">
+        
+  July 5, 2019
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/paper">Paper</a>, 
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/gan">GAN</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        Index  Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion  이 논문에서 사용하는 모델은 Generative adversarial network(GAN)에 기반을 두고 있습니다. Ian Goodfellow et al1에서 제안 된 기존의 모델에서는 Generator G와 Discriminator D가 존재 합니다. G는 노이즈를 실제 데이터 처럼 만드는 역할을 합니다. D는 G가 만들어낸 가짜 데이터와 실제 데이터를 구별하는 역할을 합니다.
+Music domain transfer이기 때문에 input데이터는 노이즈가 아니라 실제 음악 데이터이고, 본 논문에서는 음악 데이터중에서 MIDI 데이터를 사용합니다.
+      
+      <p>
+        <a href="https://sihan-son.github.io/paper/3-cyclegan-music-model/" class="postShorten-excerpt_link link">Continue reading</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+            
+              
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="https://sihan-son.github.io/paper/4-cyclegan-music-pre/">
+          Symbolic Music Genre Transfer with CycleGAN(4)
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-07-04T00:49:14&#43;09:00">
+        
+  July 4, 2019
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/paper">Paper</a>, 
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/gan">GAN</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        Index  Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion  Model Architecture파트전에 Dataset and Preprocessing 파트를 먼저 다루려고합니다. 이 파트는 MIDI대한 간단한 설명과 데이터 전처리 방법과 전략이 나와있는 장입니다. 미디를 다루는 딥러닝 프로젝트에 꽤 큰 도움이 될 듯 합니다.
+MIDI (Musical Instrument Digital Interface)는 통신 규격을 담은 심볼릭 데이터입니다. 여기에 대한 자세한 설명은 Symbolic Music MIDI를 참조 해주세요. MIDI는 통신 규격이기 때문에 진짜 소리를 가지고 있지 않습니다.
+      
+      <p>
+        <a href="https://sihan-son.github.io/paper/4-cyclegan-music-pre/" class="postShorten-excerpt_link link">Continue reading</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+            
+              
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="https://sihan-son.github.io/paper/2-cyclegan-music-related/">
+          Symbolic Music Genre Transfer with CycleGAN(2)
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-07-01T00:49:14&#43;09:00">
+        
+  July 1, 2019
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/paper">Paper</a>, 
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/gan">GAN</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        지난 글에 이어서 이번 글에서는 Related Work 파트의 내용을 정리해려고 합니다. 이번 파트는 선행 연국에 대한 이야기이기 때문에 레펀러스가 많이 달리고 논문 링크는 하단에 레퍼런스로 있습니다
+Index  Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion  Related Work Gatys et al.1의 논문에서 Neural Style Transfer의 컨셉을 설명한다. 이 논문에서는 Pre-Trained CNN ResNet을 이용해 두 이미지의 스타일과 컨텐츠를 합친다.
+CycleGAN2같은 접근에서는 explict 스타일 특성 추출이 요구되지 않는다.
+      
+      <p>
+        <a href="https://sihan-son.github.io/paper/2-cyclegan-music-related/" class="postShorten-excerpt_link link">Continue reading</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+            
+              
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="https://sihan-son.github.io/paper/1-cyclegan-music-intro/">
+          Symbolic Music Genre Transfer with CycleGAN(1)
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-06-29T00:49:14&#43;09:00">
+        
+  June 29, 2019
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/paper">Paper</a>, 
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/gan">GAN</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        졸업 작품으로 Generative adversarial network(GAN)을 이용해 작곡을 하려고 했다. 프로젝트 진행을 위해 자료 수집을 진행하며 지도 교수님과 이야기를 통해 작곡에서 domain transfer 즉 음악의 편곡으로 방향을 선회해 프로젝트를 진행하게 되었다. 핵심적으로 본 논문들을 리뷰하면서 공부한 내용을 정리하고자 한다. 수학적 베이스가 약해서 논문을 읽으면서 가장 힘들었던 부분이 Loss function에 관한 내용이었던 만큼 이 부분의 감안하고 읽어 주세요. 논문 리뷰 이후에 github에 공개된 코드를 리뷰해 보려고 합니다
+처음으로 살펴볼 논문은 Symbolic Music Genre Transfer with CycleGAN입니다.
+      
+      <p>
+        <a href="https://sihan-son.github.io/paper/1-cyclegan-music-intro/" class="postShorten-excerpt_link link">Continue reading</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+            
             
 
           </section>
@@ -335,6 +559,10 @@ $(document).ready(function() {
 
 
 
+<script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
     
   </body>
 </html>

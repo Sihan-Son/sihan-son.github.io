@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>alexnet on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/alexnet/</link>
+    <description>Recent content in alexnet on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 24 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/alexnet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>간단하게 훑어보는 Advanced CNNs</title>
+      <link>https://sihan-son.github.io/mldl/advanced-cnn/</link>
+      <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/mldl/advanced-cnn/</guid>
+      <description>언제나 처럼 다시 돌아온 간단하게 Deep Learning 개념 정리 글입니다. 자세한 내용은 각 논문을 참조하거나 다른 학술 블로그를 읽어 주세요. 이 글에서 언급 되는 아키텍쳐들에 관한 논문 제목은 글 하단의 각주로 확인해 주세요.
+ Index 1. AlexNet2. VGGNet, GoogLeNet3. ResNet fig.1 ILSVRC 우승 네트워크 레이어 수
+2012년 AlexNet을 시작으로 Convolution Neural Network CNN은 빠른 속도로 성능이 좋아지고 위 이미지에서 보이는 것 처럼 레이어가 깊어지기 시작했습니다. 이후 모델들은 가중치 업데이트를 위해 사용한 Error Backpropagation 알고리즘의 단점인 Gradient Vanishing과 Gradient Exploding 문제를 극복하고 나온 모델들입니다.</description>
+    </item>
+    
+  </channel>
+</rss>

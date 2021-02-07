@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Probability on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/probability/</link>
+    <description>Recent content in Probability on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/probability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>다시 확률 통계 -확률편-</title>
+      <link>https://sihan-son.github.io/again-probability/</link>
+      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/again-probability/</guid>
+      <description>2021년 첫 책은 길벗의 수학책인 다시 확률 통계: 확률편입니다. 같은 시리즈의 다시 미분 적분 처럼 다시 수학 공부를 하고 싶은 사람들 위한 기초 개념 서적입니다.
+일상 생활 속에 끝없는 확률게임을 마주합니다. 점심 먹고 아이스크림 내기 부터 한 주의 즐거움을 위해 산다는 로또까지 소소하게 확률을 계산하고 있습니다. 그런데 분명 학생 시절 배운 것 같지만 아리송한 부분이 또 많은게 확률입니다. 이건 독립사건과 종속사건 중에 하나는 더하고 하나는 곱하는게 맞는데 뭐가 뭔지 헷갈려서 계산을 포기하고 손으로 세는 경우를 주변에서 어렵지 않게 볼 수 있습니다.</description>
+    </item>
+    
+  </channel>
+</rss>

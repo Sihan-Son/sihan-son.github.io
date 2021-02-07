@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.78.2 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="Sihan Son">
+<meta name="keywords" content="">
+<meta name="description" content="지난 글에 이어서 이번 글에서는 Related Work 파트의 내용을 정리해려고 합니다. 이번 파트는 선행 연국에 대한 이야기이기 때문에 레펀러스가 많이 달리고 논문 링크는 하단에 레퍼런스로 있습니다
+Index  Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion  Related Work Gatys et al.1의 논문에서 Neural Style Transfer의 컨셉을 설명한다. 이 논문에서는 Pre-Trained CNN ResNet을 이용해 두 이미지의 스타일과 컨텐츠를 합친다.
+CycleGAN2같은 접근에서는 explict 스타일 특성 추출이 요구되지 않는다.">
+
+
+<meta property="og:description" content="지난 글에 이어서 이번 글에서는 Related Work 파트의 내용을 정리해려고 합니다. 이번 파트는 선행 연국에 대한 이야기이기 때문에 레펀러스가 많이 달리고 논문 링크는 하단에 레퍼런스로 있습니다
+Index  Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion  Related Work Gatys et al.1의 논문에서 Neural Style Transfer의 컨셉을 설명한다. 이 논문에서는 Pre-Trained CNN ResNet을 이용해 두 이미지의 스타일과 컨텐츠를 합친다.
+CycleGAN2같은 접근에서는 explict 스타일 특성 추출이 요구되지 않는다.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Symbolic Music Genre Transfer with CycleGAN(2)">
+<meta name="twitter:title" content="Symbolic Music Genre Transfer with CycleGAN(2)">
+<meta property="og:url" content="https://sihan-son.github.io/paper/2-cyclegan-music-related/">
+<meta property="twitter:url" content="https://sihan-son.github.io/paper/2-cyclegan-music-related/">
+<meta property="og:site_name" content="Sihan`s Blog">
+<meta property="og:description" content="지난 글에 이어서 이번 글에서는 Related Work 파트의 내용을 정리해려고 합니다. 이번 파트는 선행 연국에 대한 이야기이기 때문에 레펀러스가 많이 달리고 논문 링크는 하단에 레퍼런스로 있습니다
+Index  Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion  Related Work Gatys et al.1의 논문에서 Neural Style Transfer의 컨셉을 설명한다. 이 논문에서는 Pre-Trained CNN ResNet을 이용해 두 이미지의 스타일과 컨텐츠를 합친다.
+CycleGAN2같은 접근에서는 explict 스타일 특성 추출이 요구되지 않는다.">
+<meta name="twitter:description" content="지난 글에 이어서 이번 글에서는 Related Work 파트의 내용을 정리해려고 합니다. 이번 파트는 선행 연국에 대한 이야기이기 때문에 레펀러스가 많이 달리고 논문 링크는 하단에 레퍼런스로 있습니다
+Index  Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion  Related Work Gatys et al.1의 논문에서 Neural Style Transfer의 컨셉을 설명한다. 이 논문에서는 Pre-Trained CNN ResNet을 이용해 두 이미지의 스타일과 컨텐츠를 합친다.
+CycleGAN2같은 접근에서는 explict 스타일 특성 추출이 요구되지 않는다.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2019-07-01T00:49:14">
+  
+  
+    <meta property="article:modified_time" content="2019-07-01T00:49:14">
+  
+  
+  
+    
+      <meta property="article:section" content="Paper">
+    
+      <meta property="article:section" content="GAN">
+    
+  
+  
+    
+      <meta property="article:tag" content="gan">
+    
+      <meta property="article:tag" content="music">
+    
+      <meta property="article:tag" content="CycleGAN">
+    
+      <meta property="article:tag" content="genre">
+    
+      <meta property="article:tag" content="ML">
+    
+      <meta property="article:tag" content="DL">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+  <meta property="twitter:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+
+
+    <title>Symbolic Music Genre Transfer with CycleGAN(2)</title>
+
+    <link rel="icon" href="https://sihan-son.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://sihan-son.github.io/paper/2-cyclegan-music-related/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://sihan-son.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://sihan-son.github.io/">Sihan`s Blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://sihan-son.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://sihan-son.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Sihan Son</h4>
+        
+          <h5 class="sidebar-profile-bio">Wir müssen wissen, Wir werden wissen</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/Sihan-Son" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.instagram.com/sihan_k_son/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-instagram"></i>
+      
+      <span class="sidebar-button-desc">Instagram</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/sihan-son-b43806120/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa fa-linkedin-square"></i>
+      
+      <span class="sidebar-button-desc">Linkedin</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.facebook.com/sihan830" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-facebook-square"></i>
+      
+      <span class="sidebar-button-desc">Facebook</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Symbolic Music Genre Transfer with CycleGAN(2)
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-07-01T00:49:14&#43;09:00">
+        
+  July 1, 2019
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/paper">Paper</a>, 
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/gan">GAN</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>지난 글에 이어서 이번 글에서는 Related Work 파트의 내용을 정리해려고 합니다. 이번 파트는 선행 연국에 대한 이야기이기 때문에 레펀러스가 많이 달리고 논문 링크는 하단에 레퍼런스로 있습니다</p>
+<h1 id="index">Index</h1>
+<ul>
+<li><a href="https://sihan-son.github.io/paper/1-cyclegan-music-intro">Intro</a></li>
+<li><a href="https://sihan-son.github.io/paper/2-cyclegan-music-related">Related Work</a></li>
+<li><a href="https://sihan-son.github.io/paper/3-cyclegan-music-model">Model Architecture</a></li>
+<li><a href="https://sihan-son.github.io/paper/4-cyclegan-music-pre">Dataset and Preprocessing</a></li>
+<li>Architecture Parmeters and Training</li>
+<li>Experimental Results</li>
+<li>Conclusion</li>
+</ul>
+<h2 id="related-work">Related Work</h2>
+<p>Gatys et al.<!-- raw HTML omitted --><!-- raw HTML omitted -->1<!-- raw HTML omitted --><!-- raw HTML omitted -->
+의 논문에서 <code>Neural Style Transfer</code>의 컨셉을 설명한다. 이 논문에서는 Pre-Trained CNN <code>ResNet</code>을 이용해 두 이미지의 스타일과 컨텐츠를 합친다.</p>
+<p><code>CycleGAN</code><!-- raw HTML omitted --><!-- raw HTML omitted -->2<!-- raw HTML omitted --><!-- raw HTML omitted -->같은 접근에서는 explict 스타일 특성 추출이 요구되지 않는다. 대신 pair의 <code>Generator (G)</code>가 사용된다. 이 두 개의 <code>G</code>는 데이터의 <code>domain transfer</code>를 위해 사용이 된다. 두 도메인의 특성은 추출될 특징의 종률르 implicit 한다. A 도메인이 사진이고 B가 그림이라고 한다면 <code>CycleGAN</code>은 사진을 그림으로 바꾸고, 그림을 사진으로 바꾸는 양 방향으로 작동한다. <code>MIDI</code> 파일을 이미지와 같은 방법으로 <code>CycleGAN</code>이 사용 가능하다. <code>CycleGAN</code>은 <code>CycleGAN-VC</code>, <code>StarGAN</code>, <code>DualGAN</code> 등으로 발전했다. <code>music domain transfer</code>에서 좀 더 발전된 복잡한 네트워크를 도입하기 기대하지만 해당 프로젝트에서는 시도하지 않고 <code>CycleGAN</code>을 사용한다</p>
+<p>Malik et al.<!-- raw HTML omitted --><!-- raw HTML omitted -->3<!-- raw HTML omitted --><!-- raw HTML omitted -->의 논문은 기존 <code>music domain transfer</code>연구에 대한 내용이 담겨 있다. 사람의 연주에서 연주 스타일을 배우는 모델을 소개한다. Flat한 <code>MIDI</code>에 <code>Velocities(음의 강약)</code>를 추가해 실제적은 소리로 만들어 낸다. 단순히 <code>Note Velocities</code>를 변화 시킴으로 다른 음악가의 스타일이나 장르에 대한 학습 없이 정말 사람처러 연주를 한다</p>
+<p>Brunner et al.<!-- raw HTML omitted --><!-- raw HTML omitted -->4<!-- raw HTML omitted --><!-- raw HTML omitted -->의 논문에서는 <code>MIDI-VAE</code> 다중작업 <code>VAE</code>모데을 소개한다. 이 모델은 <a href="MLDL/latent-space"><code>latent space</code></a>를 공유한다. 스타일의 구성요소를 완벽하게 바꿀수 있는 네트워크 모델이다. 즉 <code>MIDI-VAE</code>는 <code>Note pitch</code> 외에도 <code>MIDI</code> 파일에 포함된 음악의 대부분의 다른 측명, <code>Velocity</code>, <code>Duration</code> 및 <code>기악 instumentation</code>을 모델링한다. <code>MIDI-VAE</code>는 재생되는 음의 수를 제한하는 반면 해당 논문은 음의 수를 제한하지 않아 더 풍부한 음향을 불러온다. 또 <code>Note pitch</code>에만 집중하면 되기 때문에 편한 모델이다.</p>
+<p>Van den Oord et al.<!-- raw HTML omitted --><!-- raw HTML omitted -->5<!-- raw HTML omitted --><!-- raw HTML omitted -->의 논문에서는 <code>Raw Audio VAE</code>모델을 이야기 한다. <code>Latent space</code>에서 speaker의 <code>voice transfer</code>가 가능하다.</p>
+<p>Mor et al.<!-- raw HTML omitted --><!-- raw HTML omitted -->6<!-- raw HTML omitted --><!-- raw HTML omitted -->에서는 WaveNet을 기반으로 한 네트워크를 소개한다. AutoEncoder는 악기, 장르 스타일 간의 raw 음악을 translate 가능하다. 심지어 휘파람에서 음악을 synthesis가 가능하다.</p>
+<p>Roberts et al.<!-- raw HTML omitted --><!-- raw HTML omitted -->7<!-- raw HTML omitted --><!-- raw HTML omitted -->에서 소개된 모델은 <code>lecome MusicVAE</code>는 폴리포닉(동시에 여러 음 연주) 음악에서 장기적 구조를 포착할 수 있고 높은 보간과 재구성을 보여줄 수 있는 계층적 <code>VAE</code> 모델이다. <code>GAN</code>은 매우 강력하지만, 훈련하기가 어렵기때문에 일반적으로 순차 데이터에 적용되지 않는다.</p>
+<p>Mogren<!-- raw HTML omitted --><!-- raw HTML omitted -->8<!-- raw HTML omitted --><!-- raw HTML omitted -->, Yang et al.<!-- raw HTML omitted --><!-- raw HTML omitted -->9<!-- raw HTML omitted --><!-- raw HTML omitted --> and Dong et al.<!-- raw HTML omitted --><!-- raw HTML omitted -->10<!-- raw HTML omitted --><!-- raw HTML omitted -->에서 <code>CNN</code>기반의 <code>GAN</code> 작곡의 효과를 보여줌</p>
+<p>음악은 듣을 때 이상하지 않아야 성공이다. 스타일이나 도메인 전송에 직접 적용하지 않고 자동 음악 생성 분야에서 중요한 작업을 간단히 다룰 것이다. 대부분 <code>Standard RNN</code> 이나 <code>LSTM</code>모델을 사용한다. 최근 연구에서는 <code>CNN</code>에서도 성공적으로 사용되었고, <code>RNN</code>과 결합되기도 한다. <code>VAE(Variational Autoencoder)</code>와 <code>GAN(Generative Adversacy Networks)</code>은 점점 성공적으로 나아간다</p>
+<hr>
+<p><!-- raw HTML omitted -->1.<!-- raw HTML omitted --> Image style transfer using convolutional neural networks<br>
+<!-- raw HTML omitted -->2.<!-- raw HTML omitted --> Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks<br>
+<!-- raw HTML omitted -->3.<!-- raw HTML omitted --> Neural translation of musical style<br>
+<!-- raw HTML omitted -->4.<!-- raw HTML omitted --> MIDI-VAE: Modeling dynamics and instrumentation of music with applications to style transfer<br>
+<!-- raw HTML omitted -->5.<!-- raw HTML omitted --> Neural discrete representation learning<br>
+<!-- raw HTML omitted -->6.<!-- raw HTML omitted --> A universal music translation network<br>
+<!-- raw HTML omitted -->7.<!-- raw HTML omitted --> Hierarchical variational autoencoders for music<br>
+<!-- raw HTML omitted -->8.<!-- raw HTML omitted --> C-RNN-GAN: continuous recurrent neural networks with adversarial training<br>
+<!-- raw HTML omitted -->9.<!-- raw HTML omitted --> MidiNet: A convolutional generative adversarial network for symbolic-domain music generation<br>
+<!-- raw HTML omitted -->10.<!-- raw HTML omitted -->MuseGAN: Multi- track sequential generative adversarial networks for symbolic music generation and accompaniment</p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/gan/">gan</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/music/">music</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/cyclegan/">CycleGAN</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/genre/">genre</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/ml/">ML</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/dl/">DL</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/paper/4-cyclegan-music-pre/" data-tooltip="Symbolic Music Genre Transfer with CycleGAN(4)">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/paper/1-cyclegan-music-intro/" data-tooltip="Symbolic Music Genre Transfer with CycleGAN(1)">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/paper/2-cyclegan-music-related/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/paper/2-cyclegan-music-related/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/paper/2-cyclegan-music-related/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2021 Sihan Son. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/paper/4-cyclegan-music-pre/" data-tooltip="Symbolic Music Genre Transfer with CycleGAN(4)">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/paper/1-cyclegan-music-intro/" data-tooltip="Symbolic Music Genre Transfer with CycleGAN(1)">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/paper/2-cyclegan-music-related/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/paper/2-cyclegan-music-related/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/paper/2-cyclegan-music-related/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsihan-son.github.io%2Fpaper%2F2-cyclegan-music-related%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fsihan-son.github.io%2Fpaper%2F2-cyclegan-music-related%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fsihan-son.github.io%2Fpaper%2F2-cyclegan-music-related%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Sihan Son</h4>
+    
+      <div id="about-card-bio">Wir müssen wissen, Wir werden wissen</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Programmer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Korea
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://sihan-son.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://sihan-son.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/sihan-son.github.io\/paper\/2-cyclegan-music-related\/';
+          
+            this.page.identifier = '\/paper\/2-cyclegan-music-related\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'sihans-blog-1';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+    
+  </body>
+</html>
+

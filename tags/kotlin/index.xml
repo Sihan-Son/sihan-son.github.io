@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kotlin on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/kotlin/</link>
+    <description>Recent content in kotlin on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 28 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>코틀린을 다루는 기술</title>
+      <link>https://sihan-son.github.io/kotlin-advanced/</link>
+      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/kotlin-advanced/</guid>
+      <description>16주의 훈련을 받고 오랜만에 새로운 책의 서평으로 돌아왔습니다. 아마 꾸준히 보러 오시는 분이 없는 작은 블로그라 제 근황은 별로 궁금하지 않으실테니 이만 줄이고 책에 대한 이야기로 들어가 보겠습니다.
+책의 제목을 보고 Kotlin을 배우려고 구매를 고민하는 분들이 아마 이 글을 보고 계실 듯 합니다. 결론 부터 이야기 하자면 이 책은 입문서적이 아닙니다. 이미 Kotlin을 사용하는 사용자가 더 안전하고 깔끔한 코드를 Kotlin을 이용해서 작성 할 수 있게 도와주는 나침반 같은 역할을 하는 책입니다.</description>
+    </item>
+    
+  </channel>
+</rss>

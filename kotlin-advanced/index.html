@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.78.2 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="Sihan Son">
+<meta name="keywords" content="">
+<meta name="description" content="16주의 훈련을 받고 오랜만에 새로운 책의 서평으로 돌아왔습니다. 아마 꾸준히 보러 오시는 분이 없는 작은 블로그라 제 근황은 별로 궁금하지 않으실테니 이만 줄이고 책에 대한 이야기로 들어가 보겠습니다.
+책의 제목을 보고 Kotlin을 배우려고 구매를 고민하는 분들이 아마 이 글을 보고 계실 듯 합니다. 결론 부터 이야기 하자면 이 책은 입문서적이 아닙니다. 이미 Kotlin을 사용하는 사용자가 더 안전하고 깔끔한 코드를 Kotlin을 이용해서 작성 할 수 있게 도와주는 나침반 같은 역할을 하는 책입니다.">
+
+
+<meta property="og:description" content="16주의 훈련을 받고 오랜만에 새로운 책의 서평으로 돌아왔습니다. 아마 꾸준히 보러 오시는 분이 없는 작은 블로그라 제 근황은 별로 궁금하지 않으실테니 이만 줄이고 책에 대한 이야기로 들어가 보겠습니다.
+책의 제목을 보고 Kotlin을 배우려고 구매를 고민하는 분들이 아마 이 글을 보고 계실 듯 합니다. 결론 부터 이야기 하자면 이 책은 입문서적이 아닙니다. 이미 Kotlin을 사용하는 사용자가 더 안전하고 깔끔한 코드를 Kotlin을 이용해서 작성 할 수 있게 도와주는 나침반 같은 역할을 하는 책입니다.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="코틀린을 다루는 기술">
+<meta name="twitter:title" content="코틀린을 다루는 기술">
+<meta property="og:url" content="https://sihan-son.github.io/kotlin-advanced/">
+<meta property="twitter:url" content="https://sihan-son.github.io/kotlin-advanced/">
+<meta property="og:site_name" content="Sihan`s Blog">
+<meta property="og:description" content="16주의 훈련을 받고 오랜만에 새로운 책의 서평으로 돌아왔습니다. 아마 꾸준히 보러 오시는 분이 없는 작은 블로그라 제 근황은 별로 궁금하지 않으실테니 이만 줄이고 책에 대한 이야기로 들어가 보겠습니다.
+책의 제목을 보고 Kotlin을 배우려고 구매를 고민하는 분들이 아마 이 글을 보고 계실 듯 합니다. 결론 부터 이야기 하자면 이 책은 입문서적이 아닙니다. 이미 Kotlin을 사용하는 사용자가 더 안전하고 깔끔한 코드를 Kotlin을 이용해서 작성 할 수 있게 도와주는 나침반 같은 역할을 하는 책입니다.">
+<meta name="twitter:description" content="16주의 훈련을 받고 오랜만에 새로운 책의 서평으로 돌아왔습니다. 아마 꾸준히 보러 오시는 분이 없는 작은 블로그라 제 근황은 별로 궁금하지 않으실테니 이만 줄이고 책에 대한 이야기로 들어가 보겠습니다.
+책의 제목을 보고 Kotlin을 배우려고 구매를 고민하는 분들이 아마 이 글을 보고 계실 듯 합니다. 결론 부터 이야기 하자면 이 책은 입문서적이 아닙니다. 이미 Kotlin을 사용하는 사용자가 더 안전하고 깔끔한 코드를 Kotlin을 이용해서 작성 할 수 있게 도와주는 나침반 같은 역할을 하는 책입니다.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2020-06-28T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2020-06-28T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="Book">
+    
+  
+  
+    
+      <meta property="article:tag" content="kotlin">
+    
+      <meta property="article:tag" content="Book">
+    
+      <meta property="article:tag" content="gilbut">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+  <meta property="twitter:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+
+
+    <title>코틀린을 다루는 기술</title>
+
+    <link rel="icon" href="https://sihan-son.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://sihan-son.github.io/kotlin-advanced/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://sihan-son.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://sihan-son.github.io/">Sihan`s Blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://sihan-son.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://sihan-son.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Sihan Son</h4>
+        
+          <h5 class="sidebar-profile-bio">Wir müssen wissen, Wir werden wissen</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/Sihan-Son" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.instagram.com/sihan_k_son/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-instagram"></i>
+      
+      <span class="sidebar-button-desc">Instagram</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/sihan-son-b43806120/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa fa-linkedin-square"></i>
+      
+      <span class="sidebar-button-desc">Linkedin</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.facebook.com/sihan830" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-facebook-square"></i>
+      
+      <span class="sidebar-button-desc">Facebook</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      코틀린을 다루는 기술
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-06-28T00:00:00Z">
+        
+  June 28, 2020
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/book">Book</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p><img src="https://sihan-son.github.io/images/book/gilbut/kotlin/1.jpg" alt="kotlin"></p>
+<p>16주의 훈련을 받고 오랜만에 새로운 책의 서평으로 돌아왔습니다. 아마 꾸준히 보러 오시는 분이 없는 작은 블로그라 제 근황은 별로 궁금하지 않으실테니 이만 줄이고 책에 대한 이야기로 들어가 보겠습니다.</p>
+<p>책의 제목을 보고 <code>Kotlin</code>을 배우려고 구매를 고민하는 분들이 아마 이 글을 보고 계실 듯 합니다. 결론 부터 이야기 하자면 이 책은 입문서적이 아닙니다. 이미 <code>Kotlin</code>을 사용하는 사용자가 더 안전하고 깔끔한 코드를 <code>Kotlin</code>을 이용해서 작성 할 수 있게 도와주는 나침반 같은 역할을 하는 책입니다. 당연히 입문 서적이라고 생각하고 서평단 신청을 해서 책을 받고 머릿말을 읽는 순간 뭔가 잘 못 되었다는 것을 느꼈습니다. 이건 절대 입문서가 아니다!!! 이 책이 입문서가 아니긴 하지만 끝까지 읽고 구매를 고민해보시면 좋겠습니다.</p>
+<p><code>Java</code>를 사용하셨던 분들이 어플 개발 등의 이유로 <code>Kotlin</code>으로 이주 하고 있는 추세이고, 아마 이 책에 대한 리뷰를 살펴보고 계신 분들도 이런 이유나 뜨는 언어라고 하니 공부 해볼까 하는 마음으로 찾고 계실 듯 합니다. <code>Java</code> 사용자 분들이라면 정확한 문법을 몰라도 우선 적인 코드 독해를 하는데 큰 무리가 없습니다.</p>
+<p>용어의 경우 많은 경우 한글화하고 있는데 원문 표현을 병기 표현을 해주고 있기 때문에 읽다가 &lsquo;이게 무슨 뜻으로 쓰는거지?&rsquo; 싶으면 책 말미의 찾아보기를 통해서 첫 등장을 살펴보시면 좋을 듯 합니다.</p>
+<p>책의 제목은 <code>코틀린을 다루는 기술</code>이지만 프로그래머로써 한단계 도약할 수 있는 내용들을 다루고 있습니다. <code>재귀</code>, <code>공재귀</code>같은 처음 보셨을 수도 있는 개념을 다루기도 하고 메모리 등 초보를 벗어나고 싶은 프로그래머 그 중에서도 자바를 다루던 분들이라면 정말 추천드립니다.</p>
+<p><code>즉시(Strict) 계산</code>, <code>지연(Lazy) 계산</code>을 다루는 챕터는 상황에 적절한 방법을 제시하면서 프로그래밍을 하면서 좀 더 고민하고 효과적이며 효율적인 코드를 작성하는 방향으로 우리를 인도합니다.</p>
+<p>개념을 다루고 개념을 손에 익힐 수 있도록 연습문제를 제공합니다. 대학교재들로 사용되는 서적들이 문제만 제공하고 답이 없는 것과 달리 답도 제공을 하고 있습니다. 물론 <code>Github</code>을 통해 정답 코드도 보여주고 있고, 문제에 힌트도 줘서 답을 보지 않고 고민해서 문제를 풀 수 있게 도와줍니다.</p>
+<p><code>Kotlin</code>의 최고 장점이자 커뮤니티가 폭발적으로 성장할 수 있게 해준 <code>Java</code>와 같이 사용하는 방법도 한 챕터를 할애하여 설명하고 있습니다. <code>Gradle</code>을 이용해서 하는 방법, <code>Kotlin</code>에서 <code>Java</code> 호출해서 사용하는 법과 반대의 방법을 다루고 있습니다. 이 떄 컴파일 오류 해결법을 제시합니다.</p>
+<p><code>Python</code>은 파이썬스럽게 사용해야 진정한 힘을 발휘하는 것처럼 기존의 <code>C</code>, <code>Java</code>를 사용하던 방법으로 사용하는 것이 아닌 <code>Kotlin</code>을 <code>Kotline</code>답게 코딩하는 법을 배우며 한단계 도약을 원하는 <code>Kotlin</code>, <code>Java</code> 사용자들, <code>Kotlin</code>에 입문하시는 분들께 추천드립니다. 분명 입문자가 보기는 다소 어려운 책이지만 <code>Kotlin</code>을 어느 정도 익히고 바로 이 책을 보신다면 <code>Kotlin</code>의 철학을 이해하시면서 빠져들 수 있는 기회가 될 듯 합니다.</p>
+<p>추천 대상: <code>Kotlin</code>유저, <code>Java</code>에서 이주를 원하는 사용자
+난아도: 다소 높음</p>
+<hr>
+<p>본 포스팅은 길벗에서 책을 제공받아 작성된 글입니다.</p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/kotlin/">kotlin</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/book/">Book</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/gilbut/">gilbut</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/mysql/" data-tooltip="이것이 MySQL이다">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/do-it-react/" data-tooltip="Do it! 리액트 프로그래밍 정석">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/kotlin-advanced/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/kotlin-advanced/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/kotlin-advanced/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2021 Sihan Son. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/mysql/" data-tooltip="이것이 MySQL이다">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/do-it-react/" data-tooltip="Do it! 리액트 프로그래밍 정석">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/kotlin-advanced/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/kotlin-advanced/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/kotlin-advanced/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsihan-son.github.io%2Fkotlin-advanced%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fsihan-son.github.io%2Fkotlin-advanced%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fsihan-son.github.io%2Fkotlin-advanced%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Sihan Son</h4>
+    
+      <div id="about-card-bio">Wir müssen wissen, Wir werden wissen</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Programmer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Korea
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://sihan-son.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://sihan-son.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/sihan-son.github.io\/kotlin-advanced\/';
+          
+            this.page.identifier = '\/kotlin-advanced\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'sihans-blog-1';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+    
+  </body>
+</html>
+

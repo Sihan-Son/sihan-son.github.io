@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Musics on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/music/</link>
+    <description>Recent content in Musics on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 30 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/music/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Symbolic Music MIDI</title>
+      <link>https://sihan-son.github.io/music/midi/</link>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/music/midi/</guid>
+      <description>Index  MIDI란? MIDI의 구조   MIDI (Musical Instrument Digital Interface) 란? MIDI는 Musical Instrument Digital Interface 의 약자로서, 전자악기의 디지털 데이터를 주고 받기 위한 표준 규격이다.
+MIDI의 구조 MIDI파일은 Chunk들의 집합으로서, 여러 개의 청크들로 구성되어있다. 청크는 다음과 같이 구성되며, 청크 타입은 크게 헤더, 트랙, 러닝 스테이터스로 구분할수 있다.
+Head Head 청크는 Mthd 로 표현되며, MIDI 청크 중 가장 앞에 단 하나만 존재한다. Head 청크의 길이는 14바이트이며, 다음과 같이 구성된다.</description>
+    </item>
+    
+  </channel>
+</rss>

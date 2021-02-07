@@ -1,18 +1,104 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>gan on Sihan`s Blog</title>
+    <title>GAN on Sihan`s Blog</title>
     <link>https://sihan-son.github.io/tags/gan/</link>
-    <description>Recent content in gan on Sihan`s Blog</description>
+    <description>Recent content in GAN on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 29 Jun 2019 00:49:14 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/gan/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/gan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GANs in Action</title>
+      <link>https://sihan-son.github.io/gans-in-action/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/gans-in-action/</guid>
+      <description>정말 오랜만에 리뷰하는 인공지능 관련도서입니다! 이 책은 인공지능에서 가장 도전적인 분야 중 하나인 생성모델 중에서 적대적 생성모델(Generative Adversarial Nets 이하 GAN)을 전반적으로 다루고 있습니다. 큰 파장을 불러온 바닐라 GAN을 시작으로 GAN분야에서도 새 지평을 열어준 CGAN, CycleGAN까지 다루면서 GAN의 국한해서는 생성모델의 주요한 발전사를 옅볼수 있는 책입니다. 생성모델에 GAN 위주의 이야기가 나오지만 GAN이외에도 다야한 모델들이 있다는 것은 알아 두시면 좋을 것 같습니다.
+인공지능 분야에서도 직관적이지도 않고 수학적 난이도도 있는 분야이다 보니 일정 수준에 오른 독자들이 읽기를 권하고 있습니다.</description>
+    </item>
+    
+    <item>
+      <title>간단하게 정리한 Mode Collapse</title>
+      <link>https://sihan-son.github.io/mldl/mode-collapse/</link>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/mldl/mode-collapse/</guid>
+      <description>저는 언제나 처럼 간단하게 이게 어떤 개념인지만 짚고 넘어가겠습니다. 자세한 내용은 다른 학술 블로그들을 참조해 주세요!
+GAN관련 논문이나 자료들을 읽다 보면은 심심치 않게 mode collapse라는 말을 발견 할 수 있습니다. 여기서 mode는 수학에서 말하는 최빈값입니다. 즉 제일 자주 등장하는 값들을 말합니다. mode collapse는 보통 Multi-Modal일 경우 두드러지게 발생 할 수 있습니다. 튜토리얼로 자주 사용하는 MNIST의 경우 &amp;lsquo;0~9&amp;rsquo; 10개의 mode를 갖게 됩니다.
+Generator G가 input z를 하나의 mode에 치우쳐 변화시키는 현상이 발생합니다.</description>
+    </item>
+    
+    <item>
+      <title>간단하게 정리한 Norm</title>
+      <link>https://sihan-son.github.io/mldl/what-is-norm/</link>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/mldl/what-is-norm/</guid>
+      <description>저는 언제나 처럼 간단하게 이게 어떤 개념인지만 짚고 넘어가겠습니다. 자세한 내용은 다른 학술 블로그들을 참조해 주세요! 그럼 이번 글에서는 Norm에 대한 개념을 간단하게 잡아 봅시다!
+What is Norm? Norm은 수학적으로 벡터 공간 또는 행렬에 있는 모든 벡터의 전체 크기, 길이를 의미합니다. 단순화를 위해 표준이 높을수록 행렬 또는 벡터의 값이 커집니다.
+p: Norm의 차수(p의 차수에 따라 L0, L1, L2 결정)
+N: 대상 벡터의 요소 수
+L0 Norm 실제로 Norm은 아닙니다. 벡터의 0이 아닌 요소의 총 개수를 의미합니다.</description>
+    </item>
+    
+    <item>
+      <title>Symbolic Music Genre Transfer with CycleGAN(3)</title>
+      <link>https://sihan-son.github.io/paper/3-cyclegan-music-model/</link>
+      <pubDate>Fri, 05 Jul 2019 00:49:14 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/paper/3-cyclegan-music-model/</guid>
+      <description>Index  Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion  이 논문에서 사용하는 모델은 Generative adversarial network(GAN)에 기반을 두고 있습니다. Ian Goodfellow et al1에서 제안 된 기존의 모델에서는 Generator G와 Discriminator D가 존재 합니다. G는 노이즈를 실제 데이터 처럼 만드는 역할을 합니다. D는 G가 만들어낸 가짜 데이터와 실제 데이터를 구별하는 역할을 합니다.
+Music domain transfer이기 때문에 input데이터는 노이즈가 아니라 실제 음악 데이터이고, 본 논문에서는 음악 데이터중에서 MIDI 데이터를 사용합니다.</description>
+    </item>
+    
+    <item>
+      <title>Symbolic Music Genre Transfer with CycleGAN(4)</title>
+      <link>https://sihan-son.github.io/paper/4-cyclegan-music-pre/</link>
+      <pubDate>Thu, 04 Jul 2019 00:49:14 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/paper/4-cyclegan-music-pre/</guid>
+      <description>Index  Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion  Model Architecture파트전에 Dataset and Preprocessing 파트를 먼저 다루려고합니다. 이 파트는 MIDI대한 간단한 설명과 데이터 전처리 방법과 전략이 나와있는 장입니다. 미디를 다루는 딥러닝 프로젝트에 꽤 큰 도움이 될 듯 합니다.
+MIDI (Musical Instrument Digital Interface)는 통신 규격을 담은 심볼릭 데이터입니다. 여기에 대한 자세한 설명은 Symbolic Music MIDI를 참조 해주세요. MIDI는 통신 규격이기 때문에 진짜 소리를 가지고 있지 않습니다.</description>
+    </item>
+    
+    <item>
+      <title>간단하게 알아보는 Difference between VAE and GAN</title>
+      <link>https://sihan-son.github.io/mldl/difference-between-vae-and-gan/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/mldl/difference-between-vae-and-gan/</guid>
+      <description>What is difference between VAE and GAN VAE와 GAN은 그림에서 보다시피 Maximum Likehood의 범주에 속하는 방법론이다. 그림에서 볼 수 있든 Explicit한 방법론과 Implicit한 방법론으로 나뉜다. 이 블로그에서 주로 다루는 GAN은 보다시피 Implicit(암시적인)한 방법론을 취하고 있다.
+VAE Variational Autoencoder(AVE)는 Kingma et al1의 논문에서 제안된 네트워크의 구조이다. 복잡한 데이터 생성 모델을 설계하고 대규모 데이터 세트에 적용을 할 수 있게 해준다. input을 z로 encoding하고 스스로 input을 decoding하는 방법을 학습하는 방법이다. 즉 decoding된 output이 input과 최대한 가깝게 만들어는 내는 방법이다.</description>
+    </item>
+    
+    <item>
+      <title>Simple Latent Space</title>
+      <link>https://sihan-son.github.io/mldl/latent-space/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/mldl/latent-space/</guid>
+      <description>오늘은 Generative adversarial network GAN 논문을 읽거나 자료를 접하다보면 자주 보는 latent space에 대한 자료를 포스팅 하려고 합니다. 이 포스트는 아마도 지속적으로 업데이트가 진행되면서 내용이 풍부해지길 저도 기대하고 있습니다. 이 포스팅은 latent space에 대해서 간단하게 알아보는 포스팅이니 개념만 잡고 가세요. 혹시 잘못된 내용이 있다면 메일이나 댓글로 피드백 주시면 수정하도록 하겠습니다!
+머신러닝의 성능은 데이터의 양과 질에 굉장히 의존적입니다. Trash in Trash out 말이 있듯이 데이터의 질에 성능이 심히 요동치게 됩니다.
+그래서 데이터가 모이면 어떤 feature가 유용한지 아닌지 확인하는 작업이 필요로 합니다.</description>
+    </item>
+    
+    <item>
+      <title>Symbolic Music Genre Transfer with CycleGAN(2)</title>
+      <link>https://sihan-son.github.io/paper/2-cyclegan-music-related/</link>
+      <pubDate>Mon, 01 Jul 2019 00:49:14 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/paper/2-cyclegan-music-related/</guid>
+      <description>지난 글에 이어서 이번 글에서는 Related Work 파트의 내용을 정리해려고 합니다. 이번 파트는 선행 연국에 대한 이야기이기 때문에 레펀러스가 많이 달리고 논문 링크는 하단에 레퍼런스로 있습니다
+Index  Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion  Related Work Gatys et al.1의 논문에서 Neural Style Transfer의 컨셉을 설명한다. 이 논문에서는 Pre-Trained CNN ResNet을 이용해 두 이미지의 스타일과 컨텐츠를 합친다.
+CycleGAN2같은 접근에서는 explict 스타일 특성 추출이 요구되지 않는다.</description>
+    </item>
+    
     <item>
       <title>Symbolic Music Genre Transfer with CycleGAN(1)</title>
-      <link>https://sihan-son.github.io/paper/cyclegan-music-intro/</link>
+      <link>https://sihan-son.github.io/paper/1-cyclegan-music-intro/</link>
       <pubDate>Sat, 29 Jun 2019 00:49:14 +0900</pubDate>
       
-      <guid>https://sihan-son.github.io/paper/cyclegan-music-intro/</guid>
+      <guid>https://sihan-son.github.io/paper/1-cyclegan-music-intro/</guid>
       <description>졸업 작품으로 Generative adversarial network(GAN)을 이용해 작곡을 하려고 했다. 프로젝트 진행을 위해 자료 수집을 진행하며 지도 교수님과 이야기를 통해 작곡에서 domain transfer 즉 음악의 편곡으로 방향을 선회해 프로젝트를 진행하게 되었다. 핵심적으로 본 논문들을 리뷰하면서 공부한 내용을 정리하고자 한다. 수학적 베이스가 약해서 논문을 읽으면서 가장 힘들었던 부분이 Loss function에 관한 내용이었던 만큼 이 부분의 감안하고 읽어 주세요. 논문 리뷰 이후에 github에 공개된 코드를 리뷰해 보려고 합니다
 처음으로 살펴볼 논문은 Symbolic Music Genre Transfer with CycleGAN입니다.</description>
     </item>

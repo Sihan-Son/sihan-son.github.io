@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2020reviewer on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/2020reviewer/</link>
+    <description>Recent content in 2020reviewer on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/2020reviewer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>핵심만 콕! 쿠버네티스</title>
+      <link>https://sihan-son.github.io/kubernetes/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/kubernetes/</guid>
+      <description>최근 몇 년 기술분야에서 꾸준히 보이고 있는 키워드 중에 하나 인 쿠버네티스를 다룬 책인 핵심만 콕! 쿠버네티스입니다. 결론부터 이야기 하자면 이 책이 필요한 독자 층은 굉장히 제한적일 것 같습니다. 책의 도입부에서 간단하게 가상화 컨테이너인 Docker에 대한 활용과 개념을 성명하고 있지만 제한적입니다. 개인이 공부용으로 다루기엔 많이 큰 시스템이라고 생각이 되고요. 물론 AWS 등 클라우드 서비스를 이용하면 충분히 개인도 실습을 병행한 학습이 가능하고 운영이 가능합니다. 이런 조건들을 책을 선택하기 전에 고려 해보시면 좋을 것 같습니다.</description>
+    </item>
+    
+    <item>
+      <title>처음 배우는 스위프트</title>
+      <link>https://sihan-son.github.io/swift-ios/</link>
+      <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/swift-ios/</guid>
+      <description>이번 달에 소개해 드릴 책은 처음 배우는 스위프트입니다. swift는 APPLE에서 공식적으로 채택하고 있는 프로그램 개발 언어입니다. 러프하게 이야기하자면 C에서 분화된 Object-C를 현대적인 형태로 개선한게 현재의 swift입니다. 나름 크로스 플랫폼을 지원하고는 있어 Linux에서는 무리 없이 사용이 가능하지만 Windows에서는 과거 C#이 macOS에서 지원이 잘 되지 않는 모습입니다. 원활한 사용을 위해서는 결국 macOS가 필요한게 현재 swift입니다.
+그런데 왜 swift를 배워야 할까요? ios어플리케이션를 위한 유일한 답은 아니지만 충분히 좋은 답이 됩니다. 또 인공지능 개발자에게는 swift for tensorflow라는 기존의 대체제가 될 수 있습니다.</description>
+    </item>
+    
+    <item>
+      <title>데이터 전처리 대전</title>
+      <link>https://sihan-son.github.io/data-preprocessing/</link>
+      <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/data-preprocessing/</guid>
+      <description>이번 달에 만나볼 책은 데이터 전처리 대전입니다. 인공지능, 빅데이터 등이 기술 분야에서 큰 자리를 잡아가고 있습니다. 그 동시에 이 데이터를 다루는 기술의 중요도도 커지고 있습니다. 그래서 데이터를 다루는 책 여러권이 시장에 나오고 있습니다.
+데이터는 굉장히 다양한 형태로 뽑아져 나옵니다. 종류도 다양하고, 데이터 셋이 가지고 있는 속성 값들, 속성의 종류들 너무 다양한 형태로 존재해서 한가지 방법론으로 모든 데이터를 다룰 수는 없습니다. 또 뽑아져 나온 데이터가 모두 우리에게 필요하지도 않습니다. 수행하려는 작업에 따라 전혀 필요없는 속성들도 존재합니다.</description>
+    </item>
+    
+    <item>
+      <title>GANs in Action</title>
+      <link>https://sihan-son.github.io/gans-in-action/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/gans-in-action/</guid>
+      <description>정말 오랜만에 리뷰하는 인공지능 관련도서입니다! 이 책은 인공지능에서 가장 도전적인 분야 중 하나인 생성모델 중에서 적대적 생성모델(Generative Adversarial Nets 이하 GAN)을 전반적으로 다루고 있습니다. 큰 파장을 불러온 바닐라 GAN을 시작으로 GAN분야에서도 새 지평을 열어준 CGAN, CycleGAN까지 다루면서 GAN의 국한해서는 생성모델의 주요한 발전사를 옅볼수 있는 책입니다. 생성모델에 GAN 위주의 이야기가 나오지만 GAN이외에도 다야한 모델들이 있다는 것은 알아 두시면 좋을 것 같습니다.
+인공지능 분야에서도 직관적이지도 않고 수학적 난이도도 있는 분야이다 보니 일정 수준에 오른 독자들이 읽기를 권하고 있습니다.</description>
+    </item>
+    
+    <item>
+      <title>데이터 과학을 위한 통계</title>
+      <link>https://sihan-son.github.io/statics-for-data-science/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/statics-for-data-science/</guid>
+      <description>이번 달에 리뷰 할 책은 통계학과 데이터 과학에 관한 책입니다. 이 책을 고민하실 때 가장 중요한 이야기를 먼저 하자면 R로 쓰여진 책 입니다. R에 익숙하지 않아 책을 읽으면서 코드가 쭉쭉 읽히지 않았던 점은 아쉬웠지만 통계를 다루시는 분들 중에 R유저가 많기 때문에 개인적인 아쉬움으로 묻어두고 리뷰를 시작하겠습니다.
+책의 구성은 정말 마음에 들었습니다. 각 절을 시작하면서 다루는 핵심 용어들을 요약 정리를 해줍니다. 해당 절에서 어떤 내용을 다룰지 미리 볼 수도 있고, 개념이 헷갈릴 때 책 중간을 다시 찾지 않아도 되어서 좋았습니다.</description>
+    </item>
+    
+    <item>
+      <title>More Effective C# </title>
+      <link>https://sihan-son.github.io/more-effective-csharp/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/more-effective-csharp/</guid>
+      <description>굉장히 다양한 프로그래밍 언어가 있고, 취향과 용도 따라 골라서 사용하고 있다. 각 언어들에서 사용하는 기본적인 문법이 큰 틀에서는 대동소이 하다보니 편하게 다른 언어로 넘어가서 사용 하실겁니다. 이러다 보니 처음 배운 언어 스타일이 다른 언어에서도 그대로 사용되는 경향이 있습니다. 그래서 다양한 서적들이 각 언어에 맞게 사용하는 방법을 소개하는 책들이 있습니다. 이 책도 그런 책들 중 하나입니다. C#을 C#처럼 사용하는 실무에서 어떻게 써야하는지를 구체적으로 다루고 있는 책입니다.
+각 언어는 그 언어가 만들어진 철학을 이해하고 맞춰 사용하는 것이 가장 효율적으로 사용할 수 있는 방법이라고 생각합니다.</description>
+    </item>
+    
+    <item>
+      <title>이것이 MySQL이다</title>
+      <link>https://sihan-son.github.io/mysql/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/mysql/</guid>
+      <description>2월에 나는 리뷰어다 2020에 뽑히고 첫 글을 드디어 작성하게 되었습니다. 훈련을 다녀오느라 4달 동안 전혀 받아 볼 수 없는 상황이었어서 4달만에 활동을 시작하게 되었습니다. 딥러닝 받고싶었ㅇ..
+MySQL은 프로그래밍을 어느 정도 공부 하신 분들과는 떨어질 수 없는 뭔가 지긋지긋한 사이인 친구입니다. 이 글을 읽으시는 분들은 잘은 못해도 대충은 다룰 줄 알고, 문법이 왜 이런 식이냐고 투덜 거리신 경험이 있을 거라고 생각합니다. 프로젝트를 진행하면서 필요한 기능만 찾아 쓰다보니 조각조각 알고는 있지만 전체적인 것을 잘 모르는 경우도 많이 본 듯합니다.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GPU on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/gpu/</link>
+    <description>Recent content in GPU on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 03 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/gpu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>쉽게 따라하는 Colab과 구글 드라이브 연결</title>
+      <link>https://sihan-son.github.io/setting/colab-setting/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/setting/colab-setting/</guid>
+      <description>오늘 포스팅은 그림이 무척 많은 Colab을 사용하는 방법부터 Colab에서 구글 드라이브를 저장소로 사용하는 방법입니다. 차근차근 따라와 주세요.
+먼저 구글 드라이브에 들어가주세요. 저장소로 쓰기 때문에 어느 정도 용량확보가 필요합니다. 그래서 기존 구글 계정의 용량이 모자른다면 새로운 구글 계정을 만드셔서 하시는 것을 추천합니다.
+ Index  Colab 추가하기 Colab 시작하기 GPU 사용하기 Google Drive 연결하기   1. Colab 추가하기 구글 드라이브의 메인 화면에서 마우스 우클릭을 해주시면 위와 같은 이미지가 뜨게 됩니다. 저는 이미 Colab을 추가한 상태라 항목에 Colab이 보이지만 이 글을 보고 계신 대부분의 사용자 분들은 없는게 정상이니 걱정하지 마세요.</description>
+    </item>
+    
+    <item>
+      <title>Cheetah 딥러닝용 GPU 플랫폼</title>
+      <link>https://sihan-son.github.io/review/cheetah-gpu/</link>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/review/cheetah-gpu/</guid>
+      <description>Deep Learning을 공부하거나 프로젝트를 진행하려면 GPU는 필수적입니다. 저의 경우는 GTX 970모델을 이용 중이었지만 학습으로 갈궈지고, 오버워치를 하다가 퍽 하고 전원이 나가더니 죽어버리는 불상사를 겪었습니다.
+졸업 프로젝트로 Deep Learning관련 프로젝트를 진행하고 있어서 GPU가 절대적으로 필요한 상황이었는데 그나마 있던 GPU가 죽어서 정말 곤란한 상황이 되었습니다. 그러던 중 머신러닝 플랫폼 서비스를 오픈해서 베타 서비스를 진행중인 Cheetah라는 플랫폼을 알게 되었습니다. 마침 베타 테스터들에게 한달간 무료로 GPU 서버를 대여 해주고 있어서 RTX 2080TI 서버를 대여해 사용할 수 있었습니다.</description>
+    </item>
+    
+    <item>
+      <title>쉽게 따라하는 Tensorflow-gpu Setting with anaconda</title>
+      <link>https://sihan-son.github.io/setting/tensoflow-gpu-setting/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/setting/tensoflow-gpu-setting/</guid>
+      <description>Tensorflow를 사용하면서 제일 힘든 작업은 GPU를 이용한 환경을 세팅하는 일이다. CUDA, cuDNN등 여러 패키지를 설치해야하고, 또 따라하라는데로 따라하는데 블로그 글들이 업데이트가 되어 있지 않아서 버전 오류가 발생하기도 한다. 그래서 간단한 방법을 소개하려고 한다.
+먼저 anaconda가 필요하다. anaconda는 과학용 파이썬 패키지를 묶어서 배포하는 배포판 인데 이 내용은 다음에 알아보도록 하고, anaconda가 설치 되어 있다는 사람들을 대상으로 글을 쓴다. 혹시 anaconda 설치가 필요하다면 이 글을 참조해서 설치하길 바란다.
+먼저 python 버전이 tensorflow와 호환되는 버전이지 확인이 필요하다.</description>
+    </item>
+    
+  </channel>
+</rss>

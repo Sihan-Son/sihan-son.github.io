@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Setting on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/setting/</link>
+    <description>Recent content in Setting on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 08 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/setting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github에서 Public 저장소를 Private로 바꾸어 봅시다</title>
+      <link>https://sihan-son.github.io/git/github-repo-public-to-private/</link>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/git/github-repo-public-to-private/</guid>
+      <description>오늘 알아볼 내용은 Public repository를 Private repository로 바꾸는 법을 알아보겠습니다. 원래는 유료 기능이었으나 Microsoft가 작년에 GitHub을 인수하면서 학생사용자들에게만 무료로 제공 되던 Private repository를 모든 사용자에게 무료로 풀어주었습니다. 그래서 BitBucket의 매력이 크게 떨어져서 조금 슬픈 일이긴 하지만 저는 GitHub을 더 좋아하기 때문에 기존의 Public repository를 Private repository로 바꾸어 봅시다.
+리포를 들어가면 제일 상단에 이미지처럼 여러 메뉴가 있습니다. 오늘 저희가 필요한 기능은 제일 우측에 있는 Settings에 있습니다.
+Settings에 들어가서 스크롤을 제일 아래로 내리면 다음과 같은 화면이 보입니다.</description>
+    </item>
+    
+    <item>
+      <title>쉽게 따라하는 Colab과 구글 드라이브 연결</title>
+      <link>https://sihan-son.github.io/setting/colab-setting/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/setting/colab-setting/</guid>
+      <description>오늘 포스팅은 그림이 무척 많은 Colab을 사용하는 방법부터 Colab에서 구글 드라이브를 저장소로 사용하는 방법입니다. 차근차근 따라와 주세요.
+먼저 구글 드라이브에 들어가주세요. 저장소로 쓰기 때문에 어느 정도 용량확보가 필요합니다. 그래서 기존 구글 계정의 용량이 모자른다면 새로운 구글 계정을 만드셔서 하시는 것을 추천합니다.
+ Index  Colab 추가하기 Colab 시작하기 GPU 사용하기 Google Drive 연결하기   1. Colab 추가하기 구글 드라이브의 메인 화면에서 마우스 우클릭을 해주시면 위와 같은 이미지가 뜨게 됩니다. 저는 이미 Colab을 추가한 상태라 항목에 Colab이 보이지만 이 글을 보고 계신 대부분의 사용자 분들은 없는게 정상이니 걱정하지 마세요.</description>
+    </item>
+    
+    <item>
+      <title>쉽게 따라하는 Pycharm interpreter 설정</title>
+      <link>https://sihan-son.github.io/setting/pycharm-setting/</link>
+      <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/setting/pycharm-setting/</guid>
+      <description>오늘 알아볼 내용은 Pycharm에서 Python interpreter설정입니다. 잘나온 Python IDE가 여러가지라 취향에 따라서 Jupyter, vscode, spyder 등등 여러가지 사용하고 계실겁니다. 이 글은 그중에서 Pycharm 사용하시려는 분 중에서 interpreter설정에서 문제를 격고 계신 분들을 위한 포스팅입니다.
+1. 기본 interpreter 설정하기! fig 1
+interpreter 설정을 위해서 파란색으로 하이라이트 되어 있는 setting을 눌러줍니다.
+fig 2
+fig 3
+이제 fig 2이미지에서 좌측 메뉴의 Project Interpreter를 들어가면 처음이시면 fig 2처럼 빈 화면이 뜨게 됩니다. 이제 우측 상단의 빨간 동그라미 표시된 톱니 바퀴를 누르게 되면 fig 3과 같이 Add와 Show all이 나옵니다.</description>
+    </item>
+    
+    <item>
+      <title>쉽게 따라하는 Tensorflow-gpu Setting with anaconda</title>
+      <link>https://sihan-son.github.io/setting/tensoflow-gpu-setting/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/setting/tensoflow-gpu-setting/</guid>
+      <description>Tensorflow를 사용하면서 제일 힘든 작업은 GPU를 이용한 환경을 세팅하는 일이다. CUDA, cuDNN등 여러 패키지를 설치해야하고, 또 따라하라는데로 따라하는데 블로그 글들이 업데이트가 되어 있지 않아서 버전 오류가 발생하기도 한다. 그래서 간단한 방법을 소개하려고 한다.
+먼저 anaconda가 필요하다. anaconda는 과학용 파이썬 패키지를 묶어서 배포하는 배포판 인데 이 내용은 다음에 알아보도록 하고, anaconda가 설치 되어 있다는 사람들을 대상으로 글을 쓴다. 혹시 anaconda 설치가 필요하다면 이 글을 참조해서 설치하길 바란다.
+먼저 python 버전이 tensorflow와 호환되는 버전이지 확인이 필요하다.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.78.2 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="Sihan Son">
+<meta name="keywords" content="">
+<meta name="description" content="What is difference between VAE and GAN VAE와 GAN은 그림에서 보다시피 Maximum Likehood의 범주에 속하는 방법론이다. 그림에서 볼 수 있든 Explicit한 방법론과 Implicit한 방법론으로 나뉜다. 이 블로그에서 주로 다루는 GAN은 보다시피 Implicit(암시적인)한 방법론을 취하고 있다.
+VAE Variational Autoencoder(AVE)는 Kingma et al1의 논문에서 제안된 네트워크의 구조이다. 복잡한 데이터 생성 모델을 설계하고 대규모 데이터 세트에 적용을 할 수 있게 해준다. input을 z로 encoding하고 스스로 input을 decoding하는 방법을 학습하는 방법이다. 즉 decoding된 output이 input과 최대한 가깝게 만들어는 내는 방법이다.">
+
+
+<meta property="og:description" content="What is difference between VAE and GAN VAE와 GAN은 그림에서 보다시피 Maximum Likehood의 범주에 속하는 방법론이다. 그림에서 볼 수 있든 Explicit한 방법론과 Implicit한 방법론으로 나뉜다. 이 블로그에서 주로 다루는 GAN은 보다시피 Implicit(암시적인)한 방법론을 취하고 있다.
+VAE Variational Autoencoder(AVE)는 Kingma et al1의 논문에서 제안된 네트워크의 구조이다. 복잡한 데이터 생성 모델을 설계하고 대규모 데이터 세트에 적용을 할 수 있게 해준다. input을 z로 encoding하고 스스로 input을 decoding하는 방법을 학습하는 방법이다. 즉 decoding된 output이 input과 최대한 가깝게 만들어는 내는 방법이다.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="간단하게 알아보는 Difference between VAE and GAN">
+<meta name="twitter:title" content="간단하게 알아보는 Difference between VAE and GAN">
+<meta property="og:url" content="https://sihan-son.github.io/mldl/difference-between-vae-and-gan/">
+<meta property="twitter:url" content="https://sihan-son.github.io/mldl/difference-between-vae-and-gan/">
+<meta property="og:site_name" content="Sihan`s Blog">
+<meta property="og:description" content="What is difference between VAE and GAN VAE와 GAN은 그림에서 보다시피 Maximum Likehood의 범주에 속하는 방법론이다. 그림에서 볼 수 있든 Explicit한 방법론과 Implicit한 방법론으로 나뉜다. 이 블로그에서 주로 다루는 GAN은 보다시피 Implicit(암시적인)한 방법론을 취하고 있다.
+VAE Variational Autoencoder(AVE)는 Kingma et al1의 논문에서 제안된 네트워크의 구조이다. 복잡한 데이터 생성 모델을 설계하고 대규모 데이터 세트에 적용을 할 수 있게 해준다. input을 z로 encoding하고 스스로 input을 decoding하는 방법을 학습하는 방법이다. 즉 decoding된 output이 input과 최대한 가깝게 만들어는 내는 방법이다.">
+<meta name="twitter:description" content="What is difference between VAE and GAN VAE와 GAN은 그림에서 보다시피 Maximum Likehood의 범주에 속하는 방법론이다. 그림에서 볼 수 있든 Explicit한 방법론과 Implicit한 방법론으로 나뉜다. 이 블로그에서 주로 다루는 GAN은 보다시피 Implicit(암시적인)한 방법론을 취하고 있다.
+VAE Variational Autoencoder(AVE)는 Kingma et al1의 논문에서 제안된 네트워크의 구조이다. 복잡한 데이터 생성 모델을 설계하고 대규모 데이터 세트에 적용을 할 수 있게 해준다. input을 z로 encoding하고 스스로 input을 decoding하는 방법을 학습하는 방법이다. 즉 decoding된 output이 input과 최대한 가깝게 만들어는 내는 방법이다.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2019-07-03T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2019-07-03T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="ML/DL">
+    
+  
+  
+    
+      <meta property="article:tag" content="GAN">
+    
+      <meta property="article:tag" content="VAE">
+    
+      <meta property="article:tag" content="graduation">
+    
+      <meta property="article:tag" content="ML">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+  <meta property="twitter:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+
+
+    <title>간단하게 알아보는 Difference between VAE and GAN</title>
+
+    <link rel="icon" href="https://sihan-son.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://sihan-son.github.io/mldl/difference-between-vae-and-gan/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://sihan-son.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://sihan-son.github.io/">Sihan`s Blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://sihan-son.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://sihan-son.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Sihan Son</h4>
+        
+          <h5 class="sidebar-profile-bio">Wir müssen wissen, Wir werden wissen</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/Sihan-Son" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.instagram.com/sihan_k_son/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-instagram"></i>
+      
+      <span class="sidebar-button-desc">Instagram</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/sihan-son-b43806120/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa fa-linkedin-square"></i>
+      
+      <span class="sidebar-button-desc">Linkedin</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.facebook.com/sihan830" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-facebook-square"></i>
+      
+      <span class="sidebar-button-desc">Facebook</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      간단하게 알아보는 Difference between VAE and GAN
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-07-03T00:00:00Z">
+        
+  July 3, 2019
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/ml/dl">ML/DL</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <h1 id="what-is-difference-between-vae-and-gan">What is difference between VAE and GAN</h1>
+<p><img src="https://sihan-son.github.io/images/vng/rough.jpg" alt="rough"></p>
+<p><code>VAE</code>와 <code>GAN</code>은 그림에서 보다시피 <code>Maximum Likehood</code>의 범주에 속하는 방법론이다. 그림에서 볼 수 있든 <code>Explicit</code>한 방법론과 <code>Implicit</code>한 방법론으로 나뉜다. 이 블로그에서 주로 다루는 <code>GAN</code>은 보다시피 <code>Implicit(암시적인)</code>한 방법론을 취하고 있다.</p>
+<h2 id="vae">VAE</h2>
+<p><code>Variational Autoencoder(AVE)</code>는 Kingma et al<!-- raw HTML omitted --><!-- raw HTML omitted -->1<!-- raw HTML omitted --><!-- raw HTML omitted -->의 논문에서 제안된 네트워크의 구조이다. 복잡한 데이터 생성 모델을 설계하고 대규모 데이터 세트에 적용을 할 수 있게 해준다. <code>input</code>을 <code>z</code>로 <code>encoding</code>하고 스스로 <code>input</code>을 <code>decoding</code>하는 방법을 학습하는 방법이다. 즉 <code>decoding</code>된 <code>output</code>이 <code>input</code>과 최대한 가깝게 만들어는 내는 방법이다.<br>
+<code>Loss Function</code>은 <code>input x</code>와 복원된 <code>output x'</code>간의 <code>Loss</code>로 정의한다. <code>VAE</code>는 모델을 명확히 정의하고 이를 최대화 하는 전략을 택한다. 그래서 예측이 가능하지만 동시에 우리가 아는 것 이상의 성능을 내기가 힘들다는 한계가 존재한다. <code>Auto-Encoder</code>가 <code>input</code> 복원하는 것에만 맞게 학습을 하기 때문이다. <code>Encoding</code>되는 잠재변수 <code>z</code>는 의미론적이지 않다.</p>
+<h2 id="gan">GAN</h2>
+<p><code>Generative adversarial network(GAN)</code>은 Ian J. Goodfellow et al<!-- raw HTML omitted --><!-- raw HTML omitted -->2<!-- raw HTML omitted --><!-- raw HTML omitted -->의 논문에서 제안된 개념이다. 이름 자체를 뜯어보면 <code>Adversarial</code>은 대립하는 뜻을 가지고 있어서 <code>적대적 생성 신경</code>이라는 뜻의 네트워크 모델이다. 이런 뜻을 가지게 된 이유는 <code>Discriminator D</code>와 <code>Generator G</code>가 서로 대립하여 학습하면서 성능을 개선해 나가는 구조를 가지고 있기 때문이다. 논문에서 나온 예시로는 위조 지폐를 만드는 <code>G</code>가 존재하고, 위조지폐를 <code>감별 Classify</code>하는 <code>D</code>가 있다. <code>D</code>와 <code>G</code>는 서로 속이고, 구별하면서 서로 능력이 발전하게 되고, 구별할 확률이 0.5로 수렴하게 된다. 즉 진짜 지폐와 위조 지폐를 구별할 수 없게 된다.</p>
+<p><img src="https://sihan-son.github.io/images/vng/gan.jpg" alt="gan"></p>
+<p>노이즈 <code>p(z)</code>가 들어오면 <code>G</code>는 실제 데이터의 분포와 비슷하게 노이즈를 변형한다. <code>D</code>는 <code>G</code>가 생성한 이미지와 실제 이미지를 받아서 구분하는 과정을 거친다.</p>
+<h2 id="차이점">차이점</h2>
+<h4 id="vae-1">VAE</h4>
+<ul>
+<li>Data의 분포를 학습하고 싶은데, 이 data가 intractable하기 때문에 variational inference라는 방법으로 풀어보고자 함</li>
+<li>VAE는 data 분포가 잘 학습되기만 하면 sampling(data generation)이 저절로 따라옴</li>
+</ul>
+<h4 id="gan-1">GAN</h4>
+<ul>
+<li>Model의 목적 자체가 어떤 data의 분포를 학습하는 것이 아님</li>
+<li>진짜 같은 sample을 generate하는 것이 목적으로 고안된 sampler</li>
+</ul>
+<hr>
+<p><!-- raw HTML omitted -->1.<!-- raw HTML omitted --> Auto-Encoding Variational Bayes<br>
+<!-- raw HTML omitted -->2.<!-- raw HTML omitted --> Generative Adversarial Networks</p>
+<hr>
+<p>본 포스팅은 졸업작품을 위한 미팅 자료에 기반을 두고 있습니다. <a href="https://dev-hani.tistory.com">팀원</a>과 함께 진행하는 프로젝트입니다.</p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/gan/">GAN</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/vae/">VAE</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/graduation/">graduation</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/ml/">ML</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/mldl/what-is-norm/" data-tooltip="간단하게 정리한 Norm">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/mldl/latent-space/" data-tooltip="Simple Latent Space">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/mldl/difference-between-vae-and-gan/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/mldl/difference-between-vae-and-gan/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/mldl/difference-between-vae-and-gan/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2021 Sihan Son. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/mldl/what-is-norm/" data-tooltip="간단하게 정리한 Norm">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/mldl/latent-space/" data-tooltip="Simple Latent Space">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/mldl/difference-between-vae-and-gan/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/mldl/difference-between-vae-and-gan/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/mldl/difference-between-vae-and-gan/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsihan-son.github.io%2Fmldl%2Fdifference-between-vae-and-gan%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fsihan-son.github.io%2Fmldl%2Fdifference-between-vae-and-gan%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fsihan-son.github.io%2Fmldl%2Fdifference-between-vae-and-gan%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Sihan Son</h4>
+    
+      <div id="about-card-bio">Wir müssen wissen, Wir werden wissen</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Programmer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Korea
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://sihan-son.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://sihan-son.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/sihan-son.github.io\/mldl\/difference-between-vae-and-gan\/';
+          
+            this.page.identifier = '\/mldl\/difference-between-vae-and-gan\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'sihans-blog-1';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+    
+  </body>
+</html>
+

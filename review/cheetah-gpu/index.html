@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.78.2 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="Sihan Son">
+<meta name="keywords" content="">
+<meta name="description" content="Deep Learning을 공부하거나 프로젝트를 진행하려면 GPU는 필수적입니다. 저의 경우는 GTX 970모델을 이용 중이었지만 학습으로 갈궈지고, 오버워치를 하다가 퍽 하고 전원이 나가더니 죽어버리는 불상사를 겪었습니다.
+졸업 프로젝트로 Deep Learning관련 프로젝트를 진행하고 있어서 GPU가 절대적으로 필요한 상황이었는데 그나마 있던 GPU가 죽어서 정말 곤란한 상황이 되었습니다. 그러던 중 머신러닝 플랫폼 서비스를 오픈해서 베타 서비스를 진행중인 Cheetah라는 플랫폼을 알게 되었습니다. 마침 베타 테스터들에게 한달간 무료로 GPU 서버를 대여 해주고 있어서 RTX 2080TI 서버를 대여해 사용할 수 있었습니다.">
+
+
+<meta property="og:description" content="Deep Learning을 공부하거나 프로젝트를 진행하려면 GPU는 필수적입니다. 저의 경우는 GTX 970모델을 이용 중이었지만 학습으로 갈궈지고, 오버워치를 하다가 퍽 하고 전원이 나가더니 죽어버리는 불상사를 겪었습니다.
+졸업 프로젝트로 Deep Learning관련 프로젝트를 진행하고 있어서 GPU가 절대적으로 필요한 상황이었는데 그나마 있던 GPU가 죽어서 정말 곤란한 상황이 되었습니다. 그러던 중 머신러닝 플랫폼 서비스를 오픈해서 베타 서비스를 진행중인 Cheetah라는 플랫폼을 알게 되었습니다. 마침 베타 테스터들에게 한달간 무료로 GPU 서버를 대여 해주고 있어서 RTX 2080TI 서버를 대여해 사용할 수 있었습니다.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cheetah 딥러닝용 GPU 플랫폼">
+<meta name="twitter:title" content="Cheetah 딥러닝용 GPU 플랫폼">
+<meta property="og:url" content="https://sihan-son.github.io/review/cheetah-gpu/">
+<meta property="twitter:url" content="https://sihan-son.github.io/review/cheetah-gpu/">
+<meta property="og:site_name" content="Sihan`s Blog">
+<meta property="og:description" content="Deep Learning을 공부하거나 프로젝트를 진행하려면 GPU는 필수적입니다. 저의 경우는 GTX 970모델을 이용 중이었지만 학습으로 갈궈지고, 오버워치를 하다가 퍽 하고 전원이 나가더니 죽어버리는 불상사를 겪었습니다.
+졸업 프로젝트로 Deep Learning관련 프로젝트를 진행하고 있어서 GPU가 절대적으로 필요한 상황이었는데 그나마 있던 GPU가 죽어서 정말 곤란한 상황이 되었습니다. 그러던 중 머신러닝 플랫폼 서비스를 오픈해서 베타 서비스를 진행중인 Cheetah라는 플랫폼을 알게 되었습니다. 마침 베타 테스터들에게 한달간 무료로 GPU 서버를 대여 해주고 있어서 RTX 2080TI 서버를 대여해 사용할 수 있었습니다.">
+<meta name="twitter:description" content="Deep Learning을 공부하거나 프로젝트를 진행하려면 GPU는 필수적입니다. 저의 경우는 GTX 970모델을 이용 중이었지만 학습으로 갈궈지고, 오버워치를 하다가 퍽 하고 전원이 나가더니 죽어버리는 불상사를 겪었습니다.
+졸업 프로젝트로 Deep Learning관련 프로젝트를 진행하고 있어서 GPU가 절대적으로 필요한 상황이었는데 그나마 있던 GPU가 죽어서 정말 곤란한 상황이 되었습니다. 그러던 중 머신러닝 플랫폼 서비스를 오픈해서 베타 서비스를 진행중인 Cheetah라는 플랫폼을 알게 되었습니다. 마침 베타 테스터들에게 한달간 무료로 GPU 서버를 대여 해주고 있어서 RTX 2080TI 서버를 대여해 사용할 수 있었습니다.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2019-07-16T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2019-07-16T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="review">
+    
+  
+  
+    
+      <meta property="article:tag" content="GPU">
+    
+      <meta property="article:tag" content="tensorflow">
+    
+      <meta property="article:tag" content="ML">
+    
+      <meta property="article:tag" content="Cheetah">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+  <meta property="twitter:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+
+
+    <title>Cheetah 딥러닝용 GPU 플랫폼</title>
+
+    <link rel="icon" href="https://sihan-son.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://sihan-son.github.io/review/cheetah-gpu/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://sihan-son.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://sihan-son.github.io/">Sihan`s Blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://sihan-son.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://sihan-son.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Sihan Son</h4>
+        
+          <h5 class="sidebar-profile-bio">Wir müssen wissen, Wir werden wissen</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/Sihan-Son" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.instagram.com/sihan_k_son/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-instagram"></i>
+      
+      <span class="sidebar-button-desc">Instagram</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/sihan-son-b43806120/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa fa-linkedin-square"></i>
+      
+      <span class="sidebar-button-desc">Linkedin</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.facebook.com/sihan830" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-facebook-square"></i>
+      
+      <span class="sidebar-button-desc">Facebook</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Cheetah 딥러닝용 GPU 플랫폼
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-07-16T00:00:00Z">
+        
+  July 16, 2019
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/review">review</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p><code>Deep Learning</code>을 공부하거나 프로젝트를 진행하려면 <code>GPU</code>는 필수적입니다. 저의 경우는 <code>GTX 970</code>모델을 이용 중이었지만 학습으로 갈궈지고, 오버워치를 하다가 퍽 하고 전원이 나가더니 죽어버리는 불상사를 겪었습니다.</p>
+<p>졸업 프로젝트로 <code>Deep Learning</code>관련 프로젝트를 진행하고 있어서 <code>GPU</code>가 절대적으로 필요한 상황이었는데 그나마 있던 <code>GPU</code>가 죽어서 정말 곤란한 상황이 되었습니다. 그러던 중 <code>머신러닝 플랫폼 서비스</code>를 오픈해서 베타 서비스를 진행중인 <a href="'https://www.n3ncloud.co.kr/cheetah/'"><code>Cheetah</code></a>라는 플랫폼을 알게 되었습니다. 마침 베타 테스터들에게 한달간 무료로 GPU 서버를 대여 해주고 있어서 <code>RTX 2080TI</code> 서버를 대여해 사용할 수 있었습니다.</p>
+<p><code>Cheetah</code>서비스를 이용하면서 가장 좋았던 점은 서버에 접속해서 사용하게 되면 세션관리가 가장 큰 문제가 되는데 <code>tmux</code>나 다른 방법들을 통해서 관리가 필요합니다. <code>Cheetah</code>의 경우 <code>Jupyter Lab</code>을 통해 접속해서 터미널을 이용하면 별도의 세션 관리 없이 학습을 하고 모니터링이 가능하다는 점이 터미널 환경이 익숙하지 않았던 저에게 가장 큰 장점이었습니다.</p>
+<p>프로젝트를 위해서 <code>PYTHON</code>패키지 중에서 <code>pretty_midi</code>와 <code>pypianoroll</code>이라는 두 패키지가 필수적이었습니다. 그런데 서버 배정을 신청할때 <code>tensorflow</code>&amp;<code>keras</code> 환경을 선택하였을 떄 디폴트로 설치된 <code>scipy</code>와 버전 <code>dependency error</code>가 발생 하였습니다. 그래서 제가 처음으로 선택한 방법은 <code>conda 가상환경</code>이었습니다. 하지만 이 방법으로는 <code>GPU</code>를 사용할 수가 없어서 포기하게 되었습니다. 문제는 이 방법을 시도한 날이 금요일 6시 이후여서 기술 지원을 받기 위해선 주말이 지나가야해서 깡 CPU 학습을 진행했습니다.</p>
+<p>기술 지원 문의를 하자 충격적인 답변을 받았습니다. 제공받은 환경이 컨테이기 때문에 여기에서 가상환경을 만들어서는 <code>GPU</code>를 사용할 수 없다라는 답변을 받았습니다. 그리고 <code>dependency error</code> 해결을 위한 방법을 제공받았습니다.</p>
+<ol>
+<li><code>sudo</code>권한을 줄 때 <code>-H</code> 옵션을 주어서 설치</li>
+<li><code>pip install</code> or <code>conda install</code>을 할 때 <code>--ignore-installed</code> 옵션으로 설치</li>
+</ol>
+<p>전 2번 방법으로 문제를 해결 했습니다. 문제가 해결되자 <code>epoch</code>당 2시간이 걸리던 <code>CPU</code>학습이 208초라는 경이로운 시간으로 줄었습니다.</p>
+<p>혹시 <code>머신러닝 플랫폼 서비스</code>를 찾으신다면 비용이 발생하겠지만 한국어로 기술문의가 가능한 <code>Cheetah</code>도 하나의 선택지가 될 수 있을 것 같습니다.</p>
+<hr>
+<p>본 포스트는 <a href="'https://www.n3ncloud.co.kr/cheetah/'"><code>Cheetah</code></a>에서 GPU 서버를 한달 제공 받아 작성되었습니다.</p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/gpu/">GPU</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/tensorflow/">tensorflow</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/ml/">ML</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/cheetah/">Cheetah</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/review/apple-new-product/" data-tooltip="Apple 2019 신제품">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/review/cheetah-gpu/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/review/cheetah-gpu/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/review/cheetah-gpu/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2021 Sihan Son. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/review/apple-new-product/" data-tooltip="Apple 2019 신제품">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/review/cheetah-gpu/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/review/cheetah-gpu/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/review/cheetah-gpu/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsihan-son.github.io%2Freview%2Fcheetah-gpu%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fsihan-son.github.io%2Freview%2Fcheetah-gpu%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fsihan-son.github.io%2Freview%2Fcheetah-gpu%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Sihan Son</h4>
+    
+      <div id="about-card-bio">Wir müssen wissen, Wir werden wissen</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Programmer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Korea
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://sihan-son.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://sihan-son.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/sihan-son.github.io\/review\/cheetah-gpu\/';
+          
+            this.page.identifier = '\/review\/cheetah-gpu\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'sihans-blog-1';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+    
+  </body>
+</html>
+
