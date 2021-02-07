@@ -3,8 +3,8 @@ title: "Symbolic Music Genre Transfer with CycleGAN(4)"
 date: 2019-07-04T00:49:14+09:00
 tags: ["gan", "music", "CycleGAN", "genre", "ML", "DL"]
 categories:
-  - paper
-  - gan
+  - Paper
+  - GAN
 type: post
 ---
 

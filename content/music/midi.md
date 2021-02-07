@@ -3,7 +3,7 @@ type: post
 title: "Symbolic Music MIDI"
 date: 2019-06-30
 categories:
-  - music
+  - Music
 tags:
   - music
   - midi
