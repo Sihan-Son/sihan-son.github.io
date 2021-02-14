@@ -1,4 +1,5 @@
 ---
+type: post
 title: "머신러닝 교과서 with 파이썬, 사이킷런, 텐서플로"
 date: 2019-07-06T23:04:49+09:00
 tags: ["Book", "scikit-learn", "numpy", "ML", "DL"]
