@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Books on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/book/</link>
+    <description>Recent content in Books on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 14 Feb 2021 10:41:15 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flutter in Action</title>
+      <link>https://sihan-son.github.io/book/flutter-in-action/</link>
+      <pubDate>Sun, 14 Feb 2021 10:41:15 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/flutter-in-action/</guid>
+      <description>2021년도에도 한빛리뷰어 활동을 이어가게 되었습니다. 이번달에 제가 소개 할 책은 Flutter in Action입니다. 작년 이맘 때는 React관련 서적들이 출판 시장에서 쏟아져 나왔었는데 올해는 Flutter 차례인 것 같습니다.
+안드로이드, ios, 웹을 다른 프레임워크가 아닌 하나의 프레임워크를 사용하려고 하는 경우가 잦아지고 있습니다. 시간, 인력, 관리 등 다양한 이유로 크로스 플랫폼 프레임워크가 뜨는 중인 듯 합니다.
+Flutter in Action은 이미 개발을 하고 있는 분들 대상으로 쓰여진 Flutter 책 입니다. 즉 이 책으로 프로그래밍 입문에는 무리가 있습니다.</description>
+    </item>
+    
+  </channel>
+</rss>
