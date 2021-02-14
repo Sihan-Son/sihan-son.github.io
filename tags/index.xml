@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 14 Feb 2021 10:41:15 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Feb 2021 23:10:33 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GIT</title>
+      <link>https://sihan-son.github.io/tags/git/</link>
+      <pubDate>Sun, 14 Feb 2021 23:10:33 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lick</title>
+      <link>https://sihan-son.github.io/tags/lick/</link>
+      <pubDate>Sun, 14 Feb 2021 23:10:33 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/lick/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>2021reviewer</title>
       <link>https://sihan-son.github.io/tags/2021reviewer/</link>
@@ -40,15 +58,6 @@
       <pubDate>Sun, 14 Feb 2021 10:41:15 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/web/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GIT</title>
-      <link>https://sihan-son.github.io/tags/git/</link>
-      <pubDate>Tue, 09 Feb 2021 22:58:36 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/git/</guid>
       <description></description>
     </item>
     
