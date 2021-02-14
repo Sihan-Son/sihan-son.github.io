@@ -1,11 +1,10 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-tags: []
+tags:
+-
 categories:
 -
-keywords:
-- tech
 type: post
 draft: true
 ---

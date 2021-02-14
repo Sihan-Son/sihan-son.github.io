@@ -19,7 +19,11 @@ canonifyurls = true
 
 [author]
   name = "Sihan Son"
-  bio = "Wir müssen wissen, Wir werden wissen"
+  bio = """
+  Wir müssen wissen, Wir werden wissen       
+  2020 & 2021 Hanbit reviewer  
+  Manager of VAIS(AI & Vision community)
+  """
   job = "Programmer"
   location = "Korea"
   picture = "images/unicorn.jpg"
