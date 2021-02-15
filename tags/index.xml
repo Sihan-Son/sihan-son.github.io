@@ -6,11 +6,11 @@
     <description>Recent content in Tags on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 15 Feb 2021 23:01:07 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Feb 2021 00:00:50 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GIT</title>
       <link>https://sihan-son.github.io/tags/git/</link>
-      <pubDate>Mon, 15 Feb 2021 23:01:07 +0900</pubDate>
+      <pubDate>Tue, 16 Feb 2021 00:00:50 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/git/</guid>
       <description></description>
@@ -19,9 +19,18 @@
     <item>
       <title>lick</title>
       <link>https://sihan-son.github.io/tags/lick/</link>
-      <pubDate>Mon, 15 Feb 2021 23:01:07 +0900</pubDate>
+      <pubDate>Tue, 16 Feb 2021 00:00:50 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/lick/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Setting</title>
+      <link>https://sihan-son.github.io/tags/setting/</link>
+      <pubDate>Tue, 16 Feb 2021 00:00:50 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/setting/</guid>
       <description></description>
     </item>
     
@@ -526,15 +535,6 @@
       <pubDate>Wed, 11 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://sihan-son.github.io/tags/appple/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Setting</title>
-      <link>https://sihan-son.github.io/tags/setting/</link>
-      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/setting/</guid>
       <description></description>
     </item>
     
