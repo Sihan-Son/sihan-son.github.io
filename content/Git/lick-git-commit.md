@@ -33,7 +33,7 @@ tags:
 4. 퇴근하기 전
 5. 화재 대피 전
 
-![fire](/images/git/commit/fire.jpg)
+![fire](/images/git/commit/fire.png)
 
 ```git
 git commit -m "commit msg"
