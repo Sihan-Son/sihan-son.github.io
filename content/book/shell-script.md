@@ -1,15 +1,15 @@
 ---
- title: "처음 배우는 셸 스크립트"
- date: 2021-03-20
- Tags:
-   - Book
-   - shell
-   - script
-   - 2021reviewer
-   - hanbit
+type: post
+title: "처음 배우는 셸 스크립트"
+date: 2021-03-20
+tags:
+  - Book
+  - shell
+  - script
+  - 2021reviewer
+  - hanbit
 categories:
   - Book
-type: post
 ---
 
 ![shell](/images/book/hanbit/shell.jpg)
