@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shell on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/shell/</link>
+    <description>Recent content in shell on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 20 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>처음 배우는 셸 스크립트</title>
+      <link>https://sihan-son.github.io/book/shell-script/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/shell-script/</guid>
+      <description>3월에 소개 할 책은 처음 배우는 셸 스크립트입니다. 프로그래밍이나 컴퓨터에 친숙하신 분들은 cmd, console, bash 등의 이름을 가진 프로그램을 사용하거나 들어보셨을 것 입니다. 정확한 설명은 아니지만 이런 명령창들을 통칭 쉘이라고 합니다. 이 책에서 다루고 있는 쉘 스크립트는 shell에서 사용하는 명령어들을 모아서 자동화 과정을 만들어 주는 것이라고 생각하면 좋을 것 같습니다.
+리눅스, AWS 등 CLI 환경에서 실습하거나 CLI가 더 편한 환경이 사람마다 다르겠지만 분명 있습니다. 저의 경우도 GIT을 CLI로 익혀서 기본적인 과정은 CLI로 처리하는 것 처럼 환경설정 등 분명 선호하시는 환경이 있을 것입니다.</description>
+    </item>
+    
+  </channel>
+</rss>
