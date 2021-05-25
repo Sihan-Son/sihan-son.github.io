@@ -6,6 +6,8 @@ tags:
   - Web
   - 2021reviewer
   - hanbit
+  - Book
+
 categories:
   - Book
 type: post

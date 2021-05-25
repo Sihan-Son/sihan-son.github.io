@@ -10,6 +10,7 @@ tags:
   - python
   - data
   - analyis
+  - Book
 ---
 
 ![dawp](/images/book/hanbit/data_python.jfif)

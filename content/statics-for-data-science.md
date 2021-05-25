@@ -5,7 +5,7 @@ date: 2020-09-11
 
 tags:
   - statics
-  - book
+  - Book
   - hanbit
   - 2020reviewer
   - R
