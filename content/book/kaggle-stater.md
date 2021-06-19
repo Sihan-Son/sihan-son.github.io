@@ -9,6 +9,7 @@ tags:
   - 2021reviewer
   - kaggle
   - data
+  - Book
 ---
 
 ![kaggle](/images/book/hanbit/kaggle.jpg)
