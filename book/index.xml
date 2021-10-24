@@ -6,7 +6,17 @@
     <description>Recent content in Books on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 12 Sep 2021 10:13:18 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/book/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Oct 2021 11:57:43 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sql_sqld_secret_note</title>
+      <link>https://sihan-son.github.io/book/sql_sqld_secret_note/</link>
+      <pubDate>Sun, 24 Oct 2021 11:57:43 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/sql_sqld_secret_note/</guid>
+      <description>데이터베이스는 프로그래밍을 하다보면 언젠가는 만나고, 자주 접할 수 밖에 없는 친구입니다. 쿼리문을 어떻게 짜느냐에 따라서 시스템의 퍼포먼스 차이가 커집니다. 데이터베이스를 다루는 실력과 자격증을 가지고 있는것은 전혀 별개의 일이지만 자격증 공부를 하면서 데이터베이스에 대해 배울 수 있는 부분이 많이 있습니다.
+책의 구성은 1,2장은 환경 세팅, 3~7장은 SQLD 시험 과목에 맞춰서 구성되어 있고, 8장은 시험을 위한 최종 정리 챕터입니다. 필기 시험을 위해서 실습 없이 이론 공부만 진행 할 수도 있고, 실습을 통해서 손에 쿼리문을 익힐 수 있는 구성입니다.</description>
+    </item>
+    
     <item>
       <title>게임 엔진 블랙 북: 울펜슈타인 3D</title>
       <link>https://sihan-son.github.io/book/wolfenstein/</link>
