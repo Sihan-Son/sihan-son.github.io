@@ -6,13 +6,58 @@
     <description>Recent content in Tags on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 24 Oct 2021 11:57:43 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Nov 2021 16:13:03 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Book</title>
       <link>https://sihan-son.github.io/tags/book/</link>
-      <pubDate>Sun, 24 Oct 2021 11:57:43 +0900</pubDate>
+      <pubDate>Sun, 21 Nov 2021 16:13:03 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hanbit</title>
+      <link>https://sihan-son.github.io/tags/hanbit/</link>
+      <pubDate>Sun, 21 Nov 2021 16:13:03 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/hanbit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ML</title>
+      <link>https://sihan-son.github.io/tags/ml/</link>
+      <pubDate>Sun, 21 Nov 2021 16:13:03 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/ml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pipeline</title>
+      <link>https://sihan-son.github.io/tags/pipeline/</link>
+      <pubDate>Sun, 21 Nov 2021 16:13:03 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/pipeline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tensorflow</title>
+      <link>https://sihan-son.github.io/tags/tensorflow/</link>
+      <pubDate>Sun, 21 Nov 2021 16:13:03 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/tensorflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TFX</title>
+      <link>https://sihan-son.github.io/tags/tfx/</link>
+      <pubDate>Sun, 21 Nov 2021 16:13:03 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/tfx/</guid>
       <description></description>
     </item>
     
@@ -22,15 +67,6 @@
       <pubDate>Sun, 24 Oct 2021 11:57:43 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/database/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hanbit</title>
-      <link>https://sihan-son.github.io/tags/hanbit/</link>
-      <pubDate>Sun, 24 Oct 2021 11:57:43 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/hanbit/</guid>
       <description></description>
     </item>
     
@@ -301,15 +337,6 @@
       <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://sihan-son.github.io/tags/dl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ML</title>
-      <link>https://sihan-son.github.io/tags/ml/</link>
-      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/ml/</guid>
       <description></description>
     </item>
     
@@ -751,15 +778,6 @@
       <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://sihan-son.github.io/tags/graduation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tensorflow</title>
-      <link>https://sihan-son.github.io/tags/tensorflow/</link>
-      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/tensorflow/</guid>
       <description></description>
     </item>
     
