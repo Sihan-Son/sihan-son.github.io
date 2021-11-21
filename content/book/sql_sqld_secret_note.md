@@ -1,6 +1,6 @@
 ---
 type: post
-title: "Sql_sqld_secret_note"
+title: "이경오의 SQL+SQLD 비밀노트"
 date: 2021-10-24T11:57:43+09:00
 categories:
   - Book
