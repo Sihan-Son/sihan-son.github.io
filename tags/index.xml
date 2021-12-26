@@ -6,22 +6,67 @@
     <description>Recent content in Tags on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 21 Nov 2021 16:13:03 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Dec 2021 20:40:06 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2021reviewer</title>
+      <link>https://sihan-son.github.io/tags/2021reviewer/</link>
+      <pubDate>Sun, 26 Dec 2021 20:40:06 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/2021reviewer/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Book</title>
       <link>https://sihan-son.github.io/tags/book/</link>
-      <pubDate>Sun, 21 Nov 2021 16:13:03 +0900</pubDate>
+      <pubDate>Sun, 26 Dec 2021 20:40:06 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/book/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Figma</title>
+      <link>https://sihan-son.github.io/tags/figma/</link>
+      <pubDate>Sun, 26 Dec 2021 20:40:06 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/figma/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hanbit</title>
       <link>https://sihan-son.github.io/tags/hanbit/</link>
-      <pubDate>Sun, 21 Nov 2021 16:13:03 +0900</pubDate>
+      <pubDate>Sun, 26 Dec 2021 20:40:06 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/hanbit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tool</title>
+      <link>https://sihan-son.github.io/tags/tool/</link>
+      <pubDate>Sun, 26 Dec 2021 20:40:06 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/tool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UI</title>
+      <link>https://sihan-son.github.io/tags/ui/</link>
+      <pubDate>Sun, 26 Dec 2021 20:40:06 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/ui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UX</title>
+      <link>https://sihan-son.github.io/tags/ux/</link>
+      <pubDate>Sun, 26 Dec 2021 20:40:06 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/ux/</guid>
       <description></description>
     </item>
     
@@ -94,15 +139,6 @@
       <pubDate>Sun, 24 Oct 2021 11:57:43 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/sqld/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>2021reviewer</title>
-      <link>https://sihan-son.github.io/tags/2021reviewer/</link>
-      <pubDate>Sun, 12 Sep 2021 10:13:18 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/2021reviewer/</guid>
       <description></description>
     </item>
     
@@ -472,15 +508,6 @@
       <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sihan-son.github.io/tags/gan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>UI</title>
-      <link>https://sihan-son.github.io/tags/ui/</link>
-      <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/ui/</guid>
       <description></description>
     </item>
     

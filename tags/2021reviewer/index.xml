@@ -6,7 +6,18 @@
     <description>Recent content in 2021reviewer on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 12 Sep 2021 10:13:18 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/2021reviewer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Dec 2021 20:40:06 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/2021reviewer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UX/UI 디자이너를 위한 실무 피그마</title>
+      <link>https://sihan-son.github.io/book/figma/</link>
+      <pubDate>Sun, 26 Dec 2021 20:40:06 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/figma/</guid>
+      <description>디지털화 되어가는 시간을 살아가는 우리에게 UX/UI 떨어질 수 없는 친구들입니다. 매일같이 다양한 인터페이스를 만나고 있다. 그 중에는 처음 만난 구성이지만 지금까지의 경험을 바탕으로 따로 배우지 않아도 되는 인터페이스가 있는 반면 디지털 네이티브 세대조차 힘들어하는 것들이 존재합니다.
+좋은 UI는 좋은 UX(사용자 경험)을 이끌어 내게 됩니다. 아무리 잘 만든 소프트웨어도 UI/UX가 별로라면 좋은 평가를 받기 힘들지만 단순하더라도 좋은 경험을 준 시스템은 좋게 각인됩니다.
+Figma는 좋은 UI/UX를 설계하고 의견을 나누는데 있어 현재 가장 핫 한 디자인 도구입니다.</description>
+    </item>
+    
     <item>
       <title>게임 엔진 블랙 북: 울펜슈타인 3D</title>
       <link>https://sihan-son.github.io/book/wolfenstein/</link>
