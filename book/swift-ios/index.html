@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.78.2 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="Sihan Son">
+<meta name="keywords" content="">
+<meta name="description" content="이번 달에 소개해 드릴 책은 처음 배우는 스위프트입니다. swift는 APPLE에서 공식적으로 채택하고 있는 프로그램 개발 언어입니다. 러프하게 이야기하자면 C에서 분화된 Object-C를 현대적인 형태로 개선한게 현재의 swift입니다. 나름 크로스 플랫폼을 지원하고는 있어 Linux에서는 무리 없이 사용이 가능하지만 Windows에서는 과거 C#이 macOS에서 지원이 잘 되지 않는 모습입니다. 원활한 사용을 위해서는 결국 macOS가 필요한게 현재 swift입니다.
+그런데 왜 swift를 배워야 할까요? ios어플리케이션를 위한 유일한 답은 아니지만 충분히 좋은 답이 됩니다. 또 인공지능 개발자에게는 swift for tensorflow라는 기존의 대체제가 될 수 있습니다.">
+
+
+<meta property="og:description" content="이번 달에 소개해 드릴 책은 처음 배우는 스위프트입니다. swift는 APPLE에서 공식적으로 채택하고 있는 프로그램 개발 언어입니다. 러프하게 이야기하자면 C에서 분화된 Object-C를 현대적인 형태로 개선한게 현재의 swift입니다. 나름 크로스 플랫폼을 지원하고는 있어 Linux에서는 무리 없이 사용이 가능하지만 Windows에서는 과거 C#이 macOS에서 지원이 잘 되지 않는 모습입니다. 원활한 사용을 위해서는 결국 macOS가 필요한게 현재 swift입니다.
+그런데 왜 swift를 배워야 할까요? ios어플리케이션를 위한 유일한 답은 아니지만 충분히 좋은 답이 됩니다. 또 인공지능 개발자에게는 swift for tensorflow라는 기존의 대체제가 될 수 있습니다.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="처음 배우는 스위프트">
+<meta name="twitter:title" content="처음 배우는 스위프트">
+<meta property="og:url" content="https://sihan-son.github.io/book/swift-ios/">
+<meta property="twitter:url" content="https://sihan-son.github.io/book/swift-ios/">
+<meta property="og:site_name" content="Sihan`s Blog">
+<meta property="og:description" content="이번 달에 소개해 드릴 책은 처음 배우는 스위프트입니다. swift는 APPLE에서 공식적으로 채택하고 있는 프로그램 개발 언어입니다. 러프하게 이야기하자면 C에서 분화된 Object-C를 현대적인 형태로 개선한게 현재의 swift입니다. 나름 크로스 플랫폼을 지원하고는 있어 Linux에서는 무리 없이 사용이 가능하지만 Windows에서는 과거 C#이 macOS에서 지원이 잘 되지 않는 모습입니다. 원활한 사용을 위해서는 결국 macOS가 필요한게 현재 swift입니다.
+그런데 왜 swift를 배워야 할까요? ios어플리케이션를 위한 유일한 답은 아니지만 충분히 좋은 답이 됩니다. 또 인공지능 개발자에게는 swift for tensorflow라는 기존의 대체제가 될 수 있습니다.">
+<meta name="twitter:description" content="이번 달에 소개해 드릴 책은 처음 배우는 스위프트입니다. swift는 APPLE에서 공식적으로 채택하고 있는 프로그램 개발 언어입니다. 러프하게 이야기하자면 C에서 분화된 Object-C를 현대적인 형태로 개선한게 현재의 swift입니다. 나름 크로스 플랫폼을 지원하고는 있어 Linux에서는 무리 없이 사용이 가능하지만 Windows에서는 과거 C#이 macOS에서 지원이 잘 되지 않는 모습입니다. 원활한 사용을 위해서는 결국 macOS가 필요한게 현재 swift입니다.
+그런데 왜 swift를 배워야 할까요? ios어플리케이션를 위한 유일한 답은 아니지만 충분히 좋은 답이 됩니다. 또 인공지능 개발자에게는 swift for tensorflow라는 기존의 대체제가 될 수 있습니다.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2020-12-08T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2020-12-08T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="Book">
+    
+  
+  
+    
+      <meta property="article:tag" content="swift">
+    
+      <meta property="article:tag" content="Book">
+    
+      <meta property="article:tag" content="Hanbit">
+    
+      <meta property="article:tag" content="2020reviewer">
+    
+      <meta property="article:tag" content="ios">
+    
+      <meta property="article:tag" content="APP">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+  <meta property="twitter:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+
+
+    <title>처음 배우는 스위프트</title>
+
+    <link rel="icon" href="https://sihan-son.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://sihan-son.github.io/book/swift-ios/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://sihan-son.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-143237170-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://sihan-son.github.io/">Sihan`s Blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://sihan-son.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://sihan-son.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Sihan Son</h4>
+        
+          <h5 class="sidebar-profile-bio">Wir müssen wissen, Wir werden wissen    <br>
+2020 &amp; 2021 Hanbit reviewer<br>
+Manager of VAIS(AI &amp; Vision community)</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/Sihan-Son" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.instagram.com/sihan_k_son/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-instagram"></i>
+      
+      <span class="sidebar-button-desc">Instagram</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/sihan-son-b43806120/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa fa-linkedin-square"></i>
+      
+      <span class="sidebar-button-desc">Linkedin</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.facebook.com/sihan830" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-facebook-square"></i>
+      
+      <span class="sidebar-button-desc">Facebook</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      처음 배우는 스위프트
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-12-08T00:00:00Z">
+        
+  December 8, 2020
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/book">Book</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p><img src="https://sihan-son.github.io/images/book/hanbit/swift.jfif" alt="swift"></p>
+<p>이번 달에 소개해 드릴 책은 <code>처음 배우는 스위프트</code>입니다. <code>swift</code>는 <code>APPLE</code>에서 공식적으로 채택하고 있는 프로그램 개발 언어입니다. 러프하게 이야기하자면 <code>C</code>에서 분화된 <code>Object-C</code>를 현대적인 형태로 개선한게 현재의 <code>swift</code>입니다. 나름 크로스 플랫폼을 지원하고는 있어 <code>Linux</code>에서는 무리 없이 사용이 가능하지만 <code>Windows</code>에서는 과거 <code>C#</code>이 <code>macOS</code>에서 지원이 잘 되지 않는 모습입니다. 원활한 사용을 위해서는 결국 <code>macOS</code>가 필요한게 현재 <code>swift</code>입니다.</p>
+<p>그런데 왜 <code>swift</code>를 배워야 할까요? <code>ios</code>어플리케이션를 위한 유일한 답은 아니지만 충분히 좋은 답이 됩니다. 또 인공지능 개발자에게는 <code>swift for tensorflow</code>라는 기존의 대체제가 될 수 있습니다. 이번 <code>M1</code> 칩셋이 공식적으로 <code>tensorflow</code>를 지원하면서 <code>python</code>을 대체할 수 있는 선택지가 되었습니다. <code>M1</code> 칩을 달고 나온 <code>Mac</code>들이 이전보다 충분히 합리적인 가격으로 출시가 되어 구매를 고민하고 있는 사용자가 분명 있을 것이라고 생각됩니다. 이 중에는 <code>ios</code> 어플에 관심을 가지고 있는 분들이 이 책에 대해 알고 싶으셔서 이 글을 읽는 중이 실 듯 하니 이제 책에 대한 이야기를 시작하겠습니다.</p>
+<p>이 책은 프로그래밍 언어를 배우는 책이지만 단순히 문법적 요소의 나열 대신 프로젝트로 어플을 강점을 가지고 있습니다. <code>Xcode</code>, <code>macOS</code>에 익숙하지 않은 기존 프로그래머와 프로그래밍 자체를 처음 접하는 두 사용자 그룹을 수용 할 수 있는 구조로 이루어져 있습니다.</p>
+<p>프로그래머 그룹은 <code>UI</code>를 어떻게 구성하고 다른 언어와 문법 구현을 어떻게 하는지, 이벤트 처리 방법 등 본인에게 필요한 요소만 체크하며 어플을 만드는 법을 터득할 수 있습니다. 처음 배우는 분들은 문법을 친절하게 설명하면서 해당 기능을 이용해서 어플에 어떻게 적용 시킬수 있는지 배울 수 있어서 추상적으로 와닿지 않는 부분없이
+문법을 익힐 수 있습니다. 동시에 문법을 배우면서 작은 어플을 하나씩 완성 할 수 있어 성취감을 가지고 책을 보실 수 있습니다</p>
+<p>처음 프로그래밍 하시는 분들에게 당부 하고 싶은 점은 최대한 책과 같은 버전을 사용해 주세요. <code>Xcode</code>가 버전별로 <code>UI</code>가 상이한점이 많아 다른 버전으로 하시면 처음부터 막히시는 경험을 할 수 있습니다. 이점 유의하시고 실습 해주세요.</p>
+<p>난이도 : 하<br>
+추천대상: <code>swift</code>가 배우고 싶거나 <code>ios</code> 어플을 만들고 싶은 모두</p>
+<hr>
+<p><code>나는 리뷰어다 2020</code>의 활동으로 작성 된 리뷰입니다</p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/swift/">swift</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/book/">Book</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/hanbit/">Hanbit</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/2020reviewer/">2020reviewer</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/ios/">ios</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/app/">APP</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/do-it-flask/" data-tooltip="Do it! 점프 투 플라스크">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/data-preprocessing/" data-tooltip="데이터 전처리 대전">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/book/swift-ios/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/book/swift-ios/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/book/swift-ios/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2022 Sihan Son. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/do-it-flask/" data-tooltip="Do it! 점프 투 플라스크">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/data-preprocessing/" data-tooltip="데이터 전처리 대전">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/book/swift-ios/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/book/swift-ios/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/book/swift-ios/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Fswift-ios%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Fswift-ios%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Fswift-ios%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Sihan Son</h4>
+    
+      <div id="about-card-bio">Wir müssen wissen, Wir werden wissen    <br>
+2020 &amp; 2021 Hanbit reviewer<br>
+Manager of VAIS(AI &amp; Vision community)</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Programmer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Korea
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://sihan-son.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://sihan-son.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/sihan-son.github.io\/book\/swift-ios\/';
+          
+            this.page.identifier = '\/book\/swift-ios\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'sihans-blog-1';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+    
+  </body>
+</html>
+

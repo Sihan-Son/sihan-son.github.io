@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 19 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/alone/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>혼자 공부하는 머신러닝&#43;딥러닝 </title>
-      <link>https://sihan-son.github.io/alone-dl/</link>
+      <link>https://sihan-son.github.io/book/alone-dl/</link>
       <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://sihan-son.github.io/alone-dl/</guid>
+      <guid>https://sihan-son.github.io/book/alone-dl/</guid>
       <description>오늘은 지난번 글에서 곧 돌아오겠다고 예고한 혼자 공부하는 머신러닝+딥러닝입니다. 한빛에서 칼을 갈고 만들고 있다고 느끼는 시리즈인 혼공 시리즈의 머신러닝, 딥러닝입니다. 제일 놀란 점은 두께와 퀄리티 대비 책이 저렴하다는 점이었습니다. 600페이지에 달하는 책을 정가 26,000원이라는 생각보다 저렴한 가격에 만날 수 있습니다. 다른 인공지능 도서들이 가격이 큰 문턱이라는 걸 생각하면 이름처럼 혼자 공부하기에 부담을 덜 수 있는 책이라고 생각합니다
 다른 인공지능 분야 도서들이랑 가장 큰 차별 점을 꽂으라면 첫 데이터 셋으로 MNIST, 와닿지도 않는 보스턴 집값 데이터가 아니라 혼공맨이 정말 실제로 겪을만한 데이터를 다룹니다.</description>
     </item>

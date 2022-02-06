@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 24 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/gan/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GANs in Action</title>
-      <link>https://sihan-son.github.io/gans-in-action/</link>
+      <link>https://sihan-son.github.io/book/gans-in-action/</link>
       <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://sihan-son.github.io/gans-in-action/</guid>
+      <guid>https://sihan-son.github.io/book/gans-in-action/</guid>
       <description>정말 오랜만에 리뷰하는 인공지능 관련도서입니다! 이 책은 인공지능에서 가장 도전적인 분야 중 하나인 생성모델 중에서 적대적 생성모델(Generative Adversarial Nets 이하 GAN)을 전반적으로 다루고 있습니다. 큰 파장을 불러온 바닐라 GAN을 시작으로 GAN분야에서도 새 지평을 열어준 CGAN, CycleGAN까지 다루면서 GAN의 국한해서는 생성모델의 주요한 발전사를 옅볼수 있는 책입니다. 생성모델에 GAN 위주의 이야기가 나오지만 GAN이외에도 다야한 모델들이 있다는 것은 알아 두시면 좋을 것 같습니다.
 인공지능 분야에서도 직관적이지도 않고 수학적 난이도도 있는 분야이다 보니 일정 수준에 오른 독자들이 읽기를 권하고 있습니다.</description>
     </item>

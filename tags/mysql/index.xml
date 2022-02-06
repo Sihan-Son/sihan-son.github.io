@@ -9,10 +9,10 @@
     <lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>이것이 MySQL이다</title>
-      <link>https://sihan-son.github.io/mysql/</link>
+      <link>https://sihan-son.github.io/book/mysql/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://sihan-son.github.io/mysql/</guid>
+      <guid>https://sihan-son.github.io/book/mysql/</guid>
       <description>2월에 나는 리뷰어다 2020에 뽑히고 첫 글을 드디어 작성하게 되었습니다. 훈련을 다녀오느라 4달 동안 전혀 받아 볼 수 없는 상황이었어서 4달만에 활동을 시작하게 되었습니다. 딥러닝 받고싶었ㅇ..
 MySQL은 프로그래밍을 어느 정도 공부 하신 분들과는 떨어질 수 없는 뭔가 지긋지긋한 사이인 친구입니다. 이 글을 읽으시는 분들은 잘은 못해도 대충은 다룰 줄 알고, 문법이 왜 이런 식이냐고 투덜 거리신 경험이 있을 거라고 생각합니다. 프로젝트를 진행하면서 필요한 기능만 찾아 쓰다보니 조각조각 알고는 있지만 전체적인 것을 잘 모르는 경우도 많이 본 듯합니다.</description>
     </item>

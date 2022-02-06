@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.78.2 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="Sihan Son">
+<meta name="keywords" content="">
+<meta name="description" content="4차산업혁명이 사회적 현상으로 대두되면서 동시에 프로그래밍이 시민의 기본요소로 자리잡아가고 있는 분위기이다. 공교육과정에 프로그래밍이 편입되었고, 점점 어린 친구들이 코딩을 시작하고 있다. 흔히 전통 인문계통 전공들에서도 컴퓨터의 사용이 많아지고, 프로그래밍능력이 필요해지고 있다.
+프로그래밍을 배워보고자 자료를 찾다보면 너무나 많은 자료가 인터넷에 있고, 어디서 무엇부터 시작해야 할지 막막한 경우가 대부분이다. 인프런, 프로그래머스, 생활코딩 등 다양한 영상 교육사이트들도 존재하고, 다양한 책들이 출판되고 있다. 이 자료의 홍수에서 사람들 마다 입문으로 추천하는 programming language, 책, 사이트가 천차만별이다. 컴파일 언어, 인터프리터 언어, Mark Up 언어 등 익숙하지 않고 비슷비슷해 보이는 것들이 튀어나온다.">
+
+
+<meta property="og:description" content="4차산업혁명이 사회적 현상으로 대두되면서 동시에 프로그래밍이 시민의 기본요소로 자리잡아가고 있는 분위기이다. 공교육과정에 프로그래밍이 편입되었고, 점점 어린 친구들이 코딩을 시작하고 있다. 흔히 전통 인문계통 전공들에서도 컴퓨터의 사용이 많아지고, 프로그래밍능력이 필요해지고 있다.
+프로그래밍을 배워보고자 자료를 찾다보면 너무나 많은 자료가 인터넷에 있고, 어디서 무엇부터 시작해야 할지 막막한 경우가 대부분이다. 인프런, 프로그래머스, 생활코딩 등 다양한 영상 교육사이트들도 존재하고, 다양한 책들이 출판되고 있다. 이 자료의 홍수에서 사람들 마다 입문으로 추천하는 programming language, 책, 사이트가 천차만별이다. 컴파일 언어, 인터프리터 언어, Mark Up 언어 등 익숙하지 않고 비슷비슷해 보이는 것들이 튀어나온다.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Do it! 첫 코딩 보통사람이 알아야 할 프로그램이 기초 with 자바">
+<meta name="twitter:title" content="Do it! 첫 코딩 보통사람이 알아야 할 프로그램이 기초 with 자바">
+<meta property="og:url" content="https://sihan-son.github.io/book/first-coding/">
+<meta property="twitter:url" content="https://sihan-son.github.io/book/first-coding/">
+<meta property="og:site_name" content="Sihan`s Blog">
+<meta property="og:description" content="4차산업혁명이 사회적 현상으로 대두되면서 동시에 프로그래밍이 시민의 기본요소로 자리잡아가고 있는 분위기이다. 공교육과정에 프로그래밍이 편입되었고, 점점 어린 친구들이 코딩을 시작하고 있다. 흔히 전통 인문계통 전공들에서도 컴퓨터의 사용이 많아지고, 프로그래밍능력이 필요해지고 있다.
+프로그래밍을 배워보고자 자료를 찾다보면 너무나 많은 자료가 인터넷에 있고, 어디서 무엇부터 시작해야 할지 막막한 경우가 대부분이다. 인프런, 프로그래머스, 생활코딩 등 다양한 영상 교육사이트들도 존재하고, 다양한 책들이 출판되고 있다. 이 자료의 홍수에서 사람들 마다 입문으로 추천하는 programming language, 책, 사이트가 천차만별이다. 컴파일 언어, 인터프리터 언어, Mark Up 언어 등 익숙하지 않고 비슷비슷해 보이는 것들이 튀어나온다.">
+<meta name="twitter:description" content="4차산업혁명이 사회적 현상으로 대두되면서 동시에 프로그래밍이 시민의 기본요소로 자리잡아가고 있는 분위기이다. 공교육과정에 프로그래밍이 편입되었고, 점점 어린 친구들이 코딩을 시작하고 있다. 흔히 전통 인문계통 전공들에서도 컴퓨터의 사용이 많아지고, 프로그래밍능력이 필요해지고 있다.
+프로그래밍을 배워보고자 자료를 찾다보면 너무나 많은 자료가 인터넷에 있고, 어디서 무엇부터 시작해야 할지 막막한 경우가 대부분이다. 인프런, 프로그래머스, 생활코딩 등 다양한 영상 교육사이트들도 존재하고, 다양한 책들이 출판되고 있다. 이 자료의 홍수에서 사람들 마다 입문으로 추천하는 programming language, 책, 사이트가 천차만별이다. 컴파일 언어, 인터프리터 언어, Mark Up 언어 등 익숙하지 않고 비슷비슷해 보이는 것들이 튀어나온다.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2019-12-06T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2019-12-06T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="Book">
+    
+  
+  
+    
+      <meta property="article:tag" content="java">
+    
+      <meta property="article:tag" content="language">
+    
+      <meta property="article:tag" content="Book">
+    
+      <meta property="article:tag" content="doit">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+  <meta property="twitter:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+
+
+    <title>Do it! 첫 코딩 보통사람이 알아야 할 프로그램이 기초 with 자바</title>
+
+    <link rel="icon" href="https://sihan-son.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://sihan-son.github.io/book/first-coding/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://sihan-son.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-143237170-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://sihan-son.github.io/">Sihan`s Blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://sihan-son.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://sihan-son.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Sihan Son</h4>
+        
+          <h5 class="sidebar-profile-bio">Wir müssen wissen, Wir werden wissen    <br>
+2020 &amp; 2021 Hanbit reviewer<br>
+Manager of VAIS(AI &amp; Vision community)</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/Sihan-Son" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.instagram.com/sihan_k_son/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-instagram"></i>
+      
+      <span class="sidebar-button-desc">Instagram</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/sihan-son-b43806120/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa fa-linkedin-square"></i>
+      
+      <span class="sidebar-button-desc">Linkedin</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.facebook.com/sihan830" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-facebook-square"></i>
+      
+      <span class="sidebar-button-desc">Facebook</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Do it! 첫 코딩 보통사람이 알아야 할 프로그램이 기초 with 자바
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-12-06T00:00:00Z">
+        
+  December 6, 2019
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/book">Book</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p><img src="https://sihan-son.github.io/images/book/easy/firstCoding.jfif" alt="firstCoding"></p>
+<p><code>4차산업혁명</code>이 사회적 현상으로 대두되면서 동시에 <code>프로그래밍</code>이 시민의 기본요소로 자리잡아가고 있는 분위기이다. 공교육과정에 <code>프로그래밍</code>이 편입되었고, 점점 어린 친구들이 <code>코딩</code>을 시작하고 있다. 흔히 전통 인문계통 전공들에서도 컴퓨터의 사용이 많아지고, <code>프로그래밍</code>능력이 필요해지고 있다.</p>
+<p><code>프로그래밍</code>을 배워보고자 자료를 찾다보면 너무나 많은 자료가 인터넷에 있고, 어디서 무엇부터 시작해야 할지 막막한 경우가 대부분이다. <code>인프런</code>, <code>프로그래머스</code>, <code>생활코딩</code> 등 다양한 영상 교육사이트들도 존재하고, 다양한 책들이 출판되고 있다. 이 자료의 홍수에서 사람들 마다 입문으로 추천하는 <code>programming language</code>, 책, 사이트가 천차만별이다. <code>컴파일 언어</code>, <code>인터프리터 언어</code>, <code>Mark Up</code> 언어 등 익숙하지 않고 비슷비슷해 보이는 것들이 튀어나온다. (물론 <code>Mark up</code>으로 분리되는 <code>HTML</code>은 <code>프로그래밍 언어</code>는 아니다.)</p>
+<p>좋은 입문서들은 굉장히 많다. 4년간 전공을 하면서 여러 입문서도 접해보았고, 후배들과 멘토링을 하면서 느낀점을 종합했을 때 이번에 <code>이지스퍼블리싱</code>에서 나온 <code>Do it! 첫 코딩</code>은 늦게 만나서 아쉬운 책이다. 이 책도 제목에서 알 수 있듯이 <code>Java</code>를 베이스로 삼는 책이다. 하지만 <code>Java</code>는 개념을 실습하기 위한 도구 일 뿐 <code>Java</code>에 매몰되어 설명하지 않는다. 이게 가장 좋았던 점이다.</p>
+<p>8일의 커리큘럼을 가이드로 제시하고 있다. 하루하루 점진적으로 컴퓨터 작동의 기초 지식으로 시작해서 프로그래밍에 필요한 추상적인 개념으로 쌓아간다. 출판사에서는 8일의 가이드안을 주었지만 욕심이 있다면 하루면 책을 한번 실습까지 훑을 수 있을 정도의 분량을 가지고 있다.</p>
+<p>책을 보면서 가장 좋았던 두 가지를 꼽자면 <code>Class</code> 단원과 <code>.(dot | 점)</code>의 사용법과 읽는 방법에 대한 설명이었다. <code>객체지향 프로그래밍 OOP</code>를 처음 공부하면서 가장 혼란스럽고 어려웠던 부분 두 가지를 잘 긁어주는 기분이었다. <code>dot</code>연산자의 읽는 법을 보고선 입문자에게 설명하기 좋은 방법이라는 생각을 했다.</p>
+<p>물론 어느정도 경험이 있는 사람이 입문서를 보고 느낌점들이기 때문에 실질적인 입문자들에게는 여전히 어렵고 생소할 수 있다. 옆에서 가이드 해 줄있는 사람이 있거나, 누군가에게 가르치기 위해서 책을 찾는다면 추천할 만한 책이다. 가격과 판형도 부담스럽지 않고 들고 다니기 적합한 수준이고, 어플로도 실습할 수 있는 환경을 제공해주어서 이동중에 틈틈이 공부할 수 있는 책이다.</p>
+<hr>
+<p>본 포스팅은 이지스퍼블리싱에서 책을 제공받아 작성된 글입니다.</p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/java/">java</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/language/">language</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/book/">Book</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/doit/">doit</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/ppt-gosu/" data-tooltip="된다! 파워포인트 실무의 신 한 번 배우면 평생 시간 버는 입문서">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/csharp-intro-review/" data-tooltip="백견불여일타 C# 입문">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/book/first-coding/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/book/first-coding/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/book/first-coding/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2022 Sihan Son. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/ppt-gosu/" data-tooltip="된다! 파워포인트 실무의 신 한 번 배우면 평생 시간 버는 입문서">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/csharp-intro-review/" data-tooltip="백견불여일타 C# 입문">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/book/first-coding/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/book/first-coding/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/book/first-coding/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Ffirst-coding%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Ffirst-coding%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Ffirst-coding%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Sihan Son</h4>
+    
+      <div id="about-card-bio">Wir müssen wissen, Wir werden wissen    <br>
+2020 &amp; 2021 Hanbit reviewer<br>
+Manager of VAIS(AI &amp; Vision community)</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Programmer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Korea
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://sihan-son.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://sihan-son.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/sihan-son.github.io\/book\/first-coding\/';
+          
+            this.page.identifier = '\/book\/first-coding\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'sihans-blog-1';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+    
+  </body>
+</html>
+

@@ -9,10 +9,10 @@
     <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>데이터 과학을 위한 통계</title>
-      <link>https://sihan-son.github.io/statics-for-data-science/</link>
+      <link>https://sihan-son.github.io/book/statics-for-data-science/</link>
       <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://sihan-son.github.io/statics-for-data-science/</guid>
+      <guid>https://sihan-son.github.io/book/statics-for-data-science/</guid>
       <description>이번 달에 리뷰 할 책은 통계학과 데이터 과학에 관한 책입니다. 이 책을 고민하실 때 가장 중요한 이야기를 먼저 하자면 R로 쓰여진 책 입니다. R에 익숙하지 않아 책을 읽으면서 코드가 쭉쭉 읽히지 않았던 점은 아쉬웠지만 통계를 다루시는 분들 중에 R유저가 많기 때문에 개인적인 아쉬움으로 묻어두고 리뷰를 시작하겠습니다.
 책의 구성은 정말 마음에 들었습니다. 각 절을 시작하면서 다루는 핵심 용어들을 요약 정리를 해줍니다. 해당 절에서 어떤 내용을 다룰지 미리 볼 수도 있고, 개념이 헷갈릴 때 책 중간을 다시 찾지 않아도 되어서 좋았습니다.</description>
     </item>

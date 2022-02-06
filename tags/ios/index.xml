@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 08 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>처음 배우는 스위프트</title>
-      <link>https://sihan-son.github.io/swift-ios/</link>
+      <link>https://sihan-son.github.io/book/swift-ios/</link>
       <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://sihan-son.github.io/swift-ios/</guid>
+      <guid>https://sihan-son.github.io/book/swift-ios/</guid>
       <description>이번 달에 소개해 드릴 책은 처음 배우는 스위프트입니다. swift는 APPLE에서 공식적으로 채택하고 있는 프로그램 개발 언어입니다. 러프하게 이야기하자면 C에서 분화된 Object-C를 현대적인 형태로 개선한게 현재의 swift입니다. 나름 크로스 플랫폼을 지원하고는 있어 Linux에서는 무리 없이 사용이 가능하지만 Windows에서는 과거 C#이 macOS에서 지원이 잘 되지 않는 모습입니다. 원활한 사용을 위해서는 결국 macOS가 필요한게 현재 swift입니다.
 그런데 왜 swift를 배워야 할까요? ios어플리케이션를 위한 유일한 답은 아니지만 충분히 좋은 답이 됩니다. 또 인공지능 개발자에게는 swift for tensorflow라는 기존의 대체제가 될 수 있습니다.</description>
     </item>
