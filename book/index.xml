@@ -6,7 +6,17 @@
     <description>Recent content in Books on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 26 Dec 2021 20:40:06 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/book/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Feb 2022 23:00:10 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sql 쿡북</title>
+      <link>https://sihan-son.github.io/book/sql_cookbook/</link>
+      <pubDate>Thu, 24 Feb 2022 23:00:10 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/sql_cookbook/</guid>
+      <description>프로그래밍을 어느 정도 하다보면 데이베이스를 멀리하기는 너무 가까운 친구입니다. 기초 문법을 익히고 쓰다보면 어느정도 값이 나오고 나온 값을 가지고 이리저리 만져 사용하기도 합니다. SQL도 다른 언어들 처럼 본격적으로 성능을 끌어내기 위해서는 복잡한 구문을 통해서 최적화하고 잘 모르는 기능들을 찾아내야 합니다.
+SQL도 자체적인 기능이 출중합니다. 근데 기본적인 문법만 이용하는 사용자가 많다는게 안타까운 현실이죠. C 계열 언어들과는 다소 다른 문법과 구조를 가지고 있는 탓에 접근성이 높기도 하지만 동시에 접근성을 높이는 원인이 됩니다.</description>
+    </item>
+    
     <item>
       <title>UX/UI 디자이너를 위한 실무 피그마</title>
       <link>https://sihan-son.github.io/book/figma/</link>
