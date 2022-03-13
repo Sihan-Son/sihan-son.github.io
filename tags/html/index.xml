@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTML on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/html/</link>
+    <description>Recent content in HTML on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 13 Mar 2022 12:38:39 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML은 프로그래밍 언어에요?!??!</title>
+      <link>https://sihan-son.github.io/programming_common_sense/html-is-not-programming-language/</link>
+      <pubDate>Sun, 13 Mar 2022 12:38:39 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/programming_common_sense/html-is-not-programming-language/</guid>
+      <description>HTML이 Programming Language이냐 아니냐는 꽤 오래된 프로그래밍 업계 밈(meme)입니다. 커뮤니티에서 해당 밈을 밈으로는 즐기지만 막상 이유를 궁금해하는 분들을 어렵지 않게 볼 수가 있습니다. 이게 왜 밈이 되었고, 논란이 많은 알아보고자 합니다.
+HTML은 약자를 풀어보자면 Hyper Text Markup Language입니다. 이름에서 부터 HTML은 자신의 분류를 밝히고 있었습니다. 즉 Markup Language 마크업 언어입니다. 마크업 언어에는 HTML말고 XML, LaTeX 등이 있습니다. 그런데 우리는 왜 마크업 언어를 프로그래밍 언어인지 아닌지로 싸우고 웃고 떠드는 것일까요?
+Fig.1 Compuer Language Tree</description>
+    </item>
+    
+  </channel>
+</rss>
