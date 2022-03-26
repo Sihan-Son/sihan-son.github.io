@@ -6,7 +6,52 @@
     <description>Recent content in Tags on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 13 Mar 2022 12:38:39 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Mar 2022 22:50:56 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>app</title>
+      <link>https://sihan-son.github.io/tags/app/</link>
+      <pubDate>Sat, 26 Mar 2022 22:50:56 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DL</title>
+      <link>https://sihan-son.github.io/tags/dl/</link>
+      <pubDate>Sat, 26 Mar 2022 22:50:56 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/dl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ML</title>
+      <link>https://sihan-son.github.io/tags/ml/</link>
+      <pubDate>Sat, 26 Mar 2022 22:50:56 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/ml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://sihan-son.github.io/tags/python/</link>
+      <pubDate>Sat, 26 Mar 2022 22:50:56 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Servcie</title>
+      <link>https://sihan-son.github.io/tags/servcie/</link>
+      <pubDate>Sat, 26 Mar 2022 22:50:56 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/servcie/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>HTML</title>
       <link>https://sihan-son.github.io/tags/html/</link>
@@ -130,15 +175,6 @@
       <pubDate>Sun, 26 Dec 2021 20:40:06 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/ux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ML</title>
-      <link>https://sihan-son.github.io/tags/ml/</link>
-      <pubDate>Sun, 21 Nov 2021 16:13:03 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/ml/</guid>
       <description></description>
     </item>
     
@@ -287,15 +323,6 @@
     </item>
     
     <item>
-      <title>python</title>
-      <link>https://sihan-son.github.io/tags/python/</link>
-      <pubDate>Sun, 18 Apr 2021 19:21:31 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>script</title>
       <link>https://sihan-son.github.io/tags/script/</link>
       <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
@@ -413,15 +440,6 @@
     </item>
     
     <item>
-      <title>DL</title>
-      <link>https://sihan-son.github.io/tags/dl/</link>
-      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/dl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>혼공</title>
       <link>https://sihan-son.github.io/tags/%ED%98%BC%EA%B3%B5/</link>
       <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
@@ -508,15 +526,6 @@
       <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sihan-son.github.io/tags/flask/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>APP</title>
-      <link>https://sihan-son.github.io/tags/app/</link>
-      <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/app/</guid>
       <description></description>
     </item>
     
