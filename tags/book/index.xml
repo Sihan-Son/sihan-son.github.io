@@ -6,7 +6,17 @@
     <description>Recent content in Book on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 24 Feb 2022 23:00:10 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Apr 2022 22:55:45 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>시맨틱 데이터 모형화, -명확해지는 데이터-</title>
+      <link>https://sihan-son.github.io/book/semantic_data/</link>
+      <pubDate>Sun, 24 Apr 2022 22:55:45 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/semantic_data/</guid>
+      <description>사실 이번 책은 1장을 다 읽을 쯤 까지 데이터 시각화를 다룬다고 생가했습니다. 책의 정체를 알고 다시 제목을 보니 제가 왜 그런 말도 안되는 착각을 했는지 잘 모르겠지만 이 책은 시각화에 도움이 될 수는 있지만 큰 관련이 없는 책이었습니다.
+제목 그래도 의미론적인 데이터 모형화를 다루고 있는 책입니다. Semantic 의미론적인 시각으로 데이터에 접근해 데이터를 만지고 모형화하는 방법을 다루고 있습니다. 우리 인간의 언어는 불완전하고 모호한데다가 애매하기도 합니다. 이런 특성들은 모델의 정확도를 낮추는 원인이 되기도 합니다.</description>
+    </item>
+    
     <item>
       <title>Sql 쿡북</title>
       <link>https://sihan-son.github.io/book/sql_cookbook/</link>

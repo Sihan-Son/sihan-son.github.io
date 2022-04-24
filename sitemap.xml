@@ -3,22 +3,72 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://sihan-son.github.io/tags/app/</loc>
-    <lastmod>2022-03-26T22:50:56+09:00</lastmod>
+    <loc>https://sihan-son.github.io/tags/book/</loc>
+    <lastmod>2022-04-24T22:55:45+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://sihan-son.github.io/categories/book/</loc>
-    <lastmod>2022-03-26T22:50:56+09:00</lastmod>
+    <lastmod>2022-04-24T22:55:45+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://sihan-son.github.io/book/</loc>
-    <lastmod>2022-03-26T22:50:56+09:00</lastmod>
+    <lastmod>2022-04-24T22:55:45+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://sihan-son.github.io/categories/</loc>
+    <lastmod>2022-04-24T22:55:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/tags/data/</loc>
+    <lastmod>2022-04-24T22:55:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/tags/hanbit/</loc>
+    <lastmod>2022-04-24T22:55:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/tags/modeling/</loc>
+    <lastmod>2022-04-24T22:55:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/tags/review/</loc>
+    <lastmod>2022-04-24T22:55:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/tags/semantic/</loc>
+    <lastmod>2022-04-24T22:55:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/tags/semantic-data/</loc>
+    <lastmod>2022-04-24T22:55:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/</loc>
+    <lastmod>2022-04-24T22:55:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/tags/</loc>
+    <lastmod>2022-04-24T22:55:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/book/semantic_data/</loc>
+    <lastmod>2022-04-24T22:55:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/tags/app/</loc>
     <lastmod>2022-03-26T22:50:56+09:00</lastmod>
   </url>
   
@@ -39,16 +89,6 @@
   
   <url>
     <loc>https://sihan-son.github.io/tags/servcie/</loc>
-    <lastmod>2022-03-26T22:50:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sihan-son.github.io/</loc>
-    <lastmod>2022-03-26T22:50:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sihan-son.github.io/tags/</loc>
     <lastmod>2022-03-26T22:50:56+09:00</lastmod>
   </url>
   
@@ -93,22 +133,12 @@
   </url>
   
   <url>
-    <loc>https://sihan-son.github.io/tags/book/</loc>
-    <lastmod>2022-02-24T23:00:10+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://sihan-son.github.io/tags/cookbook/</loc>
     <lastmod>2022-02-24T23:00:10+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://sihan-son.github.io/tags/database/</loc>
-    <lastmod>2022-02-24T23:00:10+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sihan-son.github.io/tags/hanbit/</loc>
     <lastmod>2022-02-24T23:00:10+09:00</lastmod>
   </url>
   
@@ -219,11 +249,6 @@
   
   <url>
     <loc>https://sihan-son.github.io/book/kaggle-stater/</loc>
-    <lastmod>2021-06-19T11:06:04+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sihan-son.github.io/tags/data/</loc>
     <lastmod>2021-06-19T11:06:04+09:00</lastmod>
   </url>
   
