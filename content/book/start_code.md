@@ -1,6 +1,6 @@
 ---
 type: post
-title: "Start_code"
+title: 혼자 공부하는 얄팍한 코딩 지식, IT 세계의 이정표
 date: 2022-05-10T20:54:36+09:00
 categories:
   - Book
