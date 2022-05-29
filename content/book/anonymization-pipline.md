@@ -9,7 +9,6 @@ tags:
   - pipline
   - law
   - anonymization
-draft: true
 ---
 
 ![anonymization](/images/book/easy/anonymization.jpg)
