@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ux on Sihan`s Blog</title>
-    <link>https://sihan-son.github.io/tags/ux/</link>
-    <description>Recent content in ux on Sihan`s Blog</description>
+    <title>car on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/car/</link>
+    <description>Recent content in car on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 09 Jun 2022 23:00:30 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/ux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Jun 2022 23:00:30 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/car/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>자동차 인터페이스 디자인, -마차에서 자율주행까지-</title>
       <link>https://sihan-son.github.io/book/car_ux/</link>
@@ -17,17 +17,6 @@
  현대 디자인에도 통용되는 내용인지는 모르겠지만 디자인에 있어서 굉장히 좋아하는 구문입니다. 형태로 기능을 유추하고 직관적으로 이해하고 사용할 수 있는 디자인이 좋은 디자인이라고 생각합니다.
 많은 언어들에서 자동차라는 단어에는 마차의 연장선상에 있었던 흔적을 찾을 수 있습니다. 그래서 마차 때 있던 기능들이 레거시로 넘어오거나 명칭들에서 흔적을 찾아 볼 수 있습니다. 이 책은 이런 내용들로 시작해 왜 현재의 형태를 가지게 되었는지 기능과 형태의 발자취를 따라갑니다.
 단순히 기능과 상호작용만 설명하는게 아니라 적절한 유머와 함께 기능의 태동부터 현재 형태까지 풀어내고 있습니다.</description>
-    </item>
-    
-    <item>
-      <title>UX/UI 디자이너를 위한 실무 피그마</title>
-      <link>https://sihan-son.github.io/book/figma/</link>
-      <pubDate>Sun, 26 Dec 2021 20:40:06 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/book/figma/</guid>
-      <description>디지털화 되어가는 시간을 살아가는 우리에게 UX/UI 떨어질 수 없는 친구들입니다. 매일같이 다양한 인터페이스를 만나고 있다. 그 중에는 처음 만난 구성이지만 지금까지의 경험을 바탕으로 따로 배우지 않아도 되는 인터페이스가 있는 반면 디지털 네이티브 세대조차 힘들어하는 것들이 존재합니다.
-좋은 UI는 좋은 UX(사용자 경험)을 이끌어 내게 됩니다. 아무리 잘 만든 소프트웨어도 UI/UX가 별로라면 좋은 평가를 받기 힘들지만 단순하더라도 좋은 경험을 준 시스템은 좋게 각인됩니다.
-Figma는 좋은 UI/UX를 설계하고 의견을 나누는데 있어 현재 가장 핫 한 디자인 도구입니다.</description>
     </item>
     
   </channel>
