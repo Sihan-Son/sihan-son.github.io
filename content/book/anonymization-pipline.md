@@ -11,7 +11,7 @@ tags:
   - anonymization
 ---
 
-![anonymization](/images/book/easy/anonymization.jpg)
+![anonymization](/images/book/hanbit/anonymization.jpg)
 
 스마트폰을 사용하면서 인터넷에 공유되는 정보의 양은 이전과 비교할 수 없을 정도로 폭발적으로 늘어났습니다. 과거에는 인터넷이 연결된 장소와 단말이 한정적이었지만 이제는 언제 어디서나 접속하고 데이터를 만들어 낼 수 있습니다. 맛집을 검색하고, 사진을 찍고, SNS 공유하고 정말 수 많은 양의 데이터가 실시간으로 쌓이고 있습니다. 기업들은 이 데이터를 기반으로 새로운 직관을 얻고, 연구를 진행하기도 합니다.
 
