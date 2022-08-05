@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>math on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/categories/math/</link>
+    <description>Recent content in math on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 05 Aug 2022 22:06:47 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/categories/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>다시 확률 통계 통계편, 세상을 분석하는 힘 통계</title>
+      <link>https://sihan-son.github.io/book/again_statistics/</link>
+      <pubDate>Fri, 05 Aug 2022 22:06:47 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/again_statistics/</guid>
+      <description>다시 확률 통계는 2019년도에 다시 미분 적분으로 서평들을 쓰기 시작 하면서부터 예고 된 책이어서 정말 기다리던 책이었습니다. 햇수로는 4년만에 드디어 책이 손에 들어와서 읽을 수 있게 되었습니다. 다시 XX XX 수학 시리즈는 굉장히 만족스럽게 읽고 있습니다.
+이 시리즈의 가장 큰 특징은 미적분도 통계도 확률도 큰 수학적 사전 지식없이 책을 시작해 수학적 지식을 가지고 책을 덮게 해줍니다. 보통 이런 책들을 읽다보면 겉핥기로 적당히 이야기를 풀다가 찝찝하게 책이 끝나는 경우도 많습니다. 하지만 이번에도 느꼈지만 수학적으로 더 깊이 들어가고 싶은 독자와 간단하게 읽고 큰 그림이 보고 싶은 독자 양쪽을 위해 증명까지 해줍니다.</description>
+    </item>
+    
+  </channel>
+</rss>
