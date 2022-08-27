@@ -6,7 +6,16 @@
     <description>Recent content in Books on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 05 Aug 2022 22:06:47 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/book/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Aug 2022 22:43:25 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>이것이 자료구조&#43;알고리즘이다 with C 언어</title>
+      <link>https://sihan-son.github.io/book/algorithm_and_data_structure_with_c/</link>
+      <pubDate>Sat, 27 Aug 2022 22:43:25 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/algorithm_and_data_structure_with_c/</guid>
+      <description>8월의 한빛 서평 도서는 이것이 자료구조+알고리즘이다 with C 언어입니다. 서평 덕에 오랜만에 C언어 코드를 읽는 시간이어서 조금 어색하기도 했지만, 구현과 컴퓨터에서 실제로 어떻게 동작하는지 이해 하긴 좋은 선택이었습니다. ADT부터 해당 자료구조들의 기본 스펙과 기능들을 소개하고 컴퓨터 메모리 상에서 어떻게 작동하고 올렸다가 내리지 등 시스템 적 이해도 동시에 키울 수 있는 책이었습니다. C언어로 코드를 작성해서 단순히 문법을 익힌 수준으로 책의 코드가 다소 어려울 수 있습니다. 포인터를 이용해 메모리를 직접 참조해서 넘기고, 메모리를 할당하기 위해 해당 구조체의 크기를 연산해서 메모리 할당을 하고, 구조체에서 자신을 재귀적으로 참조하는 등 C 기초 이상을 이해를 하고 있어야 큰 무리 없이 읽을 수 있다고 생각이 들었습니다.</description>
+    </item>
+    
     <item>
       <title>다시 확률 통계 통계편, 세상을 분석하는 힘 통계</title>
       <link>https://sihan-son.github.io/book/again_statistics/</link>

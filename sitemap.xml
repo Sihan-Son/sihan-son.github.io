@@ -3,27 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sihan-son.github.io/tags/algorithm/</loc>
+    <lastmod>2022-08-27T22:43:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/categories/book/</loc>
+    <lastmod>2022-08-27T22:43:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/book/</loc>
+    <lastmod>2022-08-27T22:43:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/tags/c-lang/</loc>
+    <lastmod>2022-08-27T22:43:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/categories/</loc>
+    <lastmod>2022-08-27T22:43:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/tags/data-structure/</loc>
+    <lastmod>2022-08-27T22:43:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/</loc>
+    <lastmod>2022-08-27T22:43:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/tags/</loc>
+    <lastmod>2022-08-27T22:43:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/book/algorithm_and_data_structure_with_c/</loc>
+    <lastmod>2022-08-27T22:43:25+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sihan-son.github.io/categories/agian-math/</loc>
     <lastmod>2022-08-05T22:06:47+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://sihan-son.github.io/tags/book/</loc>
-    <lastmod>2022-08-05T22:06:47+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sihan-son.github.io/categories/book/</loc>
-    <lastmod>2022-08-05T22:06:47+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sihan-son.github.io/book/</loc>
-    <lastmod>2022-08-05T22:06:47+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sihan-son.github.io/categories/</loc>
     <lastmod>2022-08-05T22:06:47+09:00</lastmod>
   </url>
   
@@ -38,17 +68,7 @@
   </url>
   
   <url>
-    <loc>https://sihan-son.github.io/</loc>
-    <lastmod>2022-08-05T22:06:47+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://sihan-son.github.io/categories/statistics/</loc>
-    <lastmod>2022-08-05T22:06:47+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sihan-son.github.io/tags/</loc>
     <lastmod>2022-08-05T22:06:47+09:00</lastmod>
   </url>
   
@@ -80,11 +100,6 @@
   <url>
     <loc>https://sihan-son.github.io/book/cloud_native/</loc>
     <lastmod>2022-07-24T20:15:40+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sihan-son.github.io/tags/algorithm/</loc>
-    <lastmod>2022-06-26T11:28:55+09:00</lastmod>
   </url>
   
   <url>

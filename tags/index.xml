@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 05 Aug 2022 22:06:47 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Aug 2022 22:43:25 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algorithm</title>
+      <link>https://sihan-son.github.io/tags/algorithm/</link>
+      <pubDate>Sat, 27 Aug 2022 22:43:25 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C lang</title>
+      <link>https://sihan-son.github.io/tags/c-lang/</link>
+      <pubDate>Sat, 27 Aug 2022 22:43:25 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/c-lang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data structure</title>
+      <link>https://sihan-son.github.io/tags/data-structure/</link>
+      <pubDate>Sat, 27 Aug 2022 22:43:25 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/data-structure/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Book</title>
       <link>https://sihan-son.github.io/tags/book/</link>
@@ -49,15 +76,6 @@
       <pubDate>Sun, 24 Jul 2022 20:15:40 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/reference/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>algorithm</title>
-      <link>https://sihan-son.github.io/tags/algorithm/</link>
-      <pubDate>Sun, 26 Jun 2022 11:28:55 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/algorithm/</guid>
       <description></description>
     </item>
     

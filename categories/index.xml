@@ -6,22 +6,22 @@
     <description>Recent content in Categories on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 05 Aug 2022 22:06:47 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Aug 2022 22:43:25 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Book</title>
+      <link>https://sihan-son.github.io/categories/book/</link>
+      <pubDate>Sat, 27 Aug 2022 22:43:25 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/categories/book/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>agian-math</title>
       <link>https://sihan-son.github.io/categories/agian-math/</link>
       <pubDate>Fri, 05 Aug 2022 22:06:47 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/categories/agian-math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Book</title>
-      <link>https://sihan-son.github.io/categories/book/</link>
-      <pubDate>Fri, 05 Aug 2022 22:06:47 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/categories/book/</guid>
       <description></description>
     </item>
     
