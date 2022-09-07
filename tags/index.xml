@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 27 Aug 2022 22:43:25 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Sep 2022 23:14:54 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>golednRabbit</title>
+      <link>https://sihan-son.github.io/tags/golednrabbit/</link>
+      <pubDate>Wed, 07 Sep 2022 23:14:54 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/golednrabbit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ML</title>
+      <link>https://sihan-son.github.io/tags/ml/</link>
+      <pubDate>Wed, 07 Sep 2022 23:14:54 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/ml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://sihan-son.github.io/tags/python/</link>
+      <pubDate>Wed, 07 Sep 2022 23:14:54 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Algorithm</title>
       <link>https://sihan-son.github.io/tags/algorithm/</link>
@@ -76,15 +103,6 @@
       <pubDate>Sun, 24 Jul 2022 20:15:40 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/reference/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://sihan-son.github.io/tags/python/</link>
-      <pubDate>Sun, 26 Jun 2022 11:28:55 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/python/</guid>
       <description></description>
     </item>
     
@@ -256,15 +274,6 @@
       <pubDate>Sat, 26 Mar 2022 22:50:56 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/dl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ML</title>
-      <link>https://sihan-son.github.io/tags/ml/</link>
-      <pubDate>Sat, 26 Mar 2022 22:50:56 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/ml/</guid>
       <description></description>
     </item>
     

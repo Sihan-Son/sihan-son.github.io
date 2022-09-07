@@ -6,7 +6,18 @@
     <description>Recent content on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 27 Aug 2022 22:43:25 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Sep 2022 23:14:54 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>데싸노트의 실전에서 통하는 머신러닝, 머신러닝의 Cheat Sheet </title>
+      <link>https://sihan-son.github.io/book/data_science_note_ml/</link>
+      <pubDate>Wed, 07 Sep 2022 23:14:54 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/data_science_note_ml/</guid>
+      <description>골든래빗 출판사로부터 책을 제공받아 작성했습니다
+책 바로가기
+데싸노트의 실전에서 통하는 머신러닝을 선택하기 전에 반드시 아셔야 할 내용이 하나 있습니다. 머신러닝과 딥러닝은 다른 것입니다. 입문 단계에서 가장 많이 헷갈리고 혼용하는 것이 용어입니다. 동일 카테고리에서 특히 많은 혼동이 있는 듯 합니다. 이제는 조금 옛날 이야기가 되어버렸지만 새롭게 인공지능의 붐을 일으킨 알파고 이후 인공지능 == 머신러닝 == 딥러닝으로 알고 있는 사람이 많아져 더욱 용어에 혼란을 느끼는 사람이 많은 듯 합니다. 그래서 이 책은 제목 그대로 머신러닝만을 다루고 있습니다.</description>
+    </item>
+    
     <item>
       <title>이것이 자료구조&#43;알고리즘이다 with C 언어</title>
       <link>https://sihan-son.github.io/book/algorithm_and_data_structure_with_c/</link>
