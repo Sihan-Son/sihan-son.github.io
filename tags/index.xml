@@ -6,7 +6,61 @@
     <description>Recent content in Tags on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 07 Sep 2022 23:14:54 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Oct 2022 11:29:39 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Book</title>
+      <link>https://sihan-son.github.io/tags/book/</link>
+      <pubDate>Sun, 02 Oct 2022 11:29:39 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud native</title>
+      <link>https://sihan-son.github.io/tags/cloud-native/</link>
+      <pubDate>Sun, 02 Oct 2022 11:29:39 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/cloud-native/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DevOps</title>
+      <link>https://sihan-son.github.io/tags/devops/</link>
+      <pubDate>Sun, 02 Oct 2022 11:29:39 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hanbit</title>
+      <link>https://sihan-son.github.io/tags/hanbit/</link>
+      <pubDate>Sun, 02 Oct 2022 11:29:39 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/hanbit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IaC</title>
+      <link>https://sihan-son.github.io/tags/iac/</link>
+      <pubDate>Sun, 02 Oct 2022 11:29:39 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/iac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reference</title>
+      <link>https://sihan-son.github.io/tags/reference/</link>
+      <pubDate>Sun, 02 Oct 2022 11:29:39 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/reference/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>golednRabbit</title>
       <link>https://sihan-son.github.io/tags/golednrabbit/</link>
@@ -62,47 +116,11 @@
     </item>
     
     <item>
-      <title>Book</title>
-      <link>https://sihan-son.github.io/tags/book/</link>
-      <pubDate>Fri, 05 Aug 2022 22:06:47 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/book/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cloud native</title>
-      <link>https://sihan-son.github.io/tags/cloud-native/</link>
-      <pubDate>Sun, 24 Jul 2022 20:15:40 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/cloud-native/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>design pattern</title>
       <link>https://sihan-son.github.io/tags/design-pattern/</link>
       <pubDate>Sun, 24 Jul 2022 20:15:40 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/design-pattern/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hanbit</title>
-      <link>https://sihan-son.github.io/tags/hanbit/</link>
-      <pubDate>Sun, 24 Jul 2022 20:15:40 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/hanbit/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>reference</title>
-      <link>https://sihan-son.github.io/tags/reference/</link>
-      <pubDate>Sun, 24 Jul 2022 20:15:40 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/reference/</guid>
       <description></description>
     </item>
     

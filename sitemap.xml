@@ -3,18 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sihan-son.github.io/tags/book/</loc>
+    <lastmod>2022-10-02T11:29:39+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sihan-son.github.io/categories/book/</loc>
-    <lastmod>2022-09-07T23:14:54+09:00</lastmod>
+    <lastmod>2022-10-02T11:29:39+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://sihan-son.github.io/book/</loc>
-    <lastmod>2022-09-07T23:14:54+09:00</lastmod>
+    <lastmod>2022-10-02T11:29:39+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://sihan-son.github.io/categories/</loc>
-    <lastmod>2022-09-07T23:14:54+09:00</lastmod>
+    <lastmod>2022-10-02T11:29:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/tags/cloud-native/</loc>
+    <lastmod>2022-10-02T11:29:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/tags/devops/</loc>
+    <lastmod>2022-10-02T11:29:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/tags/hanbit/</loc>
+    <lastmod>2022-10-02T11:29:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/tags/iac/</loc>
+    <lastmod>2022-10-02T11:29:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/tags/reference/</loc>
+    <lastmod>2022-10-02T11:29:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/</loc>
+    <lastmod>2022-10-02T11:29:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/tags/</loc>
+    <lastmod>2022-10-02T11:29:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sihan-son.github.io/book/infrastructure_as_code/</loc>
+    <lastmod>2022-10-02T11:29:39+09:00</lastmod>
   </url>
   
   <url>
@@ -29,16 +74,6 @@
   
   <url>
     <loc>https://sihan-son.github.io/tags/python/</loc>
-    <lastmod>2022-09-07T23:14:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sihan-son.github.io/</loc>
-    <lastmod>2022-09-07T23:14:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sihan-son.github.io/tags/</loc>
     <lastmod>2022-09-07T23:14:54+09:00</lastmod>
   </url>
   
@@ -73,11 +108,6 @@
   </url>
   
   <url>
-    <loc>https://sihan-son.github.io/tags/book/</loc>
-    <lastmod>2022-08-05T22:06:47+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://sihan-son.github.io/categories/gilbut/</loc>
     <lastmod>2022-08-05T22:06:47+09:00</lastmod>
   </url>
@@ -98,22 +128,7 @@
   </url>
   
   <url>
-    <loc>https://sihan-son.github.io/tags/cloud-native/</loc>
-    <lastmod>2022-07-24T20:15:40+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://sihan-son.github.io/tags/design-pattern/</loc>
-    <lastmod>2022-07-24T20:15:40+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sihan-son.github.io/tags/hanbit/</loc>
-    <lastmod>2022-07-24T20:15:40+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sihan-son.github.io/tags/reference/</loc>
     <lastmod>2022-07-24T20:15:40+09:00</lastmod>
   </url>
   
