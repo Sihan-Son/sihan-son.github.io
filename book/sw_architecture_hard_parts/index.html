@@ -9,29 +9,29 @@
 <meta name="generator" content="Hugo 0.78.2 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Sihan Son">
 <meta name="keywords" content="">
-<meta name="description" content="9월 한빛 리뷰어로 리뷰하게 된 책은 코드로 인프라 관리하기입니다. 리뷰어를 하면서 책을 읽다보면 도서 시장에 작은 트렌드들과 큰 흐름이 있는 것 같습니다. DevOps, Cloud Native등 온 프레미스에서 클라우드로 넘어가는 과정의 기술 적 과도기에 봉착 한 사람들이 많을 것입니다.
-이 책은 제목 그대로 IaC(Infrastructure as Code)와 그에 수반되는 DevOps 등 다양한 기술과 필요한 이유, 해당 개념에 따라오는 부가적인 요소까지 설명하고 있습니다. 점점 규모가 커지면서 전통적인 방법들로는 빠른 대응과 확장이 힘들 수 밖에 없는 구조가 되어 가고 있습니다.">
+<meta name="description" content="소프트웨어의 아키텍처는 프로젝트의 규모가 커지고 복잡해 질 수록 진가를 발휘하는 것 같습니다. 이번 SK IDC 화재로 카카오의 서비스들이 다운 되었을 때도 여러사람이 지적한 부분이 아키텍처 측면이었습니다. 프로젝트를 진행하다보면 초기에는 빠른 성장을 위해 사소한 것들은 뒤로 잠시 미뤄두고 진행하기도 합니다. 작은 변화는 티가 잘 나지 않는 것처럼 아키텍처의 변화는 각 단계들에서 덧 붙여지는 것은 크게 체감하기 힘듭니다. 하지만 어느 순간 돌아보면 개발 중인 사람조차 이해하기 힘들정도로 엉켜 있는경우가 있습니다.
+이 책은 이런 경우 어떻게 접근하고 분해해야 할까를 다루고 있습니다.">
 
 
-<meta property="og:description" content="9월 한빛 리뷰어로 리뷰하게 된 책은 코드로 인프라 관리하기입니다. 리뷰어를 하면서 책을 읽다보면 도서 시장에 작은 트렌드들과 큰 흐름이 있는 것 같습니다. DevOps, Cloud Native등 온 프레미스에서 클라우드로 넘어가는 과정의 기술 적 과도기에 봉착 한 사람들이 많을 것입니다.
-이 책은 제목 그대로 IaC(Infrastructure as Code)와 그에 수반되는 DevOps 등 다양한 기술과 필요한 이유, 해당 개념에 따라오는 부가적인 요소까지 설명하고 있습니다. 점점 규모가 커지면서 전통적인 방법들로는 빠른 대응과 확장이 힘들 수 밖에 없는 구조가 되어 가고 있습니다.">
+<meta property="og:description" content="소프트웨어의 아키텍처는 프로젝트의 규모가 커지고 복잡해 질 수록 진가를 발휘하는 것 같습니다. 이번 SK IDC 화재로 카카오의 서비스들이 다운 되었을 때도 여러사람이 지적한 부분이 아키텍처 측면이었습니다. 프로젝트를 진행하다보면 초기에는 빠른 성장을 위해 사소한 것들은 뒤로 잠시 미뤄두고 진행하기도 합니다. 작은 변화는 티가 잘 나지 않는 것처럼 아키텍처의 변화는 각 단계들에서 덧 붙여지는 것은 크게 체감하기 힘듭니다. 하지만 어느 순간 돌아보면 개발 중인 사람조차 이해하기 힘들정도로 엉켜 있는경우가 있습니다.
+이 책은 이런 경우 어떻게 접근하고 분해해야 할까를 다루고 있습니다.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="코드로 인프라 관리하기">
-<meta name="twitter:title" content="코드로 인프라 관리하기">
-<meta property="og:url" content="https://sihan-son.github.io/book/infrastructure_as_code/">
-<meta property="twitter:url" content="https://sihan-son.github.io/book/infrastructure_as_code/">
+<meta property="og:title" content="소프트웨어 아키텍처 The Hard Parts -나눌 것인가 합칠 것인가?-">
+<meta name="twitter:title" content="소프트웨어 아키텍처 The Hard Parts -나눌 것인가 합칠 것인가?-">
+<meta property="og:url" content="https://sihan-son.github.io/book/sw_architecture_hard_parts/">
+<meta property="twitter:url" content="https://sihan-son.github.io/book/sw_architecture_hard_parts/">
 <meta property="og:site_name" content="Sihan`s Blog">
-<meta property="og:description" content="9월 한빛 리뷰어로 리뷰하게 된 책은 코드로 인프라 관리하기입니다. 리뷰어를 하면서 책을 읽다보면 도서 시장에 작은 트렌드들과 큰 흐름이 있는 것 같습니다. DevOps, Cloud Native등 온 프레미스에서 클라우드로 넘어가는 과정의 기술 적 과도기에 봉착 한 사람들이 많을 것입니다.
-이 책은 제목 그대로 IaC(Infrastructure as Code)와 그에 수반되는 DevOps 등 다양한 기술과 필요한 이유, 해당 개념에 따라오는 부가적인 요소까지 설명하고 있습니다. 점점 규모가 커지면서 전통적인 방법들로는 빠른 대응과 확장이 힘들 수 밖에 없는 구조가 되어 가고 있습니다.">
-<meta name="twitter:description" content="9월 한빛 리뷰어로 리뷰하게 된 책은 코드로 인프라 관리하기입니다. 리뷰어를 하면서 책을 읽다보면 도서 시장에 작은 트렌드들과 큰 흐름이 있는 것 같습니다. DevOps, Cloud Native등 온 프레미스에서 클라우드로 넘어가는 과정의 기술 적 과도기에 봉착 한 사람들이 많을 것입니다.
-이 책은 제목 그대로 IaC(Infrastructure as Code)와 그에 수반되는 DevOps 등 다양한 기술과 필요한 이유, 해당 개념에 따라오는 부가적인 요소까지 설명하고 있습니다. 점점 규모가 커지면서 전통적인 방법들로는 빠른 대응과 확장이 힘들 수 밖에 없는 구조가 되어 가고 있습니다.">
+<meta property="og:description" content="소프트웨어의 아키텍처는 프로젝트의 규모가 커지고 복잡해 질 수록 진가를 발휘하는 것 같습니다. 이번 SK IDC 화재로 카카오의 서비스들이 다운 되었을 때도 여러사람이 지적한 부분이 아키텍처 측면이었습니다. 프로젝트를 진행하다보면 초기에는 빠른 성장을 위해 사소한 것들은 뒤로 잠시 미뤄두고 진행하기도 합니다. 작은 변화는 티가 잘 나지 않는 것처럼 아키텍처의 변화는 각 단계들에서 덧 붙여지는 것은 크게 체감하기 힘듭니다. 하지만 어느 순간 돌아보면 개발 중인 사람조차 이해하기 힘들정도로 엉켜 있는경우가 있습니다.
+이 책은 이런 경우 어떻게 접근하고 분해해야 할까를 다루고 있습니다.">
+<meta name="twitter:description" content="소프트웨어의 아키텍처는 프로젝트의 규모가 커지고 복잡해 질 수록 진가를 발휘하는 것 같습니다. 이번 SK IDC 화재로 카카오의 서비스들이 다운 되었을 때도 여러사람이 지적한 부분이 아키텍처 측면이었습니다. 프로젝트를 진행하다보면 초기에는 빠른 성장을 위해 사소한 것들은 뒤로 잠시 미뤄두고 진행하기도 합니다. 작은 변화는 티가 잘 나지 않는 것처럼 아키텍처의 변화는 각 단계들에서 덧 붙여지는 것은 크게 체감하기 힘듭니다. 하지만 어느 순간 돌아보면 개발 중인 사람조차 이해하기 힘들정도로 엉켜 있는경우가 있습니다.
+이 책은 이런 경우 어떻게 접근하고 분해해야 할까를 다루고 있습니다.">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2022-10-02T11:29:39">
+    <meta property="article:published_time" content="2022-10-23T18:46:50">
   
   
-    <meta property="article:modified_time" content="2022-10-02T11:29:39">
+    <meta property="article:modified_time" content="2022-10-23T18:46:50">
   
   
   
@@ -41,13 +41,7 @@
   
   
     
-      <meta property="article:tag" content="cloud native">
-    
-      <meta property="article:tag" content="IaC">
-    
-      <meta property="article:tag" content="reference">
-    
-      <meta property="article:tag" content="DevOps">
+      <meta property="article:tag" content="Architecture">
     
       <meta property="article:tag" content="hanbit">
     
@@ -72,14 +66,14 @@
   <meta property="twitter:image" content="https://sihan-son.github.io/images/unicorn.jpg">
 
 
-    <title>코드로 인프라 관리하기</title>
+    <title>소프트웨어 아키텍처 The Hard Parts -나눌 것인가 합칠 것인가?-</title>
 
     <link rel="icon" href="https://sihan-son.github.io/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://sihan-son.github.io/book/infrastructure_as_code/">
+    <link rel="canonical" href="https://sihan-son.github.io/book/sw_architecture_hard_parts/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -274,15 +268,15 @@ Manager of VAIS(AI &amp; Vision community)</h5>
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      코드로 인프라 관리하기
+      소프트웨어 아키텍처 The Hard Parts -나눌 것인가 합칠 것인가?-
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2022-10-02T11:29:39&#43;09:00">
+      <time itemprop="datePublished" datetime="2022-10-23T18:46:50&#43;09:00">
         
-  October 2, 2022
+  October 23, 2022
 
       </time>
     
@@ -301,13 +295,11 @@ Manager of VAIS(AI &amp; Vision community)</h5>
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p><img src="https://sihan-son.github.io/images/book/hanbit/infra_as_code.jpg" alt="infra_as_code"></p>
-<p>9월 한빛 리뷰어로 리뷰하게 된 책은 <code>코드로 인프라 관리하기</code>입니다. 리뷰어를 하면서 책을 읽다보면 도서 시장에 작은 트렌드들과 큰 흐름이 있는 것 같습니다. <code>DevOps</code>, <code>Cloud Native</code>등 온 프레미스에서 클라우드로 넘어가는 과정의 기술 적 과도기에 봉착 한 사람들이 많을 것입니다.</p>
-<p>이 책은 제목 그대로 <code>IaC(Infrastructure as Code)</code>와 그에 수반되는 <code>DevOps</code> 등 다양한 기술과 필요한 이유, 해당 개념에 따라오는 부가적인 요소까지 설명하고 있습니다. 점점 규모가 커지면서 전통적인 방법들로는 빠른 대응과 확장이 힘들 수 밖에 없는 구조가 되어 가고 있습니다. 이런 구조를 개선하기 위해서는 인프라의 도움이 없어서는 안됩니다. 이를 위해서는 인프라도 빠른 구조 변경에 대응할 수 있어야 합니다. 이를 위해 인프라도 적절한 관리가 필요합니다.</p>
-<p>인프라 관리를 위해 코드를 이용하는 방법을 이야기하고 있습니다. 단점이자 장점은 특정 벤더에 종속 되지 않아서 중립적인 의사코드를 볼 수 있지만 동시에 구현체를 볼 수 없는 것은 아쉬운 점이었습니다.</p>
-<p>정석적인 교과서 느낌의 책이어서 단 권으로 끝내기는 다소 힘든 책입니다. 개념은 다루고 있지만 구현체가 약해서 실습이나 실전을 위해서는 다른 책 한 두권이 더 필요 할 것 같습니다.</p>
-<p>이 책을 제대로 읽기 위해서는 선행지식이 좀 많이 필요합니다. 이론서여서 배경지식들이 필요합니다. <code>인프라</code>, <code>클라우드</code>, <code>DevOps</code>, <code>에자일</code> 등이 바탕이 되어야 이 지식들이 하나의 합주를 할 수 있는 책입니다.</p>
-<p>번역은 깔끔하게 되어서 위의 배경 지식만 갖춰진다면 인프라 떄문에 고민하신 분들에게는 정말 추천하는 책입니다.</p>
+              <p><img src="https://sihan-son.github.io/images/book/hanbit/sw_architecture.jpg" alt="sw_architecture"></p>
+<p>소프트웨어의 아키텍처는 프로젝트의 규모가 커지고 복잡해 질 수록 진가를 발휘하는 것 같습니다. 이번 SK IDC 화재로 카카오의 서비스들이 다운 되었을 때도 여러사람이 지적한 부분이 아키텍처 측면이었습니다. 프로젝트를 진행하다보면 초기에는 빠른 성장을 위해 사소한 것들은 뒤로 잠시 미뤄두고 진행하기도 합니다. 작은 변화는 티가 잘 나지 않는 것처럼 아키텍처의 변화는 각 단계들에서 덧 붙여지는 것은 크게 체감하기 힘듭니다. 하지만 어느 순간 돌아보면 개발 중인 사람조차 이해하기 힘들정도로 엉켜 있는경우가 있습니다.</p>
+<p>이 책은 이런 경우 어떻게 접근하고 분해해야 할까를 다루고 있습니다. 무조건 쪼개는 것은 방법이 아닙니다. 오히려 잘못된 분할은 복잡도만 증가시키고 시스템의 안정성을 해치는 이유가 됩니다. 아키텍처를 재정비하고 분할하는 이유는 시스템의 안정도를 높이고 가용성을 높이기 위해서입니다. 그런데 오히려 유연성이 떨어지고 복잡도가 증가한다면 잘 못된 리모델링입니다.</p>
+<p>아키텍처 리모델링을 위한 정답은 없습니다. 각 시스템에 맞게 각 단계별로 적절한 방법론을 가지고 손익 계산을 해야합니다. 우리가 고를 선택지에는 최고의 선택지는 없습니다. 우리는 차악의 선택지를 고를 뿐입니다. 7가지의 옵션 중에 모든 옵션이 좋은 선택지는 우리 앞에 쉬이 나타나지 않습니다. 그런 깔끔한 케이스는 교과서에서나 볼 법한 이야기입니다. 그래서 우리는 각 선택지의 트레이드 오프를 따져가면서 적용할 방법을 선택해야합니다.</p>
+<p>트레이드 오프 계산을 통해 남은 선택지들 중 차악의 선택지를 선택하며 아키텍쳐의 리모델링을 진행합니다. 지우고, 분리하고 때로는 다시 합치면서 리모델일 진행합니다. 가용성 등의 문제를 겪고 있거나 프로젝트가 안정화되서 구조적인 문제를 손봐야겠다고 생각은 하고 있지만, 시작점을 못 잡고 계셨다면 좋은 출발점입니다.</p>
 <hr>
 <p>한빛미디어 <code>2022 도서 서평단 &quot;나는 리뷰어다&quot;</code>의 일원으로 도서를 제공받아 작성한 리뷰입니다.</p>
 
@@ -322,13 +314,7 @@ Manager of VAIS(AI &amp; Vision community)</h5>
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">TAGGED IN</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/cloud-native/">cloud native</a>
-
-  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/iac/">IaC</a>
-
-  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/reference/">reference</a>
-
-  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/devops/">DevOps</a>
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/architecture/">Architecture</a>
 
   <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/hanbit/">hanbit</a>
 
@@ -345,7 +331,7 @@ Manager of VAIS(AI &amp; Vision community)</h5>
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/sw_architecture_hard_parts/" data-tooltip="소프트웨어 아키텍처 The Hard Parts -나눌 것인가 합칠 것인가?-">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -353,7 +339,7 @@ Manager of VAIS(AI &amp; Vision community)</h5>
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/data_science_note_ml/" data-tooltip="데싸노트의 실전에서 통하는 머신러닝, 머신러닝의 Cheat Sheet ">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/infrastructure_as_code/" data-tooltip="코드로 인프라 관리하기">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -371,19 +357,19 @@ Manager of VAIS(AI &amp; Vision community)</h5>
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/book/infrastructure_as_code/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/book/sw_architecture_hard_parts/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/book/infrastructure_as_code/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/book/sw_architecture_hard_parts/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/book/infrastructure_as_code/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/book/sw_architecture_hard_parts/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -431,7 +417,7 @@ Manager of VAIS(AI &amp; Vision community)</h5>
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/sw_architecture_hard_parts/" data-tooltip="소프트웨어 아키텍처 The Hard Parts -나눌 것인가 합칠 것인가?-">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -439,7 +425,7 @@ Manager of VAIS(AI &amp; Vision community)</h5>
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/data_science_note_ml/" data-tooltip="데싸노트의 실전에서 통하는 머신러닝, 머신러닝의 Cheat Sheet ">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/infrastructure_as_code/" data-tooltip="코드로 인프라 관리하기">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -457,19 +443,19 @@ Manager of VAIS(AI &amp; Vision community)</h5>
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/book/infrastructure_as_code/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/book/sw_architecture_hard_parts/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/book/infrastructure_as_code/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/book/sw_architecture_hard_parts/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/book/infrastructure_as_code/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/book/sw_architecture_hard_parts/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -499,19 +485,19 @@ Manager of VAIS(AI &amp; Vision community)</h5>
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Finfrastructure_as_code%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Fsw_architecture_hard_parts%2F">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Finfrastructure_as_code%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Fsw_architecture_hard_parts%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Finfrastructure_as_code%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Fsw_architecture_hard_parts%2F">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>
@@ -605,9 +591,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/sihan-son.github.io\/book\/infrastructure_as_code\/';
+          this.page.url = 'https:\/\/sihan-son.github.io\/book\/sw_architecture_hard_parts\/';
           
-            this.page.identifier = '\/book\/infrastructure_as_code\/'
+            this.page.identifier = '\/book\/sw_architecture_hard_parts\/'
           
         };
         (function() {

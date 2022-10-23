@@ -6,7 +6,17 @@
     <description>Recent content in Book on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 02 Oct 2022 11:29:39 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/categories/book/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Oct 2022 18:46:50 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/categories/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>소프트웨어 아키텍처 The Hard Parts -나눌 것인가 합칠 것인가?-</title>
+      <link>https://sihan-son.github.io/book/sw_architecture_hard_parts/</link>
+      <pubDate>Sun, 23 Oct 2022 18:46:50 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/sw_architecture_hard_parts/</guid>
+      <description>소프트웨어의 아키텍처는 프로젝트의 규모가 커지고 복잡해 질 수록 진가를 발휘하는 것 같습니다. 이번 SK IDC 화재로 카카오의 서비스들이 다운 되었을 때도 여러사람이 지적한 부분이 아키텍처 측면이었습니다. 프로젝트를 진행하다보면 초기에는 빠른 성장을 위해 사소한 것들은 뒤로 잠시 미뤄두고 진행하기도 합니다. 작은 변화는 티가 잘 나지 않는 것처럼 아키텍처의 변화는 각 단계들에서 덧 붙여지는 것은 크게 체감하기 힘듭니다. 하지만 어느 순간 돌아보면 개발 중인 사람조차 이해하기 힘들정도로 엉켜 있는경우가 있습니다.
+이 책은 이런 경우 어떻게 접근하고 분해해야 할까를 다루고 있습니다.</description>
+    </item>
+    
     <item>
       <title>코드로 인프라 관리하기</title>
       <link>https://sihan-son.github.io/book/infrastructure_as_code/</link>
