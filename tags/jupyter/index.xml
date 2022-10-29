@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jupyter on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/jupyter/</link>
+    <description>Recent content in jupyter on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 29 Oct 2022 10:00:41 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/jupyter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jupyter Kernel 추가하기</title>
+      <link>https://sihan-son.github.io/python/jupyter-kernel/</link>
+      <pubDate>Sat, 29 Oct 2022 10:00:41 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/python/jupyter-kernel/</guid>
+      <description>파이썬을 이용하다보면 프로젝트마다 필요한 라이브러리들이 다르고 파이썬의 버전도 다른경우가 대부분입니다. 그래서 다양한 가상환경 세팅을 위한 라이브러리들과 환경들이 존재합니다. 제목처럼 Anaconda에서 가상환경을 만들고 jupyter에 커널을 연결하는 방법을 소개드리겠습니다.
+1. 환경만들기 conda create -n [env name] [python=ver] Anaconda Prompt에서 위와 같이 입력을 하시면 가상환경이 만들어집니다. 환경변수를 설정해놓으셨다면 윈도우 기준 꼭 Anaconda Prompt가 아니어도 CMD 등 에서도 가능합니다.
+ [env name] 옵션은 여러분이 만든 가상환경에 붙는 이름입니다. [python=ver]은 필요할 경우 기입하시면 됩니다. 특정 파이썬 버전이 필요하시면 해당 버전을 기입하시면 됩니다.</description>
+    </item>
+    
+  </channel>
+</rss>

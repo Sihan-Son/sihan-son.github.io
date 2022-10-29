@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    
+    <meta charset="UTF-8">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5414348543182733" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.78.2 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="Sihan Son">
+<meta name="keywords" content="">
+<meta name="description" content="파이썬을 이용하다보면 프로젝트마다 필요한 라이브러리들이 다르고 파이썬의 버전도 다른경우가 대부분입니다. 그래서 다양한 가상환경 세팅을 위한 라이브러리들과 환경들이 존재합니다. 제목처럼 Anaconda에서 가상환경을 만들고 jupyter에 커널을 연결하는 방법을 소개드리겠습니다.
+1. 환경만들기 conda create -n [env name] [python=ver] Anaconda Prompt에서 위와 같이 입력을 하시면 가상환경이 만들어집니다. 환경변수를 설정해놓으셨다면 윈도우 기준 꼭 Anaconda Prompt가 아니어도 CMD 등 에서도 가능합니다.
+ [env name] 옵션은 여러분이 만든 가상환경에 붙는 이름입니다. [python=ver]은 필요할 경우 기입하시면 됩니다. 특정 파이썬 버전이 필요하시면 해당 버전을 기입하시면 됩니다.">
+
+
+<meta property="og:description" content="파이썬을 이용하다보면 프로젝트마다 필요한 라이브러리들이 다르고 파이썬의 버전도 다른경우가 대부분입니다. 그래서 다양한 가상환경 세팅을 위한 라이브러리들과 환경들이 존재합니다. 제목처럼 Anaconda에서 가상환경을 만들고 jupyter에 커널을 연결하는 방법을 소개드리겠습니다.
+1. 환경만들기 conda create -n [env name] [python=ver] Anaconda Prompt에서 위와 같이 입력을 하시면 가상환경이 만들어집니다. 환경변수를 설정해놓으셨다면 윈도우 기준 꼭 Anaconda Prompt가 아니어도 CMD 등 에서도 가능합니다.
+ [env name] 옵션은 여러분이 만든 가상환경에 붙는 이름입니다. [python=ver]은 필요할 경우 기입하시면 됩니다. 특정 파이썬 버전이 필요하시면 해당 버전을 기입하시면 됩니다.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jupyter Kernel 추가하기">
+<meta name="twitter:title" content="Jupyter Kernel 추가하기">
+<meta property="og:url" content="https://sihan-son.github.io/python/jupyter-kernel/">
+<meta property="twitter:url" content="https://sihan-son.github.io/python/jupyter-kernel/">
+<meta property="og:site_name" content="Sihan`s Blog">
+<meta property="og:description" content="파이썬을 이용하다보면 프로젝트마다 필요한 라이브러리들이 다르고 파이썬의 버전도 다른경우가 대부분입니다. 그래서 다양한 가상환경 세팅을 위한 라이브러리들과 환경들이 존재합니다. 제목처럼 Anaconda에서 가상환경을 만들고 jupyter에 커널을 연결하는 방법을 소개드리겠습니다.
+1. 환경만들기 conda create -n [env name] [python=ver] Anaconda Prompt에서 위와 같이 입력을 하시면 가상환경이 만들어집니다. 환경변수를 설정해놓으셨다면 윈도우 기준 꼭 Anaconda Prompt가 아니어도 CMD 등 에서도 가능합니다.
+ [env name] 옵션은 여러분이 만든 가상환경에 붙는 이름입니다. [python=ver]은 필요할 경우 기입하시면 됩니다. 특정 파이썬 버전이 필요하시면 해당 버전을 기입하시면 됩니다.">
+<meta name="twitter:description" content="파이썬을 이용하다보면 프로젝트마다 필요한 라이브러리들이 다르고 파이썬의 버전도 다른경우가 대부분입니다. 그래서 다양한 가상환경 세팅을 위한 라이브러리들과 환경들이 존재합니다. 제목처럼 Anaconda에서 가상환경을 만들고 jupyter에 커널을 연결하는 방법을 소개드리겠습니다.
+1. 환경만들기 conda create -n [env name] [python=ver] Anaconda Prompt에서 위와 같이 입력을 하시면 가상환경이 만들어집니다. 환경변수를 설정해놓으셨다면 윈도우 기준 꼭 Anaconda Prompt가 아니어도 CMD 등 에서도 가능합니다.
+ [env name] 옵션은 여러분이 만든 가상환경에 붙는 이름입니다. [python=ver]은 필요할 경우 기입하시면 됩니다. 특정 파이썬 버전이 필요하시면 해당 버전을 기입하시면 됩니다.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2022-10-29T10:00:41">
+  
+  
+    <meta property="article:modified_time" content="2022-10-29T10:00:41">
+  
+  
+  
+    
+      <meta property="article:section" content="Python">
+    
+  
+  
+    
+      <meta property="article:tag" content="Python">
+    
+      <meta property="article:tag" content="jupyter">
+    
+      <meta property="article:tag" content="anconda">
+    
+      <meta property="article:tag" content="envs">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+  <meta property="twitter:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+
+
+    <title>Jupyter Kernel 추가하기</title>
+
+    <link rel="icon" href="https://sihan-son.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://sihan-son.github.io/python/jupyter-kernel/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://sihan-son.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-143237170-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://sihan-son.github.io/">Sihan`s Blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://sihan-son.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://sihan-son.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Sihan Son</h4>
+        
+          <h5 class="sidebar-profile-bio">Wir müssen wissen, Wir werden wissen    <br>
+2020 &amp; 2021 Hanbit reviewer<br>
+Manager of VAIS(AI &amp; Vision community)</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/Sihan-Son" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.instagram.com/sihan_k_son/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-instagram"></i>
+      
+      <span class="sidebar-button-desc">Instagram</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/sihan-son-b43806120/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa fa-linkedin-square"></i>
+      
+      <span class="sidebar-button-desc">Linkedin</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.facebook.com/sihan830" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-facebook-square"></i>
+      
+      <span class="sidebar-button-desc">Facebook</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Jupyter Kernel 추가하기
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2022-10-29T10:00:41&#43;09:00">
+        
+  October 29, 2022
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/python">Python</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>파이썬을 이용하다보면 프로젝트마다 필요한 라이브러리들이 다르고 파이썬의 버전도 다른경우가 대부분입니다. 그래서 다양한 가상환경 세팅을 위한 라이브러리들과 환경들이 존재합니다. 제목처럼 <code>Anaconda</code>에서 가상환경을 만들고 <code>jupyter</code>에 커널을 연결하는 방법을 소개드리겠습니다.</p>
+<h1 id="1-환경만들기">1. 환경만들기</h1>
+<pre><code class="language-script" data-lang="script">conda create -n [env name] [python=ver]
+</code></pre><p><code>Anaconda Prompt</code>에서 위와 같이 입력을 하시면 가상환경이 만들어집니다. 환경변수를 설정해놓으셨다면 윈도우 기준 꼭 <code>Anaconda Prompt</code>가 아니어도 CMD 등 에서도 가능합니다.</p>
+<ul>
+<li>[env name] 옵션은 여러분이 만든 가상환경에 붙는 이름입니다.</li>
+<li>[python=ver]은 필요할 경우 기입하시면 됩니다. 특정 파이썬 버전이 필요하시면 해당 버전을 기입하시면 됩니다. 옵션을 주지 않는 경우 <code>Anaconda</code>의 기본 버전으로 파이썬이 설정됩니다.</li>
+</ul>
+<h1 id="2-환경-확인하기">2. 환경 확인하기</h1>
+<pre><code>conda info --envs
+</code></pre><p><code>Anaconda</code>가상환경 목록 확인이 필요할 경우 위 명령어를 통해 만들어진 환경들을 볼 수 있습니다.</p>
+<p><img src="https://sihan-son.github.io/images/python/jupyter-setting/envs.png" alt="envs"></p>
+<h1 id="3-사용하기">3. 사용하기</h1>
+<p>환경을 만들고 해당 환경을 사용하고 라이브러리 설치를 위해선 활성화를 주어야합니다.</p>
+<pre><code># 활성화
+conda activate [env name]
+
+# 비활성화
+conda deactivate
+</code></pre><ul>
+<li>[env name] 활성화하려는 환경</li>
+</ul>
+<p><img src="https://sihan-son.github.io/images/python/jupyter-setting/activate.png" alt="act"><br>
+<code>activate</code>를 이용해 활성화 시키면 경로 이름 앞에 위 이미지처럼 환경이름이 표시됩니다.</p>
+<p><img src="https://sihan-son.github.io/images/python/jupyter-setting/deactivate.png" alt="deact"><br>
+<code>deactivate</code>를 실행하면 환경이름이 사라지고 현재 경로이름만 표시가 됩니다.</p>
+<h1 id="4-jupyter에-커널-연결하기">4. Jupyter에 커널 연결하기</h1>
+<p>프롬포트를 실행시키고 연결이 필요한 환경을 활성화 해줍니다. 활성화가 되면 <code>jupyter</code>연결을 위해 <code>ipykernel</code>을 설치 해줍니다.</p>
+<pre><code>pip install ipykernel
+</code></pre><p><code>ipykernel</code>이 설치 되면 아래 명령어로 <code>jupyter</code>환경에 커널을 연결합니다.</p>
+<pre><code>python -m ipykernel install --user --name [env name] --display-name [display name]
+</code></pre><ul>
+<li>[env name]은 <code>conda info</code>를 통해 표시되는 여러분이 만들 떄 사용한 이름입니다.</li>
+<li>[display name]은 <code>jupyter</code>환경에서 커널을 선택할 때 표시되는 이름입니다.</li>
+</ul>
+<p>[env name]과 [display name]을 꼭 동일하게 맞출 필요는 없습니다.</p>
+<h1 id="5-커널-연결-해제하기">5. 커널 연결 해제하기</h1>
+<pre><code>jupyter kernelspec uninstall [display name]
+</code></pre><p>더 이상 해당 커널을 <code>jupyter</code>환경에서 사용하지 않을 경우 위 명령어를 통해 연결을 해제할 수 있습니다. 커널 연결만 해제 할 뿐 가상환경은 유지됩니다.</p>
+<h1 id="6-환경-삭제">6. 환경 삭제</h1>
+<pre><code>conda remove -n [env name] --all
+</code></pre><p>가상환경이 모든 쓸모를 다하고 더 이상 필요가 없어진 경우 위의 방법으로 삭제하시면 됩니다.</p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/python/">Python</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/jupyter/">jupyter</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/anconda/">anconda</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/envs/">envs</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/python/jupyter-kernel/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/python/jupyter-kernel/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/python/jupyter-kernel/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2022 Sihan Son. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/python/jupyter-kernel/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/python/jupyter-kernel/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/python/jupyter-kernel/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsihan-son.github.io%2Fpython%2Fjupyter-kernel%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fsihan-son.github.io%2Fpython%2Fjupyter-kernel%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fsihan-son.github.io%2Fpython%2Fjupyter-kernel%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Sihan Son</h4>
+    
+      <div id="about-card-bio">Wir müssen wissen, Wir werden wissen    <br>
+2020 &amp; 2021 Hanbit reviewer<br>
+Manager of VAIS(AI &amp; Vision community)</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Programmer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Korea
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://sihan-son.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://sihan-son.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/sihan-son.github.io\/python\/jupyter-kernel\/';
+          
+            this.page.identifier = '\/python\/jupyter-kernel\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'sihans-blog-1';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+    
+  </body>
+</html>
+

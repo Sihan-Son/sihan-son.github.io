@@ -14,10 +14,10 @@
 
 <meta property="og:description" content="Hugo tranquilpeak theme demo">
 <meta property="og:type" content="website">
-<meta property="og:title" content="python">
-<meta name="twitter:title" content="python">
-<meta property="og:url" content="https://sihan-son.github.io/tags/python/">
-<meta property="twitter:url" content="https://sihan-son.github.io/tags/python/">
+<meta property="og:title" content="jupyter">
+<meta name="twitter:title" content="jupyter">
+<meta property="og:url" content="https://sihan-son.github.io/tags/jupyter/">
+<meta property="twitter:url" content="https://sihan-son.github.io/tags/jupyter/">
 <meta property="og:site_name" content="Sihan`s Blog">
 <meta property="og:description" content="Hugo tranquilpeak theme demo">
 <meta name="twitter:description" content="Hugo tranquilpeak theme demo">
@@ -40,16 +40,16 @@
   <meta property="twitter:image" content="https://sihan-son.github.io/images/unicorn.jpg">
 
 
-    <title>python</title>
+    <title>jupyter</title>
 
     <link rel="icon" href="https://sihan-son.github.io/favicon.png">
     
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://sihan-son.github.io/tags/python/index.xml">
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://sihan-son.github.io/tags/jupyter/index.xml">
     
 
     
 
-    <link rel="canonical" href="https://sihan-son.github.io/tags/python/">
+    <link rel="canonical" href="https://sihan-son.github.io/tags/jupyter/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -261,16 +261,16 @@ Manager of VAIS(AI &amp; Vision community)</h5>
     
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://sihan-son.github.io/setting/colab-setting/">
-          쉽게 따라하는 Colab과 구글 드라이브 연결
+        <a class="link-unstyled" href="https://sihan-son.github.io/python/jupyter-kernel/">
+          Jupyter Kernel 추가하기
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-09-03T00:00:00Z">
+      <time itemprop="datePublished" datetime="2022-10-29T10:00:41&#43;09:00">
         
-  September 3, 2019
+  October 29, 2022
 
       </time>
     
@@ -279,7 +279,7 @@ Manager of VAIS(AI &amp; Vision community)</h5>
   
     <span>in</span>
     
-      <a class="category-link" href="https://sihan-son.github.io/categories/setting">Setting</a>
+      <a class="category-link" href="https://sihan-son.github.io/categories/python">Python</a>
     
   
 
@@ -288,73 +288,12 @@ Manager of VAIS(AI &amp; Vision community)</h5>
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        오늘 포스팅은 그림이 무척 많은 Colab을 사용하는 방법부터 Colab에서 구글 드라이브를 저장소로 사용하는 방법입니다. 차근차근 따라와 주세요.
-먼저 구글 드라이브에 들어가주세요. 저장소로 쓰기 때문에 어느 정도 용량확보가 필요합니다. 그래서 기존 구글 계정의 용량이 모자른다면 새로운 구글 계정을 만드셔서 하시는 것을 추천합니다.
- Index  Colab 추가하기 Colab 시작하기 GPU 사용하기 Google Drive 연결하기   1. Colab 추가하기 구글 드라이브의 메인 화면에서 마우스 우클릭을 해주시면 위와 같은 이미지가 뜨게 됩니다. 저는 이미 Colab을 추가한 상태라 항목에 Colab이 보이지만 이 글을 보고 계신 대부분의 사용자 분들은 없는게 정상이니 걱정하지 마세요.
+        파이썬을 이용하다보면 프로젝트마다 필요한 라이브러리들이 다르고 파이썬의 버전도 다른경우가 대부분입니다. 그래서 다양한 가상환경 세팅을 위한 라이브러리들과 환경들이 존재합니다. 제목처럼 Anaconda에서 가상환경을 만들고 jupyter에 커널을 연결하는 방법을 소개드리겠습니다.
+1. 환경만들기 conda create -n [env name] [python=ver] Anaconda Prompt에서 위와 같이 입력을 하시면 가상환경이 만들어집니다. 환경변수를 설정해놓으셨다면 윈도우 기준 꼭 Anaconda Prompt가 아니어도 CMD 등 에서도 가능합니다.
+ [env name] 옵션은 여러분이 만든 가상환경에 붙는 이름입니다. [python=ver]은 필요할 경우 기입하시면 됩니다. 특정 파이썬 버전이 필요하시면 해당 버전을 기입하시면 됩니다.
       
       <p>
-        <a href="https://sihan-son.github.io/setting/colab-setting/" class="postShorten-excerpt_link link">Continue reading</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-            
-              
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://sihan-son.github.io/setting/pycharm-setting/">
-          쉽게 따라하는 Pycharm interpreter 설정
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2019-08-12T00:00:00Z">
-        
-  August 12, 2019
-
-      </time>
-    
-    
-  
-  
-    <span>in</span>
-    
-      <a class="category-link" href="https://sihan-son.github.io/categories/setting">Setting</a>
-    
-  
-
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        오늘 알아볼 내용은 Pycharm에서 Python interpreter설정입니다. 잘나온 Python IDE가 여러가지라 취향에 따라서 Jupyter, vscode, spyder 등등 여러가지 사용하고 계실겁니다. 이 글은 그중에서 Pycharm 사용하시려는 분 중에서 interpreter설정에서 문제를 격고 계신 분들을 위한 포스팅입니다.
-1. 기본 interpreter 설정하기! fig 1
-interpreter 설정을 위해서 파란색으로 하이라이트 되어 있는 setting을 눌러줍니다.
-fig 2
-fig 3
-이제 fig 2이미지에서 좌측 메뉴의 Project Interpreter를 들어가면 처음이시면 fig 2처럼 빈 화면이 뜨게 됩니다. 이제 우측 상단의 빨간 동그라미 표시된 톱니 바퀴를 누르게 되면 fig 3과 같이 Add와 Show all이 나옵니다.
-      
-      <p>
-        <a href="https://sihan-son.github.io/setting/pycharm-setting/" class="postShorten-excerpt_link link">Continue reading</a>
+        <a href="https://sihan-son.github.io/python/jupyter-kernel/" class="postShorten-excerpt_link link">Continue reading</a>
         
       </p>
     </div>
@@ -364,23 +303,6 @@ fig 3
 
             
             
-  <div class="pagination-bar">
-    <ul class="pagination">
-      
-        
-          <li class="pagination-prev">
-            <a class="btn btn--default btn--small" href="https://sihan-son.github.io/tags/python/">
-              <i class="fa fa-angle-left text-base icon-mr"></i>
-              <span>NEWER POSTS</span>
-            </a>
-          </li>
-        
-        
-      
-      <li class="pagination-number">page 2 of 2</li>
-    </ul>
-  </div>
-
 
           </section>
         
