@@ -9,29 +9,33 @@
 <meta name="generator" content="Hugo 0.78.2 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Sihan Son">
 <meta name="keywords" content="">
-<meta name="description" content="소프트웨어의 아키텍처는 프로젝트의 규모가 커지고 복잡해 질 수록 진가를 발휘하는 것 같습니다. 이번 SK IDC 화재로 카카오의 서비스들이 다운 되었을 때도 여러사람이 지적한 부분이 아키텍처 측면이었습니다. 프로젝트를 진행하다보면 초기에는 빠른 성장을 위해 사소한 것들은 뒤로 잠시 미뤄두고 진행하기도 합니다. 작은 변화는 티가 잘 나지 않는 것처럼 아키텍처의 변화는 각 단계들에서 덧 붙여지는 것은 크게 체감하기 힘듭니다. 하지만 어느 순간 돌아보면 개발 중인 사람조차 이해하기 힘들정도로 엉켜 있는경우가 있습니다.
-이 책은 이런 경우 어떻게 접근하고 분해해야 할까를 다루고 있습니다.">
+<meta name="description" content="골든래빗 출판사로부터 책을 제공받아 작성했습니다
+책 바로가기
+알파고가 가지고 온 인고지능 쇼크 이후 벌써 6년이라는 시간이 지났습니다. 그 기간동안 다양한 인공지능/딥러닝 관련 서적들이 나왔고, tenosrflow와 pytorch가 인공지능 프레임워크의 두 기둥으로 자리 잡았습니다. 다양한 프레임워크와 네트워크/모델들이 나왔고 그래서 상대적으로 초창기에 나온 책들은 기초적인 MLP, CNN, RNN 정도를 다루고 부록에 GAN, Transformer 등 나름 트랜디하게 뒤에 나온 모델들을 소개하는 정도였습니다. 이번 책은 퍼셉트론을 시작으로 GPT, ViT등 요즘 핫하다고 할 수 있는 대규모 모델 등까지 다루고 있습니다.">
 
 
-<meta property="og:description" content="소프트웨어의 아키텍처는 프로젝트의 규모가 커지고 복잡해 질 수록 진가를 발휘하는 것 같습니다. 이번 SK IDC 화재로 카카오의 서비스들이 다운 되었을 때도 여러사람이 지적한 부분이 아키텍처 측면이었습니다. 프로젝트를 진행하다보면 초기에는 빠른 성장을 위해 사소한 것들은 뒤로 잠시 미뤄두고 진행하기도 합니다. 작은 변화는 티가 잘 나지 않는 것처럼 아키텍처의 변화는 각 단계들에서 덧 붙여지는 것은 크게 체감하기 힘듭니다. 하지만 어느 순간 돌아보면 개발 중인 사람조차 이해하기 힘들정도로 엉켜 있는경우가 있습니다.
-이 책은 이런 경우 어떻게 접근하고 분해해야 할까를 다루고 있습니다.">
+<meta property="og:description" content="골든래빗 출판사로부터 책을 제공받아 작성했습니다
+책 바로가기
+알파고가 가지고 온 인고지능 쇼크 이후 벌써 6년이라는 시간이 지났습니다. 그 기간동안 다양한 인공지능/딥러닝 관련 서적들이 나왔고, tenosrflow와 pytorch가 인공지능 프레임워크의 두 기둥으로 자리 잡았습니다. 다양한 프레임워크와 네트워크/모델들이 나왔고 그래서 상대적으로 초창기에 나온 책들은 기초적인 MLP, CNN, RNN 정도를 다루고 부록에 GAN, Transformer 등 나름 트랜디하게 뒤에 나온 모델들을 소개하는 정도였습니다. 이번 책은 퍼셉트론을 시작으로 GPT, ViT등 요즘 핫하다고 할 수 있는 대규모 모델 등까지 다루고 있습니다.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="소프트웨어 아키텍처 The Hard Parts -나눌 것인가 합칠 것인가?-">
-<meta name="twitter:title" content="소프트웨어 아키텍처 The Hard Parts -나눌 것인가 합칠 것인가?-">
-<meta property="og:url" content="https://sihan-son.github.io/book/sw_architecture_hard_parts/">
-<meta property="twitter:url" content="https://sihan-son.github.io/book/sw_architecture_hard_parts/">
+<meta property="og:title" content="Must Have 텐초의 파이토치 딥러닝 특강">
+<meta name="twitter:title" content="Must Have 텐초의 파이토치 딥러닝 특강">
+<meta property="og:url" content="https://sihan-son.github.io/book/pytorch_rabbit/">
+<meta property="twitter:url" content="https://sihan-son.github.io/book/pytorch_rabbit/">
 <meta property="og:site_name" content="Sihan`s Blog">
-<meta property="og:description" content="소프트웨어의 아키텍처는 프로젝트의 규모가 커지고 복잡해 질 수록 진가를 발휘하는 것 같습니다. 이번 SK IDC 화재로 카카오의 서비스들이 다운 되었을 때도 여러사람이 지적한 부분이 아키텍처 측면이었습니다. 프로젝트를 진행하다보면 초기에는 빠른 성장을 위해 사소한 것들은 뒤로 잠시 미뤄두고 진행하기도 합니다. 작은 변화는 티가 잘 나지 않는 것처럼 아키텍처의 변화는 각 단계들에서 덧 붙여지는 것은 크게 체감하기 힘듭니다. 하지만 어느 순간 돌아보면 개발 중인 사람조차 이해하기 힘들정도로 엉켜 있는경우가 있습니다.
-이 책은 이런 경우 어떻게 접근하고 분해해야 할까를 다루고 있습니다.">
-<meta name="twitter:description" content="소프트웨어의 아키텍처는 프로젝트의 규모가 커지고 복잡해 질 수록 진가를 발휘하는 것 같습니다. 이번 SK IDC 화재로 카카오의 서비스들이 다운 되었을 때도 여러사람이 지적한 부분이 아키텍처 측면이었습니다. 프로젝트를 진행하다보면 초기에는 빠른 성장을 위해 사소한 것들은 뒤로 잠시 미뤄두고 진행하기도 합니다. 작은 변화는 티가 잘 나지 않는 것처럼 아키텍처의 변화는 각 단계들에서 덧 붙여지는 것은 크게 체감하기 힘듭니다. 하지만 어느 순간 돌아보면 개발 중인 사람조차 이해하기 힘들정도로 엉켜 있는경우가 있습니다.
-이 책은 이런 경우 어떻게 접근하고 분해해야 할까를 다루고 있습니다.">
+<meta property="og:description" content="골든래빗 출판사로부터 책을 제공받아 작성했습니다
+책 바로가기
+알파고가 가지고 온 인고지능 쇼크 이후 벌써 6년이라는 시간이 지났습니다. 그 기간동안 다양한 인공지능/딥러닝 관련 서적들이 나왔고, tenosrflow와 pytorch가 인공지능 프레임워크의 두 기둥으로 자리 잡았습니다. 다양한 프레임워크와 네트워크/모델들이 나왔고 그래서 상대적으로 초창기에 나온 책들은 기초적인 MLP, CNN, RNN 정도를 다루고 부록에 GAN, Transformer 등 나름 트랜디하게 뒤에 나온 모델들을 소개하는 정도였습니다. 이번 책은 퍼셉트론을 시작으로 GPT, ViT등 요즘 핫하다고 할 수 있는 대규모 모델 등까지 다루고 있습니다.">
+<meta name="twitter:description" content="골든래빗 출판사로부터 책을 제공받아 작성했습니다
+책 바로가기
+알파고가 가지고 온 인고지능 쇼크 이후 벌써 6년이라는 시간이 지났습니다. 그 기간동안 다양한 인공지능/딥러닝 관련 서적들이 나왔고, tenosrflow와 pytorch가 인공지능 프레임워크의 두 기둥으로 자리 잡았습니다. 다양한 프레임워크와 네트워크/모델들이 나왔고 그래서 상대적으로 초창기에 나온 책들은 기초적인 MLP, CNN, RNN 정도를 다루고 부록에 GAN, Transformer 등 나름 트랜디하게 뒤에 나온 모델들을 소개하는 정도였습니다. 이번 책은 퍼셉트론을 시작으로 GPT, ViT등 요즘 핫하다고 할 수 있는 대규모 모델 등까지 다루고 있습니다.">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2022-10-23T18:46:50">
+    <meta property="article:published_time" content="2022-10-31T22:03:08">
   
   
-    <meta property="article:modified_time" content="2022-10-23T18:46:50">
+    <meta property="article:modified_time" content="2022-10-31T22:03:08">
   
   
   
@@ -41,11 +45,15 @@
   
   
     
-      <meta property="article:tag" content="Architecture">
+      <meta property="article:tag" content="golednRabbit">
     
-      <meta property="article:tag" content="hanbit">
+      <meta property="article:tag" content="ML">
     
-      <meta property="article:tag" content="book">
+      <meta property="article:tag" content="python">
+    
+      <meta property="article:tag" content="torch">
+    
+      <meta property="article:tag" content="pytorch">
     
   
 
@@ -66,14 +74,14 @@
   <meta property="twitter:image" content="https://sihan-son.github.io/images/unicorn.jpg">
 
 
-    <title>소프트웨어 아키텍처 The Hard Parts -나눌 것인가 합칠 것인가?-</title>
+    <title>Must Have 텐초의 파이토치 딥러닝 특강</title>
 
     <link rel="icon" href="https://sihan-son.github.io/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://sihan-son.github.io/book/sw_architecture_hard_parts/">
+    <link rel="canonical" href="https://sihan-son.github.io/book/pytorch_rabbit/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -268,15 +276,15 @@ Manager of VAIS(AI &amp; Vision community)</h5>
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      소프트웨어 아키텍처 The Hard Parts -나눌 것인가 합칠 것인가?-
+      Must Have 텐초의 파이토치 딥러닝 특강
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2022-10-23T18:46:50&#43;09:00">
+      <time itemprop="datePublished" datetime="2022-10-31T22:03:08&#43;09:00">
         
-  October 23, 2022
+  October 31, 2022
 
       </time>
     
@@ -295,13 +303,13 @@ Manager of VAIS(AI &amp; Vision community)</h5>
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p><img src="https://sihan-son.github.io/images/book/hanbit/sw_architecture.jpg" alt="sw_architecture"></p>
-<p>소프트웨어의 아키텍처는 프로젝트의 규모가 커지고 복잡해 질 수록 진가를 발휘하는 것 같습니다. 이번 SK IDC 화재로 카카오의 서비스들이 다운 되었을 때도 여러사람이 지적한 부분이 아키텍처 측면이었습니다. 프로젝트를 진행하다보면 초기에는 빠른 성장을 위해 사소한 것들은 뒤로 잠시 미뤄두고 진행하기도 합니다. 작은 변화는 티가 잘 나지 않는 것처럼 아키텍처의 변화는 각 단계들에서 덧 붙여지는 것은 크게 체감하기 힘듭니다. 하지만 어느 순간 돌아보면 개발 중인 사람조차 이해하기 힘들정도로 엉켜 있는경우가 있습니다.</p>
-<p>이 책은 이런 경우 어떻게 접근하고 분해해야 할까를 다루고 있습니다. 무조건 쪼개는 것은 방법이 아닙니다. 오히려 잘못된 분할은 복잡도만 증가시키고 시스템의 안정성을 해치는 이유가 됩니다. 아키텍처를 재정비하고 분할하는 이유는 시스템의 안정도를 높이고 가용성을 높이기 위해서입니다. 그런데 오히려 유연성이 떨어지고 복잡도가 증가한다면 잘 못된 리모델링입니다.</p>
-<p>아키텍처 리모델링을 위한 정답은 없습니다. 각 시스템에 맞게 각 단계별로 적절한 방법론을 가지고 손익 계산을 해야합니다. 우리가 고를 선택지에는 최고의 선택지는 없습니다. 우리는 차악의 선택지를 고를 뿐입니다. 7가지의 옵션 중에 모든 옵션이 좋은 선택지는 우리 앞에 쉬이 나타나지 않습니다. 그런 깔끔한 케이스는 교과서에서나 볼 법한 이야기입니다. 그래서 우리는 각 선택지의 트레이드 오프를 따져가면서 적용할 방법을 선택해야합니다.</p>
-<p>트레이드 오프 계산을 통해 남은 선택지들 중 차악의 선택지를 선택하며 아키텍쳐의 리모델링을 진행합니다. 지우고, 분리하고 때로는 다시 합치면서 리모델일 진행합니다. 가용성 등의 문제를 겪고 있거나 프로젝트가 안정화되서 구조적인 문제를 손봐야겠다고 생각은 하고 있지만, 시작점을 못 잡고 계셨다면 좋은 출발점입니다.</p>
-<hr>
-<p>한빛미디어 <code>2022 도서 서평단 &quot;나는 리뷰어다&quot;</code>의 일원으로 도서를 제공받아 작성한 리뷰입니다.</p>
+              <p><code>골든래빗 출판사로부터 책을 제공받아 작성했습니다</code></p>
+<p><img src="https://sihan-son.github.io/images/book/goldenRabbit/torch.jpg" alt="ands"><br>
+<a href="http://www.yes24.com/Product/Goods/111102197">책 바로가기</a></p>
+<p>알파고가 가지고 온 인고지능 쇼크 이후 벌써 6년이라는 시간이 지났습니다. 그 기간동안 다양한 인공지능/딥러닝 관련 서적들이 나왔고, <code>tenosrflow</code>와 <code>pytorch</code>가 인공지능 프레임워크의 두 기둥으로 자리 잡았습니다. 다양한 프레임워크와 네트워크/모델들이 나왔고 그래서 상대적으로 초창기에 나온 책들은 기초적인 <code>MLP</code>, <code>CNN</code>, <code>RNN</code> 정도를 다루고 부록에 <code>GAN</code>, <code>Transformer</code> 등 나름 트랜디하게 뒤에 나온 모델들을 소개하는 정도였습니다. 이번 책은 퍼셉트론을 시작으로 <code>GPT</code>, <code>ViT</code>등 요즘 핫하다고 할 수 있는 대규모 모델 등까지 다루고 있습니다.</p>
+<p>다양한 모델을 다루고 있어 각 모델들에 따라 <code>pytorch</code>를 이용해서 모델을 구성하는 법을 배울 수 있습니다. 논문 등을 보면서 논리적인 구조는 이해해도 이해를 코드로 바꾸는 것은 다른 이야기여서 피상적으로 그림같은 구조로 모델의 구조만 이해하고 있을 학습자가 꽤 있을 것입니다. 구조만 이해하고 돌아가는 코드를 깃허브에서 찾아 해매 가중치를 또 찾아 해매 모델을 돌렸을 겁니다.</p>
+<p>모델을 <code>torch</code>를 이용해 구성하면서 <code>torch</code>의 사용법과 모델 구성하는 방법 두 마리 토끼를 한번에 잡을 수 있습니다. <code>torch</code>의 사용법 모델 구성법를 같이 다루고 있어서 책을 처음부터 쭉 읽을 수도 있고, 필요한 모델구성에 따라서 발췌하면서 읽을 수 있습니다.</p>
+<p>각 모델별로 접근 방식과 문제 정의부 등 학습목표와 학습 순서를 제시하고 새로운 용어를 챕터 시작에서 정리를 해주기 때문에 필요한 내용을 빠르게 확인 할 수 있습니다. 예저 파일도 QR코드, URL, 단축 URL을 제공해주어서 편한 방법으로 예제 코드에 접근 할 수 있습니다. 모델을 각 단계별로 쪼개서 코드로 정의하기 때문에 원하는 부분으로 필요에 따라 다시 보기 좋은 구성입니다.</p>
 
               
             </div>
@@ -314,11 +322,15 @@ Manager of VAIS(AI &amp; Vision community)</h5>
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">TAGGED IN</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/architecture/">Architecture</a>
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/golednrabbit/">golednRabbit</a>
 
-  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/hanbit/">hanbit</a>
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/ml/">ML</a>
 
-  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/book/">book</a>
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/python/">python</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/torch/">torch</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/pytorch/">pytorch</a>
 
                   </div>
                 
@@ -331,7 +343,7 @@ Manager of VAIS(AI &amp; Vision community)</h5>
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/pytorch_rabbit/" data-tooltip="Must Have 텐초의 파이토치 딥러닝 특강">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -339,7 +351,7 @@ Manager of VAIS(AI &amp; Vision community)</h5>
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/infrastructure_as_code/" data-tooltip="코드로 인프라 관리하기">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/sw_architecture_hard_parts/" data-tooltip="소프트웨어 아키텍처 The Hard Parts -나눌 것인가 합칠 것인가?-">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -357,19 +369,19 @@ Manager of VAIS(AI &amp; Vision community)</h5>
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/book/sw_architecture_hard_parts/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/book/pytorch_rabbit/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/book/sw_architecture_hard_parts/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/book/pytorch_rabbit/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/book/sw_architecture_hard_parts/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/book/pytorch_rabbit/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -417,7 +429,7 @@ Manager of VAIS(AI &amp; Vision community)</h5>
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/pytorch_rabbit/" data-tooltip="Must Have 텐초의 파이토치 딥러닝 특강">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -425,7 +437,7 @@ Manager of VAIS(AI &amp; Vision community)</h5>
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/infrastructure_as_code/" data-tooltip="코드로 인프라 관리하기">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/sw_architecture_hard_parts/" data-tooltip="소프트웨어 아키텍처 The Hard Parts -나눌 것인가 합칠 것인가?-">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -443,19 +455,19 @@ Manager of VAIS(AI &amp; Vision community)</h5>
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/book/sw_architecture_hard_parts/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/book/pytorch_rabbit/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/book/sw_architecture_hard_parts/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/book/pytorch_rabbit/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/book/sw_architecture_hard_parts/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/book/pytorch_rabbit/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -485,19 +497,19 @@ Manager of VAIS(AI &amp; Vision community)</h5>
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Fsw_architecture_hard_parts%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Fpytorch_rabbit%2F">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Fsw_architecture_hard_parts%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Fpytorch_rabbit%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Fsw_architecture_hard_parts%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Fpytorch_rabbit%2F">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>
@@ -591,9 +603,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/sihan-son.github.io\/book\/sw_architecture_hard_parts\/';
+          this.page.url = 'https:\/\/sihan-son.github.io\/book\/pytorch_rabbit\/';
           
-            this.page.identifier = '\/book\/sw_architecture_hard_parts\/'
+            this.page.identifier = '\/book\/pytorch_rabbit\/'
           
         };
         (function() {
