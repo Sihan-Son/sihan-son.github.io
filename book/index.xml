@@ -6,7 +6,17 @@
     <description>Recent content in Books on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 31 Oct 2022 22:03:08 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/book/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Nov 2022 22:49:22 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>소문난 명강의 : 김범준의 핸즈온 리액트 네이티브</title>
+      <link>https://sihan-son.github.io/book/rn_hands_book/</link>
+      <pubDate>Tue, 22 Nov 2022 22:49:22 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/rn_hands_book/</guid>
+      <description>React Native는 이제 많은 분들이 이름은 익숙하실 겁니다. 이 글을 읽고 계시면 작은 흥미는 있으실 거라고 생각합니다. React Native(이하 RN)은 안드로이드/IOS 개발이 모두 가능한 앱 프레임워크입니다.
+OS에 종속 되지 않고 어플을 만들 수 있는 언어와 프레임워크는 RN 외에도 다양하게 존재합니다. C#의 자마린, 구글 Dart의 Flutter 등 선택지가 있습니다. RN의 가장 큰 장점은 메타라는 든든한 뒷배경과 새로운 언어의 추가적인 학습 소요가 적다는데 있다고 생각합니다. 자마린은 사실상 20년 이후 지원이 끝긴 상태고, Flutter를 하기 위해선 Dart를 배워야 하는데 아직까진 Flutter 외의 사용처가 없는 지엽적인 언어인게 장애물입니다.</description>
+    </item>
+    
     <item>
       <title>Must Have 텐초의 파이토치 딥러닝 특강</title>
       <link>https://sihan-son.github.io/book/pytorch_rabbit/</link>
