@@ -6,7 +6,52 @@
     <description>Recent content in Tags on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 22 Nov 2022 22:49:22 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Dec 2022 20:44:31 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data</title>
+      <link>https://sihan-son.github.io/tags/data/</link>
+      <pubDate>Fri, 30 Dec 2022 20:44:31 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data science</title>
+      <link>https://sihan-son.github.io/tags/data-science/</link>
+      <pubDate>Fri, 30 Dec 2022 20:44:31 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>https://sihan-son.github.io/tags/math/</link>
+      <pubDate>Fri, 30 Dec 2022 20:44:31 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>modeling</title>
+      <link>https://sihan-son.github.io/tags/modeling/</link>
+      <pubDate>Fri, 30 Dec 2022 20:44:31 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/modeling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://sihan-son.github.io/tags/r/</link>
+      <pubDate>Fri, 30 Dec 2022 20:44:31 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/r/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>app</title>
       <link>https://sihan-son.github.io/tags/app/</link>
@@ -242,15 +287,6 @@
     </item>
     
     <item>
-      <title>Data</title>
-      <link>https://sihan-son.github.io/tags/data/</link>
-      <pubDate>Sun, 29 May 2022 11:28:55 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>law</title>
       <link>https://sihan-son.github.io/tags/law/</link>
       <pubDate>Sun, 29 May 2022 11:28:55 +0900</pubDate>
@@ -319,15 +355,6 @@
       <pubDate>Tue, 10 May 2022 20:54:36 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/fundamental/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>modeling</title>
-      <link>https://sihan-son.github.io/tags/modeling/</link>
-      <pubDate>Sun, 24 Apr 2022 22:55:45 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/modeling/</guid>
       <description></description>
     </item>
     
@@ -755,15 +782,6 @@
     </item>
     
     <item>
-      <title>math</title>
-      <link>https://sihan-son.github.io/tags/math/</link>
-      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Probability</title>
       <link>https://sihan-son.github.io/tags/probability/</link>
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
@@ -841,15 +859,6 @@
       <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sihan-son.github.io/tags/%EC%B1%85%EB%A7%8C/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>https://sihan-son.github.io/tags/r/</link>
-      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/r/</guid>
       <description></description>
     </item>
     
