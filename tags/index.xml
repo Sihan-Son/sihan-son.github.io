@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 19 Feb 2023 21:31:02 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Mar 2023 09:21:45 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>analyze</title>
+      <link>https://sihan-son.github.io/tags/analyze/</link>
+      <pubDate>Sun, 26 Mar 2023 09:21:45 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/analyze/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>https://sihan-son.github.io/tags/data/</link>
+      <pubDate>Sun, 26 Mar 2023 09:21:45 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://sihan-son.github.io/tags/python/</link>
+      <pubDate>Sun, 26 Mar 2023 09:21:45 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Game</title>
       <link>https://sihan-son.github.io/tags/game/</link>
@@ -22,15 +49,6 @@
       <pubDate>Sun, 19 Feb 2023 21:31:02 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/history/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>https://sihan-son.github.io/tags/data/</link>
-      <pubDate>Fri, 30 Dec 2022 20:44:31 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/data/</guid>
       <description></description>
     </item>
     
@@ -112,15 +130,6 @@
       <pubDate>Mon, 31 Oct 2022 22:03:08 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/ml/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://sihan-son.github.io/tags/python/</link>
-      <pubDate>Mon, 31 Oct 2022 22:03:08 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/python/</guid>
       <description></description>
     </item>
     
