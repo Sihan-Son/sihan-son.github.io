@@ -9,43 +9,47 @@
 <meta name="generator" content="Hugo 0.78.2 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Sihan Son">
 <meta name="keywords" content="">
-<meta name="description" content="chatGPT가 AlphaGo 이후로 다시 한 번 대중의 관심을 인공지능으로 가지고 왔습니다. prompt engineer라는 용어가 나오고 중고생들부터 학계까지 광범위하게 사용하는 도구가 되었습니다. 이런 흐름 속에 입문을 고민하면서 어쩌다 데이터 분석 with 파이썬을 찾고 계실 것 같습니다.
-데이터 과학이라는 큰 범주 내에서는 가까운 사이라고 생각할 수 있지만 AI의 ML/DL(머신러닝/딥러닝)에서 필요로 하는 능력과 데이터 분석은 다소 궤가 다르다고 봐야랍니다. DL을 위해서도 데이터를 분석하고 정제하는 능력이 필요하기 때문에 DL 공부를 염두에 두셔도 볼 만한 책입니다.">
+<meta name="description" content="정답은 없지만 오답은 있다는 격언은 기술 문서에도 꽤나 어울립니다. 완벽한 개발 문서는 없지만, 있는 것에 의의를 둔 문서가 너무 많습니다. 경우에 따라선 코드 작성보다 문서 작성에 더 큰 시간 투자가 필요하거, 유지 보수도 어려울 때가 많습니다. 그래서 코드만 잘 쓰면 굳이 문서가 필요 없이 코드만 읽으면 된다는 입장, 주석은 최소화해서 간결하게 적자 등 개발자 진영에선 개발 문서의 호혜를 입으면서 그렇게 호의적인 태도는 아닙니다.
+구 MicroSoft Developer Network(MSDN), 현 Microsoft Docs는 관리가 정말 잘 되고 있는 개발 문서지만 때때로 스펙 변경이 문서에 반영되는 딜레이가 발생 하는 등 개발 문서 관리에 어려움을 개발 문서를 찾아 읽는 매 순간 경험하는 것이 개발자들의 현실이라고 생각합니다.">
 
 
-<meta property="og:description" content="chatGPT가 AlphaGo 이후로 다시 한 번 대중의 관심을 인공지능으로 가지고 왔습니다. prompt engineer라는 용어가 나오고 중고생들부터 학계까지 광범위하게 사용하는 도구가 되었습니다. 이런 흐름 속에 입문을 고민하면서 어쩌다 데이터 분석 with 파이썬을 찾고 계실 것 같습니다.
-데이터 과학이라는 큰 범주 내에서는 가까운 사이라고 생각할 수 있지만 AI의 ML/DL(머신러닝/딥러닝)에서 필요로 하는 능력과 데이터 분석은 다소 궤가 다르다고 봐야랍니다. DL을 위해서도 데이터를 분석하고 정제하는 능력이 필요하기 때문에 DL 공부를 염두에 두셔도 볼 만한 책입니다.">
+<meta property="og:description" content="정답은 없지만 오답은 있다는 격언은 기술 문서에도 꽤나 어울립니다. 완벽한 개발 문서는 없지만, 있는 것에 의의를 둔 문서가 너무 많습니다. 경우에 따라선 코드 작성보다 문서 작성에 더 큰 시간 투자가 필요하거, 유지 보수도 어려울 때가 많습니다. 그래서 코드만 잘 쓰면 굳이 문서가 필요 없이 코드만 읽으면 된다는 입장, 주석은 최소화해서 간결하게 적자 등 개발자 진영에선 개발 문서의 호혜를 입으면서 그렇게 호의적인 태도는 아닙니다.
+구 MicroSoft Developer Network(MSDN), 현 Microsoft Docs는 관리가 정말 잘 되고 있는 개발 문서지만 때때로 스펙 변경이 문서에 반영되는 딜레이가 발생 하는 등 개발 문서 관리에 어려움을 개발 문서를 찾아 읽는 매 순간 경험하는 것이 개발자들의 현실이라고 생각합니다.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="어쩌다 데이터 분석 with 파이썬, 입문의 왕도">
-<meta name="twitter:title" content="어쩌다 데이터 분석 with 파이썬, 입문의 왕도">
-<meta property="og:url" content="https://sihan-son.github.io/book/anyway_data_analytics/">
-<meta property="twitter:url" content="https://sihan-son.github.io/book/anyway_data_analytics/">
+<meta property="og:title" content="Docs for Developers 기술 문서 작성 완벽 가이드">
+<meta name="twitter:title" content="Docs for Developers 기술 문서 작성 완벽 가이드">
+<meta property="og:url" content="https://sihan-son.github.io/book/technical_writing/">
+<meta property="twitter:url" content="https://sihan-son.github.io/book/technical_writing/">
 <meta property="og:site_name" content="Sihan`s Blog">
-<meta property="og:description" content="chatGPT가 AlphaGo 이후로 다시 한 번 대중의 관심을 인공지능으로 가지고 왔습니다. prompt engineer라는 용어가 나오고 중고생들부터 학계까지 광범위하게 사용하는 도구가 되었습니다. 이런 흐름 속에 입문을 고민하면서 어쩌다 데이터 분석 with 파이썬을 찾고 계실 것 같습니다.
-데이터 과학이라는 큰 범주 내에서는 가까운 사이라고 생각할 수 있지만 AI의 ML/DL(머신러닝/딥러닝)에서 필요로 하는 능력과 데이터 분석은 다소 궤가 다르다고 봐야랍니다. DL을 위해서도 데이터를 분석하고 정제하는 능력이 필요하기 때문에 DL 공부를 염두에 두셔도 볼 만한 책입니다.">
-<meta name="twitter:description" content="chatGPT가 AlphaGo 이후로 다시 한 번 대중의 관심을 인공지능으로 가지고 왔습니다. prompt engineer라는 용어가 나오고 중고생들부터 학계까지 광범위하게 사용하는 도구가 되었습니다. 이런 흐름 속에 입문을 고민하면서 어쩌다 데이터 분석 with 파이썬을 찾고 계실 것 같습니다.
-데이터 과학이라는 큰 범주 내에서는 가까운 사이라고 생각할 수 있지만 AI의 ML/DL(머신러닝/딥러닝)에서 필요로 하는 능력과 데이터 분석은 다소 궤가 다르다고 봐야랍니다. DL을 위해서도 데이터를 분석하고 정제하는 능력이 필요하기 때문에 DL 공부를 염두에 두셔도 볼 만한 책입니다.">
+<meta property="og:description" content="정답은 없지만 오답은 있다는 격언은 기술 문서에도 꽤나 어울립니다. 완벽한 개발 문서는 없지만, 있는 것에 의의를 둔 문서가 너무 많습니다. 경우에 따라선 코드 작성보다 문서 작성에 더 큰 시간 투자가 필요하거, 유지 보수도 어려울 때가 많습니다. 그래서 코드만 잘 쓰면 굳이 문서가 필요 없이 코드만 읽으면 된다는 입장, 주석은 최소화해서 간결하게 적자 등 개발자 진영에선 개발 문서의 호혜를 입으면서 그렇게 호의적인 태도는 아닙니다.
+구 MicroSoft Developer Network(MSDN), 현 Microsoft Docs는 관리가 정말 잘 되고 있는 개발 문서지만 때때로 스펙 변경이 문서에 반영되는 딜레이가 발생 하는 등 개발 문서 관리에 어려움을 개발 문서를 찾아 읽는 매 순간 경험하는 것이 개발자들의 현실이라고 생각합니다.">
+<meta name="twitter:description" content="정답은 없지만 오답은 있다는 격언은 기술 문서에도 꽤나 어울립니다. 완벽한 개발 문서는 없지만, 있는 것에 의의를 둔 문서가 너무 많습니다. 경우에 따라선 코드 작성보다 문서 작성에 더 큰 시간 투자가 필요하거, 유지 보수도 어려울 때가 많습니다. 그래서 코드만 잘 쓰면 굳이 문서가 필요 없이 코드만 읽으면 된다는 입장, 주석은 최소화해서 간결하게 적자 등 개발자 진영에선 개발 문서의 호혜를 입으면서 그렇게 호의적인 태도는 아닙니다.
+구 MicroSoft Developer Network(MSDN), 현 Microsoft Docs는 관리가 정말 잘 되고 있는 개발 문서지만 때때로 스펙 변경이 문서에 반영되는 딜레이가 발생 하는 등 개발 문서 관리에 어려움을 개발 문서를 찾아 읽는 매 순간 경험하는 것이 개발자들의 현실이라고 생각합니다.">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2023-03-26T09:21:45">
+    <meta property="article:published_time" content="2023-05-13T22:10:36">
   
   
-    <meta property="article:modified_time" content="2023-03-26T09:21:45">
+    <meta property="article:modified_time" content="2023-05-13T22:10:36">
   
-  
-  
-    
-      <meta property="article:section" content="book">
-    
   
   
     
-      <meta property="article:tag" content="data">
+      <meta property="article:section" content="Book">
     
-      <meta property="article:tag" content="analyze">
+  
+  
     
-      <meta property="article:tag" content="python">
+      <meta property="article:tag" content="Book">
+    
+      <meta property="article:tag" content="Docs">
+    
+      <meta property="article:tag" content="writing">
+    
+      <meta property="article:tag" content="api">
+    
+      <meta property="article:tag" content="readme">
     
   
 
@@ -66,14 +70,14 @@
   <meta property="twitter:image" content="https://sihan-son.github.io/images/unicorn.jpg">
 
 
-    <title>어쩌다 데이터 분석 with 파이썬, 입문의 왕도</title>
+    <title>Docs for Developers 기술 문서 작성 완벽 가이드</title>
 
     <link rel="icon" href="https://sihan-son.github.io/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://sihan-son.github.io/book/anyway_data_analytics/">
+    <link rel="canonical" href="https://sihan-son.github.io/book/technical_writing/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -268,15 +272,15 @@ Manager of VAIS(AI &amp; Vision community)</h5>
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      어쩌다 데이터 분석 with 파이썬, 입문의 왕도
+      Docs for Developers 기술 문서 작성 완벽 가이드
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2023-03-26T09:21:45&#43;09:00">
+      <time itemprop="datePublished" datetime="2023-05-13T22:10:36&#43;09:00">
         
-  March 26, 2023
+  May 13, 2023
 
       </time>
     
@@ -285,7 +289,7 @@ Manager of VAIS(AI &amp; Vision community)</h5>
   
     <span>in</span>
     
-      <a class="category-link" href="https://sihan-son.github.io/categories/book">book</a>
+      <a class="category-link" href="https://sihan-son.github.io/categories/book">Book</a>
     
   
 
@@ -295,14 +299,10 @@ Manager of VAIS(AI &amp; Vision community)</h5>
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p><code>chatGPT</code>가 <code>AlphaGo</code> 이후로 다시 한 번 대중의 관심을 인공지능으로 가지고 왔습니다. <code>prompt engineer</code>라는 용어가 나오고 중고생들부터 학계까지 광범위하게 사용하는 도구가 되었습니다. 이런 흐름 속에 입문을 고민하면서 <code>어쩌다 데이터 분석 with 파이썬</code>을 찾고 계실 것 같습니다.</p>
-<p>데이터 과학이라는 큰 범주 내에서는 가까운 사이라고 생각할 수 있지만 AI의 <code>ML/DL(머신러닝/딥러닝)</code>에서 필요로 하는 능력과 데이터 분석은 다소 궤가 다르다고 봐야랍니다. <code>DL</code>을 위해서도 데이터를 분석하고 정제하는 능력이 필요하기 때문에 <code>DL</code> 공부를 염두에 두셔도 볼 만한 책입니다.</p>
-<p>데이터나 과학/수치 관련 프로그래밍을 전혀 안해봤다면 왕도라고 할 수 있는 구성으로 되어있습니다. 독학을 하다보면 <code>numpy</code>에서 <code>pandas</code>에서 <code>matplotlib</code>에서 또 한번 고비를 맞이합니다. 그래서 저도 <code>pandas</code>를 별도로 다룬 책, 데이터 시각화 책을 몇 권 가지고 있습니다.</p>
-<p>입문 단계에서는 내가 어디가 부족하고 어떤 것을 더 봐야 할지 알기 쉽지 않습니다. 그래서 <code>어쩌다 데이터 분석 with 파이썬</code>을 목차에 따라 따라가기를 추천드립니다. 정말 해당 라이브러리를 다뤄보지 않은 사용자를 대상으로 쓰여진 책이라 유경험자에게는 추천드리기 다소 힘든 책입니다. 다만 체계적인 흐름없이 닥치는데로 학습을 해서 과정에 구멍이 많다고 느껴지면 추천 드릴만한 책입니다.</p>
-<p><code>numpy</code>를 통한 수치연산을 배우고 <code>pandas</code>로 그걸 가공하고 <code>matplotlib</code>와 <code>seaborn</code>으로 데이터를 시각화해 데이터의 구멍을 찾아 메우는 과정에서 데이터와 친해지시면 됩니다. 흥미가 생기신다면 <code>kaggle</code> 등 데이터 경진 대회도 있고, 정말 책 제목처럼 어쩌다 시작하셔도 재밌는 책입니다.</p>
-<p>정말 입문자를 위한 책이어서 기존 입문자에게는 별로 추천드리지 않습니다.
-유사한 입문서적을 가지고 계시다면 중복 투자일 확률이 높습니다.
-난이도는 높지 않은 편이며, 이론에 대해서는 거의 다루지 않습니다.</p>
+              <p><code>정답은 없지만 오답은 있다</code>는 격언은 기술 문서에도 꽤나 어울립니다. 완벽한 개발 문서는 없지만, 있는 것에 의의를 둔 문서가 너무 많습니다. 경우에 따라선 코드 작성보다 문서 작성에 더 큰 시간 투자가 필요하거, 유지 보수도 어려울 때가 많습니다. 그래서 코드만 잘 쓰면 굳이 문서가 필요 없이 코드만 읽으면 된다는 입장, 주석은 최소화해서 간결하게 적자 등 개발자 진영에선 개발 문서의 호혜를 입으면서 그렇게 호의적인 태도는 아닙니다.</p>
+<p>구 <code>MicroSoft Developer Network(MSDN)</code>, 현 <code>Microsoft Docs</code>는 관리가 정말 잘 되고 있는 개발 문서지만 때때로 스펙 변경이 문서에 반영되는 딜레이가 발생 하는 등 개발 문서 관리에 어려움을 개발 문서를 찾아 읽는 매 순간 경험하는 것이 개발자들의 현실이라고 생각합니다.</p>
+<p>더불어 가장 큰 이유는 완벽한 개발 문서는 없지만, 너무 많은 오답 문서 때문에 고통 받은 경험과 개발 문서 작성에 대한 체계적인 교육, 자료 부족이라고 생각합니다. 그래서 이 책은 오답을 최대한 줄일 수 있는 방법을 알려주고 있습니다.</p>
+<p>개발문서에 대한 큰 가이드를 첫장에서 제시하고 각장을 거쳐 글을 완성도 있게 채워나가는 작업을 합니다. 모든 개발문서가 똑같이 작성될 수는 없습니다. 하지만 기본적으로 고려해야 할 사항은 같습니다. 코드도 상황에 맞춰 적절히 맞추듯 개발문서도 고려사항에 맞춰 기본기를 활욜 할 수 있어야 합니다. 책의 모든 과정을 착실히 수행해도 최상의 글은 나오지 않을 수 있습니다. 하지만 착실한 오답노트의 역할을 해줄 수 있는 책입니다.</p>
 <hr>
 <p>한빛미디어 <code>2023 도서 서평단 &quot;나는 리뷰어다&quot;</code>의 일원으로 도서를 제공받아 작성한 리뷰입니다.</p>
 
@@ -317,11 +317,15 @@ Manager of VAIS(AI &amp; Vision community)</h5>
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">TAGGED IN</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/data/">data</a>
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/book/">Book</a>
 
-  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/analyze/">analyze</a>
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/docs/">Docs</a>
 
-  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/python/">python</a>
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/writing/">writing</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/api/">api</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/readme/">readme</a>
 
                   </div>
                 
@@ -334,7 +338,7 @@ Manager of VAIS(AI &amp; Vision community)</h5>
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/technical_writing/" data-tooltip="Docs for Developers 기술 문서 작성 완벽 가이드">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -342,7 +346,7 @@ Manager of VAIS(AI &amp; Vision community)</h5>
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/lovely_korean_pc_game/" data-tooltip="우리가 사랑한 한국 PC 게임, 우리의 부모님도 게이머였다. ">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/anyway_data_analytics/" data-tooltip="어쩌다 데이터 분석 with 파이썬, 입문의 왕도">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -360,19 +364,19 @@ Manager of VAIS(AI &amp; Vision community)</h5>
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/book/anyway_data_analytics/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/book/technical_writing/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/book/anyway_data_analytics/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/book/technical_writing/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/book/anyway_data_analytics/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/book/technical_writing/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -420,7 +424,7 @@ Manager of VAIS(AI &amp; Vision community)</h5>
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/technical_writing/" data-tooltip="Docs for Developers 기술 문서 작성 완벽 가이드">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -428,7 +432,7 @@ Manager of VAIS(AI &amp; Vision community)</h5>
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/lovely_korean_pc_game/" data-tooltip="우리가 사랑한 한국 PC 게임, 우리의 부모님도 게이머였다. ">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/anyway_data_analytics/" data-tooltip="어쩌다 데이터 분석 with 파이썬, 입문의 왕도">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -446,19 +450,19 @@ Manager of VAIS(AI &amp; Vision community)</h5>
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/book/anyway_data_analytics/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/book/technical_writing/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/book/anyway_data_analytics/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/book/technical_writing/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/book/anyway_data_analytics/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/book/technical_writing/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -488,19 +492,19 @@ Manager of VAIS(AI &amp; Vision community)</h5>
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Fanyway_data_analytics%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Ftechnical_writing%2F">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Fanyway_data_analytics%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Ftechnical_writing%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Fanyway_data_analytics%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Ftechnical_writing%2F">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>
@@ -594,9 +598,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/sihan-son.github.io\/book\/anyway_data_analytics\/';
+          this.page.url = 'https:\/\/sihan-son.github.io\/book\/technical_writing\/';
           
-            this.page.identifier = '\/book\/anyway_data_analytics\/'
+            this.page.identifier = '\/book\/technical_writing\/'
           
         };
         (function() {

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>api on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/api/</link>
+    <description>Recent content in api on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 13 May 2023 22:10:36 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docs for Developers 기술 문서 작성 완벽 가이드</title>
+      <link>https://sihan-son.github.io/book/technical_writing/</link>
+      <pubDate>Sat, 13 May 2023 22:10:36 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/technical_writing/</guid>
+      <description>정답은 없지만 오답은 있다는 격언은 기술 문서에도 꽤나 어울립니다. 완벽한 개발 문서는 없지만, 있는 것에 의의를 둔 문서가 너무 많습니다. 경우에 따라선 코드 작성보다 문서 작성에 더 큰 시간 투자가 필요하거, 유지 보수도 어려울 때가 많습니다. 그래서 코드만 잘 쓰면 굳이 문서가 필요 없이 코드만 읽으면 된다는 입장, 주석은 최소화해서 간결하게 적자 등 개발자 진영에선 개발 문서의 호혜를 입으면서 그렇게 호의적인 태도는 아닙니다.
+구 MicroSoft Developer Network(MSDN), 현 Microsoft Docs는 관리가 정말 잘 되고 있는 개발 문서지만 때때로 스펙 변경이 문서에 반영되는 딜레이가 발생 하는 등 개발 문서 관리에 어려움을 개발 문서를 찾아 읽는 매 순간 경험하는 것이 개발자들의 현실이라고 생각합니다.</description>
+    </item>
+    
+  </channel>
+</rss>
