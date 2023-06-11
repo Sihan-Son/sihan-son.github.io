@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>베타리딩 on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/%EB%B2%A0%ED%83%80%EB%A6%AC%EB%94%A9/</link>
+    <description>Recent content in 베타리딩 on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 11 Jun 2023 21:29:36 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/%EB%B2%A0%ED%83%80%EB%A6%AC%EB%94%A9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>혼자 공부하는 C언어</title>
+      <link>https://sihan-son.github.io/book/alone_c/</link>
+      <pubDate>Sun, 11 Jun 2023 21:29:36 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/alone_c/</guid>
+      <description>오랜만에 베타리딩으로 참가한 혼자 공부하는 C언어(개정판)입니다. 혼공 시리즈는 접할 때 마다 정말 잘 짜여진 입문서적이라고 생각합니다. 출판사와 저자 분들의 노하우가 집대성 되어 있어서 입문자 때 공부하는 입장에서 접했으면 좋았을 것 같은 책들입니다. 입문을 고민하는 분들에게 추천하기에 분량과 퀄리티 대비 책값도 비싸지 않은 편이라 추천도 부담스럽지 않습니다.
+입문서적들은 미묘한 디테일에 따라서 난이도가 굉장히 다르게 느껴집니다. 내용 순서의 배치, 연계 등이 C처럼 클래식하면서 포인터같은 추상화 된 개념이 필요한 언어에서는 특히 더 그렇습니다. 혼공C는 실제적 개념을 쌓아올려서 추상화 시키는 과정이 탁월합니다.</description>
+    </item>
+    
+  </channel>
+</rss>
