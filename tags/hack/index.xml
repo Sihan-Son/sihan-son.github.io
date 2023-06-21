@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hack on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/hack/</link>
+    <description>Recent content in hack on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 20 Jun 2023 23:14:24 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/hack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>초보 해커를 위한 칼리 리눅스 입문</title>
+      <link>https://sihan-son.github.io/book/kali_linux/</link>
+      <pubDate>Tue, 20 Jun 2023 23:14:24 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/kali_linux/</guid>
+      <description>해킹의 시작은 시스템을 깊게 이해하는 것이다. 시스템의 취약점을 파악하긴 위해서는 탄탄하고 멀쩡한 시스템을 이해하고 알아야 합니다. Linux는 윈도우보다 사용자가 시스템에 더 가깝게 접근할 수 있다. 해킹을 위한 툴들과 설정들을 만지기엔 Linux가 윈도우보다 제공해주는 것이 많다. 그 중에서도 Kali 칼리 리눅스는 이런 툴들을 익히고 사용하기 좋은 환경입니다.
+이 책은 Kali를 다루면서 해킹에 입문하기 위한 준비를 하기 책입니다. 리눅스에 익숙하지 않은 유저들을 위해서 os세팅하고 기본적인 사용법에 대해 설명해줍니다. 리눅스 사용법에 더해 해킹을 위한 네트워크 세팅, 분석 및 관리를 집중적으로 이야기합니다.</description>
+    </item>
+    
+  </channel>
+</rss>
