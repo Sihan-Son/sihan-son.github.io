@@ -6,7 +6,17 @@
     <description>Recent content in Books on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 25 Jun 2023 23:16:32 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/book/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Jul 2023 21:27:25 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>데이터 과학자 원칙</title>
+      <link>https://sihan-son.github.io/book/princple-of-data-scientist/</link>
+      <pubDate>Sat, 01 Jul 2023 21:27:25 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/princple-of-data-scientist/</guid>
+      <description>9명의 저자 분의 글이 하나의 유기적인 글로 막힘없이 읽히는데 편집자님과 저자님들의 노고가 진하게 느껴졌습니다. 다양한 배경을 갖고 계신 분들의 인사이트를 그렇게 두껍지 않은 책을 통해 접할 수 있는 좋은 기회이었습니다. 저자분들을 페이스북이나 링크드인 등 SNS에서 단편적인 글로만 접하다가 정제 된 글을 통해 접하는 것은 색다른 느낌이었습니다.
+직접 마주하고 있지는 못하지만 짧게 짧게 보았던 글들에 대한 이해가 깊어지기도 했고, 글 속에 나타난 삶의 태도로 데이터에 대한 접근법을 새롭게 볼 수 있었습니다. 배경이 다양한만큼 시행착오도 다양합니다.</description>
+    </item>
+    
     <item>
       <title>This Is C Sharp</title>
       <link>https://sihan-son.github.io/book/this-is-c-sharp/</link>
