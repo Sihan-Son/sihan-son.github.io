@@ -15,7 +15,7 @@
       <guid>https://sihan-son.github.io/setting/colab-setting/</guid>
       <description>오늘 포스팅은 그림이 무척 많은 Colab을 사용하는 방법부터 Colab에서 구글 드라이브를 저장소로 사용하는 방법입니다. 차근차근 따라와 주세요.
 먼저 구글 드라이브에 들어가주세요. 저장소로 쓰기 때문에 어느 정도 용량확보가 필요합니다. 그래서 기존 구글 계정의 용량이 모자른다면 새로운 구글 계정을 만드셔서 하시는 것을 추천합니다.
- Index  Colab 추가하기 Colab 시작하기 GPU 사용하기 Google Drive 연결하기   1. Colab 추가하기 구글 드라이브의 메인 화면에서 마우스 우클릭을 해주시면 위와 같은 이미지가 뜨게 됩니다. 저는 이미 Colab을 추가한 상태라 항목에 Colab이 보이지만 이 글을 보고 계신 대부분의 사용자 분들은 없는게 정상이니 걱정하지 마세요.</description>
+Index Colab 추가하기 Colab 시작하기 GPU 사용하기 Google Drive 연결하기 1. Colab 추가하기 구글 드라이브의 메인 화면에서 마우스 우클릭을 해주시면 위와 같은 이미지가 뜨게 됩니다. 저는 이미 Colab을 추가한 상태라 항목에 Colab이 보이지만 이 글을 보고 계신 대부분의 사용자 분들은 없는게 정상이니 걱정하지 마세요.</description>
     </item>
     
   </channel>

@@ -36,7 +36,7 @@
       <guid>https://sihan-son.github.io/git/lick-git-author-setting/</guid>
       <description>commit은 한 번 밀리게 되었습니다. 생각을 해보니까 이걸 안해놓으면 나중에 commit할 때 꼬일거 같아서 설정을 먼저 해보겠습니다.
 add한 파일의 변경사항을 기록하는게 commit입니다. 게임도 저장할때 누구의 세이브 파일인지 알려줍니다. Git도 비슷하게 누가 해당 commit을 남기는지 알고 싶어합니다. Git이 원하느 정보는 두 가지입니다. 당신의 이름이 뭐고, 연락하고 싶을 때 보낼 메일 주소입니다.
-git config --global user.name &amp;quot;Hong-Gildong&amp;quot; git config --global user.email &amp;quot;gildong@github.com&amp;quot; 이 명령어는 내 컴퓨터고 나 혼자 이 컴퓨터에서 Git을 사용한다! 하시는 분에게 추천합니다.</description>
+git config --global user.name &amp;#34;Hong-Gildong&amp;#34; git config --global user.email &amp;#34;gildong@github.com&amp;#34; 이 명령어는 내 컴퓨터고 나 혼자 이 컴퓨터에서 Git을 사용한다! 하시는 분에게 추천합니다.</description>
     </item>
     
     <item>
@@ -87,7 +87,7 @@ git을 이용해 프로젝트를 진행하다 보면 굳이 버전관리가 필�
       
       <guid>https://sihan-son.github.io/book/git-from-hell/</guid>
       <description>GIT과 GITHUB는 프로그래밍을 시작하면 어느 순간부터 많이 듣지만 누군가에게는 굉장히 어려워 보이고 익숙하지 않은 개념일 수 있다. GIT과 GITHUB이 무슨 차이가 있고 이게 무슨 필요지 싶다. 특히 혼자 개발하는 분들에게는 협업 툴 아니냐고 생각하기 쉽상이다. 하지만 혼자 개발하는 분일 수록 GIT은 친해져야하는 툴이라고 생각한다. 이 책은 입문자를 대상으로 씌여진 책이다. 개념적인 부분이 굉장히 친절하게 잘 되어있다. 약 4년 동안 쓰면서도 헷갈리던 부분을 명쾌하게 해결해주었다.
-책은 총 6개의 챕터로 이루어져 있다. 앞의 3 챕터는 GIT설치부터 전반적인 사용 방법까지 설명한다.</description>
+책은 총 6개의 챕터로 이루어져 있다.</description>
     </item>
     
     <item>

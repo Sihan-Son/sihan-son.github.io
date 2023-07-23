@@ -6,14 +6,14 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5414348543182733" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.78.2 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.115.4 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Sihan Son">
 <meta name="keywords" content="">
-<meta name="description" content="Index  Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion  Model Architecture파트전에 Dataset and Preprocessing 파트를 먼저 다루려고합니다. 이 파트는 MIDI대한 간단한 설명과 데이터 전처리 방법과 전략이 나와있는 장입니다. 미디를 다루는 딥러닝 프로젝트에 꽤 큰 도움이 될 듯 합니다.
+<meta name="description" content="Index Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion Model Architecture파트전에 Dataset and Preprocessing 파트를 먼저 다루려고합니다. 이 파트는 MIDI대한 간단한 설명과 데이터 전처리 방법과 전략이 나와있는 장입니다. 미디를 다루는 딥러닝 프로젝트에 꽤 큰 도움이 될 듯 합니다.
 MIDI (Musical Instrument Digital Interface)는 통신 규격을 담은 심볼릭 데이터입니다. 여기에 대한 자세한 설명은 Symbolic Music MIDI를 참조 해주세요. MIDI는 통신 규격이기 때문에 진짜 소리를 가지고 있지 않습니다.">
 
 
-<meta property="og:description" content="Index  Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion  Model Architecture파트전에 Dataset and Preprocessing 파트를 먼저 다루려고합니다. 이 파트는 MIDI대한 간단한 설명과 데이터 전처리 방법과 전략이 나와있는 장입니다. 미디를 다루는 딥러닝 프로젝트에 꽤 큰 도움이 될 듯 합니다.
+<meta property="og:description" content="Index Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion Model Architecture파트전에 Dataset and Preprocessing 파트를 먼저 다루려고합니다. 이 파트는 MIDI대한 간단한 설명과 데이터 전처리 방법과 전략이 나와있는 장입니다. 미디를 다루는 딥러닝 프로젝트에 꽤 큰 도움이 될 듯 합니다.
 MIDI (Musical Instrument Digital Interface)는 통신 규격을 담은 심볼릭 데이터입니다. 여기에 대한 자세한 설명은 Symbolic Music MIDI를 참조 해주세요. MIDI는 통신 규격이기 때문에 진짜 소리를 가지고 있지 않습니다.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Symbolic Music Genre Transfer with CycleGAN(4)">
@@ -21,9 +21,9 @@ MIDI (Musical Instrument Digital Interface)는 통신 규격을 담은 심볼릭
 <meta property="og:url" content="https://sihan-son.github.io/paper/4-cyclegan-music-pre/">
 <meta property="twitter:url" content="https://sihan-son.github.io/paper/4-cyclegan-music-pre/">
 <meta property="og:site_name" content="Sihan`s Blog">
-<meta property="og:description" content="Index  Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion  Model Architecture파트전에 Dataset and Preprocessing 파트를 먼저 다루려고합니다. 이 파트는 MIDI대한 간단한 설명과 데이터 전처리 방법과 전략이 나와있는 장입니다. 미디를 다루는 딥러닝 프로젝트에 꽤 큰 도움이 될 듯 합니다.
+<meta property="og:description" content="Index Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion Model Architecture파트전에 Dataset and Preprocessing 파트를 먼저 다루려고합니다. 이 파트는 MIDI대한 간단한 설명과 데이터 전처리 방법과 전략이 나와있는 장입니다. 미디를 다루는 딥러닝 프로젝트에 꽤 큰 도움이 될 듯 합니다.
 MIDI (Musical Instrument Digital Interface)는 통신 규격을 담은 심볼릭 데이터입니다. 여기에 대한 자세한 설명은 Symbolic Music MIDI를 참조 해주세요. MIDI는 통신 규격이기 때문에 진짜 소리를 가지고 있지 않습니다.">
-<meta name="twitter:description" content="Index  Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion  Model Architecture파트전에 Dataset and Preprocessing 파트를 먼저 다루려고합니다. 이 파트는 MIDI대한 간단한 설명과 데이터 전처리 방법과 전략이 나와있는 장입니다. 미디를 다루는 딥러닝 프로젝트에 꽤 큰 도움이 될 듯 합니다.
+<meta name="twitter:description" content="Index Intro Related Work Model Architecture Dataset and Preprocessing Architecture Parmeters and Training Experimental Results Conclusion Model Architecture파트전에 Dataset and Preprocessing 파트를 먼저 다루려고합니다. 이 파트는 MIDI대한 간단한 설명과 데이터 전처리 방법과 전략이 나와있는 장입니다. 미디를 다루는 딥러닝 프로젝트에 꽤 큰 도움이 될 듯 합니다.
 MIDI (Musical Instrument Digital Interface)는 통신 규격을 담은 심볼릭 데이터입니다. 여기에 대한 자세한 설명은 Symbolic Music MIDI를 참조 해주세요. MIDI는 통신 규격이기 때문에 진짜 소리를 가지고 있지 않습니다.">
 <meta property="og:locale" content="en-us">
 
@@ -107,7 +107,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
     
     
   </head>

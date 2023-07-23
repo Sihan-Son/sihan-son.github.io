@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Product Manager on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/product-manager/</link>
+    <description>Recent content in Product Manager on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 23 Jul 2023 21:14:59 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/product-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>프로덕트 매니지먼트, - 우리는 무엇을 하는가? -</title>
+      <link>https://sihan-son.github.io/book/pm/</link>
+      <pubDate>Sun, 23 Jul 2023 21:14:59 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/pm/</guid>
+      <description>PM이란 단어는 참 여러 용례로 사용됩니다. 많은 현장에서 프로젝트 관리를 하는 프로젝트 매니저로 사용합니다. 이 책에서는 프로덕트 매니저에 대해 이야기합니다.
+프로덕트 매니저라는 직무명을 들었을 때 무슨 어떤 포지션인지 쉽게 감이 오지 않습니다. 책을 읽다보면 프로덕트 매니저가 이해가 가지 않았던게 당연하게 다가옵니다. PM이라는 직무에 대해 직관적으로 이해 할 수 있게 해당 직무에 대한 다양한 모습을 단계적으로 보여줍니다.
+PM의 가장 큰 역할은 소통이라는 것을 여실없이 보여주고 있는 책입니다. 저자 분의 소통 능력이 정말 뛰어나다고 느낀 점은 적재적소의 삽화와 물음표 없이 술술 읽히던 글이었습니다.</description>
+    </item>
+    
+  </channel>
+</rss>

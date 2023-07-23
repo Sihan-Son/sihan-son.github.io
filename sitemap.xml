@@ -1,1338 +1,813 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://sihan-son.github.io/categories/book/</loc>
-    <lastmod>2023-07-01T21:27:25+09:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2023-07-23T21:14:59+09:00</lastmod>
+  </url><url>
     <loc>https://sihan-son.github.io/book/</loc>
-    <lastmod>2023-07-01T21:27:25+09:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2023-07-23T21:14:59+09:00</lastmod>
+  </url><url>
     <loc>https://sihan-son.github.io/categories/</loc>
-    <lastmod>2023-07-01T21:27:25+09:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2023-07-23T21:14:59+09:00</lastmod>
+  </url><url>
+    <loc>https://sihan-son.github.io/tags/manage/</loc>
+    <lastmod>2023-07-23T21:14:59+09:00</lastmod>
+  </url><url>
+    <loc>https://sihan-son.github.io/tags/product-manager/</loc>
+    <lastmod>2023-07-23T21:14:59+09:00</lastmod>
+  </url><url>
+    <loc>https://sihan-son.github.io/</loc>
+    <lastmod>2023-07-23T21:14:59+09:00</lastmod>
+  </url><url>
+    <loc>https://sihan-son.github.io/tags/</loc>
+    <lastmod>2023-07-23T21:14:59+09:00</lastmod>
+  </url><url>
+    <loc>https://sihan-son.github.io/book/pm/</loc>
+    <lastmod>2023-07-23T21:14:59+09:00</lastmod>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/data/</loc>
     <lastmod>2023-07-01T21:27:25+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/golden/</loc>
     <lastmod>2023-07-01T21:27:25+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/golednrabbit/</loc>
     <lastmod>2023-07-01T21:27:25+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/ml/</loc>
     <lastmod>2023-07-01T21:27:25+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/princple/</loc>
     <lastmod>2023-07-01T21:27:25+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/scientist/</loc>
     <lastmod>2023-07-01T21:27:25+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sihan-son.github.io/</loc>
-    <lastmod>2023-07-01T21:27:25+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sihan-son.github.io/tags/</loc>
-    <lastmod>2023-07-01T21:27:25+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/princple-of-data-scientist/</loc>
     <lastmod>2023-07-01T21:27:25+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/c#/</loc>
     <lastmod>2023-06-25T23:16:32+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/dotnet/</loc>
     <lastmod>2023-06-25T23:16:32+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/this-is-c-sharp/</loc>
     <lastmod>2023-06-25T23:16:32+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/hack/</loc>
     <lastmod>2023-06-20T23:14:24+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/kali/</loc>
     <lastmod>2023-06-20T23:14:24+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/linux/</loc>
     <lastmod>2023-06-20T23:14:24+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/newbie/</loc>
     <lastmod>2023-06-20T23:14:24+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/kali_linux/</loc>
     <lastmod>2023-06-20T23:14:24+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/alone/</loc>
     <lastmod>2023-06-11T21:29:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/c/</loc>
     <lastmod>2023-06-11T21:29:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/hanbit/</loc>
     <lastmod>2023-06-11T21:29:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/%EB%B2%A0%ED%83%80%EB%A6%AC%EB%94%A9/</loc>
     <lastmod>2023-06-11T21:29:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/%ED%98%BC%EA%B3%B5/</loc>
     <lastmod>2023-06-11T21:29:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/alone_c/</loc>
     <lastmod>2023-06-11T21:29:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/api/</loc>
     <lastmod>2023-05-13T22:10:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/book/</loc>
     <lastmod>2023-05-13T22:10:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/docs/</loc>
     <lastmod>2023-05-13T22:10:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/technical_writing/</loc>
     <lastmod>2023-05-13T22:10:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/readme/</loc>
     <lastmod>2023-05-13T22:10:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/writing/</loc>
     <lastmod>2023-05-13T22:10:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/analyze/</loc>
     <lastmod>2023-03-26T09:21:45+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/python/</loc>
     <lastmod>2023-03-26T09:21:45+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/anyway_data_analytics/</loc>
     <lastmod>2023-03-26T09:21:45+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/game/</loc>
     <lastmod>2023-02-19T21:31:02+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/history/</loc>
     <lastmod>2023-02-19T21:31:02+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/lovely_korean_pc_game/</loc>
     <lastmod>2023-02-19T21:31:02+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/data-science/</loc>
     <lastmod>2022-12-30T20:44:31+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/math/</loc>
     <lastmod>2022-12-30T20:44:31+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/modeling/</loc>
     <lastmod>2022-12-30T20:44:31+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/r/</loc>
     <lastmod>2022-12-30T20:44:31+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/business-data-science/</loc>
     <lastmod>2022-12-30T20:44:31+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/app/</loc>
     <lastmod>2022-11-22T22:49:22+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/hybrid/</loc>
     <lastmod>2022-11-22T22:49:22+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/rn/</loc>
     <lastmod>2022-11-22T22:49:22+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/rn_hands_book/</loc>
     <lastmod>2022-11-22T22:49:22+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/pytorch_rabbit/</loc>
     <lastmod>2022-10-31T22:03:08+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/pytorch/</loc>
     <lastmod>2022-10-31T22:03:08+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/torch/</loc>
     <lastmod>2022-10-31T22:03:08+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/anconda/</loc>
     <lastmod>2022-10-29T10:00:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/envs/</loc>
     <lastmod>2022-10-29T10:00:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/jupyter/</loc>
     <lastmod>2022-10-29T10:00:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/python/jupyter-kernel/</loc>
     <lastmod>2022-10-29T10:00:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/categories/python/</loc>
     <lastmod>2022-10-29T10:00:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/python/</loc>
     <lastmod>2022-10-29T10:00:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/architecture/</loc>
     <lastmod>2022-10-23T18:46:50+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/sw_architecture_hard_parts/</loc>
     <lastmod>2022-10-23T18:46:50+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/cloud-native/</loc>
     <lastmod>2022-10-02T11:29:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/devops/</loc>
     <lastmod>2022-10-02T11:29:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/iac/</loc>
     <lastmod>2022-10-02T11:29:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/reference/</loc>
     <lastmod>2022-10-02T11:29:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/infrastructure_as_code/</loc>
     <lastmod>2022-10-02T11:29:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/data_science_note_ml/</loc>
     <lastmod>2022-09-07T23:14:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/algorithm/</loc>
     <lastmod>2022-08-27T22:43:25+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/c-lang/</loc>
     <lastmod>2022-08-27T22:43:25+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/data-structure/</loc>
     <lastmod>2022-08-27T22:43:25+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/algorithm_and_data_structure_with_c/</loc>
     <lastmod>2022-08-27T22:43:25+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/categories/agian-math/</loc>
     <lastmod>2022-08-05T22:06:47+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/categories/gilbut/</loc>
     <lastmod>2022-08-05T22:06:47+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/categories/math/</loc>
     <lastmod>2022-08-05T22:06:47+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/categories/statistics/</loc>
     <lastmod>2022-08-05T22:06:47+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/again_statistics/</loc>
     <lastmod>2022-08-05T22:06:47+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/design-pattern/</loc>
     <lastmod>2022-07-24T20:15:40+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/cloud_native/</loc>
     <lastmod>2022-07-24T20:15:40+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/python-algorithm/</loc>
     <lastmod>2022-06-26T11:28:55+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/car/</loc>
     <lastmod>2022-06-09T23:00:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/ui/</loc>
     <lastmod>2022-06-09T23:00:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/ux/</loc>
     <lastmod>2022-06-09T23:00:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/car_ux/</loc>
     <lastmod>2022-06-09T23:00:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/anonymization/</loc>
     <lastmod>2022-05-29T11:28:55+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/law/</loc>
     <lastmod>2022-05-29T11:28:55+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/pipline/</loc>
     <lastmod>2022-05-29T11:28:55+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/anonymization-pipline/</loc>
     <lastmod>2022-05-29T11:28:55+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/clone_coding/</loc>
     <lastmod>2022-05-23T21:22:13+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/js/</loc>
     <lastmod>2022-05-23T21:22:13+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/nico/</loc>
     <lastmod>2022-05-23T21:22:13+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/web/</loc>
     <lastmod>2022-05-23T21:22:13+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/zoom_clone_coding_nico/</loc>
     <lastmod>2022-05-23T21:22:13+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/beta_reading/</loc>
     <lastmod>2022-05-10T20:54:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/fundamental/</loc>
     <lastmod>2022-05-10T20:54:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/start_code/</loc>
     <lastmod>2022-05-10T20:54:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/review/</loc>
     <lastmod>2022-04-24T22:55:45+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/semantic/</loc>
     <lastmod>2022-04-24T22:55:45+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/semantic-data/</loc>
     <lastmod>2022-04-24T22:55:45+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/semantic_data/</loc>
     <lastmod>2022-04-24T22:55:45+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/dl/</loc>
     <lastmod>2022-03-26T22:50:56+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/servcie/</loc>
     <lastmod>2022-03-26T22:50:56+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/ml_app/</loc>
     <lastmod>2022-03-26T22:50:56+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/html/</loc>
     <lastmod>2022-03-13T12:38:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/programming_common_sense/html-is-not-programming-language/</loc>
     <lastmod>2022-03-13T12:38:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/hummor/</loc>
     <lastmod>2022-03-13T12:38:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/language/</loc>
     <lastmod>2022-03-13T12:38:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/meme/</loc>
     <lastmod>2022-03-13T12:38:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/categories/meme/</loc>
     <lastmod>2022-03-13T12:38:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/programming_common_sense/</loc>
     <lastmod>2022-03-13T12:38:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/cookbook/</loc>
     <lastmod>2022-02-24T23:00:10+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/database/</loc>
     <lastmod>2022-02-24T23:00:10+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/sql/</loc>
     <lastmod>2022-02-24T23:00:10+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/sql_cookbook/</loc>
     <lastmod>2022-02-24T23:00:10+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/2021reviewer/</loc>
     <lastmod>2021-12-26T20:40:06+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/figma/</loc>
     <lastmod>2021-12-26T20:40:06+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/tool/</loc>
     <lastmod>2021-12-26T20:40:06+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/figma/</loc>
     <lastmod>2021-12-26T20:40:06+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/bulding-ml-pipline/</loc>
     <lastmod>2021-11-21T16:13:03+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/pipeline/</loc>
     <lastmod>2021-11-21T16:13:03+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/tensorflow/</loc>
     <lastmod>2021-11-21T16:13:03+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/tfx/</loc>
     <lastmod>2021-11-21T16:13:03+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/oracle/</loc>
     <lastmod>2021-10-24T11:57:43+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/sqld/</loc>
     <lastmod>2021-10-24T11:57:43+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/sql_sqld_secret_note/</loc>
     <lastmod>2021-10-24T11:57:43+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/wolfenstein/</loc>
     <lastmod>2021-09-12T10:13:18+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/first-network/</loc>
     <lastmod>2021-07-25T19:56:09+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/first/</loc>
     <lastmod>2021-07-25T19:56:09+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/network/</loc>
     <lastmod>2021-07-25T19:56:09+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/security/</loc>
     <lastmod>2021-07-25T19:56:09+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/kaggle-stater/</loc>
     <lastmod>2021-06-19T11:06:04+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/kaggle/</loc>
     <lastmod>2021-06-19T11:06:04+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/express/</loc>
     <lastmod>2021-05-23T16:19:10+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/node/</loc>
     <lastmod>2021-05-23T16:19:10+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/node-and-express/</loc>
     <lastmod>2021-05-23T16:19:10+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/analyis/</loc>
     <lastmod>2021-04-18T19:21:31+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/data-analysis-with-python/</loc>
     <lastmod>2021-04-18T19:21:31+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/script/</loc>
     <lastmod>2021-03-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/shell/</loc>
     <lastmod>2021-03-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/shell-script/</loc>
     <lastmod>2021-03-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sihan-son.github.io/tags/git/</loc>
-    <lastmod>2021-02-18T23:08:15+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/categories/git/</loc>
     <lastmod>2021-02-18T23:08:15+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://sihan-son.github.io/tags/git/</loc>
+    <lastmod>2021-02-18T23:08:15+09:00</lastmod>
+  </url><url>
     <loc>https://sihan-son.github.io/git/</loc>
     <lastmod>2021-02-18T23:08:15+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/lick/</loc>
     <lastmod>2021-02-18T23:08:15+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/git/lick-git-commit2/</loc>
     <lastmod>2021-02-18T23:08:15+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/git/lick-git-commit/</loc>
     <lastmod>2021-02-16T21:55:44+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/setting/</loc>
     <lastmod>2021-02-16T00:00:50+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/git/lick-git-author-setting/</loc>
     <lastmod>2021-02-16T00:00:50+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/git/lick-git-ignore/</loc>
     <lastmod>2021-02-15T23:01:07+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/git/lick-git-add/</loc>
     <lastmod>2021-02-14T23:10:33+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/flutter/</loc>
     <lastmod>2021-02-14T10:41:15+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/flutter-in-action/</loc>
     <lastmod>2021-02-14T10:41:15+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/git/lick-git-start/</loc>
     <lastmod>2021-02-09T22:58:36+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/2020reviewer/</loc>
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/add/</loc>
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/github/</loc>
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/gitignore/</loc>
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/git/git-ignore-update/</loc>
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/ignore/</loc>
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/kubernetes/</loc>
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/kubernetes/</loc>
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/alone-dl/</loc>
     <lastmod>2021-01-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/%EB%B0%91%EB%B0%94%EB%8B%A5/</loc>
     <lastmod>2021-01-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/deep-learning-from-scratch-3/</loc>
     <lastmod>2021-01-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/django/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/do-it-django/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/doit/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/agian-math/</loc>
     <lastmod>2021-01-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/gilbut/</loc>
     <lastmod>2021-01-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/probability/</loc>
     <lastmod>2021-01-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/statistics/</loc>
     <lastmod>2021-01-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/again-probability/</loc>
     <lastmod>2021-01-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/do-it-flask/</loc>
     <lastmod>2020-12-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/flask/</loc>
     <lastmod>2020-12-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/ios/</loc>
     <lastmod>2020-12-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/swift/</loc>
     <lastmod>2020-12-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/swift-ios/</loc>
     <lastmod>2020-12-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/data-preprocessing/</loc>
     <lastmod>2020-11-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/data-preprocessing/</loc>
     <lastmod>2020-11-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/gan/</loc>
     <lastmod>2020-10-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/gans-in-action/</loc>
     <lastmod>2020-10-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/us/</loc>
     <lastmod>2020-09-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/law-of-ui-ux/</loc>
     <lastmod>2020-09-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/%EC%B1%85%EB%A7%8C/</loc>
     <lastmod>2020-09-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/statics/</loc>
     <lastmod>2020-09-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/statics-for-data-science/</loc>
     <lastmod>2020-09-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/csharp/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/more-effective-csharp/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/mysql/</loc>
     <lastmod>2020-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/mysql/</loc>
     <lastmod>2020-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/kotlin/</loc>
     <lastmod>2020-06-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/kotlin-advanced/</loc>
     <lastmod>2020-06-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/do-it-react/</loc>
     <lastmod>2020-02-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/react/</loc>
     <lastmod>2020-02-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/deeplearning/</loc>
     <lastmod>2020-02-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/do-it-deep-learning/</loc>
     <lastmod>2020-02-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/git-from-hell/</loc>
     <lastmod>2020-01-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/event/</loc>
     <lastmod>2019-12-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/ms/</loc>
     <lastmod>2019-12-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/ppt/</loc>
     <lastmod>2019-12-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/ppt-gosu/</loc>
     <lastmod>2019-12-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/first-coding/</loc>
     <lastmod>2019-12-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/java/</loc>
     <lastmod>2019-12-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/csharp-intro-review/</loc>
     <lastmod>2019-11-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/again-math/</loc>
     <lastmod>2019-11-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/calculus/</loc>
     <lastmod>2019-11-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/derivative/</loc>
     <lastmod>2019-11-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/integral/</loc>
     <lastmod>2019-11-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/again-calculus/</loc>
     <lastmod>2019-11-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/alexnet/</loc>
     <lastmod>2019-09-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/cnn/</loc>
     <lastmod>2019-09-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/mldl/</loc>
     <lastmod>2019-09-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/resnet/</loc>
     <lastmod>2019-09-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/vggnet/</loc>
     <lastmod>2019-09-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/mldl/advanced-cnn/</loc>
     <lastmod>2019-09-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/markdown/</loc>
     <lastmod>2019-09-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/pandoc/</loc>
     <lastmod>2019-09-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/git/pandoc-github-style-render/</loc>
     <lastmod>2019-09-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/review/apple-new-product/</loc>
     <lastmod>2019-09-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/appple/</loc>
     <lastmod>2019-09-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/categories/review/</loc>
     <lastmod>2019-09-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/review/</loc>
     <lastmod>2019-09-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/git/github-repo-public-to-private/</loc>
     <lastmod>2019-09-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/colab/</loc>
     <lastmod>2019-09-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/gpu/</loc>
     <lastmod>2019-09-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/categories/setting/</loc>
     <lastmod>2019-09-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/setting/</loc>
     <lastmod>2019-09-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/setting/colab-setting/</loc>
     <lastmod>2019-09-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/deutsch/</loc>
     <lastmod>2019-08-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/categories/deutsch/</loc>
     <lastmod>2019-08-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/german/</loc>
     <lastmod>2019-08-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/categories/language/</loc>
     <lastmod>2019-08-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/language/</loc>
     <lastmod>2019-08-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/language/german-02/</loc>
     <lastmod>2019-08-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/language/german-01/</loc>
     <lastmod>2019-08-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/language/german-00/</loc>
     <lastmod>2019-08-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/anaconda/</loc>
     <lastmod>2019-08-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/pycharm/</loc>
     <lastmod>2019-08-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/setting/pycharm-setting/</loc>
     <lastmod>2019-08-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/cheetah/</loc>
     <lastmod>2019-07-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/review/cheetah-gpu/</loc>
     <lastmod>2019-07-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/graduation/</loc>
     <lastmod>2019-07-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/mldl/mode-collapse/</loc>
     <lastmod>2019-07-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/mldl/what-is-norm/</loc>
     <lastmod>2019-07-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/blog/</loc>
     <lastmod>2019-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/jekyll/</loc>
     <lastmod>2019-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/ruby/</loc>
     <lastmod>2019-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/setting/jekyll-github-page/</loc>
     <lastmod>2019-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/numpy/</loc>
     <lastmod>2019-07-06T23:04:49+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/scikit-learn/</loc>
     <lastmod>2019-07-06T23:04:49+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/book/ml-book-review-gilbut-1/</loc>
     <lastmod>2019-07-06T23:04:49+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/cyclegan/</loc>
     <lastmod>2019-07-05T00:49:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/categories/gan/</loc>
     <lastmod>2019-07-05T00:49:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/genre/</loc>
     <lastmod>2019-07-05T00:49:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/music/</loc>
     <lastmod>2019-07-05T00:49:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/categories/paper/</loc>
     <lastmod>2019-07-05T00:49:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/paper/</loc>
     <lastmod>2019-07-05T00:49:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/paper/3-cyclegan-music-model/</loc>
     <lastmod>2019-07-05T00:49:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/setting/tensoflow-gpu-setting/</loc>
     <lastmod>2019-07-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/paper/4-cyclegan-music-pre/</loc>
     <lastmod>2019-07-04T00:49:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/vae/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/mldl/difference-between-vae-and-gan/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/mldl/latent-space/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/paper/2-cyclegan-music-related/</loc>
     <lastmod>2019-07-01T00:49:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/tags/midi/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/categories/music/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/music/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/music/midi/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/paper/1-cyclegan-music-intro/</loc>
     <lastmod>2019-06-29T00:49:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/archives/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sihan-son.github.io/categories/ml/dl/</loc>
   </url>
-  
 </urlset>

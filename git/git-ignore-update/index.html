@@ -6,7 +6,7 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5414348543182733" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.78.2 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.115.4 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Sihan Son">
 <meta name="keywords" content="">
 <meta name="description" content="테크 블로그를 목표 시작한 블로그가 1년 넘게 IT 도서 서평 블로그가 되었습니다. 초심을 찾고자 오랜만에 git, Github를 주제로 돌아왔습니다. 오늘 내용은 Github에만 적용 되는 내용은 아니고 bitbucket, gitlab에서도 동일하게 적용되는 내용이지만 제 주 서식처가 github인 관계로 github가 메인입니다.
@@ -103,7 +103,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
     
     
   </head>
@@ -302,10 +301,10 @@ Manager of VAIS(AI &amp; Vision community)</h5>
               <p>테크 블로그를 목표 시작한 블로그가 1년 넘게 IT 도서 서평 블로그가 되었습니다. 초심을 찾고자 오랜만에 <code>git</code>, <code>Github</code>를 주제로 돌아왔습니다. 오늘 내용은 <code>Github</code>에만 적용 되는 내용은 아니고 <code>bitbucket</code>, <code>gitlab</code>에서도 동일하게 적용되는 내용이지만 제 주 서식처가 <code>github</code>인 관계로 <code>github</code>가 메인입니다.</p>
 <p><code>git</code>을 이용해 프로젝트를 진행하다 보면 굳이 버전관리가 필요 없거나 <code>remote repo</code>인 <code>Github</code>등에 올리면 안되거나, 필요가 없는 것들이 존재합니다. <code>git</code>에 좀 익숙하신 분들이라면 이런 파일이나 디렉토리를 관리하기 위해서 <code>.gitignore</code>을 대충이라도 써보셨거나 쓸 계획을 가지고 계실 것입니다. <code>gitignore</code>에 대한 자세한 내용은 조만간 다른 글로 돌아오겠습니다.</p>
 <p>시작 단계에서는 필요를 못 느꼈던 파일이나 디렉토리가 프로젝트를 진행하다 보면 생기기 마련입니다. 그런데 어느새 <code>git add .</code>나 ide에서 단축키를 이용해서 <code>add</code>를 하다보면 올려선 안 될 것들이 이미 <code>github</code>에서 자리를 떡하니 잡고 올라가 있습니다. 그래서 급하게 <code>gitignore</code> 파일을 열어서 급하게 추가해 보지만 이미 올라간 파일은 <code>indexing</code>이 되어서 내려오지 않고 있습니다. 오늘 이 문제의 해결 방법입니다.</p>
-<pre><code class="language-git" data-lang="git">git add &quot;&lt;file | directoty&gt;&quot;
+<pre tabindex="0"><code class="language-git" data-lang="git">git add &#34;&lt;file | directoty&gt;&#34;
 </code></pre><p>를 하게 되면 인덱싱이 되어 그 때 부터 버전관리를 하게 됩니다. <code>gitignore</code>에 추가를 하게 되도 인덱싱 된 캐시가 있기 때문에 추가로 생성된 파일이나 경로가 아니라면 기존의 것들은 계속해서 버전 관리가 되고 <code>remote repo</code>에 잔류하게 되는 것 입니다.</p>
 <p>해결 방법은 의외로 굉장히 간단합니다. 캐싱이 문제라면 캐시를 정리하면 되겠죠?</p>
-<pre><code class="language-git" data-lang="git">git rm --cached &quot;&lt;file | *.file extension&gt;&quot;
+<pre tabindex="0"><code class="language-git" data-lang="git">git rm --cached &#34;&lt;file | *.file extension&gt;&#34;
 gir rm -r --cached &lt;directoty&gt;
 
 ex)

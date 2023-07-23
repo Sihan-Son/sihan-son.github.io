@@ -6,16 +6,22 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5414348543182733" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.78.2 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.115.4 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Sihan Son">
 <meta name="keywords" content="">
 <meta name="description" content="언제나 처럼 다시 돌아온 간단하게 Deep Learning 개념 정리 글입니다. 자세한 내용은 각 논문을 참조하거나 다른 학술 블로그를 읽어 주세요. 이 글에서 언급 되는 아키텍쳐들에 관한 논문 제목은 글 하단의 각주로 확인해 주세요.
- Index 1. AlexNet2. VGGNet, GoogLeNet3. ResNet fig.1 ILSVRC 우승 네트워크 레이어 수
+Index 1. AlexNet
+2. VGGNet, GoogLeNet
+3. ResNet
+fig.1 ILSVRC 우승 네트워크 레이어 수
 2012년 AlexNet을 시작으로 Convolution Neural Network CNN은 빠른 속도로 성능이 좋아지고 위 이미지에서 보이는 것 처럼 레이어가 깊어지기 시작했습니다. 이후 모델들은 가중치 업데이트를 위해 사용한 Error Backpropagation 알고리즘의 단점인 Gradient Vanishing과 Gradient Exploding 문제를 극복하고 나온 모델들입니다.">
 
 
 <meta property="og:description" content="언제나 처럼 다시 돌아온 간단하게 Deep Learning 개념 정리 글입니다. 자세한 내용은 각 논문을 참조하거나 다른 학술 블로그를 읽어 주세요. 이 글에서 언급 되는 아키텍쳐들에 관한 논문 제목은 글 하단의 각주로 확인해 주세요.
- Index 1. AlexNet2. VGGNet, GoogLeNet3. ResNet fig.1 ILSVRC 우승 네트워크 레이어 수
+Index 1. AlexNet
+2. VGGNet, GoogLeNet
+3. ResNet
+fig.1 ILSVRC 우승 네트워크 레이어 수
 2012년 AlexNet을 시작으로 Convolution Neural Network CNN은 빠른 속도로 성능이 좋아지고 위 이미지에서 보이는 것 처럼 레이어가 깊어지기 시작했습니다. 이후 모델들은 가중치 업데이트를 위해 사용한 Error Backpropagation 알고리즘의 단점인 Gradient Vanishing과 Gradient Exploding 문제를 극복하고 나온 모델들입니다.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="간단하게 훑어보는 Advanced CNNs">
@@ -24,10 +30,16 @@
 <meta property="twitter:url" content="https://sihan-son.github.io/mldl/advanced-cnn/">
 <meta property="og:site_name" content="Sihan`s Blog">
 <meta property="og:description" content="언제나 처럼 다시 돌아온 간단하게 Deep Learning 개념 정리 글입니다. 자세한 내용은 각 논문을 참조하거나 다른 학술 블로그를 읽어 주세요. 이 글에서 언급 되는 아키텍쳐들에 관한 논문 제목은 글 하단의 각주로 확인해 주세요.
- Index 1. AlexNet2. VGGNet, GoogLeNet3. ResNet fig.1 ILSVRC 우승 네트워크 레이어 수
+Index 1. AlexNet
+2. VGGNet, GoogLeNet
+3. ResNet
+fig.1 ILSVRC 우승 네트워크 레이어 수
 2012년 AlexNet을 시작으로 Convolution Neural Network CNN은 빠른 속도로 성능이 좋아지고 위 이미지에서 보이는 것 처럼 레이어가 깊어지기 시작했습니다. 이후 모델들은 가중치 업데이트를 위해 사용한 Error Backpropagation 알고리즘의 단점인 Gradient Vanishing과 Gradient Exploding 문제를 극복하고 나온 모델들입니다.">
 <meta name="twitter:description" content="언제나 처럼 다시 돌아온 간단하게 Deep Learning 개념 정리 글입니다. 자세한 내용은 각 논문을 참조하거나 다른 학술 블로그를 읽어 주세요. 이 글에서 언급 되는 아키텍쳐들에 관한 논문 제목은 글 하단의 각주로 확인해 주세요.
- Index 1. AlexNet2. VGGNet, GoogLeNet3. ResNet fig.1 ILSVRC 우승 네트워크 레이어 수
+Index 1. AlexNet
+2. VGGNet, GoogLeNet
+3. ResNet
+fig.1 ILSVRC 우승 네트워크 레이어 수
 2012년 AlexNet을 시작으로 Convolution Neural Network CNN은 빠른 속도로 성능이 좋아지고 위 이미지에서 보이는 것 처럼 레이어가 깊어지기 시작했습니다. 이후 모델들은 가중치 업데이트를 위해 사용한 Error Backpropagation 알고리즘의 단점인 Gradient Vanishing과 Gradient Exploding 문제를 극복하고 나온 모델들입니다.">
 <meta property="og:locale" content="en-us">
 
@@ -105,7 +117,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
     
     
   </head>

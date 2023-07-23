@@ -6,7 +6,7 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5414348543182733" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.78.2 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.115.4 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Sihan Son">
 <meta name="keywords" content="">
 <meta name="description" content="약속을 지키기 위해 오늘은 드디어 commit 편입니다. 위에 그림을 보시면 Stage Area에서 Local Repository로 단계를 넘어갈 때 사용하는 명령어가 commit입니다. 영어 공부를 열심히 한 여러분은 아마 지난 두 편간 나올 기약이 없던 commit을 보면서 commit인데 왜 약속을 안지키냐고 생각 하셨을 수도 있겠습니다. 프로그래밍을 공부하다 보면 익숙한 단어지만 익숙하지 않은 뜻으로 사용되는 경험을 종종하실 수 있습니다. 오늘의 주인공인 commit도 그 중 하나입니다.
@@ -97,7 +97,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
     
     
   </head>
@@ -313,7 +312,7 @@ Manager of VAIS(AI &amp; Vision community)</h5>
 <li>화재 대피 전</li>
 </ol>
 <p><img src="https://sihan-son.github.io/images/git/commit/fire.png" alt="fire"></p>
-<pre><code class="language-git" data-lang="git">git commit -m &quot;commit msg&quot;
+<pre tabindex="0"><code class="language-git" data-lang="git">git commit -m &#34;commit msg&#34;
 </code></pre><p>명령어를 통해 <code>commit</code>을 할 수 있습니다. <code>commit msg</code>는 <code>snapshot</code>을 찍을 때 이번 <code>snapshot</code>은 어떤 내용을 위해 기록하는 건지 메모를 남기는 것 입니다. 여러분이 원하고 남들도 이해 할 수 있는 작업내용을 써주시면 됩니다. <code>commit</code>은 제목과 본문이 구분되어 있습니다. 제목과 본문 구분은 &quot;&quot; 안에서 한줄 공백을 주면 구분됩니다. 어떻게 쓸지는 순전히 여러분의 자유입니다. 하지만 추천 되는 방법이 있다면 따라하면서 본인의 스타일을 만드게 좋다고 생각합니다.</p>
 <p>제가 공부하면서 배우고 찾은 규칙들입니다. 추후에 별도로 다시 다룰 예정이지만 여기선 중요 포인트만 체크하고 가겠습니다.</p>
 <ol>
@@ -324,7 +323,7 @@ Manager of VAIS(AI &amp; Vision community)</h5>
 </ol>
 <p>이 규칙들은 가독성을 위해서 지켜주면 좋겠습니다.</p>
 <p><code>-m</code>은 <code>commit</code>을 <code>CLI</code>로 하실 때 개인적으로 추천하는 옵션입니다. <code>git bash</code>의 기본 editor는 <code>VIM</code>이라서 익숙하지 않으신 분이 대부분이라고 생각이 들고, <code>vscode</code>로 바꾸셨어도 매번 <code>vscode</code>가 켜지고 커밋 메세지를 작성하는게 여간 귀찮은 일이 아니라서 한번에 해결 할 수 있는 옵션을 추천 드립니다. 제가 처음 <code>Git</code>을 접하고 가장 많은 삽질을 한 부분이 바로 <code>commit</code> 단계에서 <code>VIM</code>을 이용해 커밋 메세지를 작성하는 것이 었습니다.</p>
-<pre><code class="language-git" data-lang="git">git commit
+<pre tabindex="0"><code class="language-git" data-lang="git">git commit
 </code></pre><p>으로 <code>VIM</code>들어가서 <code>i</code>로 입력모드로 바꿔서 메세지 쓰고 <code>esc :wq</code>로 저장하는데 툭하면 <code>wq</code>대신 <code>ㅈㅂ</code> 입력하고 엔터쳐서 에러 발생하는 등 익숙하지 않은 도구 두개를 동시에 사용하느라 정말 많은 삽질을 해서 여러분은 삽질 하지 않을 수 있는 옵션 쓰세요.</p>
 <p>다음 글은 <code>commit 보충편</code> 또는 <code>Remote Repo</code>편으로 돌아오겠습니다. <code>ignore</code>나 <code>setting</code>편처럼 다른게 올 수도 있지만&hellip;&hellip; 다음 글도 기대해 주세요.</p>
 <hr>

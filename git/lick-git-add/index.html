@@ -6,7 +6,7 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5414348543182733" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.78.2 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.115.4 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Sihan Son">
 <meta name="keywords" content="">
 <meta name="description" content="이미지에 있는 명령어는 하나씩 배울 거니 지금은 이해가 안가도 괜찮습니다. 겉핥기로 시작하는 Git 시리즈는 Git bash를 사용하는 것으로 전제로 작성 된 글입니다. 이김에 CLI에 익숙해져 보세요!!
@@ -97,7 +97,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
     
     
   </head>
@@ -298,13 +297,13 @@ Manager of VAIS(AI &amp; Vision community)</h5>
 <code>겉핥기로 시작하는 Git</code> 시리즈는 <code>Git bash</code>를 사용하는 것으로 전제로 작성 된 글입니다. 이김에 <code>CLI</code>에 익숙해져 보세요!!</p>
 <p>오늘은 <code>Git</code>이 어떤 작업 순서를 살펴 보겠습니다. <code>Git</code>을 사용하면 물리적으로는 2가지 단계 논리적으로는 3,4단계에 걸쳐 있습니다. 여기서 물리적인 단계는 작업을 하고 있는 내 컴퓨터와 내 작업 내역을 저장할 원격 저장소가 있는 서버 또는 <code>Github</code>, <code>GitLab</code> 등의 서비스 저장소를 의미하며 물리적으로 2개 이상으로 나뉘어 있는게 보통입니다. 논리적 단계는 내가 작업하고 있는 컴퓨터에서 관리중인 프로젝트가 있는 디렉토리 내에서 명령에 따라 변화하는 단계를 의미합니다. 위 이미지에서 색이 다른 두개가 물리적 단계고, 안에 있는 4가지 줄기가 논리적 단계에 해당합니다.</p>
 <p>이번 글에선 내 컴퓨터에서 일어나는 3단계와 단계에 필요한 명령어들에서 배워보겠습니다. <code>Git</code>을 이용해서 프로젝트나 디렉토리의 버전관리를 하기 위해선 먼저 해당 디렉토리(폴더)를 <code>Git Repository(저장소)</code>로 만들어 주어야 합니다.</p>
-<pre><code>git init
+<pre tabindex="0"><code>git init
 </code></pre><p>명령어를 터미널에서 원하는 경로에서 입력하게 되면 <code>.git</code> 디렉토리가 생성되고 해당 디렉토리를 <code>Git Repository</code>로 만들게 됩니다. <code>git init</code>은 게임을 진행하기 위한 캐릭터를 만드는 과정입니다. 이제 이미지에 있는 <code>Working Directory</code>가 만들어졌습니다. <code>git init</code>을 해준 다음에는 <code>.gitignore</code>파일도 만들고 해줘야 할 작업이 있지만 해당 내용은 뒤에서 별도로 다루겠습니다.</p>
 <p><code>Working Directory</code>가 만들어지면 이제 생성 되는 파일들을 버전을 트랙킹하면서 관리할 수 있습니다. 해당 파일이 관리가 되고 있는지 아닌지 확인 할 수 있습니다. <code>Working Directory</code>는 문자 그대로 내가 작업을 할 경로를 의미합니다.</p>
-<pre><code>git status
+<pre tabindex="0"><code>git status
 </code></pre><p>명령어를 입력했을 때 관리 중이 아니라면 다음 이미지 처럼 <code>Untracked File</code> 목록에 빨간 색으로 파일 이름이 뜨게 됩니다.</p>
 <p><img src="https://sihan-son.github.io/images/git/lick-git-add/status1.png" alt="status1"></p>
-<pre><code>git add &lt;file name | directory&gt;
+<pre tabindex="0"><code>git add &lt;file name | directory&gt;
 </code></pre><p>를 하게 되면 해당 파일은 이제 <code>indexing</code>이 되어 <code>Stage Area</code>에 올라가게 됩니다. 이제서야 비로소 해당 파일을 버전 관리할 준비가 끝났습니다.</p>
 <p><img src="https://sihan-son.github.io/images/git/lick-git-add/add.png" alt="add"></p>
 <p>보시면 <code>No commit yet</code> 변경 사항이 발생했지만 commit 하지 않은 파일의 목록이 녹색으로 뜹니다. <code>git add</code>를 하면 <code>indexing</code>이 돼서 <code>Stage Area</code>에 올라간다고 했죠? <code>indexing</code>은 내가 관리 할 파일이라고 알려주는 과정입니다. 여러분이 책을 보다가 중요한 부분에 인덱서 포스트잇을 붙이는 것과 유사한 작업입니다. 여기선 빠르게 찾으려고 붙이는게 아니라 포스트잇이 붙은 곳만 변경이 발생하는지 확인 하라는 의미로 붙입니다. <code>add</code>를 하지 않으면 아무리 파일이 변경사항이 발생해도 <code>Git</code>이 그 걸 알 방법이 전혀 없답니다.</p>
