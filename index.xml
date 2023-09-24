@@ -6,7 +6,18 @@
     <description>Recent content on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 23 Jul 2023 21:14:59 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Sep 2023 23:24:50 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>진화적 아키텍쳐</title>
+      <link>https://sihan-son.github.io/book/evo/</link>
+      <pubDate>Sun, 24 Sep 2023 23:24:50 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/evo/</guid>
+      <description>소프트웨어 아키텍트는 아직까지는 그렇게 대중적인 포지션은 아닌 것 같습니다. 하지만 포지션에 대해 고민하고, 변화에 대응하기 위한 설계를 고민하는 분들에게 도움이 될 만한 책입니다.
+쉬운 책은 아니고 고민할 영역이 많습니다. 소프트웨어에 대한 유연한 대응을 하기 위해선 기초 설계 단계에서부터 해야할 것이 참 많습니다. 설계가 튼튼해야 규모에 대응하고 문제를 풀어갈 수 있습니다. 커지면서 시간에 따라 무너지지 않기 위해선 아키텍트의 역량이 중요함을 강조합니다.
+거번넌스, 피트니스 함수 등 유연한 설계와 그에 대한 대응에 대한 깊이를 다루고 싶으면 꼭 읽어보기를 추천합니다.</description>
+    </item>
+    
     <item>
       <title>프로덕트 매니지먼트, - 우리는 무엇을 하는가? -</title>
       <link>https://sihan-son.github.io/book/pm/</link>
@@ -404,7 +415,7 @@ node와 프레임워크인 Express를 입문하기에 충분한 책이라고 생
       <guid>https://sihan-son.github.io/git/lick-git-author-setting/</guid>
       <description>commit은 한 번 밀리게 되었습니다. 생각을 해보니까 이걸 안해놓으면 나중에 commit할 때 꼬일거 같아서 설정을 먼저 해보겠습니다.
 add한 파일의 변경사항을 기록하는게 commit입니다. 게임도 저장할때 누구의 세이브 파일인지 알려줍니다. Git도 비슷하게 누가 해당 commit을 남기는지 알고 싶어합니다. Git이 원하느 정보는 두 가지입니다. 당신의 이름이 뭐고, 연락하고 싶을 때 보낼 메일 주소입니다.
-git config --global user.name &amp;#34;Hong-Gildong&amp;#34; git config --global user.email &amp;#34;gildong@github.com&amp;#34; 이 명령어는 내 컴퓨터고 나 혼자 이 컴퓨터에서 Git을 사용한다! 하시는 분에게 추천합니다.</description>
+git config --global user.name &amp;#34;Hong-Gildong&amp;#34;git config --global user.email &amp;#34;gildong@github.com&amp;#34; 이 명령어는 내 컴퓨터고 나 혼자 이 컴퓨터에서 Git을 사용한다! 하시는 분에게 추천합니다.</description>
     </item>
     
     <item>

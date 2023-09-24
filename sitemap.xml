@@ -2,25 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sihan-son.github.io/tags/architect/</loc>
+    <lastmod>2023-09-24T23:24:50+09:00</lastmod>
+  </url><url>
     <loc>https://sihan-son.github.io/categories/book/</loc>
-    <lastmod>2023-07-23T21:14:59+09:00</lastmod>
+    <lastmod>2023-09-24T23:24:50+09:00</lastmod>
   </url><url>
     <loc>https://sihan-son.github.io/book/</loc>
-    <lastmod>2023-07-23T21:14:59+09:00</lastmod>
+    <lastmod>2023-09-24T23:24:50+09:00</lastmod>
   </url><url>
     <loc>https://sihan-son.github.io/categories/</loc>
-    <lastmod>2023-07-23T21:14:59+09:00</lastmod>
+    <lastmod>2023-09-24T23:24:50+09:00</lastmod>
+  </url><url>
+    <loc>https://sihan-son.github.io/</loc>
+    <lastmod>2023-09-24T23:24:50+09:00</lastmod>
+  </url><url>
+    <loc>https://sihan-son.github.io/tags/</loc>
+    <lastmod>2023-09-24T23:24:50+09:00</lastmod>
+  </url><url>
+    <loc>https://sihan-son.github.io/book/evo/</loc>
+    <lastmod>2023-09-24T23:24:50+09:00</lastmod>
   </url><url>
     <loc>https://sihan-son.github.io/tags/manage/</loc>
     <lastmod>2023-07-23T21:14:59+09:00</lastmod>
   </url><url>
     <loc>https://sihan-son.github.io/tags/product-manager/</loc>
-    <lastmod>2023-07-23T21:14:59+09:00</lastmod>
-  </url><url>
-    <loc>https://sihan-son.github.io/</loc>
-    <lastmod>2023-07-23T21:14:59+09:00</lastmod>
-  </url><url>
-    <loc>https://sihan-son.github.io/tags/</loc>
     <lastmod>2023-07-23T21:14:59+09:00</lastmod>
   </url><url>
     <loc>https://sihan-son.github.io/book/pm/</loc>
