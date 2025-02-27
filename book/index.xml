@@ -6,7 +6,18 @@
     <description>Recent content in Books on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 21 Oct 2024 23:49:10 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/book/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Feb 2025 07:49:58 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>그로킹 알고리즘</title>
+      <link>https://sihan-son.github.io/book/grokking_algorithm/</link>
+      <pubDate>Fri, 28 Feb 2025 07:49:58 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/grokking_algorithm/</guid>
+      <description>한빛미디어 서평단 &amp;lt;나는리뷰어다&amp;gt; 활동을 위해서 책을 협찬 받아 작성된 서평입니다.
+유튜브, 넥플릭스 등 개인 맞춤화 된 추천 시스템이 보편화 되면서 알고리즘이라는 용어가 흔하게 사용하고 있습니다. 프로그래밍에서 알고리즘은 분리될 수 없는 관계이자 점점 깊어지는 관계입니다. 컴퓨터를 전공하게 되면 자료구조부터 여러과목을 통해 알고리즘에 대한 개념을 익혀가게 됩니다.
+그로킹 알고리즘은 알고리즘 문제 풀이를 위한 깊은 구현이나 응용을 이야기하는 책은 아닙니다. 알고리즘이라는 세계를 그림으로 소개해주는 책에 가깝습니다. 알고리즘에 있어 가장 기본인 시간 복잡도부터 NP-완전문제까지 다루고 있습니다.</description>
+    </item>
+    
     <item>
       <title>Fast Api로 배우는 백엔드 프로그래밍 with 클린 아키텍쳐</title>
       <link>https://sihan-son.github.io/book/fast-api/</link>

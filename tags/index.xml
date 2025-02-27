@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 01 Feb 2025 21:14:20 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Feb 2025 07:49:58 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algorithm</title>
+      <link>https://sihan-son.github.io/tags/algorithm/</link>
+      <pubDate>Fri, 28 Feb 2025 07:49:58 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hanbit</title>
+      <link>https://sihan-son.github.io/tags/hanbit/</link>
+      <pubDate>Fri, 28 Feb 2025 07:49:58 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/hanbit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://sihan-son.github.io/tags/python/</link>
+      <pubDate>Fri, 28 Feb 2025 07:49:58 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>ai</title>
       <link>https://sihan-son.github.io/tags/ai/</link>
@@ -49,15 +76,6 @@
       <pubDate>Mon, 21 Oct 2024 23:49:10 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/fastapi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://sihan-son.github.io/tags/python/</link>
-      <pubDate>Mon, 21 Oct 2024 23:49:10 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/python/</guid>
       <description></description>
     </item>
     
@@ -323,15 +341,6 @@
     </item>
     
     <item>
-      <title>Hanbit</title>
-      <link>https://sihan-son.github.io/tags/hanbit/</link>
-      <pubDate>Sun, 11 Jun 2023 21:29:36 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/hanbit/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>베타리딩</title>
       <link>https://sihan-son.github.io/tags/%EB%B2%A0%ED%83%80%EB%A6%AC%EB%94%A9/</link>
       <pubDate>Sun, 11 Jun 2023 21:29:36 +0900</pubDate>
@@ -553,15 +562,6 @@
       <pubDate>Sun, 02 Oct 2022 11:29:39 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/reference/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Algorithm</title>
-      <link>https://sihan-son.github.io/tags/algorithm/</link>
-      <pubDate>Sat, 27 Aug 2022 22:43:25 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/algorithm/</guid>
       <description></description>
     </item>
     
