@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tech on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/tech/</link>
+    <description>Recent content in tech on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language><atom:link href="https://sihan-son.github.io/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>개발자 기술 면접 노트</title>
+      <link>https://sihan-son.github.io/book/tech_interview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/tech_interview/</guid>
+      <description>한빛미디어 서평단 &amp;lt;나는리뷰어다&amp;gt; 활동을 위해서 책을 협찬 받아 작성된 서평입니다.
+컴퓨터를 전공하면서 공부를 하다보면 네트워크, 데이터베이스, 자바, 파이썬, 자료구조 등등 CS(computrer sicence) 지식을 얻게 됩니다. 과제를 위한 코드는 썩 잘 작성하더라도 이 지식을 어떻게 활용해서 취업을 준비하고, 산업현장에서 원하는 제품을 만들어 내는 것에 대한 이해가 부족할 때가 있습니다. 코로나 이전에는 같이 학교를 다니던 취업한 선배 등을 통하거나 행사 등을 통해 만나 업계 선배들을 통해 조언을 받을 수 있었지만, 코로나와 인공지능 파도를 헤쳐온 뒤로는 그 조차 쉽지 않아졌습니다.</description>
+    </item>
+    
+  </channel>
+</rss>
