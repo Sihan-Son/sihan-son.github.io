@@ -2,25 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sihan-son.github.io/tags/book/</loc>
-    <lastmod>2025-04-27T23:10:11+09:00</lastmod>
+    <loc>https://sihan-son.github.io/categories/book/</loc>
+    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sihan-son.github.io/book/</loc>
-    <lastmod>2025-04-27T23:10:11+09:00</lastmod>
+    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sihan-son.github.io/categories/</loc>
+    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sihan-son.github.io/tags/interview/</loc>
+    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sihan-son.github.io/</loc>
+    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sihan-son.github.io/tags/</loc>
+    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sihan-son.github.io/tags/tech/</loc>
+    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sihan-son.github.io/book/tech_interview/</loc>
+    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sihan-son.github.io/tags/book/</loc>
     <lastmod>2025-04-27T23:10:11+09:00</lastmod>
   </url><url>
     <loc>https://sihan-son.github.io/categories/image/</loc>
     <lastmod>2025-04-27T23:10:11+09:00</lastmod>
   </url><url>
     <loc>https://sihan-son.github.io/categories/photoshop/</loc>
-    <lastmod>2025-04-27T23:10:11+09:00</lastmod>
-  </url><url>
-    <loc>https://sihan-son.github.io/</loc>
-    <lastmod>2025-04-27T23:10:11+09:00</lastmod>
-  </url><url>
-    <loc>https://sihan-son.github.io/tags/</loc>
     <lastmod>2025-04-27T23:10:11+09:00</lastmod>
   </url><url>
     <loc>https://sihan-son.github.io/book/photoshop/</loc>
@@ -36,9 +48,6 @@
     <lastmod>2025-03-29T22:04:39+09:00</lastmod>
   </url><url>
     <loc>https://sihan-son.github.io/tags/algorithm/</loc>
-    <lastmod>2025-02-28T07:49:58+09:00</lastmod>
-  </url><url>
-    <loc>https://sihan-son.github.io/categories/book/</loc>
     <lastmod>2025-02-28T07:49:58+09:00</lastmod>
   </url><url>
     <loc>https://sihan-son.github.io/tags/hanbit/</loc>
@@ -904,12 +913,6 @@
   </url><url>
     <loc>https://sihan-son.github.io/archives/</loc>
   </url><url>
-    <loc>https://sihan-son.github.io/tags/interview/</loc>
-  </url><url>
     <loc>https://sihan-son.github.io/categories/ml/dl/</loc>
-  </url><url>
-    <loc>https://sihan-son.github.io/tags/tech/</loc>
-  </url><url>
-    <loc>https://sihan-son.github.io/book/tech_interview/</loc>
   </url>
 </urlset>
