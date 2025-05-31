@@ -1,7 +1,7 @@
 ---
 type: post
 title: "개발자 기술 면접 노트"
-date: 2025-5-30
+date: 2025-05-30
 
 categories:
 - Book
