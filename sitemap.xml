@@ -2,22 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sihan-son.github.io/book/execl_power_query/</loc>
+    <lastmod>2025-06-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sihan-son.github.io/categories/book/</loc>
-    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sihan-son.github.io/book/</loc>
-    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sihan-son.github.io/categories/</loc>
-    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sihan-son.github.io/tags/interview/</loc>
-    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
+    <loc>https://sihan-son.github.io/tags/execl/</loc>
+    <lastmod>2025-06-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sihan-son.github.io/</loc>
-    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sihan-son.github.io/tags/</loc>
+    <lastmod>2025-06-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sihan-son.github.io/tags/interview/</loc>
     <lastmod>2025-05-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sihan-son.github.io/tags/tech/</loc>
