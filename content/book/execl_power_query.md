@@ -1,6 +1,6 @@
 ---
 type: post
-title: "[서평]일잘러의 무기가 되는 엑셀 파워 쿼"
+title: "[서평]일잘러의 무기가 되는 엑셀 파워 쿼리"
 date: 2025-06-28
 
 categories:
