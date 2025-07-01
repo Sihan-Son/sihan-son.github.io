@@ -6,7 +6,18 @@
     <description>Recent content in web on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 21 Oct 2024 23:49:10 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[서평]LUVIT♥ 실전 백엔드 러스트 Axum 프로그래밍</title>
+      <link>https://sihan-son.github.io/book/rust_axum/</link>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/rust_axum/</guid>
+      <description>제이펍 서평단 활동으로 제공받아 작성 된 서평입니다
+프로그래밍 언어는 아무리 언어를 공부해도 이걸 어떻게 써야할까라는 고민이 따라옵니다. java, c, python, js 등 그 어떤 언어도 책으로 문법만 공부해서는 죽은 지식이 됩니다. 무엇인가 만들어야 언어를 배우는 의미가 있습니다.
+rust가 그렇게 성능이 좋고, 메모리 안정성이 좋다고는 하지만 어떻게 써야할지 감을 못잡는 경우가 많습니다. 저도 막상 rust를 익히면서 이걸로 뭘 만들 수 있을까 하다가 axum 프레임워크를 다루는 책을 통해 활동 영역을 좀 더 넓혀 갈 수 있었습니다.</description>
+    </item>
+    
     <item>
       <title>Fast Api로 배우는 백엔드 프로그래밍 with 클린 아키텍쳐</title>
       <link>https://sihan-son.github.io/book/fast-api/</link>
