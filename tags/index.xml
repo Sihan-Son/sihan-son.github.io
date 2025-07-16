@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 01 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Jul 2025 07:54:03 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gilbut</title>
+      <link>https://sihan-son.github.io/tags/gilbut/</link>
+      <pubDate>Thu, 17 Jul 2025 07:54:03 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/gilbut/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>https://sihan-son.github.io/tags/math/</link>
+      <pubDate>Thu, 17 Jul 2025 07:54:03 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>statistics</title>
+      <link>https://sihan-son.github.io/tags/statistics/</link>
+      <pubDate>Thu, 17 Jul 2025 07:54:03 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/statistics/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>axum</title>
       <link>https://sihan-son.github.io/tags/axum/</link>
@@ -229,15 +256,6 @@
       <pubDate>Sun, 29 Oct 2023 23:31:45 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/linear-algebra/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>math</title>
-      <link>https://sihan-son.github.io/tags/math/</link>
-      <pubDate>Sun, 29 Oct 2023 23:31:45 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/math/</guid>
       <description></description>
     </item>
     
@@ -1106,29 +1124,11 @@
     </item>
     
     <item>
-      <title>gilbut</title>
-      <link>https://sihan-son.github.io/tags/gilbut/</link>
-      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/gilbut/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Probability</title>
       <link>https://sihan-son.github.io/tags/probability/</link>
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://sihan-son.github.io/tags/probability/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Statistics</title>
-      <link>https://sihan-son.github.io/tags/statistics/</link>
-      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/statistics/</guid>
       <description></description>
     </item>
     
