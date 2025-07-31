@@ -6,7 +6,28 @@
     <description>Recent content in Books on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 17 Jul 2025 07:54:03 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/book/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Jul 2025 07:54:03 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>파인만의 컴퓨터 강의, 과학은 자연철학이었다</title>
+      <link>https://sihan-son.github.io/book/feynman_-quantum/</link>
+      <pubDate>Thu, 31 Jul 2025 07:54:03 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/feynman_-quantum/</guid>
+      <description>한빛미디어 서평단 &amp;lt;나는리뷰어다&amp;gt; 활동을 위해서 책을 협찬 받아 작성된 서평입니다.
+빨간책의 물리학자이자 농담좋아하는 익살꾼으로만 알고 있덛 20세기 최고의 과학자를 컴퓨터 분류에서 만나는건 색다른 경험이었습니다. 처음 딱 책을 받아서 열었을 때 두께에서 한번 놀랐지만, 서문에서 느껴지는 책의 흡입력에 가장 놀랐습니다. 파인만의 강의를 엮어서 책을 만드신 분도, 번역하시고 편집하신 한빛미디어 팀들의 애정이 느껴지는 책이었습니다. 내용은 쉽지 않습니다. 얕게라도 개념적인 양자컴퓨팅은 맛은 봤다고 생각하고 양자 컴퓨팅 챕터를 들어갔을때 수 많은 수식들이 쉽지 않았습니다. 역사상 최고의 과학자 중 한명의 정신적 유산을 어깨넘어로나마 느낄 수 있는 책입니다.</description>
+    </item>
+    
+    <item>
+      <title>59가지 통계학 궁금증 완전 정복</title>
+      <link>https://sihan-son.github.io/book/59statistics/</link>
+      <pubDate>Thu, 17 Jul 2025 22:06:47 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/59statistics/</guid>
+      <description>길벗 서평단 활동으로 제공받아 작성 된 서평입니다
+확률과 통계는 고등학교 시절부터 보면 아는거 같은데 막상 사용하려고 하면 용어부터 혼란이 참 많은 과목입니다. 번역은 평균이지만 영어로는 mean, average로 구분해서 쓰거나 정규화/표준화 등 비슷해 보이지만 참 다른 용어 등 용어에 대한 개념 정리가 가장 어려운 분야라고 생각됩니다.
+보통 시중에 있는 통계학 관련 서적을 보면 번역서들이라서 용어 차이에 대해서 각주로 설명하는 점이 아쉬웠는데 한국 저자분이 집필하셔서 그런 문제가 전혀 없는 책입니다. 어려운 개념을 향해 차근 차근 개념적으로 쌓아 올라가지만 각 59개 장이 독립적으로 구성 되어서 필요한 개념만 찾아 볼 수 있는 등의 장점이 있습니다.</description>
+    </item>
+    
     <item>
       <title>59가지 통계학 궁금증 완전 정복</title>
       <link>https://sihan-son.github.io/book/59/</link>
