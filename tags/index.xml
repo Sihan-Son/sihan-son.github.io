@@ -6,11 +6,20 @@
     <description>Recent content in Tags on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 17 Jul 2025 07:54:03 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Aug 2025 11:53:22 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM</title>
+      <link>https://sihan-son.github.io/tags/llm/</link>
+      <pubDate>Sun, 31 Aug 2025 11:53:22 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/llm/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>gilbut</title>
       <link>https://sihan-son.github.io/tags/gilbut/</link>
-      <pubDate>Thu, 17 Jul 2025 07:54:03 +0900</pubDate>
+      <pubDate>Thu, 17 Jul 2025 22:06:47 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/gilbut/</guid>
       <description></description>
@@ -19,7 +28,7 @@
     <item>
       <title>math</title>
       <link>https://sihan-son.github.io/tags/math/</link>
-      <pubDate>Thu, 17 Jul 2025 07:54:03 +0900</pubDate>
+      <pubDate>Thu, 17 Jul 2025 22:06:47 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/math/</guid>
       <description></description>
@@ -28,7 +37,7 @@
     <item>
       <title>statistics</title>
       <link>https://sihan-son.github.io/tags/statistics/</link>
-      <pubDate>Thu, 17 Jul 2025 07:54:03 +0900</pubDate>
+      <pubDate>Thu, 17 Jul 2025 22:06:47 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/statistics/</guid>
       <description></description>
