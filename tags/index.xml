@@ -6,7 +6,16 @@
     <description>Recent content in Tags on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 31 Aug 2025 11:53:22 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Oct 2025 22:06:47 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Book</title>
+      <link>https://sihan-son.github.io/tags/book/</link>
+      <pubDate>Sun, 26 Oct 2025 22:06:47 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/book/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>LLM</title>
       <link>https://sihan-son.github.io/tags/llm/</link>
@@ -112,15 +121,6 @@
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
       <guid>https://sihan-son.github.io/tags/tech/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Book</title>
-      <link>https://sihan-son.github.io/tags/book/</link>
-      <pubDate>Sun, 27 Apr 2025 23:10:11 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/book/</guid>
       <description></description>
     </item>
     
