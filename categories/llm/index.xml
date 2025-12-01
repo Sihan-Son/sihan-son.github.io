@@ -6,7 +6,17 @@
     <description>Recent content in LLM on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 26 Oct 2025 22:06:47 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/categories/llm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/categories/llm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>바이브 코딩 너무 개발장 생존법</title>
+      <link>https://sihan-son.github.io/book/vibe_code_new_era/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/vibe_code_new_era/</guid>
+      <description>한빛미디어 서평단 &amp;lt;나는리뷰어다&amp;gt; 활동을 위해서 책을 협찬 받아 작성된 서평입니다.
+GPT와 코파일럿이 시작한 대 LLM 코딩 시대는 이제는 여러 벤더들이 앞다투어 여러 모델을 조합한 코딩 어시턴트, IDE, 바이브 코딩 툴, cli 등 다양한 도구들을 앞 다투어 내놓고있습니다. 책 발간 이후에 나온 프론트 타겟의 안티 그래비티 등 책이 따라 잡을 수 없을 속도로 여러 도구가 나오고 사라지고 있습니다. 새로운 LLM 모델이 발표되면 코딩 문제를 주고 풀게 하면서 코딩 성능을 테스트하고, LLM 모델의 주요 지표로 삼을 만큼 이제 LLM은 단순히 검색 엔진을 대체하는 것 뿐 아니라 적극적인 생산 보조내지 주 도구로 쓰이고 있습니다.</description>
+    </item>
+    
     <item>
       <title>AI Engineeing, 파운데이션 모델을 활용한 시스템 설계</title>
       <link>https://sihan-son.github.io/book/ai_engineering/</link>

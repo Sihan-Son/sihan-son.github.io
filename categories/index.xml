@@ -6,11 +6,11 @@
     <description>Recent content in Categories on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 26 Oct 2025 22:06:47 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
       <link>https://sihan-son.github.io/categories/ai/</link>
-      <pubDate>Sun, 26 Oct 2025 22:06:47 +0900</pubDate>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
       
       <guid>https://sihan-son.github.io/categories/ai/</guid>
       <description></description>
@@ -19,9 +19,18 @@
     <item>
       <title>LLM</title>
       <link>https://sihan-son.github.io/categories/llm/</link>
-      <pubDate>Sun, 26 Oct 2025 22:06:47 +0900</pubDate>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
       
       <guid>https://sihan-son.github.io/categories/llm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vibe</title>
+      <link>https://sihan-son.github.io/categories/vibe/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/categories/vibe/</guid>
       <description></description>
     </item>
     
