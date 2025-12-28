@@ -6,7 +6,52 @@
     <description>Recent content in Categories on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 30 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>framework</title>
+      <link>https://sihan-son.github.io/categories/framework/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/categories/framework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>https://sihan-son.github.io/categories/java/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/categories/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spring</title>
+      <link>https://sihan-son.github.io/categories/spring/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/categories/spring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>springboot</title>
+      <link>https://sihan-son.github.io/categories/springboot/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/categories/springboot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>https://sihan-son.github.io/categories/web/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/categories/web/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>AI</title>
       <link>https://sihan-son.github.io/categories/ai/</link>

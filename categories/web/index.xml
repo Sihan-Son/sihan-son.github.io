@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/categories/web/</link>
+    <description>Recent content in web on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 28 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://sihan-son.github.io/categories/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>스프링 부트 개발자 온보딩 가이드</title>
+      <link>https://sihan-son.github.io/book/spring_boot_onboarding/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/spring_boot_onboarding/</guid>
+      <description>한빛미디어 서평단 &amp;lt;나는리뷰어다&amp;gt; 활동을 위해서 책을 협찬 받아 작성된 서평입니다.
+python, node가 아무리 많이 쓰이고 있어도, 자바가 시장에서 차지하고 있는 파이는 견고합니다. 그 중에서 스프링과 스프링 부트가 가장 큰 파이를 차지하고 있어서 한번쯤 도전해보는 프레임워크입니다. 책은 이름처럼 온보딩으 위한 책이라서 프로젝트 세팅부터 나오고 있어 처음 스프링 부트를 접하는 개발자도 큰 무리 없이 시작할 수 있는 구성입니다.
+jetbrain의 인텔리제이를 통한 프로젝트 구성을 하여 추후 코틀링으로 전환하기에 편한 구성입니다. 스프링 부트처럼 역사가 오래되 프레임워크는 저자가 하고 싶은 말이 많아 책 구성이 깔끔하지 않은 경우가 있는데 이 책은 순차적으로 따라가면 되는 구성이라 쭉 읽을 수 있는 책입니다.</description>
+    </item>
+    
+  </channel>
+</rss>
