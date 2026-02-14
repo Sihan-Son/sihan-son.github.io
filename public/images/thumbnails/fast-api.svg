@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="codex-bg-fastapi" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b132b" />
+      <stop offset="52%" stop-color="#1c2541" />
+      <stop offset="100%" stop-color="#3a506b" />
+    </linearGradient>
+    <filter id="noise-4183751026">
+      <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="2" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.06" />
+      </feComponentTransfer>
+    </filter>
+    <filter id="glow-4183751026" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="b" />
+      <feMerge>
+        <feMergeNode in="b" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <pattern id="grid-4183751026" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#codex-bg-fastapi)"/>
+  <rect width="1200" height="630" fill="url(#grid-4183751026)" />
+  <rect width="1200" height="630" filter="url(#noise-4183751026)"/>
+
+  <circle cx="1016" cy="176" r="260" fill="#f59e0b" opacity="0.20" filter="url(#glow-4183751026)"/>
+  <circle cx="206" cy="536" r="180" fill="white" opacity="0.07"/>
+  <circle cx="756" cy="466" r="120" fill="white" opacity="0.09"/>
+
+  <rect x="72" y="68" width="230" height="42" rx="21" fill="white" fill-opacity="0.14" />
+  <text x="92" y="95" font-family="'Avenir Next', 'Pretendard', 'Noto Sans KR', sans-serif" font-size="20" font-weight="700" fill="white">BOOK</text>
+
+  <text x="96" y="229.76" font-family="'Avenir Next', 'Pretendard', 'Noto Sans KR', sans-serif" font-size="44" font-weight="800" letter-spacing="-0.6" fill="white">
+    <tspan x="96" dy="0">Fast Api로 배우는 백엔드 프로그래밍 with</tspan><tspan x="96" dy="55.44">클린 아키텍쳐</tspan>
+  </text>
+
+  <rect x="96" y="498" width="1008" height="2" fill="white" fill-opacity="0.22" />
+  <text x="96" y="542" font-family="'JetBrains Mono', 'SFMono-Regular', monospace" font-size="20" fill="white" fill-opacity="0.78">sihan-son.github.io</text>
+  <text x="1104" y="542" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', monospace" font-size="18" fill="white" fill-opacity="0.62">2024-10-21</text>
+</svg>

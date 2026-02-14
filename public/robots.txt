@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sihan-son.github.io/sitemap-index.xml
