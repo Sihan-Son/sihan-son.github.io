@@ -5,7 +5,12 @@ site:
 
 author:
   name: "Sihan Son"
-  bio: "Wir müssen wissen, Wir werden wissen / 2020~2023 & 2025 Hanbit reviewer / Manager of VAIS"
+  bio: |
+    Wir müssen wissen, 
+    Wir werden wissen
+
+    2020~2023 & 2025 Hanbit reviewer
+    Manager of VAIS
   image: "/images/unicorn.jpg"
 
 social:
