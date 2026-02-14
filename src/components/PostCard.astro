@@ -1,0 +1,50 @@
+---
+interface Props {
+  title: string;
+  date: Date;
+  section: string;
+  slug: string;
+  thumbnail?: string | null;
+  categories?: string[];
+  tags?: string[];
+}
+
+const { title, date, section, slug, thumbnail, categories = [], tags = [] } = Astro.props;
+const href = `/${section}/${slug}/`;
+const displayDate = date.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' });
+
+const gradients = [
+  'from-blue-500 to-purple-600',
+  'from-green-500 to-teal-600',
+  'from-orange-500 to-red-600',
+  'from-pink-500 to-rose-600',
+  'from-indigo-500 to-blue-600',
+  'from-yellow-500 to-orange-600',
+];
+const gradientIndex = section.split('').reduce((acc, c) => acc + c.charCodeAt(0), 0) % gradients.length;
+---
+
+<article class="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 dark:border-gray-700">
+  <a href={href} class="block">
+    {thumbnail ? (
+      <div class="aspect-video overflow-hidden">
+        <img src={thumbnail} alt={title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+      </div>
+    ) : (
+      <div class={`aspect-video bg-gradient-to-br ${gradients[gradientIndex]} flex items-center justify-center`}>
+        <span class="text-white/80 text-sm font-medium uppercase tracking-wider">{categories[0] || section}</span>
+      </div>
+    )}
+    <div class="p-4 space-y-2">
+      <h2 class="font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
+        {title}
+      </h2>
+      <div class="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
+        <time datetime={date.toISOString()}>{displayDate}</time>
+        {categories.length > 0 && (
+          <span class="px-2 py-0.5 bg-gray-100 dark:bg-gray-700 rounded-full">{categories[0]}</span>
+        )}
+      </div>
+    </div>
+  </a>
+</article>

@@ -1,0 +1,42 @@
+site:
+  title: "Sihan's Blog"
+  description: "Programmer, Korea"
+  url: "https://sihan-son.github.io"
+
+author:
+  name: "Sihan Son"
+  bio: "Wir müssen wissen, Wir werden wissen / 2020~2023 & 2025 Hanbit reviewer / Manager of VAIS"
+  image: "/images/unicorn.jpg"
+
+social:
+  - name: GitHub
+    url: "https://github.com/Sihan-Son"
+    icon: github
+  - name: Instagram
+    url: "https://www.instagram.com/sihan_k_son/"
+    icon: instagram
+  - name: LinkedIn
+    url: "https://www.linkedin.com/in/sihan-son-b43806120/"
+    icon: linkedin
+  - name: Facebook
+    url: "https://www.facebook.com/sihan830"
+    icon: facebook
+
+nav:
+  - name: Home
+    url: /
+  - name: Categories
+    url: /categories/
+  - name: Tags
+    url: /tags/
+  - name: Archives
+    url: /archives/
+
+integrations:
+  adsense_pub_id: "pub-5414348543182733"
+  ga_id: "UA-143237170-1"
+  giscus_repo: "Sihan-Son/sihan-son.github.io"
+  giscus_repo_id: ""
+  giscus_category_id: ""
+
+posts_per_page: 9

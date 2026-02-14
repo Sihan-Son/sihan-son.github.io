@@ -1,0 +1,22 @@
+{
+  "name": "sihans-blog",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "migrate": "node scripts/migrate.mjs"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.15",
+    "@astrojs/sitemap": "^3.3.0",
+    "@astrojs/tailwind": "^6.0.2",
+    "@rollup/plugin-yaml": "^4.1.2",
+    "@tailwindcss/typography": "^0.5.16",
+    "astro": "^5.3.0",
+    "tailwindcss": "^3.4.17"
+  }
+}

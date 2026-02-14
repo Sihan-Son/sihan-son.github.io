@@ -1,0 +1,49 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getPostSlug } from '../../lib/constants';
+
+const allPosts = (await getCollection('posts'))
+  .filter(p => !p.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const postsByYear = new Map<number, typeof allPosts>();
+allPosts.forEach(post => {
+  const year = post.data.date.getFullYear();
+  if (!postsByYear.has(year)) postsByYear.set(year, []);
+  postsByYear.get(year)!.push(post);
+});
+
+const years = [...postsByYear.keys()].sort((a, b) => b - a);
+---
+
+<BaseLayout title="Archives">
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-8">Archives</h1>
+    <div class="space-y-10">
+      {years.map(year => (
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+            {year}
+            <span class="text-sm font-normal text-gray-400 dark:text-gray-500">{postsByYear.get(year)!.length} posts</span>
+          </h2>
+          <ul class="space-y-3 border-l-2 border-gray-200 dark:border-gray-700 pl-6">
+            {postsByYear.get(year)!.map(post => (
+              <li class="relative">
+                <div class="absolute -left-[1.625rem] top-1.5 w-3 h-3 rounded-full bg-gray-300 dark:bg-gray-600 border-2 border-white dark:border-gray-900"></div>
+                <a href={`/${post.data.section}/${getPostSlug(post)}/`} class="group block">
+                  <span class="text-sm text-gray-400 dark:text-gray-500">
+                    {post.data.date.toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' })}
+                  </span>
+                  <span class="ml-3 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    {post.data.title}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,56 @@
+---
+import { SITE_TITLE, ADSENSE_PUB_ID, GA_ID } from '../lib/constants';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const { title, description = '', image = '/images/unicorn.jpg' } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="canonical" href={canonicalURL} />
+
+<title>{title} | {SITE_TITLE}</title>
+<meta name="description" content={description} />
+<meta name="generator" content={Astro.generator} />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={new URL(image, Astro.site)} />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={new URL(image, Astro.site)} />
+
+<!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title={SITE_TITLE} href="/rss.xml" />
+
+<!-- Google Analytics -->
+<script is:inline define:vars={{ GA_ID }}>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', GA_ID);
+</script>
+<script is:inline src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} async></script>
+
+<!-- Google AdSense -->
+<script is:inline src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-${ADSENSE_PUB_ID}`} crossorigin="anonymous" async></script>
+
+<!-- Dark mode -->
+<script is:inline>
+  const theme = localStorage.getItem('theme') ??
+    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.classList.toggle('dark', theme === 'dark');
+</script>
