@@ -44,6 +44,7 @@ const SECTION_PALETTES = {
   music: { bg1: "#172554", bg2: "#1e3a8a", bg3: "#2563eb", accent: "#93c5fd" },
   triton: { bg1: "#1a1a2e", bg2: "#16213e", bg3: "#0f3460", accent: "#22d3ee" },
   programming_common_sense: { bg1: "#111827", bg2: "#1f2937", bg3: "#374151", accent: "#a3e635" },
+  drf: { bg1: "#0c4b33", bg2: "#1a6b4a", bg3: "#2d8f60", accent: "#a30000" },
 };
 const DEFAULT_PALETTE = { bg1: "#111827", bg2: "#1f2937", bg3: "#334155", accent: "#f59e0b" };
 

@@ -8,7 +8,7 @@ import { POSTS_PER_PAGE, getPostSlug } from '../../lib/constants';
 
 export async function getStaticPaths() {
   const allPosts = (await getCollection('posts'))
-    .filter(p => !p.data.draft)
+    .filter(p => import.meta.env.DEV || !p.data.draft)
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
   const totalPages = Math.ceil(allPosts.length / POSTS_PER_PAGE);

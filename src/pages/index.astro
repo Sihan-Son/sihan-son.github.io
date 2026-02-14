@@ -7,17 +7,38 @@ import Pagination from '../components/Pagination.astro';
 import { POSTS_PER_PAGE, getPostSlug } from '../lib/constants';
 
 const allPosts = (await getCollection('posts'))
-  .filter(p => !p.data.draft)
+  .filter(p => import.meta.env.DEV || !p.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
-const totalPages = Math.ceil(allPosts.length / POSTS_PER_PAGE);
-const posts = allPosts.slice(0, POSTS_PER_PAGE);
+const pinnedPosts = allPosts.filter(p => p.data.pinned);
+const regularPosts = allPosts.filter(p => !p.data.pinned);
+
+const totalPages = Math.ceil(regularPosts.length / POSTS_PER_PAGE);
+const posts = regularPosts.slice(0, POSTS_PER_PAGE);
 ---
 
 <BaseLayout title="Home">
   <div class="max-w-7xl mx-auto px-4 py-8">
     <div class="flex flex-col lg:flex-row gap-8">
       <div class="flex-1 min-w-0">
+        {pinnedPosts.length > 0 && (
+          <div class="mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {pinnedPosts.map(post => (
+                <PostCard
+                  title={post.data.title}
+                  date={post.data.date}
+                  section={post.data.section}
+                  slug={getPostSlug(post)}
+                  thumbnail={post.data.thumbnail}
+                  categories={post.data.categories}
+                  tags={post.data.tags}
+                  pinned={true}
+                />
+              ))}
+            </div>
+          </div>
+        )}
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {posts.map(post => (
             <PostCard

@@ -7,9 +7,10 @@ interface Props {
   thumbnail?: string | null;
   categories?: string[];
   tags?: string[];
+  pinned?: boolean;
 }
 
-const { title, date, section, slug, thumbnail, categories = [], tags = [] } = Astro.props;
+const { title, date, section, slug, thumbnail, categories = [], tags = [], pinned = false } = Astro.props;
 const href = `/${section}/${slug}/`;
 const displayDate = date.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' });
 
@@ -24,8 +25,11 @@ const gradients = [
 const gradientIndex = section.split('').reduce((acc, c) => acc + c.charCodeAt(0), 0) % gradients.length;
 ---
 
-<article class="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 dark:border-gray-700">
-  <a href={href} class="block">
+<article class={`group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border ${pinned ? 'border-blue-300 dark:border-blue-600 ring-1 ring-blue-200 dark:ring-blue-700' : 'border-gray-100 dark:border-gray-700'}`}>
+  <a href={href} class="block relative">
+    {pinned && (
+      <span class="absolute top-2 right-2 z-10 px-2 py-0.5 bg-blue-600 text-white text-xs font-semibold rounded-full">PIN</span>
+    )}
     {thumbnail ? (
       <div class="aspect-video overflow-hidden">
         <img src={thumbnail} alt={title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />

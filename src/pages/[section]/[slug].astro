@@ -6,7 +6,7 @@ import { getPostSlug } from '../../lib/constants';
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
   return posts
-    .filter(p => !p.data.draft)
+    .filter(p => import.meta.env.DEV || !p.data.draft)
     .map(post => ({
       params: { section: post.data.section, slug: getPostSlug(post) },
       props: { post },
