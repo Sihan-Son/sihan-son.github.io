@@ -15,43 +15,70 @@ const regularPosts = allPosts.filter(p => !p.data.pinned);
 
 const totalPages = Math.ceil(regularPosts.length / POSTS_PER_PAGE);
 const posts = regularPosts.slice(0, POSTS_PER_PAGE);
+
+// Split posts: first 2 are "large", rest are "default"
+const largePosts = posts.slice(0, 2);
+const defaultPosts = posts.slice(2);
 ---
 
 <BaseLayout title="Home">
-  <div class="max-w-7xl mx-auto px-4 py-8">
-    <div class="flex flex-col lg:flex-row gap-8">
-      <div class="flex-1 min-w-0">
+  <div class="max-w-7xl mx-auto px-4 py-12 md:py-16">
+    <div class="flex flex-col lg:flex-row gap-12">
+      <div class="flex-1 min-w-0 space-y-12">
+        {/* Featured (pinned) posts - full width hero */}
         {pinnedPosts.length > 0 && (
-          <div class="mb-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {pinnedPosts.map(post => (
-                <PostCard
-                  title={post.data.title}
-                  date={post.data.date}
-                  section={post.data.section}
-                  slug={getPostSlug(post)}
-                  thumbnail={post.data.thumbnail}
-                  categories={post.data.categories}
-                  tags={post.data.tags}
-                  pinned={true}
-                />
-              ))}
-            </div>
-          </div>
+          <section class="space-y-8">
+            {pinnedPosts.map(post => (
+              <PostCard
+                title={post.data.title}
+                date={post.data.date}
+                section={post.data.section}
+                slug={getPostSlug(post)}
+                thumbnail={post.data.thumbnail}
+                categories={post.data.categories}
+                tags={post.data.tags}
+                pinned={true}
+                variant="featured"
+              />
+            ))}
+          </section>
         )}
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {posts.map(post => (
-            <PostCard
-              title={post.data.title}
-              date={post.data.date}
-              section={post.data.section}
-              slug={getPostSlug(post)}
-              thumbnail={post.data.thumbnail}
-              categories={post.data.categories}
-              tags={post.data.tags}
-            />
-          ))}
-        </div>
+
+        {/* Large posts - 2 column */}
+        {largePosts.length > 0 && (
+          <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {largePosts.map(post => (
+              <PostCard
+                title={post.data.title}
+                date={post.data.date}
+                section={post.data.section}
+                slug={getPostSlug(post)}
+                thumbnail={post.data.thumbnail}
+                categories={post.data.categories}
+                tags={post.data.tags}
+                variant="large"
+              />
+            ))}
+          </section>
+        )}
+
+        {/* Default posts - 3 column */}
+        {defaultPosts.length > 0 && (
+          <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {defaultPosts.map(post => (
+              <PostCard
+                title={post.data.title}
+                date={post.data.date}
+                section={post.data.section}
+                slug={getPostSlug(post)}
+                thumbnail={post.data.thumbnail}
+                categories={post.data.categories}
+                tags={post.data.tags}
+              />
+            ))}
+          </section>
+        )}
+
         <Pagination currentPage={1} totalPages={totalPages} />
       </div>
       <Sidebar />

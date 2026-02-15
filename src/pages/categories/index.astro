@@ -15,16 +15,17 @@ const categories = [...categoryMap.entries()].sort((a, b) => b[1] - a[1]);
 ---
 
 <BaseLayout title="Categories">
-  <div class="max-w-4xl mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-8">Categories</h1>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+  <div class="max-w-4xl mx-auto px-4 py-12 md:py-16">
+    <h1 class="text-3xl font-serif font-black tracking-tight mb-10" style="color: var(--text-primary);">Categories</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       {categories.map(([cat, count]) => (
         <a
           href={`/categories/${cat.toLowerCase().replace(/[\/\s]/g, '-')}/`}
-          class="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+          class="group flex items-center justify-between p-4 border-l-3 rounded-r-lg transition-colors"
+          style="border-color: var(--accent); background-color: var(--card-bg);"
         >
-          <span class="font-medium text-gray-900 dark:text-white">{cat}</span>
-          <span class="text-sm text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-gray-600 px-2 py-0.5 rounded-full">{count}</span>
+          <span class="font-serif font-bold" style="color: var(--text-primary);">{cat}</span>
+          <span class="font-mono text-xs tracking-wider" style="color: var(--text-muted);">{count}</span>
         </a>
       ))}
     </div>

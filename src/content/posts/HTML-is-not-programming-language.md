@@ -1,7 +1,7 @@
 ---
 title: "HTML은 프로그래밍 언어에요?!??!"
 date: "2022-03-13T12:38:39+09:00"
-section: programming_common_sense
+section: meme
 slug: HTML-is-not-programming-language
 thumbnail: /images/meme/HTML_MEME/Fig1.png
 categories:

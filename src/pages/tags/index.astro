@@ -12,21 +12,26 @@ allPosts.forEach(post => {
 });
 
 const tags = [...tagMap.entries()].sort((a, b) => b[1] - a[1]);
+const maxCount = Math.max(...tags.map(t => t[1]));
 ---
 
 <BaseLayout title="Tags">
-  <div class="max-w-4xl mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-8">Tags</h1>
-    <div class="flex flex-wrap gap-3">
-      {tags.map(([tag, count]) => (
-        <a
-          href={`/tags/${tag.toLowerCase()}/`}
-          class="inline-flex items-center gap-1.5 px-4 py-2 bg-gray-50 dark:bg-gray-800 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-sm"
-        >
-          <span class="text-gray-700 dark:text-gray-300">#{tag}</span>
-          <span class="text-xs text-gray-400 dark:text-gray-500">{count}</span>
-        </a>
-      ))}
+  <div class="max-w-4xl mx-auto px-4 py-12 md:py-16">
+    <h1 class="text-3xl font-serif font-black tracking-tight mb-10" style="color: var(--text-primary);">Tags</h1>
+    <div class="flex flex-wrap gap-3 items-baseline">
+      {tags.map(([tag, count]) => {
+        const scale = 0.75 + (count / maxCount) * 0.75;
+        return (
+          <a
+            href={`/tags/${tag.toLowerCase()}/`}
+            class="font-mono tracking-wider hover-underline transition-colors"
+            style={`color: var(--text-secondary); font-size: ${scale}rem;`}
+          >
+            #{tag}
+            <sup class="ml-0.5" style="color: var(--text-muted); font-size: 0.65em;">{count}</sup>
+          </a>
+        );
+      })}
     </div>
   </div>
 </BaseLayout>

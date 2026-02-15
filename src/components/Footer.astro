@@ -3,12 +3,12 @@ import { SITE_TITLE } from '../lib/constants';
 const year = new Date().getFullYear();
 ---
 
-<footer class="border-t border-gray-200 dark:border-gray-700 mt-12">
-  <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500 dark:text-gray-400">
-    <p>&copy; {year} {SITE_TITLE}. All rights reserved.</p>
-    <div class="flex items-center gap-4">
-      <a href="/rss.xml" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">RSS</a>
-      <a href="/archives/" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Archives</a>
+<footer class="border-t mt-16" style="border-color: var(--border-color);">
+  <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-xs tracking-wider" style="color: var(--text-muted);">
+    <p>&copy; {year} {SITE_TITLE}</p>
+    <div class="flex items-center gap-6">
+      <a href="/rss.xml" class="hover-underline transition-colors" style="color: var(--text-muted);">rss</a>
+      <a href="/archives/" class="hover-underline transition-colors" style="color: var(--text-muted);">archives</a>
     </div>
   </div>
 </footer>

@@ -3,6 +3,7 @@ title: 망분리 문제인 줄 알았는데 Docker가 길을 가로챘다
 date: 2026-02-14
 section: setting
 slug: docker-route-hijack-in-vlan
+thumbnail: /images/thumbnails/docker-route-hijack-in-vlan.svg
 categories:
   - Setting
 tags:

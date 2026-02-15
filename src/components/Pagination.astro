@@ -11,19 +11,25 @@ const nextUrl = `${baseUrl}/${currentPage + 1}/`;
 ---
 
 {totalPages > 1 && (
-  <nav class="flex items-center justify-center gap-2 mt-8" aria-label="Pagination">
-    {currentPage > 1 && (
-      <a href={prevUrl} class="px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-sm">
-        ← Prev
+  <nav class="flex items-center justify-center gap-6 mt-12 font-mono text-sm" aria-label="Pagination">
+    {currentPage > 1 ? (
+      <a href={prevUrl} class="group flex items-center gap-2 transition-colors" style="color: var(--text-secondary);">
+        <span class="inline-block transition-transform group-hover:-translate-x-1">&larr;</span>
+        <span class="hover-underline">prev</span>
       </a>
+    ) : (
+      <span style="color: var(--text-muted); opacity: 0.3;">&larr; prev</span>
     )}
-    <span class="px-4 py-2 text-sm text-gray-500 dark:text-gray-400">
+    <span class="tracking-wider" style="color: var(--text-muted);">
       {currentPage} / {totalPages}
     </span>
-    {currentPage < totalPages && (
-      <a href={nextUrl} class="px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-sm">
-        Next →
+    {currentPage < totalPages ? (
+      <a href={nextUrl} class="group flex items-center gap-2 transition-colors" style="color: var(--text-secondary);">
+        <span class="hover-underline">next</span>
+        <span class="inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
       </a>
+    ) : (
+      <span style="color: var(--text-muted); opacity: 0.3;">next &rarr;</span>
     )}
   </nav>
 )}
