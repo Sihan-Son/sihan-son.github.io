@@ -4,7 +4,6 @@ date: 2026-02-14
 section: drf
 slug: drf-apiview-vs-viewset
 thumbnail: /images/thumbnails/drf-apiview-vs-viewset.svg
-draft: true
 categories:
   - Django REST Framework
 tags:

@@ -4,7 +4,6 @@ date: 2026-02-14
 section: drf
 slug: drf-jwt-authentication
 thumbnail: /images/thumbnails/drf-jwt-authentication.svg
-draft: true
 categories:
   - Django REST Framework
 tags:

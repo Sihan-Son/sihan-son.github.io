@@ -4,7 +4,6 @@ date: 2026-02-14
 section: drf
 slug: drf-middleware-cross-cutting
 thumbnail: /images/thumbnails/drf-middleware-cross-cutting.svg
-draft: true
 categories:
   - Django REST Framework
 tags:

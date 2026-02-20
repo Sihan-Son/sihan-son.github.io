@@ -4,7 +4,6 @@ date: 2026-02-14
 section: drf
 slug: drf-response-envelope
 thumbnail: /images/thumbnails/drf-response-envelope.svg
-draft: true
 categories:
   - Django REST Framework
 tags:

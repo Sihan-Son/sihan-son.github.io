@@ -4,7 +4,6 @@ date: 2026-02-14
 section: drf
 slug: drf-serializer-design
 thumbnail: /images/thumbnails/drf-serializer-design.svg
-draft: true
 categories:
   - Django REST Framework
 tags:
