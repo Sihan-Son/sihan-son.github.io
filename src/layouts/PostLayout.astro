@@ -2,6 +2,7 @@
 import BaseLayout from './BaseLayout.astro';
 import Sidebar from '../components/Sidebar.astro';
 import Giscus from '../components/Giscus.astro';
+import TableOfContents from '../components/TableOfContents.astro';
 
 interface Props {
   title: string;
@@ -10,13 +11,15 @@ interface Props {
   tags?: string[];
   section: string;
   thumbnail?: string | null;
+  headings?: { depth: number; slug: string; text: string }[];
 }
 
-const { title, date, categories = [], tags = [], section, thumbnail } = Astro.props;
+const { title, date, categories = [], tags = [], section, thumbnail, headings = [] } = Astro.props;
 const displayDate = date.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' });
 ---
 
 <BaseLayout title={title} image={thumbnail || undefined}>
+  <TableOfContents headings={headings} />
   <div class="max-w-7xl mx-auto px-4 py-12 md:py-16">
     <div class="flex flex-col lg:flex-row gap-12">
       <!-- Main content -->
