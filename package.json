@@ -16,7 +16,7 @@
     "@astrojs/tailwind": "^6.0.2",
     "@rollup/plugin-yaml": "^4.1.2",
     "@tailwindcss/typography": "^0.5.16",
-    "astro": "^5.3.0",
+    "astro": "^5.18.1",
     "tailwindcss": "^3.4.17"
   }
 }
