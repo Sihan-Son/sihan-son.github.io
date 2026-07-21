@@ -32,18 +32,33 @@ tags:
 
 ## 생김새 미리보기 (같은 "주문" 예시로)
 
-| | |
-|---|---|
-| ![시퀀스](/images/planner-web/UML-SEQ.png) | ![플로우차트](/images/planner-web/UML-FLOW.png) |
-| 시퀀스 — 시간순 요청/응답 | 플로우차트 — 진행과 분기 |
-| ![유스케이스](/images/planner-web/UML-UC.png) | ![컴포넌트](/images/planner-web/UML-COMP.png) |
-| 유스케이스 — 누가 어떤 기능을 | 컴포넌트 — 구성과 연결 |
-| ![상태](/images/planner-web/UML-STATE.png) | ![ER](/images/planner-web/UML-ER.png) |
-| 상태 — 주문의 일생과 전이 | ER — 테이블 관계 (1:N) |
+**시퀀스 — 시간순 요청/응답**
 
-![클래스](/images/planner-web/UML-CLASS.png)
+![시퀀스 다이어그램 예시](/images/planner-web/UML-SEQ.png)
 
-클래스 — 코드 내부 구조 (참고용)
+**플로우차트 — 진행과 분기**
+
+![플로우차트 예시](/images/planner-web/UML-FLOW.png)
+
+**유스케이스 — 누가 어떤 기능을 쓰는가**
+
+![유스케이스 다이어그램 예시](/images/planner-web/UML-UC.png)
+
+**컴포넌트 — 구성과 연결**
+
+![컴포넌트 다이어그램 예시](/images/planner-web/UML-COMP.png)
+
+**상태 — 주문의 일생과 전이**
+
+![상태 다이어그램 예시](/images/planner-web/UML-STATE.png)
+
+**ER — 테이블 관계 (1:N)**
+
+![ER 다이어그램 예시](/images/planner-web/UML-ER.png)
+
+**클래스 — 코드 내부 구조 (참고용)**
+
+![클래스 다이어그램 예시](/images/planner-web/UML-CLASS.png)
 
 ## 용어사전
 
